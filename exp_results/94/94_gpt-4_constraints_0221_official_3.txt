@@ -1,0 +1,4 @@
+1. Replace implicit join with explicit join: This rule can be applied when the query uses implicit join syntax (i.e., listing tables in the FROM clause and specifying join conditions in the WHERE clause).
+2. Use "select 1" instead of "select *": This rule can be applied when a subquery is used only to check the existence of rows, and the actual data returned by the subquery is not used.
+3. Add "group by" clause: This rule can be applied when the query uses aggregate functions (like count, sum, etc.) but does not include a GROUP BY clause.
+4. Remove unnecessary columns from the select clause: This rule can be applied when the SELECT clause includes columns that are not used in the output or in the ORDER BY, GROUP BY, or HAVING clauses.

@@ -1,0 +1,4 @@
+1. Use JOIN instead of "," in FROM clause: This rule can be applied when multiple tables are being used in the query and there are conditions that relate these tables to each other.
+2. Use UNION ALL instead of OR in WHERE clause: This rule can be applied when there are multiple conditions in the WHERE clause that are separated by OR and these conditions are selecting from the same or similar datasets.
+3. Replace SELECT * with SELECT 1 in subqueries: This rule can be applied when a subquery is being used only to check for the existence of rows, not to return any specific data from those rows.
+4. Use BETWEEN in date conditions: This rule can be applied when there are conditions that check if a date or number is within a certain range.

@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when there are multiple tables being combined based on some common columns, especially when the query involves complex conditions.
+2. Use window functions instead of self-join: This rule can be applied when the query needs to compare values with previous or next rows, especially when the comparison is based on some order.
+3. Replace NULL with 0 in aggregation: This rule can be applied when the query involves aggregation functions like SUM, which may return NULL if the input is all NULL.
+4. Remove unnecessary date range conditions: This rule can be applied when the query has conditions on date or time columns, but these conditions are not used in the final result.

@@ -1,0 +1,4 @@
+1. Use CTE (Common Table Expressions) for subqueries: Makes the main query easier to read and understand, and can improve performance by allowing the database to better optimize the query.
+2. Use JOIN instead of comma-separated tables in FROM clause: Improves readability and allows the database to better optimize the query by clearly defining the relationships between tables.
+3. Move conditions from WHERE clause to ON clause in JOINs: Can improve performance by filtering data before the JOIN operation is performed, reducing the amount of data that needs to be processed.
+4. Use EXISTS instead of IN for subqueries: Can improve performance when the subquery returns a large result set, as EXISTS will stop as soon as it finds a match, while IN will scan the entire result set.

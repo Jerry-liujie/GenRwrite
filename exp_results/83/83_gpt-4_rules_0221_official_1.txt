@@ -1,0 +1,4 @@
+1. Combine similar subqueries into one using UNION ALL: This reduces the number of subqueries and makes the query more readable and maintainable.
+2. Use CASE statements to differentiate different types of data in a combined subquery: This allows us to process different types of data in a single pass, improving performance.
+3. Move common WHERE clause conditions to the outer query: This reduces redundancy and can improve performance by reducing the amount of data processed in the subquery.
+4. Use JOIN instead of WHERE for matching rows from different tables: This can improve performance by reducing the amount of data that needs to be processed.

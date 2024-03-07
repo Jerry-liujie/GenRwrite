@@ -1,0 +1,4 @@
+1. Replace implicit join with explicit join: Explicit joins are easier to read and understand. They also prevent accidental Cartesian products if the join condition is forgotten.
+2. Use "select 1" instead of "select *": This improves performance as it reduces the amount of data that needs to be fetched from the disk.
+3. Add "group by" clause: It is necessary to add "group by" clause when using aggregate functions like count, sum etc. It improves the performance by reducing the amount of data to be processed.
+4. Remove unnecessary columns from the select clause: This reduces the amount of data that needs to be fetched and processed, thereby improving performance.

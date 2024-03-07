@@ -1,0 +1,6 @@
+1. Use explicit JOIN syntax instead of WHERE for joining tables: This rule can be applied when there are multiple tables being joined in the query.
+2. Remove unnecessary columns from the SELECT clause: This rule can be applied when the SELECT clause contains columns that are not used in the final output or in any calculations.
+3. Combine conditions on the same column with IN instead of multiple ORs: This rule can be applied when there are multiple OR conditions on the same column in the WHERE clause.
+4. Use GROUP BY and HAVING instead of multiple self-joins: This rule can be applied when the query contains multiple self-joins that are used to perform calculations on groups of rows.
+5. Use CASE in the HAVING clause to perform calculations on specific rows: This rule can be applied when there are calculations that need to be performed on specific rows based on certain conditions.
+6. Use LIMIT to reduce the number of rows returned: This rule can be applied when the query is expected to return a large number of rows but only a small subset of the results is needed.

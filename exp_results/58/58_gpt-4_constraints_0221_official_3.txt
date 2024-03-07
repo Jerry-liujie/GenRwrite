@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one: This rule can be applied when the same tables are being scanned multiple times in separate subqueries for similar computations.
+2. Use left joins instead of inner joins when possible: This rule can be applied when the data from the right table is not necessary for the final result, and the right table is much larger than the left table.
+3. Use case statements to calculate sums conditionally: This rule can be applied when there are multiple conditions that require scanning the same table multiple times.
+4. Use a single where clause for all conditions: This rule can be applied when there are multiple conditions that can be combined into a single where clause, reducing the complexity of the query and potentially improving performance.

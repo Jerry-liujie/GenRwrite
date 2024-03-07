@@ -1,0 +1,3 @@
+1. Use CTEs to filter data early: This rule can be applied when the query involves multiple tables and there are conditions that can be used to filter the data in the early stages of the query.
+2. Remove unnecessary columns from CTEs: This rule can be applied when the CTEs in the query include columns that are not used in the final result set.
+3. Use JOIN instead of OUTER JOIN when possible: This rule can be applied when the data guarantees that there will always be a match between the tables being joined, making an OUTER JOIN unnecessary.

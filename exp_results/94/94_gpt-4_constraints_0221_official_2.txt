@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when the query involves multiple tables and there are conditions that link these tables together.
+2. Use CTE (Common Table Expressions) for subqueries: This rule can be applied when the query contains subqueries that are used multiple times or when the subquery is complex and makes the main query difficult to read.
+3. Move the NOT EXISTS condition to the CTE: This rule can be applied when the main query contains a NOT EXISTS condition that filters the data based on a subquery.
+4. Use EXISTS instead of IN for subqueries: This rule can be applied when the subquery returns a large result set and the main query checks for the existence of rows in this result set.

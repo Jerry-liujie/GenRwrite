@@ -1,0 +1,5 @@
+1. Use CTEs for subqueries: This makes the query more readable and maintainable.
+2. Use LIMIT clause instead of RANK() function: This reduces the complexity of the query and improves performance.
+3. Use ROW_NUMBER() function instead of RANK() function: ROW_NUMBER() assigns a unique row number to each row, whereas RANK() can assign the same rank to multiple rows with the same values. Using ROW_NUMBER() can avoid potential issues caused by duplicate ranks.
+4. Use JOIN instead of multiple WHERE conditions: This makes the query more readable and can improve performance by reducing the number of comparisons.
+5. Remove unnecessary subqueries: This simplifies the query and can improve performance by reducing the amount of data that needs to be processed.

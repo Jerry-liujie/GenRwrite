@@ -1,0 +1,3 @@
+1. Replace WHERE clause with JOIN statement: This increases the performance by reducing the number of records that need to be scanned.
+2. Pre-calculate average return: This reduces the number of computations needed in the main query, improving performance.
+3. Use subquery to calculate average return: This reduces the complexity of the main query, making it easier to read and maintain.

@@ -1,0 +1,4 @@
+1. Replace multiple subqueries with window functions: Window functions can often provide a more efficient way to perform calculations that involve comparing values in different rows of a table.
+2. Replace NULL with 0 in the case statement: This avoids unnecessary NULL checks and can improve performance.
+3. Use JOIN instead of WHERE for combining tables: Using JOIN can be more efficient and clearer than using WHERE for combining tables.
+4. Filter in the main query instead of in the subquery: This can reduce the amount of data that needs to be processed in the subquery, which can improve performance.

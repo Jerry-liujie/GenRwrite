@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one: This rule can be applied when the same table is being scanned multiple times in different subqueries for similar computations.
+2. Use case statements for conditional aggregation: This rule can be applied when there are multiple conditions that need to be checked for the same column and computations need to be performed based on these conditions.
+3. Use cross join for dummy tables: This rule can be applied when there are multiple dummy tables being used in the query which do not have any join conditions.
+4. Adjust the range of where clause: This rule can be applied when the range of values in the where clause can be adjusted to reduce the number of times the database needs to scan the table.

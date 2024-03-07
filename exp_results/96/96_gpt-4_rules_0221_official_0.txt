@@ -1,0 +1,4 @@
+1. Use subqueries to filter data before joining: This reduces the amount of data that needs to be processed in the join operation, which can significantly improve performance.
+2. Remove unnecessary 'order by' and 'limit' clauses: The 'order by' clause can be expensive in terms of performance, and it is not necessary in this case because we are only interested in the count of records. The 'limit' clause is also not necessary because the count operation will only return one row.
+3. Use direct equality in subqueries instead of joining on equality: This can potentially reduce the amount of data that needs to be processed and improve performance.
+4. Avoid using 'select *' in subqueries: This can reduce the amount of data that needs to be processed and improve performance.

@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for joining tables: This makes the query more readable and easier to understand.
+2. Use NULLIF function to avoid division by zero: This simplifies the case when statement and makes the code cleaner.
+3. Use HAVING clause to filter grouped data: This eliminates the need for a subquery and improves performance.
+4. Remove unnecessary columns from the SELECT clause: This reduces the amount of data that needs to be processed and returned, improving performance.
+5. Combine two similar queries into one: This reduces redundancy and improves performance.

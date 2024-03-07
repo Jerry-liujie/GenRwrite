@@ -1,0 +1,4 @@
+1. Use join instead of subquery in where clause: It improves performance by reducing the number of full table scans and making use of indexes.
+2. Filter data as early as possible: By creating a subquery (item_filter) to filter the items first, we reduce the amount of data that needs to be processed in the later stages of the query.
+3. Avoid repeated subqueries: The subquery to filter items by category was repeated three times in the original query. By creating a subquery at the beginning, we avoid this repetition and improve performance.
+4. Use union all instead of union: Union all is faster than union because it does not need to check for duplicate rows.

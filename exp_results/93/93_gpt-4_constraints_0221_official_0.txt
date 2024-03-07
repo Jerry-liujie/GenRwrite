@@ -1,0 +1,4 @@
+1. Move conditions from the outer query to the join condition: This rule can be applied when there are conditions in the WHERE clause that involve columns from both tables in the join.
+2. Remove the subquery and perform the calculation in the main query: This rule can be applied when the subquery is only used to perform calculations that could be done in the main query.
+3. Combine the conditions into a single condition in the join clause: This rule can be applied when there are multiple conditions in the join clause that can be combined into a single condition.
+4. Use a case statement in the sum function: This rule can be applied when there are conditional calculations within the aggregate function.

@@ -1,0 +1,7 @@
+1. Use JOIN instead of comma-separated tables: This rule can be applied when multiple tables are being queried together and there is a clear relationship between them that can be expressed as a JOIN.
+2. Remove unnecessary subqueries: This rule can be applied when there are subqueries that do not contribute to the final result or can be replaced with simpler constructs.
+3. Use COALESCE instead of CASE WHEN for null checks: This rule can be applied when there are conditional checks for null values in the query.
+4. Remove unnecessary window functions: This rule can be applied when there are window functions that do not contribute to the final result or can be replaced with simpler constructs.
+5. Use the BETWEEN operator for range conditions: This rule can be applied when there are conditions that check if a value is within a certain range.
+6. Use aliases for tables and columns: This rule can be applied when there are long or complex table or column names that are used multiple times in the query.
+7. Remove unnecessary grouping: This rule can be applied when there are GROUP BY clauses that do not contribute to the final result or can be replaced with simpler constructs.

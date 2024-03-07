@@ -1,0 +1,3 @@
+1. Use JOIN instead of WHERE for table relationships: This can improve readability and potentially performance by explicitly specifying the relationships between tables.
+2. Pre-calculate averages in a subquery: This can improve performance by reducing the number of calculations needed in the main query. It also avoids the need for a correlated subquery, which can be slow because it needs to be executed for each row in the main query.
+3. Use CTEs (Common Table Expressions) for complex subqueries: This can improve readability and maintainability by breaking down complex queries into simpler parts. It can also improve performance by allowing the database to optimize each part of the query separately.

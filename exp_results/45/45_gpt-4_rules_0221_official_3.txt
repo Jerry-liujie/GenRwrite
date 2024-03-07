@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Use a CTE (Common Table Expression) for subqueries that are used multiple times: This can improve performance by reducing the number of times the subquery needs to be executed.
+3. Move conditions on dimension tables to the JOIN ON clause: This can improve performance by reducing the number of records that need to be processed in the join.
+4. Use IN clause for multiple OR conditions: This can improve performance by reducing the number of comparisons that need to be made.

@@ -1,0 +1,4 @@
+1. Replace joins with subqueries in WHERE clause: This can reduce the amount of data that needs to be processed by the join operation, which can lead to performance improvements.
+2. Use IN instead of JOIN for filtering: Using IN can be faster than JOIN when the subquery returns very few rows. This is because IN uses a nested loops semi join and does not have to scan all the rows in the subquery.
+3. Use UNION ALL instead of UNION: UNION ALL is faster than UNION because UNION removes duplicates which requires additional processing.
+4. Limit the number of rows processed: By using a LIMIT clause, we can reduce the number of rows that need to be processed, which can improve performance.

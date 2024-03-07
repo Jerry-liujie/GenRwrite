@@ -1,0 +1,3 @@
+1. Use window functions to calculate lag and lead values in the same subquery: This reduces the number of subqueries and joins, which can improve performance.
+2. Remove unnecessary subquery v2: By calculating the lag and lead values in the same subquery as the other calculations, we can eliminate the need for the second subquery, reducing complexity and potentially improving performance.
+3. Avoid unnecessary case statement: The case statement in the where clause is unnecessary because we already filter out rows where avg_monthly_sales <= 0. Removing this can simplify the query and potentially improve performance.

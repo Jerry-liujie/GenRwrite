@@ -1,0 +1,4 @@
+1. Replace implicit JOIN syntax with explicit JOIN syntax: This makes the query more readable and easier to understand.
+2. Replace NULL in the SUM function with 0: NULL values can cause issues in the SUM function, replacing them with 0 ensures the function works as expected.
+3. Remove unnecessary ORDER BY clauses: Ordering by the sum of sales for each day of the week is unnecessary and can slow down the query. The query only needs to order by s_store_name and s_store_id.
+4. Use LIMIT clause wisely: Limiting the number of rows returned can greatly increase the speed of a query. However, it should be used wisely, as it can also lead to missing data.

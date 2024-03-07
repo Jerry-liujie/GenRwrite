@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for joining tables: This rule can be applied when there are multiple tables that need to be combined based on a common column or set of columns.
+2. Split UNION ALL subquery into two separate subqueries in the CTE: This rule can be applied when a UNION ALL operation is used to combine the results of two or more SELECT statements that have the same structure.
+3. Remove unnecessary DISTINCT keyword: This rule can be applied when the DISTINCT keyword is used in a SELECT statement, but the columns being selected are already unique.
+4. Use CTEs (Common Table Expressions) for complex subqueries: This rule can be applied when the query contains complex subqueries that can be isolated and named for better readability and potentially improved performance.

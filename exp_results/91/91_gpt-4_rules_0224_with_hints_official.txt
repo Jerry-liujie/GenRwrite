@@ -1,0 +1,4 @@
+1. Use table alias for better readability: Improves readability and reduces the chance of errors in writing and understanding the query.
+2. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: Improves readability and makes the join conditions more clear.
+3. Group only necessary columns: Improves performance by reducing the amount of data that needs to be grouped.
+4. Replace implicit joins with explicit joins: Improves readability and makes the join conditions more clear.

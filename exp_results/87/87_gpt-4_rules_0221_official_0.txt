@@ -1,0 +1,2 @@
+1. Use JOIN instead of WHERE for combining tables: This makes the query more readable and easier to understand. It also allows the database to optimize the query execution.
+2. Remove DISTINCT when using EXCEPT: The EXCEPT operator automatically removes duplicate rows, so using DISTINCT is redundant and may slow down the query.

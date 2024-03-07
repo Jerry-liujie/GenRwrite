@@ -1,0 +1,4 @@
+1. Split the query into smaller parts using WITH clause: This improves readability and allows the database to materialize intermediate results, potentially improving performance.
+2. Replace UNION ALL with separate JOINs in the main query: This allows the database to optimize each join separately, potentially improving performance.
+3. Use LEFT JOIN instead of INNER JOIN when joining with the warehouse table: This ensures that all warehouses are included in the result, even if they have no corresponding sales records.
+4. Move the WHERE conditions to the subqueries: This allows the database to filter out unnecessary data early, reducing the amount of data processed in the main query.

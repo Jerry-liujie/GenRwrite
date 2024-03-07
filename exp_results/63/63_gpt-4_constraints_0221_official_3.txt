@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for connecting tables: This rule can be applied when there are multiple tables in the query that need to be connected based on certain conditions.
+2. Use BETWEEN for continuous range conditions: This rule can be applied when there are conditions that involve checking if a value falls within a certain range.
+3. Move the partition by clause to the inner query and include the month in the partition: This rule can be applied when there is a need to calculate an aggregate function over a partition of data.
+4. Filter out zero averages in the WHERE clause of the outer query: This rule can be applied when there are calculations in the query that could potentially result in a division by zero error.
+5. Avoid using SELECT *: This rule can be applied when the query does not require all columns from the tables involved.

@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This improves readability and performance by explicitly specifying the relationships between tables.
+2. Move join conditions from WHERE clause to ON clause in JOINs: This improves performance by reducing the number of records that need to be processed in the join operation.
+3. Remove unnecessary parentheses: This improves readability by simplifying the structure of the query.
+4. Use JOIN instead of WHERE for joining tables: This improves performance by reducing the number of records that need to be processed in the join operation.

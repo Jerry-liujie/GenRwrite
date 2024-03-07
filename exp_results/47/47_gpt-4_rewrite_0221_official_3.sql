@@ -1,0 +1,80 @@
+```sql
+with v1 as(
+    select
+        i_category,
+        i_brand,
+        s_store_name,
+        s_company_name,
+        d_year,
+        d_moy,
+        sum(ss_sales_price) sum_sales,
+        avg(sum(ss_sales_price)) over (
+            partition by i_category,
+            i_brand,
+            s_store_name,
+            s_company_name,
+            d_year
+        ) avg_monthly_sales,
+        lag(sum(ss_sales_price)) over (
+            partition by i_category,
+            i_brand,
+            s_store_name,
+            s_company_name
+            order by
+                d_year,
+                d_moy
+        ) psum,
+        lead(sum(ss_sales_price)) over (
+            partition by i_category,
+            i_brand,
+            s_store_name,
+            s_company_name
+            order by
+                d_year,
+                d_moy
+        ) nsum
+    from
+        item,
+        store_sales,
+        date_dim,
+        store
+    where
+        ss_item_sk = i_item_sk
+        and ss_sold_date_sk = d_date_sk
+        and ss_store_sk = s_store_sk
+        and (
+            d_year = 2000
+            or (
+                d_year = 2000 -1
+                and d_moy = 12
+            )
+            or (
+                d_year = 2000 + 1
+                and d_moy = 1
+            )
+        )
+    group by
+        i_category,
+        i_brand,
+        s_store_name,
+        s_company_name,
+        d_year,
+        d_moy
+)
+select
+    *
+from
+    v1
+where
+    d_year = 2000
+    and avg_monthly_sales > 0
+    and case
+        when avg_monthly_sales > 0 then abs(sum_sales - avg_monthly_sales) / avg_monthly_sales
+        else null
+    end > 0.1
+order by
+    sum_sales - avg_monthly_sales,
+    nsum
+limit
+    100;
+```

@@ -1,0 +1,1 @@
+select i_product_name, i_brand, i_class, i_category, avg(inv_quantity_on_hand) qoh from inventory inv, item i, date_dim d where inv.inv_item_sk = i.i_item_sk and inv.inv_date_sk = d.d_date_sk and d.d_month_seq between 1200 and 1200 + 11 group by rollup( i_product_name, i_brand, i_class, i_category ) order by qoh, i_product_name, i_brand, i_class, i_category limit 100;

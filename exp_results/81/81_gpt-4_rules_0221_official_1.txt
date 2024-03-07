@@ -1,0 +1,3 @@
+1. Replace WHERE clause joins with ANSI JOINs: This makes the query more readable and easier to maintain.
+2. Use subqueries to pre-calculate aggregates: This can reduce the amount of data that needs to be processed in the main query, potentially improving performance.
+3. Avoid using subqueries in the WHERE clause: Subqueries in the WHERE clause can be inefficient because they need to be re-evaluated for each row processed by the main query. Instead, join to a subquery that calculates the necessary values once.

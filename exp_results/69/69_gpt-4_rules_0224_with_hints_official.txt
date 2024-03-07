@@ -1,0 +1,5 @@
+1. Use CTEs (Common Table Expressions) for complex subqueries: This improves readability and potentially performance by isolating and naming complex subqueries.
+2. Use JOIN instead of WHERE for joining tables: This can improve performance by reducing the amount of data that needs to be processed.
+3. Push down predicates: This can reduce the amount of data processed by moving conditions from the main query to subqueries.
+4. Use JOIN instead of comma-separated tables in FROM clause: This can improve performance by reducing the amount of data that needs to be processed.
+5. Split the query into multiple subqueries in the CTE: This can improve performance by reducing the complexity of the main query.

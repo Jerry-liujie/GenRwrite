@@ -1,0 +1,80 @@
+```
+select
+    i_category,
+    i_class,
+    i_brand,
+    s_store_name,
+    s_company_name,
+    d_moy,
+    sum_sales,
+    avg_monthly_sales
+from
+(
+    select
+        i_category,
+        i_class,
+        i_brand,
+        s_store_name,
+        s_company_name,
+        d_moy,
+        sum(ss_sales_price) as sum_sales,
+        avg(sum(ss_sales_price)) over (
+            partition by i_category,
+            i_brand,
+            s_store_name,
+            s_company_name
+        ) as avg_monthly_sales,
+        case
+            when (avg(sum(ss_sales_price)) over (
+                partition by i_category,
+                i_brand,
+                s_store_name,
+                s_company_name
+            ) <> 0) then (
+                abs(sum(ss_sales_price) - avg(sum(ss_sales_price)) over (
+                    partition by i_category,
+                    i_brand,
+                    s_store_name,
+                    s_company_name
+                )) / avg(sum(ss_sales_price)) over (
+                    partition by i_category,
+                    i_brand,
+                    s_store_name,
+                    s_company_name
+                )
+            )
+            else null
+        end as sales_difference
+    from
+        item
+        join store_sales on ss_item_sk = i_item_sk
+        join date_dim on ss_sold_date_sk = d_date_sk
+        join store on ss_store_sk = s_store_sk
+    where
+        d_year = 2001
+        and (
+            (
+                i_category in ('Books', 'Children', 'Electronics')
+                and i_class in ('history', 'school-uniforms', 'audio')
+            )
+            or (
+                i_category in ('Men', 'Sports', 'Shoes')
+                and i_class in ('pants', 'tennis', 'womens')
+            )
+        )
+    group by
+        i_category,
+        i_class,
+        i_brand,
+        s_store_name,
+        s_company_name,
+        d_moy
+) tmp1
+where
+    sales_difference > 0.1
+order by
+    sum_sales - avg_monthly_sales,
+    s_store_name
+limit
+    100;
+```

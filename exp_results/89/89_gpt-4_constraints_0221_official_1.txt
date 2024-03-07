@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for joining tables: This rule can be applied when there are multiple tables involved in the query and they are connected through common columns.
+2. Use CTE (Common Table Expressions) to simplify complex queries: This rule can be applied when the query is complex and involves multiple steps that can be broken down into simpler parts.
+3. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+4. Avoid using functions on columns in WHERE clause: This rule can be applied when there are functions used on columns in the WHERE clause, which can prevent the use of indexes and lead to full table scans.

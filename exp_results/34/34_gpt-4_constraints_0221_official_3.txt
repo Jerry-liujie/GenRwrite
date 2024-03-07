@@ -1,0 +1,5 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being queried together and there are conditions that link these tables.
+2. Use IN instead of multiple OR conditions: This rule can be applied when there are multiple conditions that check if a column's value is one of several specific values.
+3. Use BETWEEN for continuous ranges: This rule can be applied when there are conditions that check if a column's value falls within a certain range.
+4. Remove duplicate values in IN clause: This rule can be applied when the IN clause contains duplicate values.
+5. Use explicit JOIN syntax instead of WHERE clause for joining tables: This rule can be applied when tables are being joined using conditions in the WHERE clause.

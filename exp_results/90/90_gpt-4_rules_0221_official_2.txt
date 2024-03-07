@@ -1,0 +1,4 @@
+1. Combine subqueries into a single query: This reduces the overhead of executing multiple subqueries and simplifies the query structure.
+2. Use JOIN instead of WHERE for table relationships: This makes the relationships between tables more explicit and can improve performance.
+3. Use CASE WHEN in aggregation instead of in WHERE clause: This allows the database to scan the table only once instead of multiple times, which can improve performance.
+4. Filter as early as possible: This reduces the amount of data that needs to be processed in the later stages of the query, which can improve performance.

@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into a single query: This reduces the number of scans on the same tables and can significantly improve performance.
+2. Use JOIN instead of WHERE for linking tables: This can make the query more readable and can also improve performance by taking advantage of the database's join optimization.
+3. Use CASE WHEN in aggregation instead of filtering in WHERE clause: This can reduce the number of rows to be scanned and thus improve performance.
+4. Filter as early as possible: This can reduce the amount of data that needs to be processed and thus improve performance.

@@ -1,0 +1,2 @@
+1. Replace multiple where conditions with IN clause: This rule can be applied when there are multiple conditions in the WHERE clause that are checking if a column's value is among a list of specific values.
+2. Use UNION ALL instead of UNION: This rule can be applied when combining results from multiple SELECT statements and it is acceptable to include duplicate rows in the final result.

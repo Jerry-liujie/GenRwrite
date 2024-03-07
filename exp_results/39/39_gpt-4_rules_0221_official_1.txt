@@ -1,0 +1,6 @@
+1. Replace WHERE clause with HAVING clause in the subquery: This allows the database to filter out unnecessary rows before performing the GROUP BY operation, which can significantly reduce the amount of data that needs to be processed.
+2. Replace implicit JOINs with explicit JOINs: This can improve readability and maintainability of the code, and in some cases it can also improve performance.
+3. Move calculations to the outer query: This can reduce the amount of data that needs to be processed in the subquery, and it can also make the query easier to understand.
+4. Replace Cartesian product with JOIN: This can significantly reduce the amount of data that needs to be processed, as it avoids creating a Cartesian product of the two tables.
+5. Remove unnecessary columns from the subquery: This can reduce the amount of data that needs to be processed in the subquery, and it can also make the query easier to understand.
+6. Use aliases for tables: This can improve readability and maintainability of the code.

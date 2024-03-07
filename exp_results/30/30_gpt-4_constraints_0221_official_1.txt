@@ -1,0 +1,4 @@
+1. Use JOIN syntax instead of WHERE for joining tables: This rule can be applied when there are multiple tables being used in the query and they need to be linked based on common columns.
+2. Pre-calculate averages in a separate subquery: This rule can be applied when the same average calculation is being used multiple times in the query.
+3. Use subquery results in the main query: This rule can be applied when the results of a subquery are needed in multiple places in the main query.
+4. Avoid using subqueries in the WHERE clause: This rule can be applied when a subquery is used in the WHERE clause, especially if the subquery is not correlated and does not depend on data from the outer query.

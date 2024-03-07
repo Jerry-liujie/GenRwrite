@@ -1,0 +1,4 @@
+1. Use subqueries to filter data: This reduces the amount of data that needs to be processed in the main query, which can improve performance.
+2. Use IN clause instead of JOIN for filtering: This can be faster than a JOIN in some cases, especially when the number of records that meet the conditions is small.
+3. Join only necessary tables in the main query: This reduces the complexity of the query and can improve performance.
+4. Filter data as early as possible: This reduces the amount of data that needs to be processed later in the query, which can improve performance.

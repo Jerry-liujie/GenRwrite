@@ -1,0 +1,5 @@
+1. Remove unnecessary unions: This rule can be applied when the UNION ALL operation is used to combine results from multiple tables, but some of these tables do not contribute to the final result.
+2. Remove unnecessary joins: This rule can be applied when JOIN operations are used to combine tables, but some of these tables do not contribute to the final result.
+3. Remove unnecessary calculations: This rule can be applied when there are calculations in the query that do not contribute to the final result.
+4. Use INNER JOIN instead of WHERE clause for joining tables: This rule can be applied when tables are joined using a WHERE clause, but an INNER JOIN could be used instead to potentially improve performance.
+5. Use GROUP BY before UNION ALL: This rule can be applied when a UNION ALL operation is used after a GROUP BY operation, but the GROUP BY operation could be used before the UNION ALL to potentially reduce the amount of data that needs to be processed.

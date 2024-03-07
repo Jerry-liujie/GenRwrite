@@ -1,0 +1,36 @@
+with cte as (
+    select
+        sum(ws_net_paid) as total_sum,
+        i_category,
+        i_class,
+        grouping(i_category) + grouping(i_class) as lochierarchy
+    from
+        web_sales ws
+        join date_dim d1 on d1.d_date_sk = ws.ws_sold_date_sk
+        join item i on i.i_item_sk = ws.ws_item_sk
+    where
+        d1.d_month_seq between 1186 and 1186 + 11
+    group by
+        rollup(i_category, i_class)
+)
+select
+    total_sum,
+    i_category,
+    i_class,
+    lochierarchy,
+    rank() over (
+        partition by lochierarchy,
+        case
+            when lochierarchy = 0 then i_category
+        end
+        order by
+            total_sum desc
+    ) as rank_within_parent
+from cte
+order by
+    lochierarchy desc,
+    case
+        when lochierarchy = 0 then i_category
+    end,
+    rank_within_parent
+limit 100;

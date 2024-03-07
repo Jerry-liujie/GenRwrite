@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit join syntax (comma-separated table list in the FROM clause and join conditions in the WHERE clause).
+2. Use '1' instead of '*' in subquery: This rule can be applied when a subquery is used only to check the existence of records, not to retrieve actual data.
+3. Use 'join' instead of ',' for joining tables: This rule can be applied when the query uses a comma to separate tables in the FROM clause, which is an old syntax for joining tables.
+4. Correct the calculation in 'between' clause: This rule can be applied when the BETWEEN clause is used and the values should represent a range, not a calculation result.

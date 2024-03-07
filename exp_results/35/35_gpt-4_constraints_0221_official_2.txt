@@ -1,0 +1,4 @@
+1. Replace WHERE clause with JOIN clause: This rule can be applied when there are conditions in the WHERE clause that are used to match rows from two or more tables based on their column values.
+2. Replace EXISTS clause with IN clause: This rule can be applied when the query uses EXISTS clause to check if any row of a subquery satisfies a condition.
+3. Use subqueries in the WHERE clause: This rule can be applied when there are conditions that need to be checked against a set of values that are returned by a subquery.
+4. Use LIMIT clause: This rule can be applied when the query is expected to return a large number of rows but only a subset of the result is needed for further processing or analysis.

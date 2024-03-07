@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for table relationships: This makes the query more readable and maintainable.
+2. Remove duplicate values in IN clause: This reduces the complexity of the query and improves performance.
+3. Use indexes on the columns used in the JOIN and WHERE clauses: This can significantly speed up the query.
+4. Limit the number of rows processed by the query using LIMIT: This can significantly reduce the amount of data that needs to be processed.
+5. Use GROUP BY instead of DISTINCT for aggregation: GROUP BY is generally faster and more efficient than DISTINCT.

@@ -1,0 +1,4 @@
+1. Combine the two subqueries into one: This reduces the amount of data that needs to be processed and eliminates the need to join the same tables twice.
+2. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query more readable and easier to understand.
+3. Move the promotion channel conditions into a CASE statement in the SELECT clause: This eliminates the need for a separate subquery to calculate the promotional sales.
+4. Remove unnecessary table aliases: This makes the query more readable and easier to understand.

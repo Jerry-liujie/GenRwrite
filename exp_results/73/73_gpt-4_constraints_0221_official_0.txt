@@ -1,0 +1,6 @@
+1. Use explicit JOIN syntax instead of implicit comma-separated syntax: This rule can be applied when multiple tables are being joined in a query. 
+2. Use IN operator for multiple OR conditions on the same column: This rule can be applied when there are multiple OR conditions on the same column in the WHERE clause.
+3. Simplify the condition on the year: This rule can be applied when there are multiple conditions on the same column that can be simplified using a BETWEEN clause.
+4. Remove duplicate conditions: This rule can be applied when the same condition is repeated multiple times in the WHERE clause.
+5. Use aliases for subqueries: This rule can be applied when subqueries are used in the main query.
+6. Use COUNT(*) instead of COUNT(column): This rule can be applied when counting the total number of rows in a table or a group.

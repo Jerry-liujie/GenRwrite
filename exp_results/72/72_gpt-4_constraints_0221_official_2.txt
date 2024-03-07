@@ -1,0 +1,5 @@
+1. Use subquery to filter data: This rule can be applied when there are conditions in the WHERE clause that filter data based on columns from multiple tables.
+2. Eliminate unnecessary joins: This rule can be applied when there are joins in the query that do not contribute to the final result set.
+3. Use 'in' instead of '=' for subqueries: This rule can be applied when a column is being compared to a subquery that returns multiple rows.
+4. Use 'not in' instead of left outer join for exclusion: This rule can be applied when rows are being excluded based on a condition that involves a column from another table.
+5. Move constant conditions to subquery: This rule can be applied when there are conditions in the WHERE clause that involve constants and can be moved to a subquery to reduce the amount of data processed in the main query.

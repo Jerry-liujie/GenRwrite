@@ -1,0 +1,4 @@
+1. Use WITH clause for subqueries: This rule can be applied when the query contains complex subqueries that are used multiple times within the main query.
+2. Replace WHERE clause with JOIN clause: This rule can be applied when the query is filtering data based on conditions that match columns in different tables.
+3. Use IN clause for subquery in WHERE clause: This rule can be applied when the query is filtering data based on a condition that matches a list of values returned by a subquery.
+4. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when the query is joining multiple tables together.

@@ -1,0 +1,4 @@
+1. Move conditions from the outer query to the join condition: This reduces the amount of data that needs to be processed in the join operation, which can significantly improve performance.
+2. Remove the subquery and perform the calculation in the main query: This simplifies the query and can improve performance by reducing the amount of data that needs to be processed.
+3. Combine the conditions into a single condition in the join clause: This can reduce the complexity of the query and improve performance by reducing the number of operations that need to be performed.
+4. Use a case statement in the sum function: This can simplify the query and improve performance by reducing the number of operations that need to be performed.

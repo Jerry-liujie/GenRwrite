@@ -1,0 +1,5 @@
+1. Use JOIN instead of comma-separated FROM clause: This rule can be applied when multiple tables are being queried together, especially when there are specific conditions on how they should be linked.
+2. Use CTE (Common Table Expressions) for subqueries: This rule can be applied when there are complex subqueries or when a subquery is used multiple times in the main query.
+3. Remove redundant subquery in WHERE clause: This rule can be applied when the same subquery is used multiple times in the WHERE clause, which can be replaced by a single instance.
+4. Use table alias for better readability: This rule can be applied when tables have long or complex names, or when the same table is used multiple times in the query.
+5. Move conditions to ON clause in JOINs where possible: This rule can be applied when there are conditions in the WHERE clause that are related to the tables being joined, and can be moved to the ON clause of the JOIN operation.

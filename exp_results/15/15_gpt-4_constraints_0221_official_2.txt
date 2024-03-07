@@ -1,0 +1,3 @@
+1. Replace commas in FROM clause with JOINs: This rule can be applied when the query involves multiple tables and these tables are listed in the FROM clause separated by commas.
+2. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that are related to the join operation and can be moved to the ON clause to filter rows before the join operation.
+3. Use LIMIT clause: This rule can be applied when the query is expected to return a large number of rows but only a subset of the result is needed.

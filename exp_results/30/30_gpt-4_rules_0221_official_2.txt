@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This can improve readability and performance by reducing the complexity of WHERE clause.
+2. Filter as early as possible: By moving the filter condition 'ca_state = 'AR'' to the first subquery, we reduce the amount of data processed in the later stages.
+3. Pre-calculate aggregates: By calculating the average return in a separate subquery, we avoid calculating it for each row in the main query, which can improve performance.
+4. Avoid subqueries in WHERE clause: By moving the subquery from the WHERE clause to a separate subquery, we avoid executing it for each row, which can improve performance.

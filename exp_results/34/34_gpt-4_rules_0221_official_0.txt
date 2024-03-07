@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Replace BETWEEN operator with IN operator for discrete values: This can improve performance because the database can optimize the query better with a list of discrete values.
+3. Use BETWEEN operator for continuous range of values: This can improve performance because the database can optimize the query better with a continuous range of values.
+4. Remove duplicate values in IN clause: This can improve performance because the database doesn't need to check the same value multiple times.
+5. Use JOIN instead of WHERE for joining tables: This can improve performance because the database can optimize the query better with JOINs.

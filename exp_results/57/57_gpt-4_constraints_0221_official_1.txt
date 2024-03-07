@@ -1,0 +1,4 @@
+1. Use JOIN syntax instead of WHERE for joining tables: This rule can be applied when there are multiple tables being joined in the query, and the join conditions are specified in the WHERE clause.
+2. Remove unnecessary subquery: This rule can be applied when there are subqueries that do not contribute to the final result or can be replaced by simpler constructs.
+3. Avoid using functions in the WHERE clause: This rule can be applied when there are functions used in the WHERE clause that could potentially prevent the use of indexes and slow down the query.
+4. Use LIMIT clause to reduce the amount of data returned: This rule can be applied when the query is expected to return a large amount of data, but only a subset of the data is actually needed for the analysis.

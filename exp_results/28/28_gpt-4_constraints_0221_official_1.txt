@@ -1,0 +1,2 @@
+1. Avoid using subqueries in FROM clause: This rule can be applied when the query contains subqueries in the FROM clause that are used to create derived tables.
+2. Use LIMIT clause wisely: This rule can be applied when the query uses the LIMIT clause to restrict the number of rows returned, especially when it's not necessary or could lead to unexpected results.

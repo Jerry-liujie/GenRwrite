@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when multiple tables are being joined in a query. Using explicit JOIN syntax can make the query more readable and potentially more efficient.
+2. Filter as early as possible: This rule can be applied when the query includes a WHERE clause. By filtering data as early as possible, we can reduce the amount of data that needs to be processed in later stages of the query.
+3. Use LIMIT clause: This rule can be applied when only a certain number of results are needed from the query. By limiting the number of results, we can improve the performance of the query.

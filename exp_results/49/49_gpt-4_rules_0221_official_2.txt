@@ -1,0 +1,4 @@
+1. Remove unnecessary subqueries: This simplifies the query and can potentially improve performance by reducing the number of operations.
+2. Replace UNION with UNION ALL: UNION removes duplicate rows and requires a sort operation, which can be expensive. If we know that the sets of rows being combined are distinct, we can use UNION ALL to skip this operation.
+3. Move the join with date_dim table inside the subquery: This reduces the number of rows in the result set of the join, which can improve performance.
+4. Remove unnecessary casting: Removing unnecessary casting can improve performance by reducing the number of operations.

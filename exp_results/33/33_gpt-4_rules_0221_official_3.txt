@@ -1,0 +1,5 @@
+1. Combine multiple subqueries into one: This reduces the number of full table scans and thus improves performance.
+2. Use left join instead of inner join: This ensures that all records from the left table (item) are included in the result set, which can prevent potential data loss.
+3. Use case statement to handle null values: This ensures that the total sales are calculated correctly even if some sales prices are null.
+4. Use a single date and address condition in the where clause: This simplifies the query and improves readability.
+5. Remove unnecessary in clause: This simplifies the query and can improve performance as in clause can be expensive.

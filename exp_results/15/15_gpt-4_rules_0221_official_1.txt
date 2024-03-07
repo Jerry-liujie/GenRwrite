@@ -1,0 +1,3 @@
+1. Filter data as early as possible: By filtering data in subqueries before joining, we reduce the amount of data that needs to be processed in the join operations, which can significantly improve performance.
+2. Avoid unnecessary columns in the join operation: By selecting only the necessary columns in the subqueries, we reduce the amount of data that needs to be processed in the join operations, which can improve performance.
+3. Use inner join instead of comma-separated join: Inner join is more efficient than comma-separated join because it allows the database to optimize the join operation.

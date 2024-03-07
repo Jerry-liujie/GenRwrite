@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for linking tables: This rule can be applied when there are multiple tables being linked together in a query, and the linking is done in the WHERE clause instead of using JOINs.
+2. Combine similar subqueries into one using UNION ALL: This rule can be applied when there are multiple subqueries that are performing the same operation on different tables or with different conditions.
+3. Move the common WHERE conditions to the outer query: This rule can be applied when there are common conditions in multiple subqueries that can be moved to the outer query to reduce redundancy.
+4. Use a CTE (Common Table Expression) for the total sales calculation: This rule can be applied when there are complex calculations or operations that are used multiple times in the query, or that would benefit from being separated for readability.
+5. Remove unnecessary grouping in subqueries: This rule can be applied when there are GROUP BY clauses in subqueries that are not necessary for the overall query, and removing them would improve performance.

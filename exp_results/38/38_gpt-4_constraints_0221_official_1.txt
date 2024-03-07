@@ -1,0 +1,2 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when there are multiple tables that need to be combined based on a common column or condition.
+2. Remove the DISTINCT keyword: This rule can be applied when using set operators like INTERSECT, UNION, or EXCEPT, which already remove duplicates, making the DISTINCT keyword redundant and potentially less efficient.

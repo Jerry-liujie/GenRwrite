@@ -1,0 +1,3 @@
+1. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query. In this case, we filter the `store_sales` and `item` tables before joining them with other tables.
+2. Avoid unnecessary columns in the select clause: Only include the columns that are necessary for the final result. This reduces the amount of data that needs to be processed and transferred.
+3. Use subqueries to simplify complex queries: Subqueries can make a complex query easier to understand and maintain. They can also improve performance by breaking down a complex query into simpler parts.

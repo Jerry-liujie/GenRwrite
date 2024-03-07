@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Use a CTE (Common Table Expression) for subqueries that are used multiple times: This rule can be applied when a subquery is used multiple times in the same query, or when a subquery is complex and could benefit from being broken down into smaller parts.
+3. Move conditions on dimension tables to the JOIN ON clause: This rule can be applied when there are conditions on dimension tables that can be moved to the JOIN ON clause to reduce the number of records that need to be processed in the join.
+4. Use IN clause for multiple OR conditions: This rule can be applied when there are multiple OR conditions in the WHERE clause that can be combined into a single IN clause to improve readability and potentially improve performance.

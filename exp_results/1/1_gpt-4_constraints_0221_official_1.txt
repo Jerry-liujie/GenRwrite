@@ -1,0 +1,4 @@
+1. Replace subquery with join: This rule can be applied when a subquery is used to fetch data that can be fetched using a join operation, which can improve the performance of the query.
+2. Use explicit join syntax instead of comma-separated tables: This rule can be applied when multiple tables are being joined in a query, as using explicit join syntax can make the query easier to read and understand.
+3. Pre-calculate averages in a separate CTE: This rule can be applied when an average calculation is being used multiple times in a query, as pre-calculating the average can improve the performance of the query.
+4. Use CTEs for complex calculations: This rule can be applied when there are complex calculations in the query, as using a CTE can make the query easier to read and understand.

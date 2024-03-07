@@ -1,0 +1,5 @@
+1. Use JOIN instead of comma-separated tables in the FROM clause: This improves readability and maintainability of the query by clearly defining the relationships between tables.
+2. Move WHERE clause filters to ON clause in JOINs: This can improve performance by filtering data before the JOIN operation, reducing the amount of data that needs to be processed.
+3. Combine multiple queries into a single query: This can improve performance by reducing the number of scans on the same tables.
+4. Move conditions from WHERE clause to CASE statement in the SELECT clause: This was not applied in this case, as the conditions in the WHERE clause could not be moved to a CASE statement in the SELECT clause without changing the logic of the query.
+5. Use LEFT JOIN for optional tables: This was not applied in this case, as there were no optional tables in the query.

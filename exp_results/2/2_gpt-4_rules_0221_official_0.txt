@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for combining tables: This can improve performance as JOINs are generally faster and use indexes more efficiently.
+2. Use 0 instead of NULL in the CASE statement: This avoids unnecessary NULL checks which can slow down the query.
+3. Avoid subqueries if not necessary: Subqueries can be slower because they force the database to perform operations in a certain order. Here, we can directly join the tables in the main query.
+4. Use table alias for better readability: This makes the query easier to understand and maintain. It also can speed up the writing of the query.
+5. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query. Here, we filter the data in the JOIN condition instead of in a WHERE clause after the JOIN.

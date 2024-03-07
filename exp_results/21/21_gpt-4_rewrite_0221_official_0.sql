@@ -1,0 +1,53 @@
+```sql
+with inv_before as (
+    select
+        w_warehouse_name,
+        i_item_id,
+        sum(inv_quantity_on_hand) as inv_before
+    from
+        inventory
+        join warehouse on inv_warehouse_sk = w_warehouse_sk
+        join item on i_item_sk = inv_item_sk
+        join date_dim on inv_date_sk = d_date_sk
+    where
+        i_current_price between 0.99 and 1.49
+        and d_date < '1999-06-22'
+    group by
+        w_warehouse_name,
+        i_item_id
+),
+inv_after as (
+    select
+        w_warehouse_name,
+        i_item_id,
+        sum(inv_quantity_on_hand) as inv_after
+    from
+        inventory
+        join warehouse on inv_warehouse_sk = w_warehouse_sk
+        join item on i_item_sk = inv_item_sk
+        join date_dim on inv_date_sk = d_date_sk
+    where
+        i_current_price between 0.99 and 1.49
+        and d_date >= '1999-06-22'
+    group by
+        w_warehouse_name,
+        i_item_id
+)
+select
+    *
+from
+    inv_before
+    join inv_after using (w_warehouse_name, i_item_id)
+where
+    (
+        case
+            when inv_before.inv_before > 0 then inv_after.inv_after / inv_before.inv_before
+            else null
+        end
+    ) between 2.0 / 3.0 and 3.0 / 2.0
+order by
+    w_warehouse_name,
+    i_item_id
+limit
+    100;
+```

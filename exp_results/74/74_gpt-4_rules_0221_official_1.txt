@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for linking tables: This can improve readability and performance of the query.
+2. Split complex queries into simpler ones using WITH clause: This can make the query more readable and maintainable, and can also improve performance by breaking down the problem.
+3. Avoid UNION ALL if not necessary: UNION ALL can be a costly operation, especially if the datasets are large. In this case, we can avoid it by creating separate subqueries for store and web sales.
+4. Avoid CASE WHEN in WHERE clause: This can be costly in terms of performance. Instead, we can use simple arithmetic operations and conditions.
+5. Use aliases for tables: This can improve readability and maintainability of the query.

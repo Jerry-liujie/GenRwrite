@@ -1,0 +1,3 @@
+1. Use CTE (Common Table Expressions) to simplify complex joins: This makes the query easier to read and maintain, and can also improve performance by reducing the number of times the join operation is performed.
+2. Filter data as early as possible: By moving the WHERE clause into the CTE, we ensure that the join operations are performed on a smaller dataset, which can significantly improve performance.
+3. Avoid using SELECT *: Selecting only the necessary columns can reduce the amount of data that needs to be processed and transferred, improving performance.

@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This makes the query more readable and easier to maintain. It also avoids accidental cross joins.
+2. Use subquery to calculate sum before calculating ratio: This reduces the number of calculations and improves performance.
+3. Push down predicates into subquery: This reduces the amount of data that needs to be processed and improves performance.
+4. Use LIMIT clause after ORDER BY clause: This reduces the amount of data that needs to be sorted and improves performance.

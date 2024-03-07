@@ -1,0 +1,4 @@
+1. Use WITH clause for subqueries: This makes the query more readable and can also improve performance by reducing the number of times a subquery is executed.
+2. Replace implicit JOINs with explicit JOINs: This makes the query more readable and can also improve performance by making it easier for the database to optimize the query.
+3. Pre-calculate aggregates: Pre-calculating aggregates (like AVG) can improve performance by reducing the number of calculations that need to be performed during the main query.
+4. Use subquery to filter rows: This can improve performance by reducing the number of rows that need to be processed in the main query.

@@ -1,0 +1,6 @@
+1. Use explicit JOIN syntax instead of WHERE for joining tables: This makes the query more readable and easier to understand.
+2. Remove unnecessary columns from the SELECT clause: This reduces the amount of data that needs to be processed and returned.
+3. Combine conditions on the same column with IN instead of multiple ORs: This simplifies the query and can improve performance.
+4. Use GROUP BY and HAVING instead of multiple self-joins: This simplifies the query and can significantly improve performance by reducing the number of rows that need to be processed.
+5. Use CASE in the HAVING clause to perform calculations on specific rows: This allows us to perform the necessary calculations without needing to self-join the table multiple times.
+6. Use LIMIT to reduce the number of rows returned: This can improve performance by reducing the amount of data that needs to be processed and returned.

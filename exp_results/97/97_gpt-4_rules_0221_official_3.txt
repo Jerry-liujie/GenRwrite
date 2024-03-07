@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: It makes the query more readable and easier to understand. It also helps the database optimizer to understand the query better and generate a more efficient execution plan.
+2. Replace multiple SUM(CASE WHEN ...) with COUNT(DISTINCT ...): It simplifies the query and potentially improves performance because COUNT(DISTINCT ...) is usually faster than SUM(CASE WHEN ...) in many databases.
+3. Use COUNT(DISTINCT ...) with multiple columns to count the number of unique combinations of multiple columns: It simplifies the query and potentially improves performance because it reduces the number of operations needed to calculate the desired results.

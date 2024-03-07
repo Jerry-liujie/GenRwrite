@@ -1,0 +1,3 @@
+1. Push down predicates: This rule can be applied when there are conditions on the columns of a table that can be used to filter the data before joining with other tables.
+2. Use subquery to pre-calculate: This rule can be applied when there are complex calculations or transformations that can be done on the data before it is used in the main query.
+3. Avoid join with date_dim table: This rule can be applied when the date_dim table is not used in the final result, and the conditions on date_dim can be transformed to conditions on other tables.

@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated FROM clause: This improves the query readability and performance by explicitly specifying the relationships between tables.
+2. Replace multiple year conditions with a range: This simplifies the query and potentially improves performance by reducing the number of conditions that need to be evaluated.
+3. Move conditions from the having clause to the where clause: This can improve performance by reducing the amount of data that needs to be grouped.
+4. Use UNION ALL instead of UNION: This can improve performance by avoiding the need to remove duplicate rows, which is required when using UNION.

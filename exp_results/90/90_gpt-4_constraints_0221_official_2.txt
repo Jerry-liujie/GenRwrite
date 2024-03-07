@@ -1,0 +1,4 @@
+1. Combine subqueries into a single query: This rule can be applied when there are multiple subqueries that can be merged into a single query without changing the result.
+2. Use JOIN instead of WHERE for table relationships: This rule can be applied when there are multiple tables involved in the query and their relationships are defined in the WHERE clause.
+3. Use CASE WHEN in aggregation instead of in WHERE clause: This rule can be applied when there are conditional statements in the WHERE clause that can be moved to the SELECT clause as part of an aggregate function.
+4. Filter as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.

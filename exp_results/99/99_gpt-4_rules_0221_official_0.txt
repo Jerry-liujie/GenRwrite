@@ -1,0 +1,3 @@
+1. Push down predicates: By moving the condition on `cs_ship_date_sk` into the subquery, we reduce the amount of data that needs to be joined with the other tables. This can significantly improve performance.
+2. Use subquery to pre-calculate: By moving the case statements into a subquery, we reduce the complexity of the main query and make it easier for the database to optimize.
+3. Avoid join with date_dim table: As the date_dim table is not used in the final result, we can avoid joining with it to reduce the complexity of the query.

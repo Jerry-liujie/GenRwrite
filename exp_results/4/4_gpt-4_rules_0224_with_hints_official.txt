@@ -1,0 +1,5 @@
+1. Split complex queries into simpler ones using WITH clause: This makes the query easier to read and understand, and it can also improve performance by allowing the database to optimize each part of the query separately.
+2. Use JOIN instead of WHERE for linking tables: This can make the query more readable and can also improve performance by allowing the database to use indexes more effectively.
+3. Avoid UNION ALL if not necessary: This can improve performance by reducing the amount of data that needs to be processed.
+4. Avoid CASE WHEN in WHERE clause: This can simplify the query and potentially improve performance by reducing the complexity of the condition.
+5. Use standard comparison operators instead of complex conditional logic: This can simplify the query and potentially improve performance by reducing the complexity of the condition.

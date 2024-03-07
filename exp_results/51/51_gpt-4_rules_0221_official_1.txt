@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for joining tables: This can improve the performance of the query by reducing the number of rows that need to be processed.
+2. Remove unnecessary subqueries: This can simplify the query and reduce the amount of data that needs to be processed.
+3. Remove unnecessary CASE statements: This can simplify the query and improve performance by reducing the number of operations that need to be performed.
+4. Use aliases for table names: This can make the query easier to read and maintain, and can potentially improve performance by reducing the amount of data that needs to be processed.
+5. Use the correct sequence in the BETWEEN clause: This can improve performance by reducing the number of rows that need to be processed.

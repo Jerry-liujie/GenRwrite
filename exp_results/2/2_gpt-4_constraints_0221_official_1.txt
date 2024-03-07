@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one: This rule can be applied when there are multiple subqueries scanning the same table or when the subqueries are performing similar computations.
+2. Use window function instead of self-join: This rule can be applied when the query is performing calculations across a set of table rows that are related to the current row, especially when comparing values between rows.
+3. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query, reducing the amount of data that needs to be processed in later stages.
+4. Replace NULL with 0 in aggregation: This rule can be applied when the query is performing aggregations and there's a possibility of NULL values in the data, which can lead to incorrect results or require additional NULL checks.

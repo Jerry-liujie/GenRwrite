@@ -1,0 +1,3 @@
+1. Filter data as early as possible: This rule can be applied when there are conditions in the WHERE clause that can be moved to subqueries before the JOIN operations.
+2. Avoid unnecessary columns in the join operation: This rule can be applied when the SELECT clause includes columns that are not used in the final result of the query.
+3. Use inner join instead of comma-separated join: This rule can be applied when the query uses a comma-separated list of tables in the FROM clause, which can be replaced with INNER JOIN operations.

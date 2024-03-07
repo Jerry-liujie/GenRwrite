@@ -1,0 +1,4 @@
+1. Use subquery to reduce the amount of data: This rule can be applied when the main query involves complex calculations or aggregations, and there are conditions that can be used to filter the data before these operations.
+2. Replace join with date_dim table by using IN clause: This rule can be applied when the query is joining with a date dimension table to filter data based on date conditions.
+3. Use join instead of comma-separated tables: This rule can be applied when the query is using comma-separated tables in the FROM clause, which can lead to a Cartesian product and potentially slow down the query.
+4. Group by in subquery: This rule can be applied when the main query involves complex calculations or aggregations, and there are group by operations that can be moved to a subquery to reduce the amount of data that needs to be processed.

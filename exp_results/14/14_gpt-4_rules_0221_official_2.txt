@@ -1,0 +1,7 @@
+1. Remove unnecessary subqueries: Subqueries can often be replaced with joins or exists clauses, which can be more efficient.
+2. Use exists instead of in for subqueries: The exists clause is generally more efficient than the in clause for subqueries.
+3. Avoid using functions in the where clause: Functions in the where clause can prevent the use of indexes, slowing down the query.
+4. Use limit to reduce the amount of data returned: If you only need a certain number of rows, use the limit clause to avoid processing unnecessary data.
+5. Use indexes for commonly queried columns: Indexes can greatly speed up queries, but they can also slow down inserts and updates, so use them judiciously.
+6. Avoid using union all if possible: Union all can be slow because it has to combine and sort two result sets. If the data sets are large, consider using a join instead.
+7. Use having clause wisely: Having clause is used to filter the results of a group by clause. It can be slow because it requires a full scan of the data. If possible, try to filter the data in the where clause instead.

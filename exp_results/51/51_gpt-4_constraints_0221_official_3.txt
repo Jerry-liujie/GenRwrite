@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being queried together and there are relationships between these tables that can be expressed as join conditions.
+2. Use COALESCE function instead of CASE WHEN for handling NULL values: This rule can be applied when there are columns that may contain NULL values and these NULL values need to be replaced with a specific value.
+3. Remove unnecessary GROUP BY clause: This rule can be applied when the GROUP BY clause is not necessary for the query to return the correct results, such as when the columns in the SELECT clause are all included in the GROUP BY clause.
+4. Use window functions directly in the main query instead of subqueries: This rule can be applied when there are operations that can be performed using window functions, such as calculating running totals or averages, and these operations are currently being performed using subqueries.

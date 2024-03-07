@@ -1,0 +1,5 @@
+1. Replace implicit JOINs with explicit JOINs: This improves readability and can also improve performance in some cases.
+2. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+3. Use direct date values instead of casting and adding intervals: This can improve performance by avoiding unnecessary computations.
+4. Filter as early as possible: This reduces the amount of data that needs to be processed in later stages of the query.
+5. Use LIMIT clause: This can significantly reduce the amount of data that needs to be processed and returned, improving performance.

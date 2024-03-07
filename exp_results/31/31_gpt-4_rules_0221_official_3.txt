@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for table relationships: This makes the query more readable and easier to maintain.
+2. Filter data as early as possible: This reduces the amount of data that needs to be processed in the later stages of the query.
+3. Replace multiple OR conditions with IN clause: This can improve performance by reducing the number of comparisons.
+4. Avoid division by zero directly in WHERE clause: This can prevent errors and improve performance by avoiding unnecessary calculations.
+5. Use relative quarter comparison instead of hardcoding each quarter: This makes the query more flexible and easier to maintain.

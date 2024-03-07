@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one: This reduces the number of times the database needs to scan the same table, which can significantly improve performance.
+2. Use case statements for conditional aggregation: This allows the database to perform all calculations in a single pass, which can be more efficient than using multiple where clauses.
+3. Use cross join for dummy tables: This can be more efficient than using multiple subqueries in the from clause.
+4. Adjust the range of where clause: By expanding the range of where clause, we can reduce the number of times the database needs to scan the table.

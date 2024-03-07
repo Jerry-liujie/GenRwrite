@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This improves the readability of the query and can also improve performance by allowing the database to optimize the join operation.
+2. Use CTEs (Common Table Expressions) to break down complex queries: This makes the query more readable and maintainable, and allows for more efficient execution by the database engine.
+3. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This improves the readability of the query and can help prevent errors due to incorrect join conditions.
+4. Apply DISTINCT after the INTERSECT operations: This can improve performance by reducing the number of records that need to be processed.

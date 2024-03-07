@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit joins, which are indicated by conditions in the WHERE clause that compare columns from different tables.
+2. Filter in subquery instead of main query: This rule can be applied when the main query contains conditions that can be moved to a subquery, especially when these conditions are used to filter data from large tables.
+3. Remove unnecessary case statements: This rule can be applied when the query contains case statements that can be replaced with simpler operations, such as arithmetic operations or comparisons.
+4. Combine multiple conditions into a single condition: This rule can be applied when the query contains multiple conditions that can be combined into a single condition, especially when these conditions are used in the same context (e.g., in the same WHERE clause or JOIN condition).

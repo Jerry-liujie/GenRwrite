@@ -1,0 +1,58 @@
+```sql
+with sales as (
+    select
+        i_category,
+        i_class,
+        i_brand,
+        i_product_name,
+        d_year,
+        d_qoy,
+        d_moy,
+        s_store_id,
+        sum(coalesce(ss_sales_price * ss_quantity, 0)) as sumsales
+    from
+        store_sales
+    join date_dim on ss_sold_date_sk = d_date_sk
+    join store on ss_store_sk = s_store_sk
+    join item on ss_item_sk = i_item_sk
+    where
+        d_month_seq between 1217 and 1217 + 11
+    group by
+        i_category,
+        i_class,
+        i_brand,
+        i_product_name,
+        d_year,
+        d_qoy,
+        d_moy,
+        s_store_id
+)
+select
+    i_category,
+    i_class,
+    i_brand,
+    i_product_name,
+    d_year,
+    d_qoy,
+    d_moy,
+    s_store_id,
+    sumsales,
+    rank() over (
+        partition by i_category
+        order by sumsales desc
+    ) as rk
+from sales
+where rk <= 100
+order by
+    i_category,
+    i_class,
+    i_brand,
+    i_product_name,
+    d_year,
+    d_qoy,
+    d_moy,
+    s_store_id,
+    sumsales,
+    rk
+limit 100;
+```

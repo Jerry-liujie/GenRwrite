@@ -1,0 +1,5 @@
+1. Split complex queries into simpler ones using WITH clause: This rule simplifies the query by breaking it down into smaller, more manageable parts. This makes the query easier to understand and debug.
+2. Use JOIN instead of WHERE for linking tables: This rule improves the performance of the query by reducing the number of comparisons needed to join tables.
+3. Avoid UNION ALL if not necessary: This rule improves the performance of the query by reducing the amount of data that needs to be processed.
+4. Avoid CASE WHEN in WHERE clause: This rule simplifies the query by replacing complex conditional logic with standard comparison operators. This makes the query easier to understand and can improve performance.
+5. Use LEFT JOIN instead of WHERE for joining tables: This rule can improve performance by reducing the number of comparisons needed to join tables.

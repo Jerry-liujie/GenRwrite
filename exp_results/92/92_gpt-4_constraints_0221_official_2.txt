@@ -1,0 +1,4 @@
+1. Use join instead of comma-separated tables in the from clause: This rule can be applied when multiple tables are being queried and there are relationships between these tables that can be expressed using join conditions.
+2. Use table aliases: This rule can be applied when a query references the same table multiple times or when the table names are long and complex, to make the query more concise and readable.
+3. Use CTE (Common Table Expressions) for subqueries: This rule can be applied when a query contains subqueries that are used multiple times or when the subquery is complex, to improve readability and potentially performance.
+4. Remove unnecessary grouping and ordering: This rule can be applied when a query includes group by or order by clauses that do not affect the final result, to improve performance by reducing the amount of data that needs to be processed.

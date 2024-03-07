@@ -1,0 +1,4 @@
+1. Replace NULL with 0 in aggregation: This rule can be applied when the data contains NULL values and these are being used in aggregation functions like SUM, AVG, etc.
+2. Use JOIN instead of WHERE for combining tables: This rule can be applied when multiple tables are being combined based on a common column or condition.
+3. Use window function instead of self-join: This rule can be applied when the query is performing operations that compare values within the same table, such as calculating differences or ratios between rows.
+4. Filter rows as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.

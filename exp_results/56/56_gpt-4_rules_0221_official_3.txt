@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for linking tables: This makes the query more readable and easier to understand.
+2. Combine similar subqueries into one using UNION ALL: This reduces the complexity of the query and makes it easier to maintain.
+3. Move the common WHERE conditions to the outer query: This reduces the redundancy of the code and makes it easier to modify in the future.
+4. Use a CTE (Common Table Expression) for the total sales calculation: This makes the query more readable and easier to understand, and also allows for reusability of the CTE in other parts of the query if needed.
+5. Remove unnecessary grouping in subqueries: This reduces the amount of data that needs to be processed, improving performance.

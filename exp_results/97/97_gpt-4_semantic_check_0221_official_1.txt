@@ -1,0 +1,36 @@
+with combined_sales as
+  (select ss_customer_sk as customer_sk,
+          ss_item_sk as item_sk,
+          'store' as sale_type
+   from store_sales
+   join date_dim on ss_sold_date_sk = d_date_sk
+   and d_month_seq between 1199 and 1199 + 11
+   union all select cs_bill_customer_sk as customer_sk,
+                    cs_item_sk as item_sk,
+                    'catalog' as sale_type
+   from catalog_sales
+   join date_dim on cs_sold_date_sk = d_date_sk
+   and d_month_seq between 1199 and 1199 + 11),
+     grouped_sales as
+  (select customer_sk,
+          item_sk,
+          count(distinct sale_type) as sale_types
+   from combined_sales
+   group by customer_sk,
+            item_sk)
+select sum(case
+               when sale_types = 1
+                    and max(sale_type) = 'store' then 1
+               else 0
+           end) as store_only,
+       sum(case
+               when sale_types = 1
+                    and max(sale_type) = 'catalog' then 1
+               else 0
+           end) as catalog_only,
+       sum(case
+               when sale_types > 1 then 1
+               else 0
+           end) as store_and_catalog
+from grouped_sales
+limit 100;

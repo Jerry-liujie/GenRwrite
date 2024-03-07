@@ -1,0 +1,4 @@
+1. Use CTEs (Common Table Expressions) for subqueries: This rule can be applied when there are subqueries that are complex, reused multiple times in the query, or when the query needs to be made more readable and maintainable.
+2. Use UNION ALL instead of UNION: This rule can be applied when the query is combining results from multiple SELECT statements and it is known that there will not be any duplicate rows, or if duplicate rows are not a concern.
+3. Move ranking functions to the outer query: This rule can be applied when ranking functions are used in multiple subqueries with the same logic, and these functions can be moved to the outer query to reduce redundancy and improve performance.
+4. Partition ranking functions by channel: This rule can be applied when the ranking needs to be done separately for each group of data, such as each channel in this case.

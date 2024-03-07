@@ -1,0 +1,4 @@
+1. Use CTEs (Common Table Expressions) instead of subqueries: This makes the query easier to read and understand by breaking it down into smaller, more manageable parts.
+2. Use JOIN instead of WHERE for linking tables: This makes the query more efficient by reducing the number of rows that need to be processed.
+3. Use aliases for table names: This makes the query easier to read and understand by reducing the amount of text that needs to be read.
+4. Move the condition inside the window function to the WHERE clause of the main query: This makes the query more efficient by reducing the number of rows that need to be processed by the window function.

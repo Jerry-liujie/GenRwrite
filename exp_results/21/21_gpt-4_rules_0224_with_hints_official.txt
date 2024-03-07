@@ -1,0 +1,6 @@
+1. Filter data as early as possible: This rule is applied by moving the conditions to the WITH clause, which filters the data before the main query is executed. This reduces the amount of data that needs to be processed in the later stages.
+2. Use JOIN instead of WHERE for combining tables: This rule is applied by using JOIN clauses instead of WHERE to combine the tables. This makes the query easier to read and understand.
+3. Move subquery to a WITH clause: This rule is applied by moving the subquery to a WITH clause, which makes the main query easier to understand and reduces redundancy.
+4. Use table aliases: This rule is applied by using short aliases for the tables. This makes the query easier to read and write.
+5. Use JOIN instead of comma-separated tables in FROM clause: This rule is applied by using JOIN clauses instead of comma-separated tables in the FROM clause. This makes the query easier to read and understand.
+6. Use HAVING instead of WHERE for filtering aggregated data: This rule is applied by using HAVING clause to filter the results of the aggregation. This makes the query more efficient as it avoids the need for a subquery.

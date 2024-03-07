@@ -1,0 +1,3 @@
+1. Remove unnecessary joins: This rule can be applied when the join operation involves a table that does not contribute to the final result set or the conditions in the WHERE clause.
+2. Use subquery to filter data first: This rule can be applied when there are conditions in the WHERE clause that can be used to filter data from a single table before performing join operations with other tables.
+3. Use table alias: This rule can be applied in any query that references the same table multiple times in the FROM clause, WHERE clause, or JOIN conditions.

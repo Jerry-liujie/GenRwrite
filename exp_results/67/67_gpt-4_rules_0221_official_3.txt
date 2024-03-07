@@ -1,0 +1,4 @@
+1. Replace implicit join with explicit join: Explicit joins are more readable and less prone to accidental Cartesian products.
+2. Remove unnecessary subquery: Unnecessary subqueries can degrade performance. By removing the outer subquery, the database engine can more easily optimize the query.
+3. Move window function to WHERE clause: This allows the database engine to filter out unnecessary rows earlier in the query execution, potentially improving performance.
+4. Remove rollup function: The rollup function can be computationally expensive and may not be necessary if we are only interested in the top 100 rows.

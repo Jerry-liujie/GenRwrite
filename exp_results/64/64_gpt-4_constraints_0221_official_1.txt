@@ -1,0 +1,4 @@
+1. Replace comma-separated table list in FROM clause with JOINs: This rule can be applied when multiple tables are being queried together and there are clear join conditions between them.
+2. Simplify the range condition on i_current_price: This rule can be applied when there are range conditions in the WHERE clause that can be simplified for better readability and potential performance improvement.
+3. Replace the arithmetic operation in the WHERE clause with a direct value: This rule can be applied when there are arithmetic operations in the WHERE clause that can be replaced with a direct value to reduce computation overhead.
+4. Use JOIN instead of comma-separated table list in the final SELECT statement: This rule can be applied when the final SELECT statement is querying from multiple tables and there are clear join conditions between them.

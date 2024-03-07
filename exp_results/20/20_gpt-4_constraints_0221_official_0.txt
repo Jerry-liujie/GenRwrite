@@ -1,0 +1,4 @@
+1. Use CTEs to simplify complex queries: This rule can be applied when the query involves multiple stages of data processing or when the same subquery is used multiple times.
+2. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being used in the query and there are conditions linking these tables.
+3. Move calculations to the CTE: This rule can be applied when there are calculations involving columns from the same table or derived tables.
+4. Avoid using functions on columns in WHERE clause: This rule can be applied when the query uses functions on columns in the WHERE clause, which can potentially hinder the use of indexes and slow down the query.

@@ -1,0 +1,6 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Replace multiple OR conditions with IN clause: This simplifies the query and can improve performance.
+3. Replace multiple instances of the same value in IN clause with a single instance: This removes redundancy and can improve performance.
+4. Use BETWEEN for range conditions: This simplifies the query and can improve performance.
+5. Use table alias for better readability: This makes the query more readable and easier to understand.
+6. Use subquery to reduce the number of rows for the join operation: This can significantly improve performance by reducing the amount of data that needs to be processed.

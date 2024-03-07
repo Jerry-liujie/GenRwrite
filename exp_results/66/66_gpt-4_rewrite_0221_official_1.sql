@@ -1,0 +1,74 @@
+```
+with web_sales_agg as (
+    select
+        ws_warehouse_sk,
+        d_year as year,
+        sum(case when d_moy = 1 then ws_ext_sales_price * ws_quantity else 0 end) as jan_sales,
+        sum(case when d_moy = 2 then ws_ext_sales_price * ws_quantity else 0 end) as feb_sales,
+        ...
+        sum(case when d_moy = 12 then ws_net_paid_inc_ship * ws_quantity else 0 end) as dec_net
+    from
+        web_sales
+        join date_dim on ws_sold_date_sk = d_date_sk
+        join time_dim on ws_sold_time_sk = t_time_sk
+        join ship_mode on ws_ship_mode_sk = sm_ship_mode_sk
+    where
+        d_year = 2001
+        and t_time between 42970 and 42970 + 28800
+        and sm_carrier in ('ORIENTAL', 'BOXBUNDLES')
+    group by
+        ws_warehouse_sk,
+        d_year
+),
+catalog_sales_agg as (
+    select
+        cs_warehouse_sk,
+        d_year as year,
+        sum(case when d_moy = 1 then cs_ext_list_price * cs_quantity else 0 end) as jan_sales,
+        sum(case when d_moy = 2 then cs_ext_list_price * cs_quantity else 0 end) as feb_sales,
+        ...
+        sum(case when d_moy = 12 then cs_net_paid * cs_quantity else 0 end) as dec_net
+    from
+        catalog_sales
+        join date_dim on cs_sold_date_sk = d_date_sk
+        join time_dim on cs_sold_time_sk = t_time_sk
+        join ship_mode on cs_ship_mode_sk = sm_ship_mode_sk
+    where
+        d_year = 2001
+        and t_time between 42970 and 42970 + 28800
+        and sm_carrier in ('ORIENTAL', 'BOXBUNDLES')
+    group by
+        cs_warehouse_sk,
+        d_year
+)
+select
+    w_warehouse_name,
+    w_warehouse_sq_ft,
+    w_city,
+    w_county,
+    w_state,
+    w_country,
+    'ORIENTAL' || ',' || 'BOXBUNDLES' as ship_carriers,
+    year,
+    sum(jan_sales) as jan_sales,
+    sum(feb_sales) as feb_sales,
+    ...
+    sum(dec_net) as dec_net
+from
+    warehouse
+    left join web_sales_agg on w_warehouse_sk = ws_warehouse_sk
+    left join catalog_sales_agg on w_warehouse_sk = cs_warehouse_sk
+group by
+    w_warehouse_name,
+    w_warehouse_sq_ft,
+    w_city,
+    w_county,
+    w_state,
+    w_country,
+    ship_carriers,
+    year
+order by
+    w_warehouse_name
+limit
+    100;
+```

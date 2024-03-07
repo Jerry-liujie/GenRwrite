@@ -1,0 +1,4 @@
+1. Use CTEs (Common Table Expressions) for subqueries: This makes the query more readable and maintainable. It also allows us to reuse the same subquery multiple times.
+2. Use UNION ALL instead of UNION: UNION ALL is faster because it does not need to check for duplicate rows.
+3. Move ranking functions to the outer query: This reduces the number of ranking functions from 6 to 2, which should improve performance.
+4. Partition ranking functions by channel: This ensures that the ranking is done separately for each channel, which matches the original query's logic.

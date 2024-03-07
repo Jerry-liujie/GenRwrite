@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit join syntax (comma-separated tables in the FROM clause and join conditions in the WHERE clause).
+2. Remove unnecessary subqueries: This rule can be applied when a subquery is used but the same result could be achieved with a simpler query structure.
+3. Remove unnecessary case statement: This rule can be applied when a CASE statement is used but the same result could be achieved with simpler logic or direct column references.
+4. Remove unnecessary columns from the select clause: This rule can be applied when the SELECT clause includes columns that are not used in the final result or in any subsequent processing.

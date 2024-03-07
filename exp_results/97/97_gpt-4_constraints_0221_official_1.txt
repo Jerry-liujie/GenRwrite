@@ -1,0 +1,4 @@
+1. Combine similar subqueries using UNION ALL: This rule can be applied when there are multiple subqueries that select similar columns from different tables or the same table with different conditions.
+2. Replace FULL OUTER JOIN with UNION ALL and conditional aggregation: This rule can be applied when a FULL OUTER JOIN is used to combine results from two or more tables, and the results are then aggregated based on some conditions.
+3. Use COUNT DISTINCT with conditional statements instead of SUM with CASE WHEN: This rule can be applied when the query is using SUM with CASE WHEN to count distinct values based on some conditions.
+4. Move the date filtering condition to the JOIN clause: This rule can be applied when there are conditions that filter data based on dates and these conditions can be moved to the JOIN clause to reduce the number of rows that need to be joined.

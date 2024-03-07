@@ -1,0 +1,3 @@
+1. Replace LEFT JOIN with EXISTS in subqueries: This can significantly improve performance by reducing the amount of data that needs to be processed. The EXISTS clause is faster because it stops as soon as it finds a match, while the LEFT JOIN processes all data.
+2. Remove unnecessary grouping in subqueries: If the columns in the GROUP BY clause are already unique, the grouping operation is unnecessary and can be removed to improve performance.
+3. Filter data as early as possible: By moving the condition 'ss_sold_year = 1998' into the subquery, we can reduce the amount of data that needs to be processed in the main query, which can improve performance.

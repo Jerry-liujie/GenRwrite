@@ -1,0 +1,4 @@
+1. Use JOIN syntax instead of WHERE for joining tables: This rule can be applied when multiple tables are being combined in a query and the relationships between them are defined using WHERE clause.
+2. Use BETWEEN for range conditions: This rule can be applied when there are conditions that involve checking if a value falls within a certain range.
+3. Move conditions from WHERE clause to JOIN ON clause: This rule can be applied when there are conditions in the WHERE clause that are based on columns from the joined tables.
+4. Remove unnecessary CASE statement: This rule can be applied when there are CASE statements in the query that are not necessary for the desired output.

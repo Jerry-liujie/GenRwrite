@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query easier to read and understand.
+2. Use BETWEEN for range conditions: This simplifies the query and can potentially improve performance if the database can use an index for the range condition.
+3. Remove unnecessary column in the GROUP BY clause: This simplifies the query and can improve performance by reducing the amount of data the database needs to group.
+4. Alias aggregate functions: This makes the query easier to read and understand.
+5. Use table alias for columns in WHERE clause: This makes the query easier to read and understand.

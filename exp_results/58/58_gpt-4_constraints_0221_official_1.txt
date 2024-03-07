@@ -1,0 +1,3 @@
+1. Combine similar subqueries: This rule can be applied when there are multiple subqueries that select similar columns from different tables and can be combined using UNION or UNION ALL.
+2. Use CTEs for complex subqueries: This rule can be applied when there are complex subqueries that are used multiple times in the main query, or when breaking down the query into smaller parts can improve readability.
+3. Avoid redundant calculations: This rule can be applied when the same calculation is repeated multiple times in the query, and the result of the calculation can be reused.

@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This makes the query easier to read and understand, and can also improve performance in some cases.
+2. Simplify WHERE clause: Instead of using complex conditions, use simpler conditions that achieve the same result. This can make the query easier to read and understand, and can also improve performance.
+3. Use window functions for lag and lead operations: Instead of joining the table to itself multiple times, use window functions to get the previous and next values. This can significantly improve performance.
+4. Avoid unnecessary calculations in WHERE clause: If a calculation is not necessary for the condition, remove it to improve performance.

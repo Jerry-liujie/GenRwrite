@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated table list in FROM clause: This makes the query more readable and easier to understand.
+2. Move join conditions from WHERE clause to ON clause: This makes the query more readable and can improve performance by reducing the number of rows that need to be processed in the join operation.
+3. Use UNION ALL instead of UNION: UNION ALL is faster because it does not need to check for duplicate rows.

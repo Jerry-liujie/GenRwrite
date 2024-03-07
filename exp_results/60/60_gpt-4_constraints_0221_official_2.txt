@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one: This rule can be applied when the same tables are being scanned multiple times in different subqueries, and the results of these subqueries are being combined.
+2. Use LEFT JOIN instead of IN clause: This rule can be applied when an IN clause is being used to filter data based on the values in another table, especially when dealing with large data sets.
+3. Use CASE statement to sum sales from different tables: This rule can be applied when the same calculation is being performed on columns from different tables, and the results are being combined.
+4. Move conditions from WHERE clause to ON clause in LEFT JOIN: This rule can be applied when there are conditions in the WHERE clause that can be moved to the ON clause of a LEFT JOIN, especially when these conditions are based on the columns of the joined tables.

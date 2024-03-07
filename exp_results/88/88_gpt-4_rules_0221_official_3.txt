@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into a single query: This reduces the number of scans needed on the same tables, which can significantly improve performance.
+2. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and can also improve performance in some cases.
+3. Use CASE WHEN to calculate the counts for different time ranges: This avoids the need to scan the tables multiple times for each time range.
+4. Simplify the conditions in the WHERE clause: This makes the query more readable and can also improve performance by reducing the complexity of the conditions.

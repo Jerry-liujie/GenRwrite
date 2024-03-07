@@ -1,0 +1,50 @@
+with item_filter as
+  (select i_manufact_id,
+          i_item_sk
+   from item
+   where i_category in ('Books') ),
+     ss as
+  (select i_manufact_id,
+          sum(ss_ext_sales_price) total_sales
+   from store_sales
+   join date_dim on ss_sold_date_sk = d_date_sk
+   join customer_address on ss_addr_sk = ca_address_sk
+   join item_filter on ss_item_sk = i_item_sk
+   where d_year = 2001
+     and d_moy = 3
+     and ca_gmt_offset = -5
+   group by i_manufact_id),
+     cs as
+  (select i_manufact_id,
+          sum(cs_ext_sales_price) total_sales
+   from catalog_sales
+   join date_dim on cs_sold_date_sk = d_date_sk
+   join customer_address on cs_bill_addr_sk = ca_address_sk
+   join item_filter on cs_item_sk = i_item_sk
+   where d_year = 2001
+     and d_moy = 3
+     and ca_gmt_offset = -5
+   group by i_manufact_id),
+     ws as
+  (select i_manufact_id,
+          sum(ws_ext_sales_price) total_sales
+   from web_sales
+   join date_dim on ws_sold_date_sk = d_date_sk
+   join customer_address on ws_bill_addr_sk = ca_address_sk
+   join item_filter on ws_item_sk = i_item_sk
+   where d_year = 2001
+     and d_moy = 3
+     and ca_gmt_offset = -5
+   group by i_manufact_id)
+select i_manufact_id,
+       sum(total_sales) total_sales
+from
+  (select *
+   from ss
+   union all select *
+   from cs
+   union all select *
+   from ws) tmp1
+group by i_manufact_id
+order by total_sales
+limit 100;

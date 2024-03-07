@@ -1,0 +1,5 @@
+1. Combine multiple subqueries into a single query: This rule can be applied when the same tables are being scanned multiple times in different subqueries.
+2. Use LEFT JOIN instead of IN clause: This rule can be applied when an IN clause is used to filter data based on the presence of values in another table.
+3. Combine SUM functions into a single query: This rule can be applied when multiple SUM functions are being used on the same table or column.
+4. Move WHERE conditions into the main query: This rule can be applied when WHERE conditions are used in subqueries that could be moved to the main query.
+5. Use a CTE (Common Table Expression) to simplify the query: This rule can be applied when the query is complex and could benefit from being broken down into simpler, named subqueries.

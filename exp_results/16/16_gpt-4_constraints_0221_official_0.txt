@@ -1,0 +1,4 @@
+1. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses implicit JOIN syntax (i.e., listing multiple tables in the FROM clause and specifying the join conditions in the WHERE clause).
+2. Remove redundant conditions in WHERE clause: This rule can be applied when the same condition is repeated multiple times in the WHERE clause.
+3. Replace '*' in subqueries with 1: This rule can be applied when a subquery is used only to check the existence of rows, not to return any specific columns.
+4. Add GROUP BY clause: This rule can be applied when the query needs to aggregate data by certain columns, but those columns are not included in the GROUP BY clause.

@@ -1,0 +1,3 @@
+1. Replace LEFT JOIN with NOT EXISTS for anti-join: This can improve performance because NOT EXISTS can stop as soon as it finds a match, while LEFT JOIN will scan the entire table.
+2. Remove unnecessary WHERE clause in subqueries: The condition `sr_ticket_number is null`, `wr_order_number is null`, and `cr_order_number is null` are unnecessary because they are already handled by the NOT EXISTS clause. Removing them can reduce the complexity of the query.
+3. Use JOIN instead of LEFT JOIN when possible: If you know that every row from the first table will match at least one row from the second table, using JOIN instead of LEFT JOIN can improve performance because it reduces the amount of data that needs to be processed.

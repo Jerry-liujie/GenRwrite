@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into a single query: This rule can be applied when the same tables are being scanned multiple times in separate subqueries.
+2. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being joined in the FROM clause using commas.
+3. Use CASE WHEN to calculate the counts for different time ranges: This rule can be applied when the query is counting records for different ranges of the same attribute.
+4. Simplify the conditions in the WHERE clause: This rule can be applied when the conditions in the WHERE clause are complex and can be simplified without changing the meaning of the query.

@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This makes the query more readable and can improve performance by reducing the number of rows that need to be processed.
+2. Use window functions (LEAD and LAG) instead of self-join: This reduces the complexity of the query and can improve performance by reducing the number of rows that need to be processed.
+3. Move calculations to WHERE clause: This can improve performance by reducing the number of calculations that need to be performed.
+4. Remove unnecessary CASE statement: This can improve performance by reducing the number of conditions that need to be checked.

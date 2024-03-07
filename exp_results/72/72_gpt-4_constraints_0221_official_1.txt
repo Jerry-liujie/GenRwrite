@@ -1,0 +1,3 @@
+1. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that are directly related to the tables being joined.
+2. Use COUNT instead of SUM for counting: This rule can be applied when the query is counting the number of rows that meet a certain condition, especially when the column being summed may contain NULL values.
+3. Remove unnecessary parentheses: This rule can be applied when there are parentheses in the query that do not affect the order of operations or the logic of the query.

@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into a single query: This reduces the overhead of executing multiple subqueries and simplifies the query structure.
+2. Use JOIN instead of WHERE for linking tables: This makes the query more readable and can improve performance by taking advantage of the database's ability to optimize join operations.
+3. Use conditional aggregation instead of separate count(*) in subqueries: This reduces the number of scans needed on the same table, which can improve performance.
+4. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query, which can improve performance.

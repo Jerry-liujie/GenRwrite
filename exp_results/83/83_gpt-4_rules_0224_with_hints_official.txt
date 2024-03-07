@@ -1,0 +1,4 @@
+1. Use a subquery to avoid repeated calculations: This rule is applied to the date filter, which is used multiple times in the query. This can improve performance by reducing the number of times the database needs to calculate the same value.
+2. Use JOIN instead of WHERE for combining tables: This rule is applied to combine the sr_items, cr_items, and wr_items tables. This can improve performance by reducing the amount of data that needs to be processed.
+3. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule is applied to make the query more readable and easier to understand.
+4. Avoid subqueries in WHERE clause: This rule is applied to move the subquery from the WHERE clause to the ON clause in the JOIN. This can improve performance by reducing the amount of data that needs to be processed.

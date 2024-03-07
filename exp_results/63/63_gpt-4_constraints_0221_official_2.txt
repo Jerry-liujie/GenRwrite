@@ -1,0 +1,5 @@
+1. Replace implicit join syntax with explicit join syntax: This rule can be applied when the query uses implicit join syntax (comma-separated table names in the FROM clause and join conditions in the WHERE clause).
+2. Replace IN clause for sequential numbers with BETWEEN: This rule can be applied when the query uses an IN clause to specify a range of sequential numbers.
+3. Move the case statement to the WHERE clause: This rule can be applied when the query uses a CASE statement in the SELECT clause to conditionally select data.
+4. Remove unnecessary NULL check: This rule can be applied when the query uses a NULL check that is not necessary because the result of the comparison will be NULL if any operand is NULL.
+5. Use subquery to filter records before joining: This rule can be applied when the query joins multiple tables and there are conditions that can be used to filter the data from one or more of the tables before the join operation.

@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when multiple tables are being joined in the query, especially when there are more than two tables.
+2. Move join conditions from WHERE clause to ON clause in JOIN statements: This rule can be applied when there are conditions in the WHERE clause that are actually specifying how tables should be joined.
+3. Avoid cross joins: This rule can be applied when the query is joining tables without specifying any conditions, resulting in a Cartesian product of the tables.
+4. Use WHERE clause for filtering data: This rule can be applied when there are conditions that can be used to filter the data after the tables have been joined.

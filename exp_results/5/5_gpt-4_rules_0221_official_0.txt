@@ -1,0 +1,5 @@
+1. Remove unnecessary unions: The original query uses UNION ALL to combine results from store_sales, catalog_sales and web_sales with store_returns, catalog_returns and web_returns. However, the return tables are not used in the final result. Removing these unnecessary unions can significantly improve performance.
+2. Remove unnecessary joins: The original query joins the sales and returns tables with the store, catalog_page and web_site tables. However, these joined tables are not used in the final result. Removing these unnecessary joins can also improve performance.
+3. Remove unnecessary calculations: The original query calculates profit by subtracting profit_loss from profit. However, profit_loss is always 0 in the final result. Removing this unnecessary calculation can improve performance.
+4. Use INNER JOIN instead of WHERE clause for joining tables: Using INNER JOIN can be more efficient than WHERE clause for joining tables as it can take advantage of indexes and other database optimizations.
+5. Use GROUP BY before UNION ALL: Grouping the data before union can reduce the amount of data that needs to be processed, which can improve performance.

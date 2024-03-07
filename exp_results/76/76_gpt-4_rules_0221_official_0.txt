@@ -1,0 +1,2 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand. It also allows the database to optimize the query more efficiently.
+2. Use UNION ALL instead of UNION: UNION ALL is faster than UNION because UNION removes duplicate rows between the various SELECT statements, and this requires extra work. If you know that there will not be any duplicates, or if duplicates do not matter for your purposes, you should use UNION ALL for better performance.

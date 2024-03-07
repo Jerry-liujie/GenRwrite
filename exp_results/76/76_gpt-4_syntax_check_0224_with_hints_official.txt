@@ -1,0 +1,42 @@
+select sales.channel,
+       sales.col_name,
+       date_dim.d_year,
+       date_dim.d_qoy,
+       item.i_category,
+       count(*) sales_cnt,
+       sum(sales.ext_sales_price) sales_amt
+from
+  (select 'store' as channel,
+          'ss_customer_sk' col_name,
+                           ss_sold_date_sk,
+                           ss_item_sk,
+                           ss_ext_sales_price ext_sales_price
+   from store_sales
+   where ss_customer_sk is null
+   union all select 'web' as channel,
+                    'ws_promo_sk' col_name,
+                                  ws_sold_date_sk,
+                                  ws_item_sk,
+                                  ws_ext_sales_price ext_sales_price
+   from web_sales
+   where ws_promo_sk is null
+   union all select 'catalog' as channel,
+                    'cs_bill_customer_sk' col_name,
+                                          cs_sold_date_sk,
+                                          cs_item_sk,
+                                          cs_ext_sales_price ext_sales_price
+   from catalog_sales
+   where cs_bill_customer_sk is null ) sales
+join date_dim on sales.ss_sold_date_sk = date_dim.d_date_sk
+join item on sales.ss_item_sk = item.i_item_sk
+group by sales.channel,
+         sales.col_name,
+         date_dim.d_year,
+         date_dim.d_qoy,
+         item.i_category
+order by sales.channel,
+         sales.col_name,
+         date_dim.d_year,
+         date_dim.d_qoy,
+         item.i_category
+limit 100;

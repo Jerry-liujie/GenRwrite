@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This makes the query more readable and easier to understand. It also allows the database to optimize the query more effectively.
+2. Remove the ROLLUP function: The ROLLUP function is used to create subtotals and grand totals in the result set, which is not required in this case. Removing it can significantly improve the performance of the query.
+3. Use CTE (Common Table Expressions) for subqueries: This simplifies the query and makes it more readable. It also allows the database to better optimize the query.
+4. Filter rows as early as possible: This reduces the amount of data that needs to be processed in later stages of the query, improving performance.

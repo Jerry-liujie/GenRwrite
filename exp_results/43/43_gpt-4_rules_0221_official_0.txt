@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for joining tables: This makes the query more readable and maintainable. It also can improve performance because modern databases are optimized for JOIN operations.
+2. Replace NULL with 0 in the SUM function: NULL values can slow down the SUM function. By replacing NULL with 0, the database can perform the SUM operation faster.
+3. Remove unnecessary ORDER BY clauses: Ordering results can be a costly operation. If the order of results is not important, removing the ORDER BY clause can significantly improve performance.
+4. Remove LIMIT clause when not necessary: The LIMIT clause can slow down a query because it forces the database to sort the results. If the number of results is not a concern, removing the LIMIT clause can improve performance.

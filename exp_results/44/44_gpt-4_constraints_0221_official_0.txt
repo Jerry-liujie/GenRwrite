@@ -1,0 +1,5 @@
+1. Use CTEs for subqueries: This rule can be applied when there are multiple subqueries that are used more than once or the subquery is complex, making the main query difficult to read.
+2. Use LIMIT clause instead of RANK() function: This rule can be applied when we only need to retrieve a fixed number of rows, and there is no need to calculate the rank for all rows.
+3. Use ROW_NUMBER() function instead of RANK() function: This rule can be applied when we need to assign a unique number to each row, and there is no need to handle ties (i.e., rows with the same values).
+4. Use JOIN instead of multiple WHERE conditions: This rule can be applied when there are multiple conditions that involve columns from different tables, and these conditions can be expressed as a join operation.
+5. Remove unnecessary subqueries: This rule can be applied when there are subqueries that do not contribute to the final result or can be replaced with a simpler expression.

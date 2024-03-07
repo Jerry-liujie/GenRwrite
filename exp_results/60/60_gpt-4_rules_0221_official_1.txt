@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into a single query: This reduces the number of scans over the same tables, which can significantly improve performance.
+2. Use LEFT JOIN instead of IN clause: The IN clause can be inefficient, especially for larger datasets. Using a JOIN operation can be more efficient.
+3. Combine multiple aggregations into a single aggregation: This reduces the number of passes over the data, which can improve performance.
+4. Use WHERE clause to filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query, which can improve performance.

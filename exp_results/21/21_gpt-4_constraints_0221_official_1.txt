@@ -1,0 +1,3 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when multiple tables are being combined based on a common column, especially when the relationship between the tables is a simple equality.
+2. Remove unnecessary casting of date: This rule can be applied when a date is being cast to another data type but the cast is not necessary for the query to function correctly.
+3. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query, reducing the amount of data that needs to be processed in the later stages.

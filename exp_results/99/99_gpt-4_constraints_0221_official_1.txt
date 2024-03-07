@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when multiple tables are being combined based on matching column values.
+2. Use COUNT instead of SUM for counting: This rule can be applied when the query is trying to count the number of rows that meet a certain condition.
+3. Move conditions to JOIN ON clause: This rule can be applied when there are conditions that can be used to filter the data while joining tables.
+4. Avoid using SELECT *: This rule can be applied when the query is selecting all columns from a table, but not all of them are being used.
+5. Use LIMIT to reduce the amount of data returned: This rule can be applied when the query is returning a large amount of data, but only a subset of the results is needed.

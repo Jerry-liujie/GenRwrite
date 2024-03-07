@@ -1,0 +1,31 @@
+```sql
+select
+    i_item_id,
+    avg(cs_quantity) agg1,
+    avg(cs_list_price) agg2,
+    avg(cs_coupon_amt) agg3,
+    avg(cs_sales_price) agg4
+from
+    (
+    select 
+        cs_item_sk,
+        cs_quantity,
+        cs_list_price,
+        cs_coupon_amt,
+        cs_sales_price
+    from
+        catalog_sales
+    where
+        cs_sold_date_sk in (select d_date_sk from date_dim where d_year = 2002)
+        and cs_bill_cdemo_sk in (select cd_demo_sk from customer_demographics where cd_gender = 'M' and cd_marital_status = 'W' and cd_education_status = 'Unknown')
+        and cs_promo_sk in (select p_promo_sk from promotion where p_channel_email = 'N' or p_channel_event = 'N')
+    ) as cs
+join
+    item on cs.cs_item_sk = i_item_sk
+group by
+    i_item_id
+order by
+    i_item_id
+limit
+    100;
+```

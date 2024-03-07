@@ -1,0 +1,4 @@
+1. Replace implicit JOINs with explicit JOINs: This makes the query easier to read and understand. It also can improve performance in some cases because it gives the database more flexibility in how it executes the query.
+2. Move conditions from WHERE to ON in JOINs: This can improve performance by reducing the amount of data that needs to be processed in the join. It can also make the query easier to read by clearly associating conditions with the tables they apply to.
+3. Use literal values instead of calculations in WHERE conditions: This can improve performance by allowing the database to use indexes more effectively. It also makes the query easier to read by removing unnecessary complexity.
+4. Remove unnecessary parentheses: This makes the query easier to read by reducing visual clutter. It does not directly improve performance, but it can make the query easier to maintain and debug.

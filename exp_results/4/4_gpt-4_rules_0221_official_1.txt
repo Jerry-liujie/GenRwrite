@@ -1,0 +1,5 @@
+1. Combine multiple subqueries into a single subquery: This reduces the complexity of the query and makes it easier to read and understand. It can also improve performance by reducing the number of separate operations the database needs to perform.
+2. Use left join instead of where clause for joining tables: This can improve performance by reducing the number of comparisons the database needs to make.
+3. Avoid unnecessary calculations in the where clause: This can improve performance by reducing the amount of computation the database needs to do.
+4. Use the in operator instead of multiple or conditions: This can make the query easier to read and can also improve performance by reducing the number of comparisons the database needs to make.
+5. Remove unnecessary group by columns: This can improve performance by reducing the amount of data the database needs to sort and group.

@@ -1,0 +1,4 @@
+1. Use WITH clause for subqueries: This improves readability and maintainability of the code by separating complex parts of the query.
+2. Replace WHERE clause with JOIN clause: This can improve performance by reducing the amount of data that needs to be processed.
+3. Use IN clause for subquery in WHERE clause: This can improve performance by reducing the number of rows that need to be processed.
+4. Use explicit JOIN syntax instead of comma-separated FROM clause: This improves readability and can help avoid errors due to missed join conditions.

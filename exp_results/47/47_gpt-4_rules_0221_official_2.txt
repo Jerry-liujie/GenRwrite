@@ -1,0 +1,4 @@
+1. Use window functions for lag and lead calculations: This eliminates the need for self-joins in the second subquery, which can be expensive in terms of performance.
+2. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+3. Simplify WHERE clause conditions: Instead of using multiple OR conditions, use BETWEEN and IN operators to make the query more readable and potentially faster.
+4. Remove unnecessary CASE statement: The condition in the WHERE clause of the final SELECT statement can be simplified by removing the CASE statement, as the condition avg_monthly_sales > 0 already ensures that the denominator is not zero.

@@ -1,0 +1,4 @@
+1. Subquery Factoring: This rule involves pulling out parts of the query into separate, named subqueries. This can improve performance by allowing the database to optimize each subquery separately, and can also make the query easier to read and understand.
+2. Join Elimination: This rule involves removing unnecessary joins from the query. If a join does not contribute to the final result of the query, it can be removed to improve performance.
+3. Push Predicates: This rule involves moving filter conditions as close as possible to the table they filter. This can improve performance by reducing the amount of data that needs to be processed in later stages of the query.
+4. Use IN instead of JOIN for subquery: This rule involves using the IN operator instead of a join when comparing a column to a subquery that returns a single column. This can improve performance by reducing the complexity of the query.

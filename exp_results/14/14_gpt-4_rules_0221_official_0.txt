@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand. It also allows for more efficient execution plans as the database can better understand the relationships between the tables.
+2. Use IN clause instead of multiple AND conditions for matching multiple columns: This can make the query more readable and potentially more efficient, as the database can optimize the IN clause more effectively than multiple AND conditions.
+3. Avoid subqueries in the SELECT clause: These can often be rewritten as joins, which are typically more efficient. Subqueries in the SELECT clause are executed once for each row returned by the outer query, which can be very inefficient.
+4. Use WHERE clause to filter rows early: This can reduce the amount of data that needs to be processed in later stages of the query, improving performance.

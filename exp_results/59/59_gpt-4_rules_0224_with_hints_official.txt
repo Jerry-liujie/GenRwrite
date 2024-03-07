@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query more readable and easier to debug.
+2. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query, improving performance.
+3. Replace NULL with 0 in aggregation: This avoids potential issues with NULL values in the aggregation functions, which can lead to incorrect results.
+4. Avoid unnecessary calculations in WHERE clause: This can improve performance by reducing the amount of processing required.
+5. Use window function instead of self-join: This can improve performance by avoiding the need to join the table to itself, which can be expensive in terms of processing.

@@ -1,0 +1,4 @@
+1. Push down predicates: By pushing down the predicates to the subquery, we can reduce the amount of data that needs to be processed in the main query. This can significantly improve the performance of the query.
+2. Use IN instead of JOIN for date_dim table: The date_dim table is only used for filtering, so using IN instead of JOIN can reduce the complexity of the query and improve performance.
+3. Use LEFT JOIN instead of JOIN: If the right table contains NULL values, LEFT JOIN can improve the performance by avoiding unnecessary computation.
+4. Group by in subquery: By grouping in the subquery, we can reduce the amount of data that needs to be processed in the main query, which can improve the performance.

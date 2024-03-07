@@ -1,0 +1,4 @@
+1. Use subqueries to filter data: This rule can be applied when the query involves multiple tables and there are conditions that can be used to filter the data before joining the tables.
+2. Use IN clause instead of direct join for filtering: This rule can be applied when the subquery returns a small number of rows, and these rows are used only for filtering data, not for fetching additional columns.
+3. Avoid joining tables that are not necessary for the final result: This rule can be applied when the query involves multiple tables, but not all of them are needed to produce the final result. 
+4. Use LIMIT clause to restrict the number of rows returned: This rule can be applied when the query is expected to return a large number of rows, but only a small subset of the result is actually needed.

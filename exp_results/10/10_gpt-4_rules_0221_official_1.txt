@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This makes the query easier to read and understand. It also helps to avoid Cartesian products by mistake.
+2. Use '1' instead of '*' in subquery: This can improve performance as it avoids unnecessary data retrieval. The database just needs to check the existence of any record, not the actual data.
+3. Use 'join' instead of ',' for joining tables: This makes the query more readable and easier to maintain. It also helps the database optimizer to create a better execution plan.
+4. Correct the calculation in 'between' clause: The original query uses '3 + 3' which equals to 6, not a range from 3 to 6. The correct syntax should be 'between 3 and 6'.

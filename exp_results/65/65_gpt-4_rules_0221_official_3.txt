@@ -1,0 +1,5 @@
+1. Use CTEs to simplify complex subqueries: This makes the query more readable and maintainable. It also allows for potential performance improvements by isolating parts of the query that can be computed once and reused.
+2. Replace implicit joins with explicit joins: This makes the query more readable and easier to understand. It also allows the database to optimize the join operation more effectively.
+3. Minimize the number of times the same subquery is run: This can significantly improve performance by reducing the amount of work the database has to do.
+4. Push down predicates where possible: This reduces the amount of data that needs to be processed in later stages of the query, improving performance.
+5. Use 'join' instead of 'where' for joining tables: This makes the query more readable and allows the database to optimize the join operation more effectively.

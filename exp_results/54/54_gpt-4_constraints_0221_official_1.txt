@@ -1,0 +1,4 @@
+1. Move conditions into subqueries: This rule can be applied when there are complex conditions that can be isolated into separate subqueries, reducing the complexity of the main query.
+2. Use IN instead of JOIN when possible: This rule can be applied when the subquery returns a small number of rows compared to the main table, and the goal is to check for the existence of these rows in the main table.
+3. Use EXISTS instead of DISTINCT when possible: This rule can be applied when the goal is to check for the existence of at least one matching row, and the exact number of matches is not important.
+4. Use WHERE instead of HAVING when possible: This rule can be applied when the conditions can be applied directly to individual rows before they are grouped and aggregated, reducing the amount of data that needs to be processed.

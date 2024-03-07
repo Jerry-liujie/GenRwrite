@@ -1,0 +1,18 @@
+select i_brand_id as brand_id,
+       i_brand as brand,
+       sum_agg as ext_price
+from
+  (select i_brand_id,
+          i_brand,
+          sum(ss_ext_sales_price) as sum_agg
+   from store_sales
+   join item on ss_item_sk = i_item_sk
+   join date_dim on d_date_sk = ss_sold_date_sk
+   where i_manager_id=52
+     and d_moy=11
+     and d_year=2000
+   group by i_brand_id,
+            i_brand) sales_agg
+order by ext_price desc,
+         brand_id
+limit 100;

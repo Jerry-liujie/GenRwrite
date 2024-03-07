@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query easier to read and understand. It also allows for better optimization by the database engine.
+2. Remove duplicate values in IN clause: This reduces the number of comparisons that need to be made, improving performance.
+3. Remove unnecessary year calculations: This reduces the computational overhead and improves performance.
+4. Group by only necessary columns: This reduces the amount of data that needs to be processed, improving performance.

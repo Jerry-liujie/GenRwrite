@@ -1,0 +1,7 @@
+1. Remove unnecessary subqueries: This rule can be applied when there are subqueries that can be replaced with joins or exists clauses without changing the result of the query.
+2. Use exists instead of in for subqueries: This rule can be applied when the subquery is used in a comparison with a list of values, especially when the subquery returns a large result set.
+3. Avoid using functions in the where clause: This rule can be applied when there are functions used in the where clause that can be moved to the select clause or calculated ahead of time.
+4. Use limit to reduce the amount of data returned: This rule can be applied when the query is used to retrieve a large amount of data but only a small subset of the result is needed.
+5. Use indexes for commonly queried columns: This rule can be applied when there are columns that are frequently used in the where clause or join conditions, and these columns do not have an index.
+6. Avoid using union all if possible: This rule can be applied when there are multiple union all operations in the query, especially when the result sets of these operations are large.
+7. Use having clause wisely: This rule can be applied when there is a having clause used to filter the results of a group by clause, especially when the group by clause includes a large number of rows.

@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when the query involves joining multiple tables.
+2. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that involve columns from more than one table.
+3. Avoid using OR in WHERE clause: This rule can be applied when there are multiple conditions in the WHERE clause connected by OR operators.
+4. Use LIMIT clause: This rule can be applied when the query is expected to return a large number of rows, but only a subset of the results is needed.

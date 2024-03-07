@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Remove duplicate values in IN clause: This rule can be applied when there are IN clauses in the query that contain duplicate values.
+3. Remove unnecessary year calculations: This rule can be applied when there are calculations in the query that are not necessary for the final result.
+4. Group by only necessary columns: This rule can be applied when there are GROUP BY clauses in the query that include columns which are not necessary for the final result.

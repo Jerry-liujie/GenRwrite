@@ -1,0 +1,2 @@
+1. Use explicit JOIN syntax instead of implicit JOIN syntax in the FROM clause: This makes the query easier to read and understand. It also helps to prevent accidental cross joins that can result from forgetting to include a join condition in the WHERE clause.
+2. Move conditions from WHERE clause to ON clause in JOIN operations: This can improve performance by reducing the number of rows that need to be processed in the join operation. It also makes the query easier to read and understand by clearly associating each condition with the relevant join operation.

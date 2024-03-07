@@ -1,0 +1,3 @@
+1. Use subqueries to filter data: By using subqueries to filter data before joining, we can reduce the amount of data that needs to be processed in the join operation, which can greatly improve performance.
+2. Use IN clause for filtering: The IN clause is more efficient than multiple OR conditions for a large list of values, especially when the list of values is subquery results.
+3. Filter data as early as possible: By filtering data in subqueries before joining, we can reduce the amount of data that needs to be processed, which can improve query performance.

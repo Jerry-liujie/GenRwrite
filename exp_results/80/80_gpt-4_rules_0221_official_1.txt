@@ -1,0 +1,6 @@
+1. Avoid unnecessary joins: If a join is not contributing to the final result set, it can be removed to improve performance. This reduces the amount of data that needs to be processed.
+2. Use UNION ALL instead of UNION: UNION ALL does not remove duplicates and is therefore faster than UNION, which does remove duplicates.
+3. Use indexes: If possible, create indexes on the columns that are used in the WHERE, JOIN, ORDER BY, and GROUP BY clauses. This can significantly speed up query execution.
+4. Limit the number of rows: If possible, limit the number of rows returned by the query. This can be done by using the LIMIT clause or by filtering the data in the WHERE clause.
+5. Use subqueries: Subqueries can be used to break down complex queries into simpler parts, which can make them easier to optimize and can also improve performance.
+6. Use the rollup function: The rollup function can be used to create subtotals and grand totals, which can reduce the amount of data that needs to be processed and can therefore improve performance.

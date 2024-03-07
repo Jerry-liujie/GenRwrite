@@ -1,0 +1,4 @@
+1. Replace LEFT JOIN with NOT EXISTS for anti-join: This rule can be applied when the query is using a LEFT JOIN to exclude rows that have a match in another table, which is also known as an anti-join.
+2. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+3. Avoid using COALESCE function when not necessary: This rule can be applied when the query is using the COALESCE function to handle NULL values, but the values can be guaranteed to be not NULL by other means.
+4. Use WHERE clause instead of HAVING clause: This rule can be applied when the query is using a HAVING clause to filter the results of a GROUP BY operation, but the same filtering could be done before the grouping and aggregation using a WHERE clause.

@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when the query involves joining multiple tables, as it makes the relationships between the tables clearer and the query easier to understand.
+2. Remove redundant values from IN clause: This rule can be applied when the IN clause of the query contains duplicate or unnecessary values, as it can improve the performance of the query.
+3. Use alias for tables: This rule can be applied when the query involves multiple tables or subqueries, as it makes the query more readable and easier to maintain.
+4. Use table alias in SELECT and ORDER BY clauses: This rule can be applied when the query involves multiple tables or subqueries, as it makes the query more readable and easier to understand.
+5. Grouping in subquery: This rule can be applied when the query involves complex calculations or aggregations, as it can reduce the amount of data that needs to be processed in the outer query and improve performance.

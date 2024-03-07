@@ -1,0 +1,4 @@
+1. Use EXISTS instead of COUNT(*): This can improve performance because the query can stop as soon as it finds a matching row, rather than counting all matching rows.
+2. Use IN instead of multiple OR conditions: This can make the query more readable and potentially more efficient.
+3. Combine similar conditions: This can reduce the complexity of the query and potentially improve performance.
+4. Avoid subqueries in the WHERE clause: This can improve performance by reducing the number of rows that need to be processed.

@@ -1,0 +1,4 @@
+1. Use WITH clause to simplify the query: This makes the query more readable and maintainable by breaking it down into smaller, simpler queries.
+2. Combine subqueries into one using JOINs: This can improve performance by reducing the number of scans needed on the same table.
+3. Move the WHERE conditions to the WITH clause: This can improve performance by reducing the number of records that need to be processed in the main query.
+4. Remove unnecessary nested subqueries: This can improve performance by reducing the complexity of the query.

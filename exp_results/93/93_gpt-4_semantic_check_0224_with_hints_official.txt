@@ -1,0 +1,24 @@
+with the 'reason' table,
+                  while q2 does not. to make q2 equivalent to q1,
+                                                              we need to include the 'reason' table in the
+from clause
+and add the condition
+for 'reason' in the
+where clause. the complete q2 after modification: with sales_returns as
+    (select ss_item_sk,
+            ss_ticket_number,
+            ss_customer_sk,
+            coalesce((ss_quantity - sr_return_quantity) * ss_sales_price, ss_quantity * ss_sales_price) as act_sales
+     from store_sales
+     left outer join store_returns on sr_item_sk = ss_item_sk
+     and sr_ticket_number = ss_ticket_number,
+         reason
+     where sr_reason_sk = r_reason_sk
+       and r_reason_desc = 'reason 58')
+  select ss_customer_sk,
+         sum(act_sales) as sumsales
+  from sales_returns
+group by ss_customer_sk
+order by sumsales,
+         ss_customer_sk
+limit 100;

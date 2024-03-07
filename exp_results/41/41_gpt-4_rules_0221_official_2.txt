@@ -1,0 +1,3 @@
+1. Replace count(*) with exists: This will improve performance as the query engine will stop scanning once it finds the first matching record.
+2. Combine similar conditions using IN: This makes the query more readable and can improve performance by reducing the number of comparisons.
+3. Remove unnecessary parentheses: This makes the query more readable and can improve performance by simplifying the query structure.

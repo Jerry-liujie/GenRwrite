@@ -1,0 +1,38 @@
+with state_ranking as
+  (select s_state,
+          rank() over (partition by s_state
+                       order by sum(ss_net_profit) desc) as ranking
+   from store_sales
+   join store on s_store_sk = ss_store_sk
+   join date_dim on d_date_sk = ss_sold_date_sk
+   where d_month_seq between 1220 and 1231
+   group by s_state),
+     filtered_states as
+  (select s_state
+   from state_ranking
+   where ranking <= 5 ),
+     sales_data as
+  (select ss_net_profit,
+          store.s_state,
+          s_county
+   from store_sales
+   join date_dim d1 on d1.d_date_sk = ss_sold_date_sk
+   join store on s_store_sk = ss_store_sk
+   join filtered_states on store.s_state = filtered_states.s_state
+   where d1.d_month_seq between 1220 and 1231 )
+select sum(ss_net_profit) as total_sum,
+       s_state,
+       s_county,
+       grouping(s_state) + grouping(s_county) as lochierarchy,
+       rank() over (partition by grouping(s_state) + grouping(s_county),
+                                 case
+                                     when grouping(s_county) = 0 then s_state
+                                 end
+                    order by sum(ss_net_profit) desc) as rank_within_parent
+from sales_data
+group by rollup(s_state, s_county)
+order by grouping(s_state) + grouping(s_county) desc, case
+                                                          when grouping(s_state) + grouping(s_county) = 0 then s_state
+                                                      end,
+                                                      rank_within_parent
+limit 100;

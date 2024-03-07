@@ -1,0 +1,5 @@
+1. Use CTEs to simplify complex subqueries: This rule can be applied when there are subqueries that are complex, reused multiple times in the query, or when there are multiple levels of nested subqueries.
+2. Replace implicit joins with explicit joins: This rule can be applied when tables are joined using the WHERE clause instead of the JOIN clause.
+3. Minimize the number of times the same subquery is run: This rule can be applied when the same subquery is used multiple times in the main query.
+4. Push down predicates where possible: This rule can be applied when there are conditions in the WHERE or HAVING clause that can be moved to a subquery or JOIN clause to filter data earlier.
+5. Use 'join' instead of 'where' for joining tables: This rule can be applied when tables are joined using the WHERE clause instead of the JOIN clause.

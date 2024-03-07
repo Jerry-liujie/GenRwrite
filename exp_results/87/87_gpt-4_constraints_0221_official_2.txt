@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being queried together and there are conditions that link these tables.
+2. Use NOT EXISTS instead of EXCEPT: This rule can be applied when we are trying to find records that exist in one table but not in another.
+3. Eliminate DISTINCT by using EXISTS: This rule can be applied when we are trying to remove duplicate records from the result set.
+4. Combine the conditions in the WHERE clause: This rule can be applied when there are multiple conditions that can be combined into a single condition using logical operators like AND and OR.

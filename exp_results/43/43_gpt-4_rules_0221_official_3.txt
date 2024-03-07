@@ -1,0 +1,3 @@
+1. Replace NULL in aggregate functions with 0: This will improve the performance as handling NULL values can be costly in terms of processing time.
+2. Replace ',' join with 'INNER JOIN' syntax: This makes the query more readable and also allows the database to optimize the join operation.
+3. Remove unnecessary fields from ORDER BY clause: Ordering by unnecessary fields can slow down the query. Only order by the fields that are necessary for the result.

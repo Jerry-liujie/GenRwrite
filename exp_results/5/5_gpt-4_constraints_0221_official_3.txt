@@ -1,0 +1,5 @@
+1. Remove unnecessary UNION operations: This rule can be applied when the query involves UNION operations and we know that the data sets being combined do not have any duplicates.
+2. Avoid unnecessary subqueries and joins: This rule can be applied when the query involves subqueries or joins that are not necessary for producing the desired result.
+3. Use JOIN instead of WHERE for linking tables: This rule can be applied when the query involves linking tables using the WHERE clause, and it could be more efficient to use JOIN instead.
+4. Remove unnecessary CAST operations: This rule can be applied when the query involves CAST operations and we know that the data types of the columns are already correct.
+5. Use WHERE clause to filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.

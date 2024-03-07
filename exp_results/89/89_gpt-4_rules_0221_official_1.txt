@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for joining tables: This makes the query more readable and easier to understand.
+2. Use CTE (Common Table Expressions) to simplify complex queries: It breaks down the query into simpler parts, making it easier to understand and maintain.
+3. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query, improving performance.
+4. Avoid using functions on columns in WHERE clause: It prevents the use of indexes, leading to full table scans. However, in this case, it's unavoidable due to the nature of the condition.

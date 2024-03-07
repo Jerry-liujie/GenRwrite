@@ -1,0 +1,3 @@
+1. Use CTEs to filter data early: By using common table expressions (CTEs), we can filter the data in the early stages of the query execution. This reduces the amount of data that needs to be processed in the later stages, which can significantly improve performance.
+2. Remove unnecessary columns from CTEs: Only include the columns in the CTEs that are actually used in the final query. This reduces the amount of data that needs to be processed and can improve performance.
+3. Use JOIN instead of OUTER JOIN when possible: OUTER JOINs can be more expensive than regular JOINs. If the data guarantees that there will always be a match, use a JOIN instead. This can improve performance by reducing the amount of data that needs to be processed.

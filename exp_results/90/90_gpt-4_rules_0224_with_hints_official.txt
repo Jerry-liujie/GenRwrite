@@ -1,0 +1,4 @@
+1. Use CTEs (Common Table Expressions) to break down complex queries: This makes the query more readable and maintainable.
+2. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query easier to read and understand, and can also improve performance by making the join operations more explicit.
+3. Combine multiple subqueries into a single query: This can improve performance by reducing the number of separate operations that the database engine needs to perform.
+4. Replace BETWEEN conditions with equivalent AND conditions: This can improve performance by allowing the database engine to use index range scans more effectively.

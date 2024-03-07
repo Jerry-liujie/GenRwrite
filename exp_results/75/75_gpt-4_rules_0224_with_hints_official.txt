@@ -1,0 +1,5 @@
+1. Use JOIN instead of comma-separated FROM clause: This improves the readability of the query and can also improve performance by allowing the database to optimize the join operation.
+2. Use UNION ALL instead of UNION: UNION ALL is faster than UNION because it does not need to check for duplicate rows.
+3. Use LEFT JOIN instead of WHERE for joining tables: This can improve performance by reducing the number of rows that need to be scanned in the joined tables.
+4. Combine similar subqueries into one: This reduces the complexity of the query and can improve performance by reducing the number of subqueries that need to be executed.
+5. Replace multiple where conditions with IN clause: This can improve performance by reducing the number of conditions that need to be checked in the WHERE clause.

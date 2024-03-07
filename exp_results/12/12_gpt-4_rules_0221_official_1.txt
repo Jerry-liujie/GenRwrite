@@ -1,0 +1,4 @@
+1. Use CTE (Common Table Expressions) to break down complex queries: This makes the query more readable and maintainable. It also allows the database to materialize the intermediate results, potentially improving performance.
+2. Reduce the number of tables in the join operation: This reduces the complexity of the join operation, which can improve performance.
+3. Move the filtering condition to the end: This reduces the amount of data that needs to be processed in the join operation and the subsequent calculations, which can improve performance.
+4. Use join instead of comma-separated tables in the from clause: This makes the join condition explicit and can improve performance by allowing the database to optimize the join operation.

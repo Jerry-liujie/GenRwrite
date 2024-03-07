@@ -1,0 +1,92 @@
+```sql
+with ssr as (
+    select
+        s_store_id,
+        sum(ss_ext_sales_price) as sales,
+        sum(ss_net_profit) as profit,
+        0 as returns,
+        0 as profit_loss
+    from
+        store_sales
+    join date_dim on ss_sold_date_sk = d_date_sk
+    join store on ss_store_sk = s_store_sk
+    where
+        d_date between cast('2000-08-19' as date) and (cast('2000-08-19' as date) + interval '14' day)
+    group by
+        s_store_id
+),
+csr as (
+    select
+        cp_catalog_page_id,
+        sum(cs_ext_sales_price) as sales,
+        sum(cs_net_profit) as profit,
+        0 as returns,
+        0 as profit_loss
+    from
+        catalog_sales
+    join date_dim on cs_sold_date_sk = d_date_sk
+    join catalog_page on cs_catalog_page_sk = cp_catalog_page_sk
+    where
+        d_date between cast('2000-08-19' as date) and (cast('2000-08-19' as date) + interval '14' day)
+    group by
+        cp_catalog_page_id
+),
+wsr as (
+    select
+        web_site_id,
+        sum(ws_ext_sales_price) as sales,
+        sum(ws_net_profit) as profit,
+        0 as returns,
+        0 as profit_loss
+    from
+        web_sales
+    join date_dim on ws_sold_date_sk = d_date_sk
+    join web_site on ws_web_site_sk = web_site_sk
+    where
+        d_date between cast('2000-08-19' as date) and (cast('2000-08-19' as date) + interval '14' day)
+    group by
+        web_site_id
+)
+select
+    channel,
+    id,
+    sum(sales) as sales,
+    sum(returns) as returns,
+    sum(profit) as profit
+from
+    (
+        select
+            'store channel' as channel,
+            'store' || s_store_id as id,
+            sales,
+            returns,
+            profit as profit
+        from
+            ssr
+        union all
+        select
+            'catalog channel' as channel,
+            'catalog_page' || cp_catalog_page_id as id,
+            sales,
+            returns,
+            profit as profit
+        from
+            csr
+        union all
+        select
+            'web channel' as channel,
+            'web_site' || web_site_id as id,
+            sales,
+            returns,
+            profit as profit
+        from
+            wsr
+    ) x
+group by
+    rollup (channel, id)
+order by
+    channel,
+    id
+limit
+    100;
+```

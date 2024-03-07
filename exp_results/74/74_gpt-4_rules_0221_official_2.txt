@@ -1,0 +1,8 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query easier to read and understand.
+2. Use BETWEEN for range conditions: This simplifies the WHERE clause and can potentially improve performance.
+3. Split the original subquery into two separate subqueries: This simplifies the query and can potentially improve performance by reducing the amount of data that needs to be processed.
+4. Remove unnecessary CASE statements: This simplifies the query and can potentially improve performance by reducing the amount of computation.
+5. Remove unnecessary UNION ALL operation: This can improve performance by reducing the amount of data that needs to be processed.
+6. Remove unnecessary columns in the SELECT clause: This can improve performance by reducing the amount of data that needs to be returned.
+7. Use column aliases for clarity: This makes the query easier to read and understand.
+8. Use a single JOIN condition instead of multiple WHERE conditions: This simplifies the query and can potentially improve performance.

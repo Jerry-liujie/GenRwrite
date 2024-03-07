@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for linking tables: This rule can be applied when there are multiple tables being used in the query and they are linked through common columns.
+2. Remove unnecessary columns from SELECT and GROUP BY clauses: This rule can be applied when there are columns in the SELECT or GROUP BY clause that are not needed in the final output.
+3. Combine similar queries using IN clause: This rule can be applied when there are multiple queries that are selecting from the same table and have similar WHERE conditions.
+4. Use subquery only once: This rule can be applied when the same subquery is being used multiple times in the main query.

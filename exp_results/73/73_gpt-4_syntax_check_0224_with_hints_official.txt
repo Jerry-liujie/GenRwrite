@@ -1,0 +1,27 @@
+select c.c_last_name,
+       c.c_first_name,
+       c.c_salutation,
+       c.c_preferred_cust_flag,
+       dj.ss_ticket_number,
+       dj.cnt
+from
+  (select ss.ss_ticket_number,
+          ss.ss_customer_sk,
+          count(*) as cnt
+   from store_sales as ss
+   join date_dim as d on ss.ss_sold_date_sk = d.d_date_sk
+   join store as s on ss.ss_store_sk = s.s_store_sk
+   join household_demographics as hd on ss.ss_hdemo_sk = hd.hd_demo_sk
+   where d.d_dom between 1 and 2
+     and hd.hd_buy_potential in ('1001-5000',
+                                 '5001-10000')
+     and hd.hd_vehicle_count > 0
+     and (hd.hd_dep_count / hd.hd_vehicle_count) > 1
+     and d.d_year between 2000 and 2002
+     and s.s_county = 'Williamson County'
+   group by ss.ss_ticket_number,
+            ss.ss_customer_sk
+   having count(*) between 1 and 5) as dj
+join customer as c on dj.ss_customer_sk = c.c_customer_sk
+order by dj.cnt desc,
+         c.c_last_name asc;

@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of implicit comma-separated syntax: This rule can be applied when multiple tables are being joined in a query.
+2. Combine similar conditions in WHERE clause: This rule can be applied when there are multiple conditions in the WHERE clause that are checking the same column.
+3. Use IN clause for checking multiple values of a column: This rule can be applied when there are multiple OR conditions in the WHERE clause that are checking the same column against different values.
+4. Remove unnecessary parentheses: This rule can be applied when there are parentheses in the query that are not required for specifying the order of operations.
+5. Use BETWEEN for range conditions: This rule can be applied when there are multiple AND conditions in the WHERE clause that are checking if a column's value is within a certain range.

@@ -1,0 +1,5 @@
+1. Use CTEs to simplify complex subqueries: This rule can be applied when the query contains complex subqueries that are used multiple times or that make the overall query difficult to understand.
+2. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when the query involves multiple tables and the relationships between them are defined using the WHERE clause.
+3. Combine similar subqueries: This rule can be applied when the query contains multiple subqueries that perform similar operations on the same or related data.
+4. Filter as early as possible: This rule can be applied when the query involves large amounts of data and there are conditions that can be used to reduce the amount of data that needs to be processed.
+5. Use table aliases to shorten table names: This rule can be applied when the query involves tables with long or complex names, or when the same table is used multiple times in the query.

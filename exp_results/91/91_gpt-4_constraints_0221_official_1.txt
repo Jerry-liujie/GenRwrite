@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of implicit comma-separated syntax: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Move conditions from WHERE clause to ON clause in JOINs where possible: This rule can be applied when there are conditions in the WHERE clause that are directly related to the tables being joined.
+3. Use column alias in ORDER BY clause: This rule can be applied when the columns in the ORDER BY clause are derived or calculated fields, or when they have long or complex names.

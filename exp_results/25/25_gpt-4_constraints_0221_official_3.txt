@@ -1,0 +1,4 @@
+1. Use subquery to reduce the number of rows for join operation: This rule can be applied when the query involves multiple joins that can be simplified or reduced by using a subquery to pre-filter or pre-aggregate the data.
+2. Replace multiple join conditions with IN clause: This rule can be applied when the query involves multiple join conditions that are based on the same column or set of columns and can be simplified by using an IN clause.
+3. Group by before join: This rule can be applied when the query involves a join operation that can be simplified or made more efficient by grouping the data before the join operation.
+4. Use explicit join syntax instead of comma-separated tables: This rule can be applied when the query involves multiple tables that are joined using a comma-separated list, which can be made more readable and potentially more efficient by using explicit join syntax.

@@ -1,0 +1,5 @@
+1. Remove unnecessary columns in the select clause: This simplifies the query and reduces the amount of data that needs to be processed.
+2. Replace IN subqueries with JOINs: This can improve performance because JOINs are usually more efficient than IN subqueries.
+3. Replace OR conditions with BETWEEN: This can improve performance because BETWEEN is usually more efficient than OR.
+4. Move conditions from the HAVING clause to the WHERE clause: This can improve performance because conditions in the WHERE clause are evaluated earlier and can reduce the number of rows that need to be processed.
+5. Combine the two main SELECT queries using UNION ALL and then perform the aggregation in the outer query: This can improve performance because it reduces the number of times the data needs to be read and processed.

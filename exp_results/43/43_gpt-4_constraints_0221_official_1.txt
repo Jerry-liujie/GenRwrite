@@ -1,0 +1,4 @@
+1. Replace implicit JOIN syntax with explicit JOIN syntax: This rule can be applied when the query uses implicit JOIN syntax, which is indicated by commas separating the tables in the FROM clause and the join conditions in the WHERE clause.
+2. Replace NULL in the SUM function with 0: This rule can be applied when the query uses the SUM function and there is a possibility of NULL values in the column being summed.
+3. Remove unnecessary ORDER BY clauses: This rule can be applied when the query uses the ORDER BY clause to sort the results by columns that do not affect the final result.
+4. Use LIMIT clause wisely: This rule can be applied when the query returns a large number of rows and only a subset of the results is needed for the analysis.

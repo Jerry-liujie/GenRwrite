@@ -1,0 +1,5 @@
+1. Combine multiple subqueries into a single subquery: This rule can be applied when there are multiple subqueries that scan the same tables and can be combined into a single subquery.
+2. Use left join instead of inner join: This rule can be applied when the data from the right table is not necessary for the final result, and we only need to match the data from the left table.
+3. Use case statement to sum sales from different tables: This rule can be applied when there are multiple tables that contain the same type of data (in this case, sales data) and we need to sum this data.
+4. Move conditions from where clause to on clause in left join: This rule can be applied when there are conditions in the where clause that can be moved to the on clause of a left join to reduce the number of rows that need to be joined.
+5. Use in clause instead of multiple or conditions: This rule can be applied when there are multiple or conditions in the where clause that can be replaced with a single in clause.

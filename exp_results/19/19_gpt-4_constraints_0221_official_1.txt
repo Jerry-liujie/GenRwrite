@@ -1,0 +1,2 @@
+1. Use JOIN clause instead of WHERE clause for joining tables: This rule can be applied when multiple tables are being used in a query and there are conditions that specify how these tables are related.
+2. Move the filter conditions to the WHERE clause: This rule can be applied when there are conditions that filter the data based on specific criteria. These conditions can be moved to the WHERE clause to improve the performance of the query.

@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This makes the query easier to read and understand. It also allows for more efficient execution planning in many SQL engines.
+2. Move conditions into subquery: This reduces the number of rows that need to be joined, which can significantly improve performance.
+3. Use subquery to pre-filter rows: This reduces the amount of data that needs to be processed in the main query, which can improve performance.
+4. Remove unnecessary columns from GROUP BY clause: This can reduce the amount of data that needs to be grouped, which can improve performance.

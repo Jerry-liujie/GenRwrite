@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query.
+2. Replace the addition of a number to a column in a WHERE clause with a simple range: This rule can be applied when a WHERE clause condition involves adding a number to a column value.
+3. Replace the addition of an interval to a date with a simple date: This rule can be applied when a WHERE clause condition involves adding an interval to a date column.
+4. Remove unnecessary parentheses: This rule can be applied when the query contains parentheses that are not required for specifying the order of operations.
+5. Use direct date values instead of casting string to date: This rule can be applied when a date value is being cast from a string in a WHERE clause condition.

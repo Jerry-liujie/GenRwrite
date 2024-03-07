@@ -1,0 +1,3 @@
+1. Limit the data in the subquery: By adding the condition 'AND d_year IN (2001, 2002)' in the subquery, we can reduce the amount of data processed. This can significantly improve the performance of the query.
+2. Use JOIN instead of comma-separated FROM clause: Using JOIN can improve the readability of the query and also allow the database to optimize the query more effectively.
+3. Avoid cross join: The original query is essentially a cross join which can be very inefficient. By adding join conditions directly in the ON clause, we can avoid unnecessary computation and improve performance.

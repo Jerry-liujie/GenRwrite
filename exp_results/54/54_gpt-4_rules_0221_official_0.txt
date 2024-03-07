@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of implicit: This makes the query easier to read and understand.
+2. Split UNION ALL subquery into two separate subqueries: This simplifies the query and can improve performance by reducing the number of rows processed.
+3. Remove unnecessary DISTINCT keyword: The DISTINCT keyword can be a performance hit because it requires sorting or hashing the result set. If the data is already unique, then DISTINCT is unnecessary.
+4. Remove unnecessary columns from the SELECT clause: Only select the columns that are needed for the final result. This can reduce the amount of data that needs to be processed and returned.

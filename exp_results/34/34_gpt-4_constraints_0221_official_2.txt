@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when there are multiple tables being joined in the query using the WHERE clause instead of the JOIN clause.
+2. Replace BETWEEN with IN for discrete values: This rule can be applied when the BETWEEN operator is used to filter discrete values, which can be explicitly listed using the IN operator.
+3. Remove duplicate conditions: This rule can be applied when the same condition is repeated in the WHERE clause, which is unnecessary and can be removed.
+4. Use equality operator instead of IN for single value: This rule can be applied when the IN operator is used with a single value, which can be replaced with the equality operator for better performance.

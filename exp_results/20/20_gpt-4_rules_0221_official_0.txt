@@ -1,0 +1,4 @@
+1. Use CTEs to simplify complex queries: This makes the query more readable and maintainable. It also allows for better optimization by the database engine.
+2. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and can improve performance by enabling the database engine to better optimize the query.
+3. Move calculations to the CTE: This can improve performance by reducing the amount of computation needed in the main query.
+4. Avoid using functions on columns in WHERE clause: This can prevent the database engine from using indexes effectively, leading to slower performance.

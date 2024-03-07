@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Remove unused columns in the GROUP BY clause: This rule can be applied when the GROUP BY clause contains columns that are not used in the SELECT clause or in aggregate functions.
+3. Replace arithmetic operations with their results in the WHERE clause: This rule can be applied when the WHERE clause contains arithmetic operations that can be pre-calculated.
+4. Alias aggregate functions in the SELECT clause: This rule can be applied when aggregate functions are used in the SELECT clause, especially when these values are referenced elsewhere in the query.

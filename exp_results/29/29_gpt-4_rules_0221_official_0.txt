@@ -1,0 +1,4 @@
+1. Use subquery to reduce the amount of data: By using a subquery to filter the data first, we can reduce the amount of data that needs to be processed in the main query. This can significantly improve the performance of the query.
+2. Replace join with date_dim table by using IN clause: The join operation with the date_dim table can be replaced by using the IN clause. This can reduce the complexity of the query and improve the performance.
+3. Use join instead of comma-separated tables: Using JOINs instead of comma-separated tables in the FROM clause makes the relationships between tables more explicit and can improve the performance of the query.
+4. Group by in subquery: By grouping in the subquery, we can reduce the amount of data that needs to be processed in the main query. This can significantly improve the performance of the query.

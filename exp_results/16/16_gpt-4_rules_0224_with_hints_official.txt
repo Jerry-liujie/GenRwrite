@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This improves readability and performance by clearly defining the relationships between tables.
+2. Use CTEs to filter data early: This improves performance by reducing the amount of data that needs to be processed in the main query.
+3. Remove redundant conditions in WHERE clause: This improves performance by reducing the complexity of the query. In the original query, 'Williamson County' was repeated multiple times, which is unnecessary.
+4. Use EXISTS instead of IN for subqueries: This improves performance when the subquery returns a large result set, as EXISTS will stop processing as soon as it finds a match, while IN will scan the entire result set.

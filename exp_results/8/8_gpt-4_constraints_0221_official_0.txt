@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when multiple tables are being joined in the query. 
+2. Use CTEs (Common Table Expressions) for subqueries: This rule can be applied when there are subqueries that are used multiple times in the query or when the subquery is complex.
+3. Avoid using functions in the WHERE clause: This rule can be applied when there are functions being used in the WHERE clause that could potentially hinder the use of indexes.
+4. Filter as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.

@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This improves readability and understanding of the query. It also helps the database optimizer to create a more efficient execution plan.
+2. Use literals instead of calculations in the where clause: This reduces the computation overhead during query execution, thus improving performance.
+3. Remove unnecessary cast function: Removing unnecessary casting can improve performance by reducing the computation overhead.
+4. Replace the addition of a number to a column in a WHERE clause with a simple range: This simplifies the query and can improve performance by reducing the computation overhead.

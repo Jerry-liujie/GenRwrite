@@ -1,0 +1,2 @@
+1. Use explicit JOIN syntax instead of implicit JOIN syntax in the FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are more than two tables being joined.
+2. Move conditions from WHERE clause to ON clause in JOIN operations: This rule can be applied when there are conditions in the WHERE clause that are based on columns from multiple tables that are being joined. These conditions can often be moved to the ON clause of the corresponding JOIN operation.

@@ -1,0 +1,4 @@
+1. Use CTEs to pre-aggregate data: This rule can be applied when the query involves complex calculations or aggregations that are used multiple times in the main query.
+2. Use JOIN instead of WHERE for table relationships: This rule can be applied when there are relationships between tables that are expressed in the WHERE clause of the query.
+3. Use LEFT JOIN instead of UNION ALL: This rule can be applied when the query is combining data from multiple tables that have the same structure and the result needs to include all records from one of the tables.
+4. Move conditions to the CTEs: This rule can be applied when there are conditions in the main query that can be moved to the CTEs to filter the data as early as possible.

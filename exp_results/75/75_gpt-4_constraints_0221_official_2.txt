@@ -1,0 +1,4 @@
+1. Use UNION ALL instead of UNION: This rule can be applied when the query is combining results from multiple SELECT statements and duplicate rows are not a concern.
+2. Filter early: This rule can be applied when there are conditions in the WHERE clause that can be used to filter data in the early stages of the query.
+3. Use JOIN instead of comma-separated FROM clause: This rule can be applied when the query is combining data from multiple tables and the relationships between the tables are defined using equalities in the WHERE clause.
+4. Explicitly specify join conditions in the ON clause: This rule can be applied when the query is using JOINs to combine data from multiple tables.

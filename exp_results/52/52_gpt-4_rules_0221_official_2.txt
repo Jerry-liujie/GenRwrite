@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This makes the query easier to read and understand. It also helps to avoid accidental Cartesian products if you forget to include a necessary WHERE clause.
+2. Move conditions from WHERE clause to ON clause in JOIN statement: This can improve performance by reducing the number of rows that need to be joined. It also makes the query easier to read and understand.
+3. Use LIMIT clause to reduce the number of rows returned: This can significantly improve performance when only a small number of the top rows are needed.

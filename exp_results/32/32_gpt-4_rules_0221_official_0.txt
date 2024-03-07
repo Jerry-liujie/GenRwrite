@@ -1,0 +1,4 @@
+1. Use CTE for subquery: This helps to avoid the repeated execution of the same subquery, which can improve performance.
+2. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and can also improve performance by making it easier for the database to optimize the query.
+3. Move conditions from WHERE to ON in JOINs: This can improve performance by reducing the number of rows that need to be joined.
+4. Remove redundant conditions: If a condition is repeated in both the main query and the subquery, it can be removed from one of them to simplify the query.

@@ -1,0 +1,4 @@
+1. Replace comma-separated table list with explicit JOIN syntax: This makes the query more readable and easier to understand. It also allows for better optimization by the database engine.
+2. Remove ORDER BY clause when it's not necessary: The original query is ordering by count(*) which is not necessary as we are only counting the number of rows. Removing this clause can significantly improve performance as sorting can be expensive.
+3. Remove unnecessary columns from SELECT clause: Only keep the columns that are necessary for the final result. This reduces the amount of data that needs to be processed.
+4. Use LIMIT without ORDER BY: When you use LIMIT with ORDER BY, the database has to sort all the results before returning the top ones. If you don't care about the order, just use LIMIT. This can significantly improve performance.

@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Use BETWEEN for range conditions: This rule can be applied when there are conditions that specify a range of values for a column.
+3. Remove unnecessary column in the GROUP BY clause: This rule can be applied when there are columns in the GROUP BY clause that are not used in the SELECT clause or in an aggregate function.
+4. Alias aggregate functions: This rule can be applied when aggregate functions are used in the SELECT clause, to make the output columns easier to understand.
+5. Use table alias for columns in WHERE clause: This rule can be applied when there are multiple tables in the query and columns in the WHERE clause could potentially come from more than one table.

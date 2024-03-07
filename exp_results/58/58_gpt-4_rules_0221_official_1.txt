@@ -1,0 +1,3 @@
+1. Combine similar subqueries: By combining the similar subqueries for store_sales, catalog_sales, and web_sales into one using UNION ALL, we reduce the number of scans on the item and date_dim tables, which can improve performance.
+2. Use CTEs for complex subqueries: By using a CTE (Common Table Expression) for the combined sales subquery, we make the query more readable and potentially more performant as the database can optimize the execution of the CTE.
+3. Avoid redundant calculations: The original query calculates the average revenue three times for each sales type. By calculating it once in the CTE, we can improve performance.

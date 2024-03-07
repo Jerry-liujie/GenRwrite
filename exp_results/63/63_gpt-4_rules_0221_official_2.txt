@@ -1,0 +1,5 @@
+1. Replace implicit join syntax with explicit join syntax: Explicit join syntax is more readable and less prone to accidental Cartesian products.
+2. Replace IN clause for sequential numbers with BETWEEN: BETWEEN is more efficient and easier to read than a long list of sequential numbers in an IN clause.
+3. Move the case statement to the WHERE clause: This simplifies the query and may improve performance by reducing the number of rows returned.
+4. Remove unnecessary NULL check: If avg_monthly_sales is NULL, the comparison with 0.1 will also be NULL, so the NULL check is not needed.
+5. Use subquery to filter records before joining: This can significantly reduce the number of records that need to be joined, which can improve performance.

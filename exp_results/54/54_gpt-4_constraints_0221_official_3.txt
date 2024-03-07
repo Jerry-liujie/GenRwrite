@@ -1,0 +1,5 @@
+1. Use subqueries instead of joins: This rule can be applied when the data needed for the main query can be isolated and fetched using a subquery, reducing the complexity of the main query.
+2. Use 'IN' clause instead of 'WHERE' clause: This rule can be applied when the query needs to filter based on a list of values, as the 'IN' clause can be more efficient than multiple 'WHERE' conditions.
+3. Use 'DISTINCT' sparingly: This rule can be applied when the query is dealing with large datasets, as using 'DISTINCT' can significantly impact performance due to the need to sort and group data.
+4. Use 'GROUP BY' before 'ORDER BY': This rule can be applied when the query needs to aggregate data before sorting it, as this can reduce the amount of data that needs to be sorted, improving performance.
+5. Limit the number of rows returned: This rule can be applied when the query is expected to return a large number of rows, as limiting the number of rows can reduce the amount of data that needs to be processed and returned, improving performance.

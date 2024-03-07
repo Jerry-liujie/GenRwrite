@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for joining tables: This makes the query more readable and easier to understand.
+2. Split UNION ALL subquery into two separate subqueries in the CTE: This can help the database optimizer to better understand the query and potentially improve performance.
+3. Remove unnecessary DISTINCT keyword: If the columns being selected are already unique, there is no need to use the DISTINCT keyword, which can slow down the query.
+4. Use CTEs (Common Table Expressions) for complex subqueries: This makes the query more readable and can also improve performance by breaking down the query into smaller parts.

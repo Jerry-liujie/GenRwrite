@@ -1,0 +1,4 @@
+1. Avoid repeated subqueries: This rule can be applied when the same subquery is used multiple times in different parts of the query.
+2. Combine multiple joins into one: This rule can be applied when the same table is joined multiple times with different conditions.
+3. Push conditions into join: This rule can be applied when there are conditions that can be used to filter the data during the join operation.
+4. Use left join instead of inner join: This rule can be applied when the data in the right table is not necessary for the final result.

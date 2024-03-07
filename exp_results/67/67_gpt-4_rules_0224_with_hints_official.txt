@@ -1,0 +1,3 @@
+1. Use CTEs to simplify complex subqueries: By breaking down the original query into two CTEs, the query becomes easier to read and understand. This also allows for potential reuse of the CTEs in other parts of the query.
+2. Replace implicit joins with explicit joins: By explicitly using JOIN clauses instead of WHERE clauses for joining tables, the query becomes more readable and easier to maintain.
+3. Filter data as early as possible: By moving the condition on the rank to the outermost query, we ensure that we filter out unnecessary data as early as possible, reducing the amount of data that needs to be processed in subsequent stages of the query.

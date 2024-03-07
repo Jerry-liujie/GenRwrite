@@ -1,0 +1,20 @@
+```sql
+select
+    c_customer_id as customer_id,
+    coalesce(c_last_name, '') || ', ' || coalesce(c_first_name, '') as customername
+from
+    customer
+inner join customer_address on c_current_addr_sk = ca_address_sk
+inner join customer_demographics on cd_demo_sk = c_current_cdemo_sk
+inner join store_returns on sr_cdemo_sk = cd_demo_sk
+inner join household_demographics on hd_demo_sk = c_current_hdemo_sk
+inner join income_band on ib_income_band_sk = hd_income_band_sk
+where
+    ca_city = 'Woodland'
+    and ib_lower_bound >= 60306
+    and ib_upper_bound <= 60306 + 50000
+order by
+    c_customer_id
+limit
+    100;
+```

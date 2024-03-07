@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for combining tables: Joins are generally faster and more efficient than WHERE clauses for combining tables, especially for larger datasets.
+2. Split the UNION ALL operation into two separate subqueries: This reduces the complexity of the query and makes it easier for the database to optimize.
+3. Filter data as early as possible: By moving the year filter into the subqueries, we reduce the amount of data that needs to be processed in the main query.
+4. Avoid repeated calculations: By calculating the year_total values in the subqueries, we avoid having to calculate them multiple times in the main query.
+5. Use IN clause for multiple OR conditions: It simplifies the query and can be more efficient than multiple OR conditions.

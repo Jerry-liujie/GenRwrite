@@ -1,0 +1,5 @@
+1. Replace implicit join syntax with explicit join syntax: This rule can be applied when the query uses implicit join syntax, which is indicated by commas separating the tables in the FROM clause and join conditions in the WHERE clause.
+2. Remove redundant conditions in the WHERE clause: This rule can be applied when there are conditions in the WHERE clause that are repeated or do not contribute to the final result of the query.
+3. Replace * in subqueries with 1: This rule can be applied when a subquery uses * in the SELECT clause, which means it returns all columns from the table.
+4. Add a GROUP BY clause: This rule can be applied when the query includes aggregate functions (like COUNT, SUM, AVG, etc.) in the SELECT clause but does not have a GROUP BY clause.
+5. Remove duplicate entries in the IN clause: This rule can be applied when the IN clause contains duplicate values, which can be identified by visually inspecting the query or by using a tool that can detect duplicates.

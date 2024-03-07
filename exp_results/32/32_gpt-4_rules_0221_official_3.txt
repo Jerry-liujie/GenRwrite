@@ -1,0 +1,4 @@
+1. Use join instead of comma-separated tables in the from clause: This makes the query more readable and easier to understand.
+2. Use a CTE (Common Table Expression) to calculate the average discount: This avoids calculating the average discount for each row in the main query, which can significantly improve performance.
+3. Remove the redundant subquery in the where clause: This simplifies the query and can improve performance by reducing the number of operations.
+4. Use explicit join conditions: This makes the query more readable and easier to understand, and can also improve performance by allowing the database to optimize the join operation.

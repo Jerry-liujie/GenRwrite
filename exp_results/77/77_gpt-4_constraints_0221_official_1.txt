@@ -1,0 +1,3 @@
+1. Remove unnecessary joins: This rule can be applied when the joined tables' data is not used in the SELECT, WHERE, or GROUP BY clauses, indicating that the join is unnecessary.
+2. Use subquery instead of join with date_dim: This rule can be applied when the join operation is only used for filtering data based on some conditions, and the joined table's data is not used elsewhere in the query.
+3. Use coalesce function to handle null values: This rule can be applied when there are columns that may contain null values, and these columns are used in calculations or other operations where null values can cause errors or unexpected results.

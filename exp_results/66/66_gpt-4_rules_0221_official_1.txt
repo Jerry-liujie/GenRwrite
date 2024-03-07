@@ -1,0 +1,4 @@
+1. Use CTEs to pre-aggregate data: This reduces the amount of data that needs to be processed in the main query, which can improve performance.
+2. Use JOIN instead of WHERE for table relationships: This makes the query more readable and can improve performance by enabling the database to use indexes more effectively.
+3. Use LEFT JOIN instead of UNION ALL: This avoids the need to scan the same tables multiple times, which can improve performance.
+4. Move conditions to the CTEs: This filters the data as early as possible, which can reduce the amount of data that needs to be processed and improve performance.

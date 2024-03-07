@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into a single query: This rule can be applied when the query contains multiple subqueries that scan the same tables and can be combined into a single query.
+2. Use JOIN instead of WHERE for linking tables: This rule can be applied when the query uses WHERE clause to link tables, which can be replaced with JOIN for better readability and performance.
+3. Use CASE WHEN in aggregation instead of filtering in WHERE clause: This rule can be applied when the query uses WHERE clause to filter data for aggregation, which can be replaced with CASE WHEN in the aggregation for better performance.
+4. Filter as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query, which can reduce the amount of data to be processed and thus improve performance.

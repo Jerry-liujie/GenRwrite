@@ -1,0 +1,5 @@
+1. Combine similar subqueries into one: This reduces the number of times the database needs to scan the same tables, improving performance.
+2. Use UNION ALL instead of UNION: UNION ALL is faster because it does not need to check for duplicate rows.
+3. Use CASE statements to differentiate between different types of returns: This allows us to perform the calculations for each type of return in a single pass, improving performance.
+4. Move the join operations to the outer query: This allows the database to perform the join operation only once, instead of three times in the original query, improving performance.
+5. Move the date filter to the outer query: This reduces the number of rows that need to be processed in the join operations, improving performance.

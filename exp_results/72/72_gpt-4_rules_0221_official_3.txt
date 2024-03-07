@@ -1,0 +1,4 @@
+1. Filter data as early as possible: By applying the conditions in the subqueries, we reduce the amount of data that needs to be processed in the later stages of the query. This can significantly improve performance.
+2. Avoid unnecessary joins: If a table is not used in the SELECT, WHERE, GROUP BY, or ORDER BY clauses, it can be removed from the query. This reduces the complexity of the query and can improve performance.
+3. Use LIMIT to reduce the amount of data returned: If only a certain number of rows are needed, use the LIMIT clause to avoid processing unnecessary data. This can significantly improve performance.
+4. Use indexes: If the columns used in the JOIN, WHERE, GROUP BY, or ORDER BY clauses are indexed, the database can retrieve the data more quickly. This can significantly improve performance.

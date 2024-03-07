@@ -1,0 +1,3 @@
+1. Use subquery to reduce the number of rows early: This will reduce the number of rows that need to be processed in the later stages of the query, improving performance.
+2. Join tables in subquery before aggregation: By joining the tables in the subquery before performing the aggregation, we reduce the amount of data that needs to be processed in the main query, improving performance.
+3. Use explicit JOIN syntax instead of comma-separated FROM clause: This makes the query easier to read and understand, which can help prevent mistakes and improve maintainability.

@@ -1,0 +1,4 @@
+1. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses implicit JOINs, which are indicated by comma-separated table names in the FROM clause and join conditions in the WHERE clause.
+2. Move conditions from WHERE to ON in JOINs: This rule can be applied when there are conditions in the WHERE clause that are directly related to the tables being joined.
+3. Use literal values instead of calculations in WHERE conditions: This rule can be applied when the WHERE clause contains conditions that involve calculations or functions on column values.
+4. Remove unnecessary parentheses: This rule can be applied when the query contains parentheses that are not necessary for specifying the order of operations.

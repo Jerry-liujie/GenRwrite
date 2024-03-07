@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query easier to read and understand. It also allows for better optimization by the query planner.
+2. Remove redundant conditions in WHERE clause: The condition 's_state in ('TN', 'TN', 'TN', 'TN', 'TN', 'TN')' is equivalent to 's_state = 'TN''. Removing redundancy makes the query more efficient and easier to read.
+3. Use indexes on join and where clause columns: If indexes are not already present, creating indexes on columns used in join and where clauses can significantly improve query performance. This is not reflected in the query itself but is an important part of query optimization.
+4. Limit the number of rows processed by the query: The 'LIMIT' clause reduces the number of rows returned by the query, which can significantly reduce the amount of data that needs to be processed.

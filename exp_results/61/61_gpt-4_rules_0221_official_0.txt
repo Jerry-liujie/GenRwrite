@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for joining tables: This makes the query more readable and easier to understand.
+2. Use LEFT JOIN for optional tables: This ensures that we don't exclude rows from the result set when there's no match in the optional table.
+3. Combine the two subqueries into one: This reduces the amount of data that needs to be processed and can significantly improve performance.
+4. Use CASE WHEN for conditional aggregation: This allows us to calculate the sum of promotions and total in one pass, reducing the amount of computation needed.
+5. Use GROUP BY instead of subqueries for aggregation: This can improve performance by reducing the amount of data that needs to be processed.

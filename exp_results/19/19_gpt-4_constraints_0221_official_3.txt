@@ -1,0 +1,4 @@
+1. Use JOIN syntax instead of WHERE for joining tables: This rule can be applied when there are multiple tables being combined in a query and the relationships between them are defined in the WHERE clause.
+2. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that are related to the joining of tables.
+3. Remove unnecessary columns from SELECT and GROUP BY clauses: This rule can be applied when there are columns in the SELECT or GROUP BY clauses that are not needed for the final result set.
+4. Use LIMIT clause to reduce the number of rows returned: This rule can be applied when the number of rows in the result set is not a concern or when only a specific number of top rows are required.

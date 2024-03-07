@@ -1,0 +1,4 @@
+1. Push conditions into join clause: This rule can be applied when there are conditions in the WHERE clause that involve columns from more than one table, and these conditions can be moved to the ON clause of the JOIN statement.
+2. Remove subquery: This rule can be applied when a subquery is used in the SELECT, FROM, or WHERE clause, but the same result can be achieved with a JOIN or an aggregate function.
+3. Move calculations to aggregate function: This rule can be applied when there are calculations in the SELECT clause that involve aggregate functions, and these calculations can be moved inside the aggregate functions.
+4. Remove unnecessary table: This rule can be applied when a table is included in the FROM clause, but none of its columns are used in the SELECT, WHERE, GROUP BY, or ORDER BY clauses.

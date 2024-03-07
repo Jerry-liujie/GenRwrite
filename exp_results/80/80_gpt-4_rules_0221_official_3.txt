@@ -1,0 +1,7 @@
+1. Remove unnecessary subqueries: Subqueries can often be replaced with a simpler join, which can improve performance.
+2. Use UNION ALL instead of UNION: UNION ALL does not remove duplicates and is therefore faster than UNION.
+3. Move conditions from WHERE to JOIN ON: This can improve performance by reducing the number of rows that need to be processed.
+4. Remove unnecessary grouping: Grouping can be expensive, so only group when necessary.
+5. Move conditions to the earliest possible point: This can reduce the number of rows that need to be processed, improving performance.
+6. Remove unnecessary columns from the SELECT clause: Only select the columns you need. This can reduce the amount of data that needs to be processed.
+7. Use LIMIT to reduce the number of rows returned: This can significantly improve performance when only a small number of rows are needed.

@@ -1,0 +1,2 @@
+1. Use subqueries to filter data: This rule can be applied when there are conditions that can be used to filter the data before joining tables, reducing the amount of data to be processed.
+2. Use join instead of comma-separated tables in the from clause: This rule can be applied when multiple tables are being queried together and there are clear relationships between the tables that can be expressed as join conditions.

@@ -1,0 +1,5 @@
+1. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses comma-separated tables in the FROM clause to join tables, which is an implicit JOIN.
+2. Use JOIN ON clause for joining conditions: This rule can be applied when the WHERE clause is used to specify the joining conditions between tables.
+3. Use literal values for dates and numbers: This rule can be applied when the query uses expressions or functions to calculate dates or numbers, which can be replaced with literal values.
+4. Remove unnecessary parentheses: This rule can be applied when the query uses parentheses that do not affect the order of operations or the logic of the query.
+5. Use LIMIT clause to reduce the amount of data returned: This rule can be applied when the query does not specify a limit on the number of rows to be returned, which can potentially return a large amount of data.

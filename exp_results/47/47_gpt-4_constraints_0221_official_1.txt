@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit join syntax (i.e., listing multiple tables in the FROM clause and specifying the join conditions in the WHERE clause).
+2. Simplify WHERE clause: This rule can be applied when the WHERE clause contains complex conditions that can be simplified without changing the result of the query.
+3. Use window functions for lag and lead operations: This rule can be applied when the query needs to access data from the previous or next rows in the result set.
+4. Avoid unnecessary calculations in WHERE clause: This rule can be applied when the WHERE clause contains calculations that are not necessary for the condition.

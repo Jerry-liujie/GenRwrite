@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of WHERE for joining tables: This rule can be applied when there are multiple tables being joined in the query, and the join conditions are specified in the WHERE clause.
+2. Filter data as early as possible: This rule can be applied when there are conditions in the query that can be used to filter out unnecessary data in the early stages of the query.
+3. Replace multiple conditions on the same column with IN clause: This rule can be applied when there are multiple conditions on the same column in the WHERE clause that can be replaced with a single IN clause.
+4. Use direct conditions instead of CASE WHEN in WHERE clause: This rule can be applied when there are CASE WHEN statements in the WHERE clause that can be replaced with direct conditions.
+5. Use JOIN instead of WHERE for connecting subqueries: This rule can be applied when there are subqueries in the query that are connected using WHERE clause, which can be replaced with JOIN for better performance.

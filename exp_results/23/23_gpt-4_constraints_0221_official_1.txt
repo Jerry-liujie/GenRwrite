@@ -1,0 +1,6 @@
+1. Remove unnecessary columns from the select clause: This rule can be applied when the query selects more columns than are actually needed for the final result.
+2. Replace the usage of arithmetic operations in the WHERE clause with the BETWEEN operator: This rule can be applied when the WHERE clause contains conditions that check if a column's value is within a certain range.
+3. Move the aggregation to the outermost query: This rule can be applied when there are subqueries that perform aggregation operations, and these operations can be moved to the main query without changing the result.
+4. Use the MAX function instead of ordering and limiting the result: This rule can be applied when the query sorts the result and then limits it to the top row, and the same result can be achieved by using the MAX function.
+5. Use the IN operator instead of a subquery in the WHERE clause: This rule can be applied when the WHERE clause contains a subquery that checks if a column's value is equal to any value in a list, and the same result can be achieved by using the IN operator.
+6. Use UNION ALL instead of UNION: This rule can be applied when the query combines the results of two or more SELECT statements, and it is not necessary to remove duplicate rows.

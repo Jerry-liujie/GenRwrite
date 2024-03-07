@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This makes the query more readable and easier to understand.
+2. Replace BETWEEN with IN for discrete values: This can improve performance as it avoids unnecessary range scans.
+3. Remove duplicate conditions: This simplifies the query and can improve performance.
+4. Use equality operator instead of IN for single value: This can improve performance as it avoids unnecessary full table scans.

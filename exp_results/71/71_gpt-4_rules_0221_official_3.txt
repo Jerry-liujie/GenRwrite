@@ -1,0 +1,2 @@
+1. Replace implicit JOINs with explicit JOINs: Explicit JOINs are more readable and less prone to accidental Cartesian products due to missing join conditions.
+2. Move WHERE clause filters to ON clause in JOINs: This can improve performance by reducing the number of rows that need to be joined.

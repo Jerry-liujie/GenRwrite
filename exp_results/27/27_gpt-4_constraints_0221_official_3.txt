@@ -1,0 +1,2 @@
+1. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses implicit JOIN syntax (comma-separated tables in the FROM clause and join conditions in the WHERE clause).
+2. Remove duplicate values in the IN clause: This rule can be applied when the IN clause contains duplicate values.

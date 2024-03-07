@@ -1,0 +1,4 @@
+1. Replace multiple joins in the where clause with joins in the from clause: This improves the readability of the query and can also improve performance by allowing the database to optimize the join order.
+2. Combine multiple conditions on the same column into a range: This simplifies the query and can improve performance by reducing the number of conditions the database needs to evaluate.
+3. Move conditions from the having clause to the where clause: This can improve performance by reducing the amount of data that needs to be grouped.
+4. Replace subqueries in the where clause with joins in the from clause: This can improve performance by allowing the database to optimize the join order and reduce the amount of data that needs to be processed.

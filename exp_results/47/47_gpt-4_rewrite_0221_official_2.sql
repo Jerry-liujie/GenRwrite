@@ -1,0 +1,65 @@
+```sql
+with v1 as(
+    select
+        i_category,
+        i_brand,
+        s_store_name,
+        s_company_name,
+        d_year,
+        d_moy,
+        sum(ss_sales_price) sum_sales,
+        avg(sum(ss_sales_price)) over (
+            partition by i_category,
+            i_brand,
+            s_store_name,
+            s_company_name,
+            d_year
+        ) avg_monthly_sales,
+        lag(sum(ss_sales_price)) over (
+            partition by i_category,
+            i_brand,
+            s_store_name,
+            s_company_name
+            order by
+                d_year,
+                d_moy
+        ) psum,
+        lead(sum(ss_sales_price)) over (
+            partition by i_category,
+            i_brand,
+            s_store_name,
+            s_company_name
+            order by
+                d_year,
+                d_moy
+        ) nsum
+    from
+        item
+        join store_sales on ss_item_sk = i_item_sk
+        join date_dim on ss_sold_date_sk = d_date_sk
+        join store on ss_store_sk = s_store_sk
+    where
+        d_year between 1999 and 2001
+        and d_moy in (12, 1)
+    group by
+        i_category,
+        i_brand,
+        s_store_name,
+        s_company_name,
+        d_year,
+        d_moy
+)
+select
+    *
+from
+    v1
+where
+    d_year = 2000
+    and avg_monthly_sales > 0
+    and abs(sum_sales - avg_monthly_sales) / avg_monthly_sales > 0.1
+order by
+    sum_sales - avg_monthly_sales,
+    nsum
+limit
+    100;
+```

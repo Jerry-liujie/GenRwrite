@@ -1,0 +1,3 @@
+1. Remove unnecessary joins: This rule can be applied when there are joins in the query that do not contribute to the final result set, such as joining with tables whose columns are not used in the SELECT, WHERE, GROUP BY, or ORDER BY clauses.
+2. Use UNION ALL instead of UNION: This rule can be applied when combining result sets from multiple SELECT statements and it is known that there will be no duplicate rows, or if duplicate rows do not matter for the purposes of the query.
+3. Use COALESCE function to handle NULL values: This rule can be applied when there are columns that may contain NULL values and these NULL values need to be replaced with a specific value for the purposes of calculations or comparisons.

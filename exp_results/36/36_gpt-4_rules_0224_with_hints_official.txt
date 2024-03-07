@@ -1,0 +1,5 @@
+1. Use CTE (Common Table Expressions) to break down complex queries: This makes the query easier to read and understand, and can also improve performance by simplifying the query execution plan.
+2. Use join instead of comma-separated tables in the from clause: This makes the query easier to read and understand, and can also improve performance by allowing the database to optimize the join operation.
+3. Replace implicit joins with explicit joins: This makes the query easier to read and understand, and can also improve performance by allowing the database to optimize the join operation.
+4. Move the filtering condition to the end: This can improve performance by reducing the amount of data that needs to be processed.
+5. Remove duplicate values in the IN clause: This can improve performance by reducing the number of comparisons that need to be made.

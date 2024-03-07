@@ -1,0 +1,5 @@
+1. Combine multiple subqueries into one: The original query has a single subquery that is repeated twice with different conditions. This can be combined into a single subquery with consolidated conditions. This will reduce the number of times the database has to scan the same table, improving performance.
+2. Consolidate where clause conditions: The original query has multiple conditions that can be combined using the IN operator. This makes the query more readable and can potentially improve performance by reducing the complexity of the condition evaluation.
+3. Remove unnecessary parentheses: The original query has many unnecessary parentheses that do not contribute to the logical structure or readability of the query. Removing these can make the query more readable and easier to maintain.
+4. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: The original query does not join any tables, so this rule is not applicable.
+5. Use JOIN instead of WHERE for joining tables: The original query does not join any tables, so this rule is not applicable.

@@ -1,0 +1,4 @@
+1. Split complex queries into simpler ones using WITH clause: This improves readability and maintainability of the code by breaking down the query into smaller, more manageable parts.
+2. Replace UNION ALL with separate subqueries: This can improve performance by allowing the database to optimize each subquery independently.
+3. Replace CASE WHEN in WHERE clause with standard comparison operators: This simplifies the query and can improve performance by reducing the number of operations the database has to perform.
+4. Replace WHERE clause with JOIN statement: This can improve performance by reducing the amount of data that needs to be processed. The join operation can filter out unnecessary data early in the query execution, reducing the amount of data that needs to be processed in later stages.

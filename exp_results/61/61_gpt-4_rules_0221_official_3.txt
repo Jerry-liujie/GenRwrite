@@ -1,0 +1,6 @@
+1. Combine subqueries into a single query: This reduces the number of scans on the same tables and the amount of data that needs to be processed.
+2. Use JOIN instead of comma-separated tables: This makes the query more readable and easier to understand.
+3. Use LEFT JOIN for optional tables: This ensures that rows from the main table are not excluded if they don't have a match in the optional table.
+4. Move conditions from WHERE clause to ON clause for LEFT JOIN: This ensures that the conditions are applied before the join, reducing the amount of data that needs to be processed.
+5. Use CASE statement to calculate conditional sum: This eliminates the need for a separate subquery to calculate the sum for promotions.
+6. Use GROUP BY to aggregate results: This makes the query more efficient by reducing the amount of data that needs to be processed.

@@ -1,0 +1,5 @@
+1. Use subqueries instead of joins: This reduces the amount of data that needs to be processed by only selecting the necessary rows.
+2. Use 'IN' clause instead of 'WHERE' clause: This can improve performance by reducing the number of comparisons that need to be made.
+3. Use 'DISTINCT' sparingly: Using 'DISTINCT' can be expensive in terms of performance, so it should be used sparingly and only when necessary.
+4. Use 'GROUP BY' before 'ORDER BY': This can improve performance by reducing the amount of data that needs to be sorted.
+5. Limit the number of rows returned: This can improve performance by reducing the amount of data that needs to be processed and returned.

@@ -1,0 +1,4 @@
+1. Combine similar subqueries using UNION ALL: This reduces the number of times we need to scan the item and date_dim tables, which can significantly improve performance if these tables are large.
+2. Use CASE statements to differentiate between different types of returns in the combined subquery: This allows us to perform the necessary calculations in a single pass, further improving performance.
+3. Use a single subquery to calculate all necessary quantities: This reduces the complexity of the query and can improve performance by reducing the number of separate calculations that need to be performed.
+4. Move the date filter to the outer query: This reduces the number of records that need to be processed in the inner query, which can improve performance if the date_dim table is large.

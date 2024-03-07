@@ -1,0 +1,3 @@
+1. Use subqueries to reduce the size of the data being joined: By using subqueries to filter the data before joining, we reduce the size of the data being joined, which can significantly improve performance.
+2. Join only necessary columns: Instead of joining all columns from a table, only join the columns that are necessary for the query. This can reduce the amount of data being processed and improve performance.
+3. Use explicit join syntax instead of implicit join syntax: Explicit join syntax (using the JOIN keyword) is generally more readable and maintainable than implicit join syntax (using commas to separate table names in the FROM clause), and can help prevent errors in complex queries.

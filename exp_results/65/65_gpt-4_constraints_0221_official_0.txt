@@ -1,0 +1,4 @@
+1. Use WITH clause to create subqueries: This rule can be applied when the same subquery is used multiple times or when the query is complex and can be broken down into smaller, more manageable parts.
+2. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses implicit JOIN syntax (i.e., listing multiple tables in the FROM clause and specifying the join conditions in the WHERE clause).
+3. Combine multiple subqueries into one when they have the same FROM and WHERE clauses: This rule can be applied when there are multiple subqueries that scan the same tables and have the same filtering conditions.
+4. Move conditions from the WHERE clause to the ON clause in JOINs when possible: This rule can be applied when there are conditions in the WHERE clause that involve columns from multiple tables that are being joined.

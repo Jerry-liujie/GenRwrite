@@ -1,0 +1,4 @@
+1. Use subqueries to filter data: This rule is applied to filter data from individual tables before joining. This reduces the amount of data that needs to be processed in the join operation, improving performance.
+2. Use WHERE clause for filtering: This rule is applied to filter the data before the grouping and aggregation operations. This reduces the amount of data that needs to be processed in these operations, improving performance.
+3. Push down predicates: This rule is applied to move conditions from the WHERE clause to the FROM clause. This filters data at the source, reducing the amount of data that needs to be processed, improving performance.
+4. Use IN clause for filtering: This rule is applied to check multiple conditions against a single column. This can be more efficient than using multiple OR conditions, especially when the list of conditions is the result of a subquery.

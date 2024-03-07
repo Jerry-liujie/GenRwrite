@@ -1,0 +1,3 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being queried together and there is a need to combine rows from these tables based on a related column.
+2. Use explicit range values instead of expressions: This rule can be applied when the conditions in the WHERE clause involve computations or expressions that can be simplified to explicit values.
+3. Use 1=1 in ON clause when joining derived tables: This rule can be applied when joining derived tables or subqueries and there is no specific condition to match the rows, but all rows from each derived table need to be included in the result.

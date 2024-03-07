@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Use CTEs (Common Table Expressions) to break down complex queries: This rule can be applied when a query involves multiple subqueries or complex operations that can be isolated into separate, named expressions.
+3. Apply DISTINCT after the INTERSECT operations: This rule can be applied when a query involves INTERSECT operations and the DISTINCT keyword, especially when the number of distinct records is significantly less than the total number of records.
+4. Move the LIMIT clause to the outermost query: This rule can be applied when a query involves multiple nested queries or subqueries and a LIMIT clause is used to restrict the number of records returned.

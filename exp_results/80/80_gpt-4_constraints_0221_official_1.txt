@@ -1,0 +1,6 @@
+1. Avoid unnecessary joins: This rule can be applied when the join operation does not contribute to the final result set, meaning the columns from the joined table are not used in the SELECT, WHERE, GROUP BY, or ORDER BY clauses.
+2. Use UNION ALL instead of UNION: This rule can be applied when the query involves combining result sets from multiple SELECT statements and it is acceptable to have duplicate rows in the final result.
+3. Use indexes: This rule can be applied when the query involves operations on columns such as filtering, joining, sorting, or grouping, which can be sped up by using an index.
+4. Limit the number of rows: This rule can be applied when the query does not require all rows from the table(s) and only a subset of rows is sufficient for the final result.
+5. Use subqueries: This rule can be applied when the query is complex and can be broken down into simpler parts, each of which can be handled by a subquery.
+6. Use the rollup function: This rule can be applied when the query involves generating subtotals and grand totals across different groupings.

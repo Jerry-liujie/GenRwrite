@@ -1,0 +1,3 @@
+1. Use subqueries to filter data first: This reduces the amount of data that needs to be processed in the main query, which can significantly improve performance.
+2. Remove the "order by" clause when it is not necessary: The "order by" clause can be expensive in terms of performance because it requires sorting the data. In this case, the query is just counting the number of rows, so the "order by" clause is not necessary.
+3. Avoid using cross joins when possible: Cross joins can result in a large number of rows and can be expensive in terms of performance. In this case, the cross join can be replaced with inner joins, which can improve performance.

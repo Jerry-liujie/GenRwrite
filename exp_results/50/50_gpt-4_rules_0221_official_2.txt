@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This makes the query easier to read and understand. It also allows the database engine to optimize the execution plan.
+2. Move conditions from WHERE clause to ON clause in JOINs: This can improve performance by reducing the number of rows that need to be processed in the join operation.
+3. Replace subtraction of date keys with direct comparison: This can improve performance by avoiding unnecessary calculations.

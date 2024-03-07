@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query more readable and easier to understand.
+2. Remove unused columns from the GROUP BY clause: This can reduce the amount of data that needs to be processed and grouped, potentially improving performance.
+3. Replace the IN operator with BETWEEN for continuous integer ranges: This can improve performance by reducing the number of comparisons needed.
+4. Use table alias for better readability: This makes the query easier to read and understand, and can also make it easier to spot potential performance issues.
+5. Use 'as' for aliasing: This makes the query more readable and easier to understand.

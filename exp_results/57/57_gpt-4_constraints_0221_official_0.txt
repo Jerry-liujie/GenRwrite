@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when multiple tables are combined based on matching column values.
+2. Use window functions (LEAD and LAG) instead of self-join: This rule can be applied when you need to compare values in a column of a table with other values in the same column.
+3. Move calculations to WHERE clause: This rule can be applied when there are calculations in the SELECT statement that can be moved to the WHERE clause to filter data earlier.
+4. Remove unnecessary CASE statement: This rule can be applied when there are CASE statements in the query that are not necessary for the final result.

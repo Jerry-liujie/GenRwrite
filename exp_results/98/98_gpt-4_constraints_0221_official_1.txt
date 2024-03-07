@@ -1,0 +1,3 @@
+1. Filter data as early as possible: This rule can be applied when there are conditions in the query that can be used to filter out unnecessary data before performing operations like joins, aggregations, etc.
+2. Avoid unnecessary columns in the select clause: This rule can be applied when the query includes columns in the select clause that are not necessary for the final result.
+3. Use subqueries to simplify complex queries: This rule can be applied when the query is complex and can be broken down into simpler parts, or when certain operations need to be performed on a subset of the data before it can be used in the main query.

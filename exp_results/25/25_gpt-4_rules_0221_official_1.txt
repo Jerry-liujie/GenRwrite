@@ -1,0 +1,5 @@
+1. Use subquery to reduce the number of rows: This reduces the amount of data that needs to be processed in the main query, which can significantly improve performance.
+2. Use left join instead of where clause for joining tables: This can improve performance by reducing the number of rows that need to be processed.
+3. Use IN clause for filtering on multiple values: This can improve performance by reducing the number of comparisons that need to be made.
+4. Move group by clause to subquery: This reduces the number of rows that need to be processed in the main query, which can significantly improve performance.
+5. Move conditions related to a single table into the subquery: This can reduce the number of rows that need to be processed in the main query, which can significantly improve performance.

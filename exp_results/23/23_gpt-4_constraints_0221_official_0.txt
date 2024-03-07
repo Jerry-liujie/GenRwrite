@@ -1,0 +1,5 @@
+1. Remove unnecessary columns from subqueries: This rule can be applied when there are columns in the subqueries that are not used in the final output or in any calculations.
+2. Replace subqueries with joins where possible: This rule can be applied when the subquery is used to filter data based on a condition that can be expressed as a join.
+3. Combine similar subqueries: This rule can be applied when there are multiple subqueries that are performing similar operations on the same or similar data.
+4. Use group by before union all: This rule can be applied when there are multiple union operations that are followed by a group by operation.
+5. Move calculations to the innermost subquery where possible: This rule can be applied when there are calculations performed in the outer query that could be moved to a subquery.

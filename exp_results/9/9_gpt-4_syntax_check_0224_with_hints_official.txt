@@ -1,0 +1,61 @@
+with sales_cte as
+  (select ss_quantity,
+          ss_ext_tax,
+          ss_net_paid_inc_tax
+   from store_sales
+   where ss_quantity between 1 and 100 ),
+     bucket_counts as
+  (select count(*) filter (
+                           where ss_quantity between 1 and 20) as count1,
+          count(*) filter (
+                           where ss_quantity between 21 and 40) as count2,
+          count(*) filter (
+                           where ss_quantity between 41 and 60) as count3,
+          count(*) filter (
+                           where ss_quantity between 61 and 80) as count4,
+          count(*) filter (
+                           where ss_quantity between 81 and 100) as count5
+   from sales_cte)
+select case
+           when
+                  (select count1
+                   from bucket_counts) > 1071 then avg(ss_ext_tax) filter (
+                                                                           where ss_quantity between 1 and 20)
+           else avg(ss_net_paid_inc_tax) filter (
+                                                 where ss_quantity between 1 and 20)
+       end as bucket1,
+       case
+           when
+                  (select count2
+                   from bucket_counts) > 39161 then avg(ss_ext_tax) filter (
+                                                                            where ss_quantity between 21 and 40)
+           else avg(ss_net_paid_inc_tax) filter (
+                                                 where ss_quantity between 21 and 40)
+       end as bucket2,
+       case
+           when
+                  (select count3
+                   from bucket_counts) > 29434 then avg(ss_ext_tax) filter (
+                                                                            where ss_quantity between 41 and 60)
+           else avg(ss_net_paid_inc_tax) filter (
+                                                 where ss_quantity between 41 and 60)
+       end as bucket3,
+       case
+           when
+                  (select count4
+                   from bucket_counts) > 6568 then avg(ss_ext_tax) filter (
+                                                                           where ss_quantity between 61 and 80)
+           else avg(ss_net_paid_inc_tax) filter (
+                                                 where ss_quantity between 61 and 80)
+       end as bucket4,
+       case
+           when
+                  (select count5
+                   from bucket_counts) > 21216 then avg(ss_ext_tax) filter (
+                                                                            where ss_quantity between 81 and 100)
+           else avg(ss_net_paid_inc_tax) filter (
+                                                 where ss_quantity between 81 and 100)
+       end as bucket5
+from sales_cte,
+     reason
+where r_reason_sk = 1;

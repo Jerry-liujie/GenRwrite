@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into a single query: This rule can be applied when the query contains multiple subqueries that are retrieving data from the same tables and can be combined into a single query.
+2. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when the query uses comma-separated tables in the FROM clause to join tables, which can be replaced with explicit JOIN syntax for better readability and maintainability.
+3. Use CASE expressions to calculate the counts in a single pass: This rule can be applied when the query uses multiple count() functions that can be replaced with a single CASE expression to improve performance.
+4. Move common conditions to the WHERE clause: This rule can be applied when the query has conditions in multiple parts of the query that can be moved to the WHERE clause to reduce the number of records that need to be processed.

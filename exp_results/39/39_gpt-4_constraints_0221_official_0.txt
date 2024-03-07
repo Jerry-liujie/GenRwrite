@@ -1,0 +1,5 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses the WHERE clause to link tables together, which is an indication of an implicit join.
+2. Move conditions from WHERE clause to HAVING clause: This rule can be applied when there are conditions in the WHERE clause that are based on aggregated data, as these conditions should be in the HAVING clause instead.
+3. Use JOIN ON for conditions that relate two tables: This rule can be applied when there are conditions in the WHERE clause that compare columns from two different tables, as these conditions should be in the JOIN ON clause instead.
+4. Remove unnecessary subqueries: This rule can be applied when there are subqueries in the FROM clause that could be replaced with a JOIN or a WHERE condition.
+5. Use column aliases for calculated fields: This rule can be applied when there are calculated fields in the SELECT clause that are used elsewhere in the query, as these fields should have aliases to make the query more readable.

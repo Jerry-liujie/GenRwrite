@@ -1,0 +1,5 @@
+1. Use CTE (Common Table Expressions) for subqueries: This makes the query more readable and can improve performance by avoiding repeated computation of the same subquery.
+2. Use table alias for better readability: This makes the query easier to read and write, especially when dealing with tables that have long or complex names.
+3. Use JOIN instead of comma-separated FROM clause: This makes the query easier to read and understand, and can also improve performance by making the join operations more explicit.
+4. Use explicit JOIN conditions instead of WHERE clause for joining tables: This separates the join conditions from the filter conditions, making the query easier to read and understand.
+5. Move conditions to ON clause in JOINs where possible: This can improve performance by reducing the amount of data that needs to be processed in the join operation.

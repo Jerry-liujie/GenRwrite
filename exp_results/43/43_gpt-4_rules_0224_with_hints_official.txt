@@ -1,0 +1,4 @@
+1. Replace ',' join with 'INNER JOIN' syntax: This makes the query more readable and easier to understand. It also allows for better optimization by the database engine.
+2. Filter rows as early as possible: This reduces the amount of data that needs to be processed in the later stages of the query, improving performance.
+3. Use CTE (Common Table Expressions) for subqueries: This makes the query more readable and easier to maintain. It also allows for better optimization by the database engine.
+4. Replace NULL in aggregate functions with 0: This prevents the aggregate functions from returning NULL, which can cause issues in subsequent computations.

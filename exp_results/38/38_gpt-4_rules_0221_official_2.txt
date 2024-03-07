@@ -1,0 +1,2 @@
+1. Use JOIN syntax instead of WHERE for combining tables: This makes the query more readable and easier to understand. It also allows the database to optimize the query execution.
+2. Avoid using SELECT DISTINCT when not necessary: SELECT DISTINCT can be a performance killer because it often requires sorting or hashing the entire result set. In this case, the INTERSECT operator will already remove duplicates, so DISTINCT is not necessary.

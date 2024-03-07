@@ -1,0 +1,5 @@
+1. Combine multiple subqueries into one: This rule can be applied when there are multiple subqueries that can be combined into a single subquery, especially when they are querying the same or related tables.
+2. Use left join instead of inner join: This rule can be applied when we want to include all records from the left table in the result set, regardless of whether there is a matching record in the right table.
+3. Use case statement to handle null values: This rule can be applied when there are nullable columns involved in calculations or comparisons, and we want to handle these null values in a specific way.
+4. Use a single date and address condition in the where clause: This rule can be applied when there are multiple conditions on the same column or related columns, and these conditions can be combined into a single condition.
+5. Remove unnecessary in clause: This rule can be applied when there is an in clause that includes values that are not necessary for the query, or when the in clause can be replaced with a more efficient operator or condition.

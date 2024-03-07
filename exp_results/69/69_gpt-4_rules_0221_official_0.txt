@@ -1,0 +1,3 @@
+1. Replace implicit joins with explicit joins: This makes the query easier to read and understand. It also helps the database optimizer to create a better execution plan.
+2. Use SELECT 1 instead of SELECT * in subqueries: This reduces the amount of data that needs to be processed and can improve performance.
+3. Move the NOT EXISTS conditions inside the EXISTS subquery: This reduces the number of rows that need to be processed and can improve performance.

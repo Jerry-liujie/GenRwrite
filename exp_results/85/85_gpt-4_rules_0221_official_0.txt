@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for linking tables: This makes the query more readable and easier to maintain. It also allows the database engine to optimize the query more effectively.
+2. Combine conditions on the same table in the same clause: This simplifies the WHERE clause and can improve performance by reducing the number of scans needed.
+3. Move conditions to JOIN ON clause where possible: This can improve performance by reducing the number of rows that need to be joined.
+4. Remove redundant conditions: This simplifies the query and can improve performance by reducing the number of conditions that need to be evaluated.

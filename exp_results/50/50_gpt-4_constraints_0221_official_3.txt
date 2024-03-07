@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when multiple tables are being joined in a query. It helps in making the query more readable and understandable.
+2. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that are related to the JOIN operation. It helps in improving the performance by reducing the number of rows that need to be joined.
+3. Remove unnecessary parentheses in CASE statements: This rule can be applied when there are unnecessary parentheses in the CASE statements. It helps in making the query more readable without affecting the performance.

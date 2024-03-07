@@ -1,0 +1,6 @@
+1. Combine subqueries into a single query: This rule can be applied when multiple subqueries are scanning the same tables and can be combined into a single query to reduce the amount of data that needs to be processed.
+2. Use JOIN instead of comma-separated tables: This rule can be applied when multiple tables are being used in a query and need to be joined based on a common column.
+3. Use LEFT JOIN for optional tables: This rule can be applied when there are tables that may not have matching data for every row in the main table, and we want to include all rows from the main table regardless.
+4. Move conditions from WHERE clause to ON clause for LEFT JOIN: This rule can be applied when there are conditions that can be applied before the join operation to reduce the amount of data that needs to be processed.
+5. Use CASE statement to calculate conditional sum: This rule can be applied when there is a need to calculate a sum based on a condition, and it can be done within the main query instead of using a separate subquery.
+6. Use GROUP BY to aggregate results: This rule can be applied when there are columns that need to be grouped together to calculate aggregate functions like sum, average, etc.

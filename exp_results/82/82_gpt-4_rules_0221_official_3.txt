@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This makes the query more readable and easier to understand.
+2. Use subqueries to filter data in the FROM clause: This reduces the amount of data that needs to be processed in the later stages of the query, which can improve performance.
+3. Filter as early as possible: By moving the conditions into the subqueries, we ensure that we filter out unnecessary data as early as possible, which can significantly improve performance.
+4. Use LIMIT clause: This reduces the amount of data returned, which can improve performance and reduce network traffic.

@@ -1,0 +1,5 @@
+1. Move the computation of the average to the outer query: This improves performance by reducing the number of computations needed. The average is only calculated once for each group, rather than for each row in the group.
+2. Use JOIN syntax instead of WHERE for joining tables: This makes the query more readable and easier to maintain. It also allows for better optimization by the database engine.
+3. Replace implicit join syntax with explicit join syntax: This makes the query easier to understand and maintain. It also allows for better optimization by the database engine.
+4. Use subquery to filter records before joining: This reduces the amount of data that needs to be processed during the join operation, which can significantly improve performance.
+5. Move conditions from WHERE clause to JOIN ON clause: This can improve performance by reducing the amount of data that needs to be processed in the join operation. The condition is applied as rows are retrieved from the tables, rather than after all rows have been retrieved.

@@ -1,0 +1,5 @@
+1. Use CTEs to pre-calculate subqueries: This rule helps to avoid the repetition of the same subquery multiple times in the main query, which can improve the performance of the query.
+2. Replace EXISTS clause with IN clause: This rule can improve the performance of the query by reducing the number of comparisons needed to be made.
+3. Replace WHERE clause with JOIN clause: This rule can improve the performance of the query by reducing the number of rows that need to be processed.
+4. Use subqueries in the WHERE clause: This rule can improve the performance of the query by reducing the number of rows that need to be processed.
+5. Use LIMIT clause: This rule can improve the performance of the query by reducing the number of rows that need to be returned.

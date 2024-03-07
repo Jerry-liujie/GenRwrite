@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for joining tables: This rule can be applied when there are conditions in the WHERE clause that are used to join tables.
+2. Combine similar conditions: This rule can be applied when there are multiple conditions in the WHERE clause that are checking the same column or set of columns.
+3. Remove unnecessary conditions: This rule can be applied when there are conditions in the WHERE clause that do not affect the result of the query.
+4. Use IN instead of multiple OR conditions: This rule can be applied when there are multiple OR conditions in the WHERE clause that are checking the same column against different values.
+5. Use BETWEEN instead of multiple AND conditions for range checks: This rule can be applied when there are multiple AND conditions in the WHERE clause that are checking if a column's value is within a certain range.

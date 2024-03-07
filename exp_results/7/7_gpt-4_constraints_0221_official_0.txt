@@ -1,0 +1,3 @@
+1. Use subqueries to filter data: This rule can be applied when the query involves multiple tables and there are conditions that can be used to filter data from individual tables before joining.
+2. Use IN clause for filtering: This rule can be applied when there are multiple conditions that need to be checked against a single column, especially when the list of conditions is the result of a subquery.
+3. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query, before performing computationally expensive operations like joins or aggregations.

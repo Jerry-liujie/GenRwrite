@@ -1,0 +1,5 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit join syntax (comma-separated tables in the FROM clause and join conditions in the WHERE clause).
+2. Use subqueries to pre-calculate values: This rule can be applied when the query includes complex calculations or aggregations that are used multiple times in the query.
+3. Use the IN clause instead of a subquery in the WHERE clause: This rule can be applied when the query uses a subquery in the WHERE clause to filter rows based on a list of values.
+4. Use a CTE (Common Table Expression) to calculate average prices: This rule can be applied when the query includes an average price calculation that is used in multiple parts of the query.
+5. Use a CTE (Common Table Expression) to get the distinct month sequence: This rule can be applied when the query includes a distinct month sequence calculation that is used in multiple parts of the query.

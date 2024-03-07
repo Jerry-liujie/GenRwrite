@@ -1,0 +1,4 @@
+1. Use JOIN syntax instead of WHERE for joining tables: This makes the query more readable and easier to understand.
+2. Move conditions from WHERE clause to ON clause in JOINs: This can improve performance as the database can eliminate rows earlier in the process.
+3. Remove unnecessary columns from SELECT and GROUP BY clauses: This can reduce the amount of data that needs to be processed and grouped, improving performance.
+4. Use LIMIT clause to reduce the number of rows returned: This can significantly reduce the amount of data that needs to be processed and returned, improving performance.

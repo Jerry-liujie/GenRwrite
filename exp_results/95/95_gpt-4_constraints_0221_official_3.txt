@@ -1,0 +1,4 @@
+1. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses implicit JOIN syntax (comma-separated tables in the FROM clause and join conditions in the WHERE clause).
+2. Use subqueries to reduce the size of the result set: This rule can be applied when the query involves multiple tables and complex conditions, and the result set of the main query can be reduced by using a subquery.
+3. Use CTEs (Common Table Expressions) for complex subqueries: This rule can be applied when the query contains complex subqueries that are used multiple times in the main query.
+4. Avoid using IN clause with subqueries: This rule can be applied when the query uses IN clause with a subquery, which can lead to inefficient full table scans.

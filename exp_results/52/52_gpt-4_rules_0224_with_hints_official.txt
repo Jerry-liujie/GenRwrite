@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query easier to read and understand, and can also improve performance by making the join operations more explicit.
+2. Move conditions from WHERE clause to ON clause in JOINs where possible: This can improve performance by reducing the number of rows that need to be processed in the join operation.
+3. Use LIMIT clause to reduce the number of rows returned: This can improve performance by reducing the amount of data that needs to be transferred and processed.
+4. Use aliases for tables and columns: This can make the query easier to read and understand, and can also reduce the amount of typing required when writing the query.

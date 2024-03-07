@@ -1,0 +1,4 @@
+1. Filter in subquery: This rule can be applied when the query involves multiple tables and there are conditions that can be used to filter the data in one or more of these tables before joining them.
+2. Avoid unnecessary columns: This rule can be applied when the query selects more columns than are necessary for the final result. 
+3. Use limit clause: This rule can be applied when only a certain number of rows are needed from the result, especially when the query could potentially return a large number of rows.
+4. Use index: This rule can be applied when the query involves conditions on columns that are or could be indexed, such as in the WHERE clause, JOIN conditions, or ORDER BY clause.

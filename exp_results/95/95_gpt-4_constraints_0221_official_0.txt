@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being queried in the same statement and there are relationships between these tables that can be defined using JOINs.
+2. Create a separate subquery for the second IN clause: This rule can be applied when there are multiple IN clauses in the WHERE condition and the subqueries in these IN clauses can be separated into different subqueries for better readability and performance.
+3. Use explicit JOIN syntax instead of implicit JOIN syntax: This rule can be applied when the query uses implicit JOIN syntax (comma-separated tables in the FROM clause and join conditions in the WHERE clause).
+4. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that can be moved to the ON clause of a JOIN to filter data before the JOIN operation is performed.

@@ -1,0 +1,2 @@
+1. Use JOIN clause instead of WHERE clause for joining tables: This makes the query more readable and easier to understand. It also separates the join conditions from the filter conditions, which can help the database optimize the query.
+2. Move the filter conditions to the WHERE clause: This can help the database eliminate rows earlier in the query processing, which can reduce the amount of data that needs to be processed in the later stages of the query. This can improve the performance of the query.

@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Use JOIN ON clause for joining conditions instead of WHERE clause: This separates the joining conditions from the filtering conditions, making the query more readable.
+3. Replace SELECT * in subqueries with SELECT 1: This can improve performance as it reduces the amount of data that needs to be fetched.
+4. Use table aliases for all tables: This makes the query more readable and easier to maintain.

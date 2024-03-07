@@ -1,0 +1,3 @@
+1. Move conditions from WHERE clause to JOIN clause: This reduces the number of rows that need to be processed in the join operation, which can improve performance.
+2. Remove subquery in FROM clause: Subqueries in the FROM clause can be inefficient because they are executed separately from the main query and their results are stored in temporary tables. By moving the subquery to the JOIN clause, we can avoid this overhead.
+3. Use IN clause instead of JOIN for filtering: The IN clause can be more efficient than a join when the subquery returns a small number of rows. This is because the database can often use an index to process the IN clause, while a join requires a full table scan.

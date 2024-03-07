@@ -1,0 +1,5 @@
+1. Combine similar subqueries into one: This reduces the number of subqueries and makes the query more efficient by reducing the amount of data that needs to be processed.
+2. Use LEFT JOIN instead of WHERE for joining tables: This can improve performance because it reduces the number of records that need to be processed.
+3. Use JOIN instead of WHERE for joining tables in the main query: This can improve performance because it reduces the number of records that need to be processed.
+4. Move conditions from WHERE to ON in JOINs: This can improve performance because it reduces the number of records that need to be processed.
+5. Remove unnecessary columns from the subquery: This can improve performance because it reduces the amount of data that needs to be processed.

@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE clause for combining tables: This is more efficient and can improve performance by reducing the amount of data that needs to be processed.
+2. Replace NULL with 0 in the aggregate functions: This can avoid unnecessary NULL-checking and improve the performance.
+3. Use table alias for better readability and less typing: This can make the query easier to understand and maintain.
+4. Move the filtering condition to the JOIN clause: This can reduce the amount of data that needs to be processed, thereby improving performance.
+5. Remove unnecessary subquery: This can simplify the query and improve performance by reducing the amount of data that needs to be processed.

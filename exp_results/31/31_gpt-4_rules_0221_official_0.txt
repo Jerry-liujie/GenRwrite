@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This makes the query more readable and maintainable. It also avoids potential Cartesian products that can occur with implicit joins if the join condition is accidentally omitted.
+2. Filter in subquery instead of main query: By filtering the data in the subquery, we reduce the amount of data that needs to be processed in the main query. This can significantly improve performance, especially when dealing with large datasets.
+3. Remove unnecessary case statements: The case statements in the original query are not necessary and can be replaced with simple division operations. This simplifies the query and can potentially improve performance.
+4. Combine multiple conditions into a single condition: This simplifies the query and can potentially improve performance by reducing the number of conditions that need to be evaluated.

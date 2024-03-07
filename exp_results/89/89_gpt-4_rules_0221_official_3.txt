@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This makes the query easier to read and understand.
+2. Use CTE (Common Table Expressions) for subqueries: This can improve readability and maintainability of the query.
+3. Move the computation of the average to the outer query: This can potentially reduce the amount of computation needed, as the average is only computed for the rows that pass the WHERE clause in the CTE.
+4. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query.

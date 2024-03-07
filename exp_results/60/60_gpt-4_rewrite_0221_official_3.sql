@@ -1,0 +1,33 @@
+```sql
+with total_sales as (
+    select
+        i_item_id,
+        sum(ss_ext_sales_price) as store_sales,
+        sum(cs_ext_sales_price) as catalog_sales,
+        sum(ws_ext_sales_price) as web_sales
+    from
+        item
+        left join store_sales on ss_item_sk = i_item_sk
+        left join catalog_sales on cs_item_sk = i_item_sk
+        left join web_sales on ws_item_sk = i_item_sk
+        left join date_dim on ss_sold_date_sk = d_date_sk and cs_sold_date_sk = d_date_sk and ws_sold_date_sk = d_date_sk
+        left join customer_address on ss_addr_sk = ca_address_sk and cs_bill_addr_sk = ca_address_sk and ws_bill_addr_sk = ca_address_sk
+    where
+        i_category in ('Jewelry')
+        and d_year = 2000
+        and d_moy = 10
+        and ca_gmt_offset = -5
+    group by
+        i_item_id
+)
+select
+    i_item_id,
+    (store_sales + catalog_sales + web_sales) as total_sales
+from
+    total_sales
+order by
+    i_item_id,
+    total_sales
+limit
+    100;
+```

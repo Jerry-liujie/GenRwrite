@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: Makes the query easier to read and understand.
+2. Filter data as early as possible: Reduces the amount of data that needs to be processed in later stages of the query.
+3. Combine similar conditions in WHERE clause: Makes the query easier to read and can potentially improve performance.
+4. Avoid unnecessary calculations in WHERE clause: Reduces the computational load on the database.
+5. Use JOIN ON clause to specify join conditions: Makes the query easier to read and understand, and can potentially improve performance by allowing the database to optimize the join operation.

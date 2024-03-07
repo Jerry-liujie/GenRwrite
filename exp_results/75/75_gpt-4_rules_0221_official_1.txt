@@ -1,0 +1,4 @@
+1. Use UNION ALL instead of UNION: UNION ALL does not remove duplicates and is therefore faster than UNION.
+2. Move filter conditions to JOIN clause: This can improve performance by reducing the number of rows that need to be joined.
+3. Replace Cartesian product with JOIN: Cartesian products (comma-separated FROM clauses) are very expensive in terms of performance. It's better to use explicit JOINs.
+4. Use explicit JOIN syntax: This makes the query easier to understand and maintain.

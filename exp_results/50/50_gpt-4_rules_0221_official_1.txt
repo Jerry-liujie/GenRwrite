@@ -1,0 +1,4 @@
+1. Replace implicit JOINs with explicit JOINs: This makes the query easier to read and understand, and can also improve performance by making the join operations more explicit to the query optimizer.
+2. Move conditions from WHERE clause to ON clause in JOINs: This can improve performance by reducing the number of rows that need to be joined.
+3. Replace CASE WHEN THEN ELSE END with IF(): This simplifies the query and can improve performance by reducing the number of operations.
+4. Move non-join related conditions to the appropriate JOIN ON clause: This can improve performance by reducing the number of rows that need to be processed.

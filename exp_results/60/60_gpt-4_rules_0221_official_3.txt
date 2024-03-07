@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one: This reduces the number of scans needed on the same table, thus reducing I/O operations and improving performance.
+2. Use left join instead of in clause: The in clause can be inefficient when dealing with large data sets. A left join can be more efficient as it can take advantage of indexes.
+3. Combine sum operations: Instead of calculating the sum in each subquery, we can calculate it once in the main query. This reduces the number of calculations and improves performance.
+4. Use where clause to filter data early: By filtering data as early as possible, we can reduce the amount of data that needs to be processed, which can improve performance.

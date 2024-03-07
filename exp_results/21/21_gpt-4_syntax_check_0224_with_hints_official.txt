@@ -1,0 +1,40 @@
+with filtered_data as
+  (select w.w_warehouse_name,
+          i.i_item_id,
+          d.d_date,
+          inv.inv_quantity_on_hand
+   from inventory inv
+   join item i on i.i_item_sk = inv.inv_item_sk
+   join warehouse w on inv.inv_warehouse_sk = w.w_warehouse_sk
+   join date_dim d on inv.inv_date_sk = d.d_date_sk
+   where i.i_current_price between 0.99 and 1.49
+     and d.d_date between (date '1999-06-22' - interval '30' day) and (date '1999-06-22' + interval '30' day) )
+select w_warehouse_name,
+       i_item_id,
+       sum(case
+               when d_date < date '1999-06-22' then inv_quantity_on_hand
+               else 0
+           end) as inv_before,
+       sum(case
+               when d_date >= date '1999-06-22' then inv_quantity_on_hand
+               else 0
+           end) as inv_after
+from filtered_data
+group by w_warehouse_name,
+         i_item_id
+having (case
+            when sum(case
+                         when d_date < date '1999-06-22' then inv_quantity_on_hand
+                         else 0
+                     end) > 0 then sum(case
+                                           when d_date >= date '1999-06-22' then inv_quantity_on_hand
+                                           else 0
+                                       end) / sum(case
+                                                      when d_date < date '1999-06-22' then inv_quantity_on_hand
+                                                      else 0
+                                                  end)
+            else null
+        end) between 2.0/3.0 and 3.0/2.0
+order by w_warehouse_name,
+         i_item_id
+limit 100;

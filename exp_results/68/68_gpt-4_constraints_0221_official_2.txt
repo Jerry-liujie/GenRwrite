@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Remove unnecessary grouping by ss_addr_sk in the subquery: This rule can be applied when the column being grouped by is not used in the SELECT clause or in an aggregate function, and its removal does not affect the result of the query.
+3. Move conditions from WHERE clause to ON clause in JOINs where possible: This rule can be applied when there are conditions in the WHERE clause that involve columns from multiple tables that are being joined. This can improve performance by reducing the number of rows that need to be processed in the join operation.

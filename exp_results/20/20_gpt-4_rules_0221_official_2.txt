@@ -1,0 +1,3 @@
+1. Filter data in subquery: By filtering the data in the subquery, we can reduce the amount of data that needs to be processed in the main query. This can significantly improve performance.
+2. Use alias for tables: Using alias for tables can make the query more readable and easier to maintain. It can also reduce the amount of typing required.
+3. Avoid using functions in the WHERE clause: Using functions in the WHERE clause can prevent the database from using indexes effectively, which can slow down the query. By moving the function to the subquery, we can avoid this issue.

@@ -1,0 +1,4 @@
+1. Replace LEFT JOIN with NOT EXISTS for anti-join: This can improve performance as NOT EXISTS can stop processing as soon as it finds a match, while LEFT JOIN has to go through all records.
+2. Remove unnecessary WHERE clause in the main query: If the subqueries already filter out the records where ws_qty and cs_qty are null, there is no need to check again in the main query. This can reduce the computation needed.
+3. Filter data as early as possible: By moving the condition `ss_sold_year = 1998` into the subquery, we can reduce the amount of data that needs to be processed in the later stages of the query. This can lead to significant performance improvements for large datasets.
+4. Use JOIN instead of LEFT JOIN when possible: JOINs are generally faster than LEFT JOINs because they return less data (only matching records). If we know that every record in the left table has a match in the right table, we can use a JOIN instead of a LEFT JOIN.

@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand. It also allows for better optimization by the database engine.
+2. Create a separate subquery for the second IN clause: This simplifies the main query and reduces the number of rows to be processed in the main query. It also allows for better optimization by the database engine.
+3. Use explicit JOIN syntax instead of implicit JOIN syntax: This makes the query more readable and easier to understand.
+4. Move conditions from WHERE clause to ON clause in JOINs: This can improve performance by reducing the number of rows that need to be joined.

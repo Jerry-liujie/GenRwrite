@@ -1,0 +1,4 @@
+1. Replace NULL with 0 in the aggregation: This rule can be applied when the data being aggregated may contain NULL values, which can complicate calculations and reduce performance.
+2. Use JOIN instead of WHERE for linking tables: This rule can be applied when multiple tables are being used in a query and they need to be linked based on common columns.
+3. Use window function LAG instead of self-join: This rule can be applied when the query requires comparing a value with its previous value in the same table.
+4. Remove unnecessary subqueries: This rule can be applied when the query contains subqueries that do not contribute to the final result or can be replaced with simpler constructs.

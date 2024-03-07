@@ -1,0 +1,4 @@
+1. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses implicit JOINs, which are usually indicated by commas separating the table names in the FROM clause and conditions in the WHERE clause that link the tables together.
+2. Reduce the number of subqueries: This rule can be applied when the query contains multiple subqueries, especially if they are nested or if they perform similar calculations or operations.
+3. Use JOINs instead of subqueries in the FROM clause: This rule can be applied when the query uses subqueries in the FROM clause to combine data from multiple tables.
+4. Use WHERE clause to filter data as early as possible: This rule can be applied when the query contains conditions that can be used to filter out unnecessary data before performing more complex operations or calculations.

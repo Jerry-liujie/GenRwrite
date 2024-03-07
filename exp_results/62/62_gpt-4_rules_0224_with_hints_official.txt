@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This improves readability and performance by explicitly defining the relationships between tables.
+2. Move conditions to JOIN ON clause: This can improve performance by filtering data during the join operation, reducing the amount of data that needs to be processed in subsequent steps.
+3. Use explicit JOIN syntax: This improves readability and maintainability by clearly specifying how tables are related.
+4. Move calculations to subquery: This can improve performance by reducing the number of times the calculation is performed. However, in this case, it was not applied as the calculations are not repeated and are dependent on the row data.

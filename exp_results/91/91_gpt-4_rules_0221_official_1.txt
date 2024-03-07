@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of implicit comma-separated syntax: This makes the query easier to read and understand. It also reduces the risk of accidental cross joins.
+2. Move conditions from WHERE clause to ON clause in JOINs where possible: This can improve performance by reducing the number of rows that need to be joined.
+3. Use column alias in ORDER BY clause: This can improve readability and maintainability of the query.

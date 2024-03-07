@@ -1,0 +1,4 @@
+1. Use explicit join syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query.
+2. Use table aliases for shorter and cleaner code: This rule can be applied to any query that references tables multiple times, especially in larger queries with multiple tables.
+3. Move conditions from WHERE clause to ON clause in JOINs where possible: This rule can be applied when there are conditions in the WHERE clause that involve columns from tables that are being joined.
+4. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.

@@ -1,0 +1,53 @@
+```sql
+with total_sales as (
+    select
+        i_item_id,
+        sum(case when sales_type = 'ss' then ss_ext_sales_price 
+                 when sales_type = 'cs' then cs_ext_sales_price 
+                 else ws_ext_sales_price end) total_sales
+    from
+        (
+            select 'ss' as sales_type, ss_ext_sales_price, i_item_id
+            from store_sales, date_dim, customer_address, item
+            where i_item_id in (select i_item_id from item where i_category in ('Jewelry'))
+            and ss_item_sk = i_item_sk
+            and ss_sold_date_sk = d_date_sk
+            and d_year = 2000
+            and d_moy = 10
+            and ss_addr_sk = ca_address_sk
+            and ca_gmt_offset = -5
+            union all
+            select 'cs' as sales_type, cs_ext_sales_price, i_item_id
+            from catalog_sales, date_dim, customer_address, item
+            where i_item_id in (select i_item_id from item where i_category in ('Jewelry'))
+            and cs_item_sk = i_item_sk
+            and cs_sold_date_sk = d_date_sk
+            and d_year = 2000
+            and d_moy = 10
+            and cs_bill_addr_sk = ca_address_sk
+            and ca_gmt_offset = -5
+            union all
+            select 'ws' as sales_type, ws_ext_sales_price, i_item_id
+            from web_sales, date_dim, customer_address, item
+            where i_item_id in (select i_item_id from item where i_category in ('Jewelry'))
+            and ws_item_sk = i_item_sk
+            and ws_sold_date_sk = d_date_sk
+            and d_year = 2000
+            and d_moy = 10
+            and ws_bill_addr_sk = ca_address_sk
+            and ca_gmt_offset = -5
+        ) tmp1
+    group by
+        i_item_id
+)
+select
+    i_item_id,
+    total_sales
+from
+    total_sales
+order by
+    i_item_id,
+    total_sales
+limit
+    100;
+```

@@ -1,0 +1,4 @@
+1. Combine similar subqueries: If two or more subqueries are performing similar operations on the same set of tables, they can be combined into a single subquery. This reduces the number of times the database needs to scan and process the same data.
+2. Use JOIN instead of WHERE for linking tables: Using JOINs to link tables can be more efficient than using WHERE conditions, as JOINs are specifically designed for this purpose and can take advantage of database optimizations.
+3. Filter as early as possible: Apply filtering conditions as early as possible in the query to reduce the amount of data that needs to be processed in later stages.
+4. Remove unnecessary GROUP BY columns: Only include columns in the GROUP BY clause that are necessary for the query. This can reduce the amount of data that needs to be grouped and can improve performance.

@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for linking tables: This is a more modern way of linking tables and is generally more efficient.
+2. Use a subquery to avoid repeated calculations: This can help to reduce the amount of computation and improve performance.
+3. Use a CTE (Common Table Expression) for repeated subqueries: This can help to reduce redundancy and improve readability and performance.
+4. Use JOIN instead of WHERE for filtering: This can help to reduce the amount of data that needs to be processed and improve performance.

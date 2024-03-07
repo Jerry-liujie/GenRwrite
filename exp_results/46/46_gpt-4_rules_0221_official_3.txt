@@ -1,0 +1,4 @@
+1. Replace implicit JOINs with explicit JOINs: This improves readability and maintainability of the query.
+2. Remove duplicate values in the IN clause: This reduces the number of comparisons and improves performance.
+3. Remove unnecessary columns from the GROUP BY clause: This reduces the amount of data that needs to be grouped and can improve performance.
+4. Use direct values instead of calculations in the WHERE clause: This reduces the computation overhead and improves performance.

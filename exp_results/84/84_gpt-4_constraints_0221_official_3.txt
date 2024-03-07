@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Remove unnecessary table joins: This rule can be applied when a table is included in the JOIN clause but its columns are not used in the SELECT, WHERE, or ORDER BY clauses.
+3. Use indexes on columns used in JOIN and WHERE clauses: This rule can be applied when a column is frequently used in JOIN and WHERE clauses, especially if the table is large.
+4. Limit the number of results returned: This rule can be applied when the client only needs a subset of the results, such as the top 10 rows or a random sample.

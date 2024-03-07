@@ -1,0 +1,3 @@
+1. Use JOIN instead of WHERE for combining tables: This makes the query more readable and easier to understand. It also improves performance because the database can optimize the join operation more effectively.
+2. Move conditions from WHERE clause to ON clause in JOIN statement: This can improve performance by reducing the number of rows that need to be joined.
+3. Replace CASE WHEN with IF: IF is more efficient than CASE WHEN because it stops evaluating as soon as it finds a true condition, while CASE WHEN evaluates all conditions.

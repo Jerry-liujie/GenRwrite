@@ -1,0 +1,4 @@
+1. Use CTEs to pre-calculate subqueries: This rule is used to pre-calculate the subquery that checks for sales in 1999 in store_sales, web_sales, and catalog_sales. This reduces the number of times the subquery is executed, improving performance.
+2. Replace EXISTS clause with IN clause: This rule is used to replace the EXISTS clause with the IN clause. The IN clause is generally faster than the EXISTS clause when the subquery results in a small number of rows.
+3. Replace WHERE clause with JOIN clause: This rule is used to replace the WHERE clause with the JOIN clause for joining the customer, customer_address, and customer_demographics tables. This can improve performance by reducing the number of rows that need to be processed.
+4. Use LIMIT clause: This rule is used to limit the number of rows returned by the query. This can improve performance by reducing the amount of data that needs to be processed and returned.

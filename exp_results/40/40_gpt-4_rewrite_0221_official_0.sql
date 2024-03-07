@@ -1,0 +1,53 @@
+```
+select
+    w_state,
+    i_item_id,
+    sum(
+        case
+            when (
+                d_date < '2001-05-02'
+            ) then cs_sales_price - coalesce(cr_refunded_cash, 0)
+            else 0
+        end
+    ) as sales_before,
+    sum(
+        case
+            when (
+                d_date >= '2001-05-02'
+            ) then cs_sales_price - coalesce(cr_refunded_cash, 0)
+            else 0
+        end
+    ) as sales_after
+from
+    (
+        select 
+            cs_sales_price,
+            cr_refunded_cash,
+            cs_item_sk,
+            cs_warehouse_sk,
+            cs_sold_date_sk
+        from
+            catalog_sales
+            left outer join catalog_returns on (
+                cs_order_number = cr_order_number
+                and cs_item_sk = cr_item_sk
+            )
+        where 
+            cs_sold_date_sk between (date '2001-05-02' - interval '30' day)
+            and (date '2001-05-02' + interval '30' day)
+    ) as sales_returns
+    join warehouse on cs_warehouse_sk = w_warehouse_sk
+    join item on i_item_sk = cs_item_sk
+    join date_dim on cs_sold_date_sk = d_date_sk
+where
+    i_current_price between 0.99
+    and 1.49
+group by
+    w_state,
+    i_item_id
+order by
+    w_state,
+    i_item_id
+limit
+    100;
+```

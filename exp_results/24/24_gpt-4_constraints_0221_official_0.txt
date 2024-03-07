@@ -1,0 +1,4 @@
+1. Combine similar subqueries: This rule can be applied when multiple subqueries are performing the same or similar operations on the same set of tables.
+2. Use JOIN instead of WHERE for linking tables: This rule can be applied when tables are being linked based on matching column values, especially when multiple tables are involved.
+3. Filter as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+4. Remove unnecessary GROUP BY columns: This rule can be applied when the GROUP BY clause includes columns that are not necessary for determining the groups or for the selected columns in the query.

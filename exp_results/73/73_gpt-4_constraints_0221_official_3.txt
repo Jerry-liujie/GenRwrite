@@ -1,0 +1,6 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Replace multiple OR conditions with IN clause: This rule can be applied when there are multiple OR conditions in the WHERE clause that check if a column's value is one of several specific values.
+3. Replace multiple instances of the same value in IN clause with a single instance: This rule can be applied when the IN clause contains duplicate values.
+4. Use BETWEEN for range conditions: This rule can be applied when there are conditions that check if a column's value is within a certain range.
+5. Use table alias for better readability: This rule can be applied when the query involves multiple tables or subqueries, and the same table or column name appears multiple times in the query.
+6. Use subquery to reduce the number of rows for the join operation: This rule can be applied when the query involves joining large tables, and there are conditions that can be used to filter the data before the join operation.

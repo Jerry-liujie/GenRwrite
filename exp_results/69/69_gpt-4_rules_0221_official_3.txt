@@ -1,0 +1,5 @@
+1. Use CTEs to pre-calculate subqueries: This reduces the number of times the subqueries are executed, improving performance.
+2. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and can improve performance by allowing the database to optimize the query.
+3. Use EXISTS instead of IN for subqueries: EXISTS can be faster than IN when the result set is large.
+4. Use DISTINCT in CTEs to reduce the amount of data: This can improve the performance of the main query by reducing the amount of data it needs to process.
+5. Use SELECT 1 instead of SELECT * in EXISTS subqueries: This can improve performance by reducing the amount of data the database needs to retrieve.

@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query easier to understand and maintain. It also allows the database to optimize the query better by determining the order of table joins.
+2. Remove unnecessary tables from the FROM clause: If a table is not used in the SELECT, WHERE, GROUP BY, HAVING, or ORDER BY clauses, it can be removed from the FROM clause. This can reduce the amount of data that needs to be read and processed, improving query performance.
+3. Use INNER JOIN instead of OUTER JOIN where possible: INNER JOINs are generally faster than OUTER JOINs because they return less data. In this case, since we are only interested in customers who have a matching record in the other tables, we can use INNER JOINs.
+4. Use LIMIT clause: This can significantly reduce the amount of data returned by the query, which can improve performance by reducing network traffic and memory usage.

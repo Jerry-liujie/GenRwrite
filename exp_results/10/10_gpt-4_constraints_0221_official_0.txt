@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being queried together and there are conditions that link these tables.
+2. Use JOIN ON clause for joining conditions instead of WHERE clause: This rule can be applied when tables are being joined based on certain conditions.
+3. Replace SELECT * in subqueries with SELECT 1: This rule can be applied when a subquery is used only to check the existence of rows and the actual data from the subquery is not required.
+4. Use table aliases for all tables: This rule can be applied when a query involves multiple tables, to make the query more readable and easier to maintain.

@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Use CTE (Common Table Expressions) for subqueries: This makes the query more readable and can also improve performance by allowing the database to materialize the CTE result set, which can be more efficient if the CTE is referenced multiple times in the query.
+3. Move conditions from WHERE clause to ON clause in JOINs: This can improve performance by reducing the number of rows that need to be joined.
+4. Avoid using subqueries in the WHERE clause: This can improve performance by reducing the number of times the subquery needs to be executed. In the original query, the subquery is executed for each row in the outer query, which can be very inefficient if the outer query returns many rows. In the rewritten query, the subquery is executed only once and its result is used in the outer query.

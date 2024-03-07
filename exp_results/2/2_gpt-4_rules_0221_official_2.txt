@@ -1,0 +1,3 @@
+1. Push down predicates: By moving the year condition into the subqueries y and z, the database can filter out unnecessary data early, reducing the amount of data that needs to be processed in later stages of the query.
+2. Eliminate unnecessary joins: The original query joined the wswscs table with the date_dim table twice, once for each subquery y and z. In the rewritten query, this join is performed only once in the wscs CTE, reducing the computational cost.
+3. Use CTEs to simplify query: Common Table Expressions (CTEs) are used to simplify the query by breaking it down into smaller, more manageable pieces. This can make the query easier to understand and maintain, and can also improve performance by allowing the database to optimize each part of the query separately.

@@ -1,0 +1,2 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions or when the join order or type is important for performance.
+2. Remove unnecessary ROLLUP function in GROUP BY clause: This rule can be applied when the ROLLUP function is used in a GROUP BY clause, but the subtotals or grand totals it produces are not used in the outer query or in any subsequent processing.

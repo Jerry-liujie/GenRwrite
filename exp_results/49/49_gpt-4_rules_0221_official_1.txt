@@ -1,0 +1,4 @@
+1. Use CTEs to simplify the query: This makes the query easier to read and understand, and can potentially improve performance by breaking down complex operations into simpler ones.
+2. Use UNION ALL instead of UNION: UNION ALL is faster than UNION because it does not need to check for duplicate rows.
+3. Move ranking functions to the outer query: This can improve performance by reducing the number of ranking calculations.
+4. Use partition by in ranking functions: This can improve performance by reducing the number of rows that need to be sorted for each ranking calculation.

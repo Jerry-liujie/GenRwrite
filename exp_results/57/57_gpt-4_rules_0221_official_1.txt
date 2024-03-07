@@ -1,0 +1,4 @@
+1. Use JOIN syntax instead of WHERE for joining tables: This makes the query more readable and easier to understand. It also allows for better optimization by the query planner.
+2. Remove unnecessary subquery (v2): The subquery v2 is not necessary and removing it can improve performance. The operations performed in this subquery can be done in the main query or in the first subquery (v1).
+3. Avoid using functions in the WHERE clause: Functions in the WHERE clause can prevent the use of indexes and slow down the query. In this case, the function is not necessary and can be removed.
+4. Use LIMIT clause to reduce the amount of data returned: This can significantly improve performance, especially when dealing with large datasets.

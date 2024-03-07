@@ -1,0 +1,5 @@
+1. Use CTEs to break down complex queries: This rule can be applied when the query involves multiple stages of data transformation or aggregation, or when the same subquery is used multiple times.
+2. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when the query involves combining data from multiple tables based on a common column.
+3. Avoid subqueries in WHERE clause: This rule can be applied when the query involves filtering data based on conditions that involve calculations or aggregations.
+4. Use ROLLUP in GROUP BY clause: This rule can be applied when the query involves grouping data at multiple levels of granularity.
+5. Use window functions for ranking: This rule can be applied when the query involves ranking data based on some metric, especially when the ranking needs to be calculated within groups of data.

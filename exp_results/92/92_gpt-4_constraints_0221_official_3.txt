@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being selected from and there are relationships between these tables that can be expressed using JOINs.
+2. Use CTE (Common Table Expressions) for subqueries: This rule can be applied when there are subqueries that are used multiple times in the main query or when the subquery is complex and could benefit from being broken down into a separate, named query.
+3. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that are related to the join operation and can be moved to the ON clause of the JOIN to reduce the number of rows that need to be joined.
+4. Avoid using subqueries in the WHERE clause: This rule can be applied when there are subqueries in the WHERE clause that are being executed for each row in the outer query, which can be inefficient if the outer query returns many rows.

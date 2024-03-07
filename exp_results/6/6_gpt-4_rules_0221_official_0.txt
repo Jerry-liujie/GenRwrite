@@ -1,0 +1,4 @@
+1. Use CTEs for subqueries: This allows for better readability and maintainability of the query. It also allows for potential performance improvements by reusing the results of the subquery.
+2. Use JOIN instead of WHERE for table relationships: This makes the query more readable and can also improve performance by allowing the database to optimize the join operation.
+3. Use IN instead of = for subquery in WHERE clause: This can improve performance when the subquery returns multiple rows.
+4. Move calculations to CTEs: This can improve performance by performing calculations once in the CTE instead of multiple times in the main query.

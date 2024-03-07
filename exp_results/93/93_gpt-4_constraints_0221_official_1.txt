@@ -1,0 +1,4 @@
+1. Push down predicates: This rule can be applied when there are conditions in the WHERE or JOIN clauses that can be moved closer to the table they reference, reducing the amount of data processed in the later stages of the query.
+2. Eliminate sub-queries: This rule can be applied when the query contains sub-queries that can be rewritten as joins or incorporated into the main query, simplifying the query and potentially improving performance.
+3. Combine aggregations: This rule can be applied when the query contains multiple aggregation functions (like SUM, COUNT, AVG) that can be combined into a single aggregation, reducing the amount of data processed.
+4. Remove unnecessary columns: This rule can be applied when the SELECT or GROUP BY clauses contain columns that are not needed for the final result, allowing for less data to be processed and potentially improving query performance.

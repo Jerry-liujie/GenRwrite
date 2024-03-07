@@ -1,0 +1,4 @@
+1. Combine similar subqueries into one: This reduces the number of subqueries and makes the query more efficient and easier to read.
+2. Use CASE statement to differentiate between different sales types: This allows us to handle different sales types in a single query, reducing the number of subqueries and improving performance.
+3. Remove unnecessary grouping in subqueries: This simplifies the query and improves performance by reducing the amount of data that needs to be processed.
+4. Use UNION ALL instead of UNION: UNION ALL is faster than UNION because it does not remove duplicates, which is not necessary in this case.

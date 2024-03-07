@@ -1,0 +1,4 @@
+1. Filter in subquery: Filtering data in subquery reduces the amount of data that needs to be joined, which can significantly improve performance.
+2. Avoid unnecessary columns: Only select the columns that are necessary for the final result. This reduces the amount of data that needs to be processed.
+3. Use limit clause: The limit clause can be used to reduce the number of rows returned by a query, which can significantly reduce the amount of data that needs to be processed.
+4. Use index: If the columns used in the where clause, join condition, or order by clause are indexed, the database can retrieve the data much faster.

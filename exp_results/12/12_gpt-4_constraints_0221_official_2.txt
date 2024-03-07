@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when multiple tables are being joined in a query. It is especially useful when there are more than two tables being joined.
+2. Use subquery to calculate sum before calculating ratio: This rule can be applied when a ratio or percentage needs to be calculated based on aggregate functions like SUM, COUNT, etc.
+3. Push down predicates into subquery: This rule can be applied when there are conditions that can be used to filter the data in the subquery, reducing the amount of data that needs to be processed in the main query.
+4. Use LIMIT clause after ORDER BY clause: This rule can be applied when the query requires sorting and only a certain number of top or bottom records are needed.

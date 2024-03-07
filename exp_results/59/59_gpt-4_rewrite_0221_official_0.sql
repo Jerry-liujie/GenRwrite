@@ -1,0 +1,40 @@
+with wss as (
+    select
+        d_week_seq,
+        ss_store_sk,
+        sum(case when (d_day_name = 'Sunday') then ss_sales_price else 0 end) as sun_sales,
+        sum(case when (d_day_name = 'Monday') then ss_sales_price else 0 end) as mon_sales,
+        sum(case when (d_day_name = 'Tuesday') then ss_sales_price else 0 end) as tue_sales,
+        sum(case when (d_day_name = 'Wednesday') then ss_sales_price else 0 end) as wed_sales,
+        sum(case when (d_day_name = 'Thursday') then ss_sales_price else 0 end) as thu_sales,
+        sum(case when (d_day_name = 'Friday') then ss_sales_price else 0 end) as fri_sales,
+        sum(case when (d_day_name = 'Saturday') then ss_sales_price else 0 end) as sat_sales
+    from
+        store_sales
+    join date_dim on d_date_sk = ss_sold_date_sk
+    group by
+        d_week_seq,
+        ss_store_sk
+)
+select
+    s_store_name,
+    s_store_id,
+    d_week_seq,
+    sun_sales / lead(sun_sales) over (partition by s_store_id order by d_week_seq),
+    mon_sales / lead(mon_sales) over (partition by s_store_id order by d_week_seq),
+    tue_sales / lead(tue_sales) over (partition by s_store_id order by d_week_seq),
+    wed_sales / lead(wed_sales) over (partition by s_store_id order by d_week_seq),
+    thu_sales / lead(thu_sales) over (partition by s_store_id order by d_week_seq),
+    fri_sales / lead(fri_sales) over (partition by s_store_id order by d_week_seq),
+    sat_sales / lead(sat_sales) over (partition by s_store_id order by d_week_seq)
+from
+    wss
+join store on ss_store_sk = s_store_sk
+where
+    d_month_seq between 1195 and 1195 + 23
+order by
+    s_store_name,
+    s_store_id,
+    d_week_seq
+limit
+    100;

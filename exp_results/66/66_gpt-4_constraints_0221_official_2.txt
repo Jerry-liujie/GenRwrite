@@ -1,0 +1,4 @@
+1. Split the query into smaller parts using WITH clause: This rule can be applied when the query is complex and involves multiple stages of data processing, especially when the same or similar operations are performed on different sets of data.
+2. Replace UNION ALL with separate JOINs in the main query: This rule can be applied when the query involves combining similar data from multiple tables or subqueries, and the combined data is used in further calculations or aggregations.
+3. Use LEFT JOIN instead of INNER JOIN when joining with the warehouse table: This rule can be applied when we want to include all records from one table in the result, even if they don't have corresponding records in the other table(s).
+4. Move the WHERE conditions to the subqueries: This rule can be applied when there are conditions that can be used to filter the data in the subqueries, reducing the amount of data that needs to be processed in the main query.

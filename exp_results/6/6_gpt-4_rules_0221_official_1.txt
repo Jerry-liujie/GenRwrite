@@ -1,0 +1,4 @@
+1. Use WITH clause for subqueries: This makes the query easier to read and understand. It also allows for reusability of the subquery results.
+2. Replace implicit JOINs with explicit JOINs: This makes the query more readable and easier to understand. It also helps to avoid accidental Cartesian products.
+3. Replace subquery in WHERE clause with JOIN: This can improve performance as the database can optimize JOIN operations better than subqueries.
+4. Use IN instead of equals for subquery in WHERE clause: This can improve performance when the subquery returns multiple rows.

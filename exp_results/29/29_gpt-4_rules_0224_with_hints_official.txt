@@ -1,0 +1,5 @@
+1. Aggregate before join: This rule is applied to the store_sales, store_returns, and catalog_sales tables. Aggregating before joining reduces the size of the tables and thus the computational load of the join operation.
+2. Use explicit join syntax instead of implicit join syntax: This rule is applied to all the join operations in the query. Using explicit join syntax improves the readability and maintainability of the query.
+3. Use subqueries to break down complex queries: This rule is applied to the date_dim table. Breaking down the query into subqueries makes it more readable and maintainable, and can also improve performance.
+4. Push down predicates: This rule is applied to the store_sales, store_returns, and catalog_sales tables. By pushing down the predicates, the amount of data that needs to be processed is reduced.
+5. Join only necessary columns: This rule is applied to all the join operations in the query. By only joining necessary columns, the computational load of the join operation is reduced.

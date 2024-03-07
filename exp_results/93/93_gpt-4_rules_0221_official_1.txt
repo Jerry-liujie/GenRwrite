@@ -1,0 +1,4 @@
+1. Push down predicates: This rule pushes down the predicates as far as possible to reduce the number of rows early in the execution plan. This can significantly reduce the amount of data that needs to be processed in the later stages of the query.
+2. Eliminate sub-queries: This rule eliminates unnecessary sub-queries. Sub-queries can often be rewritten as joins or exist in the main query, which can improve performance by reducing the complexity of the query.
+3. Combine aggregations: This rule combines multiple aggregations into a single aggregation. This can reduce the amount of data that needs to be processed and can improve the performance of the query.
+4. Remove unnecessary columns: This rule removes unnecessary columns from the select and group by clauses. This can reduce the amount of data that needs to be processed and can improve the performance of the query.

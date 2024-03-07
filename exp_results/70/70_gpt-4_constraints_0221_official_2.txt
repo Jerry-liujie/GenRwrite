@@ -1,0 +1,4 @@
+1. Use CTEs to break down complex queries: This rule can be applied when the query involves multiple stages of data processing, especially when intermediate results are used in multiple places within the query.
+2. Replace subqueries with joins where possible: This rule can be applied when a subquery is used in the FROM or WHERE clause to retrieve data based on a relationship between two tables.
+3. Use window functions for ranking: This rule can be applied when the query involves calculating rankings or other analytics that require considering the entire result set.
+4. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query, before performing more resource-intensive operations like joins or aggregations.

@@ -1,0 +1,5 @@
+1. Combine multiple subqueries into a single query: This reduces the number of scans over the same tables and can improve performance by reducing the amount of data that needs to be processed.
+2. Use LEFT JOIN instead of IN clause: The IN clause can be inefficient, especially when dealing with large data sets. Using a LEFT JOIN can be more efficient as it allows the database to better optimize the query.
+3. Combine SUM functions into a single query: This reduces the number of calculations that need to be performed, which can improve performance.
+4. Move WHERE conditions into the main query: This allows the database to filter out unnecessary data earlier in the query execution, which can reduce the amount of data that needs to be processed.
+5. Use a CTE (Common Table Expression) to simplify the query: This can make the query easier to read and maintain, and can also allow the database to better optimize the query.

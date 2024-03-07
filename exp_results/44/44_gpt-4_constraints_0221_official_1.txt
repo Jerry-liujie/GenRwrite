@@ -1,0 +1,4 @@
+1. Use CTEs (Common Table Expressions) instead of subqueries: This rule can be applied when the query has multiple subqueries that are complex and hard to read, or when the same subquery is used multiple times.
+2. Combine multiple subqueries into a single subquery where possible: This rule can be applied when there are multiple subqueries scanning the same table and producing similar results.
+3. Use JOIN instead of WHERE for linking tables: This rule can be applied when there are multiple tables that need to be combined based on a common column.
+4. Move the condition inside the window function to the WHERE clause of the main query: This rule can be applied when there are conditions inside a window function that can be moved to the WHERE clause of the main query to reduce the number of rows processed by the window function.

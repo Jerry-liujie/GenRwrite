@@ -1,0 +1,4 @@
+1. Push down predicates: This rule can be applied when there are conditions in the WHERE clause that can be used to filter the data in the subquery, reducing the amount of data that needs to be processed in the main query.
+2. Use IN instead of JOIN for date_dim table: This rule can be applied when the table is only used for filtering and not for returning any columns in the SELECT clause.
+3. Use LEFT JOIN instead of JOIN: This rule can be applied when there are tables that may contain NULL values and we want to keep all records from the left table regardless of whether there is a match in the right table.
+4. Group by in subquery: This rule can be applied when there are aggregate functions in the main query that can be calculated in the subquery, reducing the amount of data that needs to be processed in the main query.

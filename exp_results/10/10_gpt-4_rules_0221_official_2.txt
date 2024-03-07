@@ -1,0 +1,4 @@
+1. Use JOIN instead of "," in FROM clause: This makes the query more readable and easier to understand. It also allows for better optimization by the database engine.
+2. Use UNION ALL instead of OR in WHERE clause: UNION ALL is faster than OR because it doesn't have to sort and remove duplicates.
+3. Replace SELECT * with SELECT 1 in subqueries: This reduces the amount of data that needs to be processed, which can improve performance.
+4. Use BETWEEN in date conditions: It's more readable and can be more efficient than using individual comparison operators.

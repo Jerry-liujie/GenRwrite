@@ -1,0 +1,2 @@
+1. Use subqueries to filter data: This can reduce the amount of data that needs to be processed in the join operation, which can improve performance.
+2. Use join instead of comma-separated tables in the from clause: This can make the query more readable and easier to understand, and it can also improve performance by allowing the database to optimize the join operation.

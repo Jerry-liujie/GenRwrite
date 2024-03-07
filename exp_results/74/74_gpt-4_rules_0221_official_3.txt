@@ -1,0 +1,6 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Break down complex subqueries into multiple CTEs: This makes the query easier to read and debug.
+3. Remove unnecessary UNION ALL operation: This reduces the amount of data processed by the query.
+4. Remove unnecessary CASE statements: This simplifies the query and can improve performance.
+5. Remove unnecessary sale_type column: This simplifies the query and can improve performance.
+6. Use explicit year values instead of expressions: This can improve performance by avoiding unnecessary calculations.

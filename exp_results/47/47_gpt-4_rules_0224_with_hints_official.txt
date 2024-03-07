@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This helps to improve the readability of the query and can also improve performance by making the join operations more explicit.
+2. Move conditions from WHERE clause to ON clause in JOINs: This can improve performance by reducing the number of rows that need to be processed in the join operation.
+3. Use explicit JOIN syntax instead of comma-separated FROM clause: This improves the readability of the query and can also improve performance by making the join operations more explicit.
+4. Remove unnecessary case statement: This can simplify the query and potentially improve performance by eliminating unnecessary operations.

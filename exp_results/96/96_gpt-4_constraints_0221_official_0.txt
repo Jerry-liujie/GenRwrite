@@ -1,0 +1,4 @@
+1. Use subqueries to filter data before joining: This rule can be applied when there are conditions in the where clause that filter data based on columns from only one table.
+2. Remove unnecessary 'order by' and 'limit' clauses: This rule can be applied when the query is not required to return a specific number of rows or the rows in a specific order.
+3. Use direct equality in subqueries instead of joining on equality: This rule can be applied when there are joins in the query that can be replaced with direct equality conditions in subqueries.
+4. Avoid using 'select *' in subqueries: This rule can be applied when a subquery selects all columns from a table but only a subset of those columns are actually used in the main query.

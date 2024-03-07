@@ -1,0 +1,4 @@
+1. Use CTE for subquery: This rule can be applied when the same subquery is used multiple times in the main query or when a subquery is complex and needs to be broken down for better readability and performance.
+2. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being used in the query and there is a need to join them based on some common column(s).
+3. Move conditions from WHERE to ON in JOINs: This rule can be applied when there are conditions in the WHERE clause that are based on columns from the tables being joined. These conditions can be moved to the ON clause of the JOIN to improve performance.
+4. Remove redundant conditions: This rule can be applied when the same condition is repeated in both the main query and a subquery. The redundant condition can be removed from one of the queries to simplify the query.

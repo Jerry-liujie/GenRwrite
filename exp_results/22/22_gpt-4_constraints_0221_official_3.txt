@@ -1,0 +1,4 @@
+1. Subquery Factoring: This rule can be applied when there are complex subqueries or repeated subqueries within the main query, which can be isolated for better readability and performance.
+2. Join Elimination: This rule can be applied when there are joins in the query that do not contribute to the final result, meaning the columns from the joined table are not used in the SELECT, WHERE, or GROUP BY clauses.
+3. Push Predicates: This rule can be applied when there are conditions filtering the data that can be moved closer to the table they filter, usually in the FROM or JOIN clauses, to reduce the amount of data processed in later stages.
+4. Use IN instead of JOIN for subquery: This rule can be applied when a column is being compared to a subquery that returns a single column, and the main query does not need any other columns from the subquery's table.

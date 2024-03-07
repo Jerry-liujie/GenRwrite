@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit joins, which are indicated by conditions in the WHERE clause that compare columns from different tables.
+2. Replace EXISTS subqueries with IN subqueries: This rule can be applied when the query uses EXISTS subqueries, which are subqueries that return true if any row is returned.
+3. Use GROUP BY and HAVING in subquery instead of joining on the same table again: This rule can be applied when the query joins a table to itself and uses aggregate functions, which can be replaced with a GROUP BY clause in a subquery.
+4. Use NOT IN instead of NOT EXISTS for the second subquery: This rule can be applied when the query uses a NOT EXISTS subquery, which is a subquery that returns true if no rows are returned.

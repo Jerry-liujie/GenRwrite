@@ -1,0 +1,4 @@
+1. Replace joins with subqueries in WHERE clause: This rule can be applied when the join operation is used for filtering data and the subquery does not return a large number of rows.
+2. Use IN instead of JOIN for filtering: This rule can be applied when the subquery used for filtering returns very few rows.
+3. Use UNION ALL instead of UNION: This rule can be applied when the query is combining results from multiple SELECT statements and it is acceptable to have duplicate rows in the result set.
+4. Limit the number of rows processed: This rule can be applied when the query is expected to return a large number of rows but only a subset of the result is needed.

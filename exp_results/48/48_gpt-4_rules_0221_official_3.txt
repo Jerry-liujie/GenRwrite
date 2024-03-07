@@ -1,0 +1,3 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand. It also allows the database to optimize the query more effectively.
+2. Move join conditions from WHERE clause to ON clause in JOINs: This makes the query more readable and allows the database to apply the join conditions earlier in the query execution, which can improve performance.
+3. Remove redundant join conditions: If a condition is repeated in multiple parts of the WHERE clause, it can be moved to a single location in the query. This makes the query more concise and can improve performance by reducing the amount of work the database needs to do.

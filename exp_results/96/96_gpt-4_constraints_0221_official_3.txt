@@ -1,0 +1,3 @@
+1. Use subqueries to filter data first: This rule can be applied when there are specific conditions that can be used to filter the data before the main query is executed. 
+2. Remove the "order by" clause when it is not necessary: This rule can be applied when the query does not require the results to be in a specific order, such as when the query is only counting the number of rows.
+3. Avoid using cross joins when possible: This rule can be applied when the relationships between the tables can be expressed using inner joins or other types of joins that are less expensive in terms of performance.

@@ -1,0 +1,4 @@
+1. Use join instead of comma-separated tables in the from clause: This rule can be applied when multiple tables are being used in a query and there is a need to combine rows from these tables based on a related column.
+2. Use a CTE (Common Table Expression) to calculate the average discount: This rule can be applied when there is a need to calculate an aggregate function (like average) and use this result in another part of the query.
+3. Remove the redundant subquery in the where clause: This rule can be applied when the same subquery is used multiple times in the where clause or when the subquery's result is not dependent on the main query's data.
+4. Use explicit join conditions: This rule can be applied when there are multiple tables being joined in a query and it's important to specify the conditions on which these tables should be joined to avoid incorrect results and improve performance.

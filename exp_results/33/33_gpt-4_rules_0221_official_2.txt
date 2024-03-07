@@ -1,0 +1,5 @@
+1. Combine multiple subqueries into a single subquery: This reduces the number of scans needed on the same tables and can significantly improve performance.
+2. Use left join instead of inner join: Left join can be more efficient than inner join because it only needs to scan the left table once.
+3. Use case statement to sum sales from different tables: This avoids the need to perform union operations, which can be expensive.
+4. Move conditions from where clause to on clause in left join: This can improve performance by reducing the number of rows that need to be joined.
+5. Use in clause instead of multiple or conditions: This can make the query more readable and potentially improve performance by reducing the number of comparisons needed.

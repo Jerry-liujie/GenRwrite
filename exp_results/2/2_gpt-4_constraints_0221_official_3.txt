@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE clause for combining tables: This rule can be applied when there are multiple tables in the query that need to be combined based on some common columns.
+2. Replace NULL with 0 in the aggregate functions: This rule can be applied when the query involves aggregate functions and there is a possibility of NULL values in the data.
+3. Use table alias for better readability and less typing: This rule can be applied when the query involves multiple tables or subqueries, and the table names are long or complex.
+4. Move the filtering condition to the JOIN clause: This rule can be applied when there are conditions that can be used to filter the data during the join operation.
+5. Remove unnecessary subquery: This rule can be applied when the query contains subqueries that do not contribute to the final result or can be replaced with a simpler construct.

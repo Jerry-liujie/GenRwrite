@@ -1,0 +1,2 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being queried together and there are relationships between these tables that can be expressed through a JOIN operation.
+2. Use UNION ALL instead of UNION: This rule can be applied when combining results from multiple SELECT statements and it is known that there will not be any duplicate rows, or if duplicate rows do not matter for the query's purpose.

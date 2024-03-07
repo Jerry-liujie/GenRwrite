@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when multiple tables are being combined based on matching column values.
+2. Move calculations to the SELECT clause: This rule can be applied when calculations are being performed in the WHERE or HAVING clause that could be moved to the SELECT clause.
+3. Use HAVING clause for filtering grouped data: This rule can be applied when there are conditions that need to be applied after the GROUP BY clause.
+4. Avoid using subqueries when not necessary: This rule can be applied when there are subqueries that could be replaced with JOINs or other constructs.
+5. Avoid using CASE statements in WHERE clause: This rule can be applied when there are CASE statements in the WHERE clause that could be replaced with simpler conditions.

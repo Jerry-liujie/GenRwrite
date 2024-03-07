@@ -1,0 +1,4 @@
+1. Move conditions into subqueries: This reduces the number of rows that need to be processed in the main query, which can significantly improve performance.
+2. Use IN instead of JOIN when possible: IN is usually faster than JOIN when the subquery returns very few rows compared to the main table.
+3. Use EXISTS instead of DISTINCT when possible: EXISTS is faster than DISTINCT because it stops as soon as it finds a match.
+4. Use WHERE instead of HAVING when possible: WHERE filters rows before grouping and aggregation, which can reduce the amount of data that needs to be processed.

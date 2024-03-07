@@ -1,0 +1,3 @@
+1. Use CTE (Common Table Expressions): This rule can be applied when the query involves multiple complex subqueries or when the same subquery is used multiple times, to improve readability and maintainability.
+2. Use explicit JOINs instead of comma-separated table list: This rule can be applied in any query that involves joining tables, to make the join conditions explicit and avoid potential mistakes like accidental cartesian products.
+3. Move calculations and conditions from the outer query to the CTE: This rule can be applied when the main query has complex calculations or conditions, to simplify the main query and potentially improve performance by reducing the amount of data processed in the main query.

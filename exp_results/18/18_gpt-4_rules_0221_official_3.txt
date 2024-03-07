@@ -1,0 +1,2 @@
+1. Push down predicates: By pushing down predicates into subqueries, we can reduce the amount of data that needs to be processed in the main query. This can lead to significant performance improvements.
+2. Use subqueries for complex conditions: Instead of applying complex conditions in the main query, we can use subqueries to filter out unnecessary data in advance. This can help to simplify the main query and improve performance.

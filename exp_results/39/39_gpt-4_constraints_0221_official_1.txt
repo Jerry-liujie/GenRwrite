@@ -1,0 +1,6 @@
+1. Replace WHERE clause with HAVING clause in the subquery: This rule can be applied when the condition is based on the result of an aggregation or a group by operation.
+2. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query involves joining multiple tables using the WHERE clause.
+3. Move calculations to the outer query: This rule can be applied when the subquery includes calculations that can be performed in the outer query instead.
+4. Replace Cartesian product with JOIN: This rule can be applied when the query involves combining all rows from two or more tables without any condition.
+5. Remove unnecessary columns from the subquery: This rule can be applied when the subquery includes columns that are not used in the outer query.
+6. Use aliases for tables: This rule can be applied when the query involves multiple tables, to make the query more readable and easier to understand.

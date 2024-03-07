@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one: This can reduce the number of times the database needs to scan the same table, which can improve performance.
+2. Use left join instead of inner join: This can prevent unnecessary data loss and improve the accuracy of the results.
+3. Use case when to calculate the sum: This can avoid the need to scan the table multiple times, which can improve performance.
+4. Use where clause to filter data as early as possible: This can reduce the amount of data that needs to be processed, which can improve performance.

@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for joining tables: This makes the query more readable and easier to understand.
+2. Remove unnecessary conditions: If a condition is repeated or does not contribute to the result, it can be removed to simplify the query.
+3. Combine similar conditions: If multiple conditions are checking the same columns, they can be combined to simplify the query.
+4. Remove unnecessary columns from GROUP BY and ORDER BY: Only the columns that are necessary for the result should be included in these clauses.
+5. Limit the number of results: If only a certain number of results are needed, use the LIMIT clause to avoid processing unnecessary data.

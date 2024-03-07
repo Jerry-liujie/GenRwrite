@@ -1,0 +1,4 @@
+1. Use JOIN clause instead of WHERE for joining tables: This improves readability and is the standard SQL way of joining tables.
+2. Use BETWEEN operator for range conditions: This improves readability and potentially performance as the database can optimize the operation.
+3. Move complex calculations to subquery: This simplifies the main query and allows the database to perform the calculation once, potentially improving performance.
+4. Create an alias for complex calculations and use it in WHERE clause: This improves readability and potentially performance as the database doesn't have to recalculate the same expression.

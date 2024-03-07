@@ -1,0 +1,4 @@
+1. Use CTE (Common Table Expressions) to break down complex queries: This rule can be applied when the query involves multiple stages of data processing, especially when some stages are used multiple times.
+2. Reduce the number of tables in the join operation: This rule can be applied when there are multiple tables in the join operation, and some of them are not necessary for the final result.
+3. Move the filtering condition to the end: This rule can be applied when the filtering condition is applied on the result of a join operation, and moving it to the end can reduce the amount of data to be processed.
+4. Use join instead of comma-separated tables in the from clause: This rule can be applied when the query uses comma-separated tables in the from clause, which can be replaced with explicit join operations for better readability and performance.

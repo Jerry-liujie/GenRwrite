@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one: This reduces the number of times the database needs to scan the same tables, which can significantly improve performance.
+2. Use left joins instead of inner joins when possible: Left joins can be faster than inner joins, especially when the right table is much larger than the left table.
+3. Use case statements to calculate sums conditionally: This avoids the need to scan the same table multiple times for different conditions, which can improve performance.
+4. Use a single where clause for all conditions: This reduces the complexity of the query and can improve performance by avoiding unnecessary calculations.

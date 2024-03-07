@@ -1,0 +1,3 @@
+1. Remove unnecessary joins: The date_dim table is not needed in this query as we are not using any columns from it. This will reduce the complexity of the query and improve performance.
+2. Use subquery to reduce the amount of data: By creating a subquery that only includes the necessary columns and rows from the inventory table, we reduce the amount of data that needs to be processed in the main query. This can significantly improve performance, especially when working with large datasets.
+3. Group by before join: By grouping the data before the join operation, we reduce the amount of data that needs to be processed during the join, which can improve performance.

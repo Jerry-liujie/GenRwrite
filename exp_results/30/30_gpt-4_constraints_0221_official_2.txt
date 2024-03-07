@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when multiple tables are being combined based on matching column values.
+2. Filter as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+3. Pre-calculate aggregates: This rule can be applied when aggregate functions are used multiple times or in complex ways in the query.
+4. Avoid subqueries in WHERE clause: This rule can be applied when there are subqueries in the WHERE clause that are not dependent on the main query and can be calculated separately.

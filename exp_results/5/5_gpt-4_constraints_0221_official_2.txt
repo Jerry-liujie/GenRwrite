@@ -1,0 +1,4 @@
+1. Remove unnecessary union operations: This rule can be applied when the datasets being unioned do not contribute to the final result or when the same result can be achieved through other means such as joins or subqueries.
+2. Replace subqueries with joins: This rule can be applied when the subquery is used to fetch data from another table that can be fetched using a join operation.
+3. Remove unnecessary calculations: This rule can be applied when there are calculations in the query whose results are not used in the final output.
+4. Use "group by" instead of "distinct": This rule can be applied when the distinct keyword is used to remove duplicate rows, but the same result can be achieved using a group by clause.

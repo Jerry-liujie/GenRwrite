@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for joining tables: This rule can be applied when multiple tables are being queried and there are common columns that can be used to join the tables.
+2. Replace NULL with 0 in the SUM function: This rule can be applied when the SUM function is used and there is a possibility of NULL values in the column being summed.
+3. Remove unnecessary ORDER BY clauses: This rule can be applied when the ORDER BY clause is used but the order of the results is not important for the purpose of the query.
+4. Remove LIMIT clause when not necessary: This rule can be applied when the LIMIT clause is used but the number of results is not a concern for the purpose of the query.

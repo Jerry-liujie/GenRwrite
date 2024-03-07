@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for table relationships: This rule can be applied when there are multiple tables in the query and they are related by common columns.
+2. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+3. Replace multiple OR conditions with IN clause: This rule can be applied when there are multiple OR conditions in the WHERE clause that check if a column equals to different values.
+4. Avoid division by zero directly in WHERE clause: This rule can be applied when there are divisions in the WHERE clause and the denominator could potentially be zero.
+5. Use relative quarter comparison instead of hardcoding each quarter: This rule can be applied when the query involves comparing data from different quarters of a year.

@@ -1,0 +1,3 @@
+1. Replace implicit joins with explicit joins: This makes the query easier to read and understand. It also allows the database engine to better optimize the query.
+2. Filter in the WHERE clause before joining tables: This reduces the amount of data that needs to be processed in the join operation, which can improve performance.
+3. Use LIMIT clause to reduce the amount of data returned: This can improve performance by reducing the amount of data that needs to be processed and sent to the client.

@@ -1,0 +1,3 @@
+1. Filter early and often: By adding the condition `d_year in (1999, 2000)` in the subquery, we can reduce the amount of data that needs to be processed in the later stages of the query.
+2. Use explicit JOINs instead of comma-separated FROM clauses: This makes the query easier to read and understand, and can also improve performance in some cases.
+3. Avoid unnecessary calculations: The original query performs the same calculations multiple times. By calculating the values once in a subquery and then referencing them later, we can potentially improve performance.

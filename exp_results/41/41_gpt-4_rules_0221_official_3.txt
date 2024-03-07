@@ -1,0 +1,3 @@
+1. Replace count(*) with exists: This rule is used to improve performance. The exists clause is faster than count(*) because it returns true as soon as it finds a matching row, whereas count(*) scans the entire table.
+2. Combine similar conditions using IN operator: This rule is used to simplify the query and improve readability. It can also potentially improve performance by reducing the number of comparisons.
+3. Remove unnecessary parentheses: This rule is used to simplify the query and improve readability. It does not directly improve performance, but it can make the query easier to understand and maintain.

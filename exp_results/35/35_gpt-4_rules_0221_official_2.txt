@@ -1,0 +1,4 @@
+1. Replace WHERE clause with JOIN clause: This can improve the performance of the query by reducing the number of rows that need to be processed.
+2. Replace EXISTS clause with IN clause: This can improve the performance of the query by reducing the number of subqueries that need to be executed.
+3. Use subqueries in the WHERE clause: This can improve the performance of the query by reducing the number of rows that need to be processed in the main query.
+4. Use LIMIT clause: This can improve the performance of the query by reducing the number of rows that need to be returned.

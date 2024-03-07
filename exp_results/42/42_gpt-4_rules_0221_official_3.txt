@@ -1,0 +1,3 @@
+1. Replace implicit join with explicit join: Explicit joins are easier to read and understand. They also prevent accidental Cartesian products if the join condition is forgotten.
+2. Use table aliases for better readability: Using table aliases can make the query easier to read and understand, especially when dealing with multiple tables.
+3. Filter in the WHERE clause: Filtering data as early as possible can reduce the amount of data that needs to be processed, improving performance.

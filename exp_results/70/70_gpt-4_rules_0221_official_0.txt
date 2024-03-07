@@ -1,0 +1,5 @@
+1. Use CTEs to break down complex queries: This makes the query easier to read and understand, and can also improve performance by allowing the database to materialize intermediate results.
+2. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and can also improve performance by allowing the database to optimize the join operation.
+3. Avoid subqueries in WHERE clause: This can improve performance by reducing the number of rows that need to be processed.
+4. Use ROLLUP in GROUP BY clause: This can improve performance by reducing the number of separate grouping sets that need to be calculated.
+5. Use window functions for ranking: This can improve performance by allowing the database to calculate rankings in a single pass over the data.

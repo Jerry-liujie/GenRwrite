@@ -1,0 +1,2 @@
+1. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses implicit syntax for JOIN operations, which is indicated by listing multiple tables in the FROM clause separated by commas.
+2. Move WHERE clause filters to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that filter data based on columns from more than one table, which could be moved to the ON clause of the corresponding JOIN operation.

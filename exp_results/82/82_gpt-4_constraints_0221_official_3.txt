@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when multiple tables are being combined based on a common column, and the relationship between them is either one-to-one or one-to-many.
+2. Use subqueries to filter data in the FROM clause: This rule can be applied when there are conditions that can be used to filter data from a table before it is joined with other tables.
+3. Filter as early as possible: This rule can be applied when there are conditions that can be used to filter out unnecessary data in the early stages of the query, before further processing is done.
+4. Use LIMIT clause: This rule can be applied when only a certain number of rows are required from the result, especially in cases where the result set is expected to be large.

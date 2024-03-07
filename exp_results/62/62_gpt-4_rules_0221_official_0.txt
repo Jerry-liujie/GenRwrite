@@ -1,0 +1,3 @@
+1. Use Common Table Expressions (CTEs) to simplify the query: This makes the query more readable and easier to debug.
+2. Filter data as early as possible: By filtering the data in the CTE, we reduce the amount of data that needs to be processed in the later stages of the query. This can significantly improve performance.
+3. Avoid unnecessary joins: In the original query, the date_dim table was joined but not used in the select statement. Removing this join can improve performance.

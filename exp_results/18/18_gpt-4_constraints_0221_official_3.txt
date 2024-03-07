@@ -1,0 +1,2 @@
+1. Push down predicates: This rule can be applied when there are conditions in the main query that can be moved to subqueries to reduce the amount of data processed.
+2. Use subqueries for complex conditions: This rule can be applied when the main query has complex conditions that can be simplified and processed in subqueries to improve performance and readability.

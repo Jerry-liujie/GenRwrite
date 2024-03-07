@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables: This makes the query more readable and can improve performance by allowing the database to optimize the join operation.
+2. Remove unnecessary subqueries: This simplifies the query and can improve performance by reducing the number of operations.
+3. Use COALESCE instead of CASE WHEN for NULL handling: This simplifies the query and can improve performance by reducing the number of operations.
+4. Remove unnecessary aggregation (sum(sum())): This simplifies the query and can improve performance by reducing the number of operations.

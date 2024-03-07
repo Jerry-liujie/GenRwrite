@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This improves readability and avoids accidental cartesian products.
+2. Use "select 1" in subqueries: This can improve performance as it reduces the amount of data that needs to be returned from the subquery.
+3. Move conditions from WHERE clause to ON clause in JOINs: This can improve performance by reducing the number of rows that need to be joined.
+4. Use BETWEEN for range conditions: This improves readability and can potentially improve performance by reducing the number of comparisons.

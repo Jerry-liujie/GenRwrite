@@ -1,0 +1,6 @@
+1. Use IN instead of multiple AND conditions in WHERE clause: This rule can be applied when there are multiple conditions in the WHERE clause that are comparing the same column to different values.
+2. Avoid unnecessary subqueries: This rule can be applied when there are subqueries that can be replaced with a simpler or more efficient construct, such as a join.
+3. Use UNION ALL instead of UNION: This rule can be applied when combining results from multiple SELECT statements and there is no need to remove duplicate rows.
+4. Use EXISTS instead of IN for subqueries: This rule can be applied when the subquery returns a large number of rows and the main query only needs to know if at least one row exists.
+5. Avoid calculations in the WHERE clause: This rule can be applied when there are calculations in the WHERE clause that could be pre-calculated or replaced with a computed column.
+6. Use appropriate indexes: This rule can be applied when a query is performing operations such as joins, WHERE clauses, and ORDER BY clauses on columns that are not indexed.

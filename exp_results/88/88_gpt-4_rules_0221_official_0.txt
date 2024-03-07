@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into a single query: This reduces the number of scans through the data, which can significantly improve performance.
+2. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query more readable and easier to maintain.
+3. Use CASE expressions to calculate the counts in a single pass: This avoids the need for multiple count() functions and can improve performance.
+4. Move common conditions to the WHERE clause: This reduces the number of records that need to be processed, which can improve performance.

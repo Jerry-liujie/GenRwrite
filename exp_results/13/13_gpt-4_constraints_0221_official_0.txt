@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when there are multiple tables being joined in the query, especially when there are complex join conditions.
+2. Combine similar conditions in the WHERE clause: This rule can be applied when there are multiple conditions in the WHERE clause that are applied to the same column or set of columns.
+3. Use IN clause for multiple OR conditions on the same column: This rule can be applied when there are multiple OR conditions in the WHERE clause that are applied to the same column.
+4. Remove unnecessary parentheses: This rule can be applied when there are parentheses in the query that do not contribute to the logic or readability of the query.

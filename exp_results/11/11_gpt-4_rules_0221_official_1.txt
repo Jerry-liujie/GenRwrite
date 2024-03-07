@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of WHERE for joining tables: This makes the query more readable and easier to understand.
+2. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query.
+3. Replace multiple conditions on the same column with IN clause: This makes the query more readable and can improve performance.
+4. Use direct conditions instead of CASE WHEN in WHERE clause: This simplifies the query and can improve performance.
+5. Use JOIN instead of WHERE for connecting subqueries: This can improve performance by reducing the amount of data that needs to be processed.

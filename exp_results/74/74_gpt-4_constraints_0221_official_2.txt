@@ -1,0 +1,8 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query.
+2. Use BETWEEN for range conditions: This rule can be applied when there are conditions that involve checking if a value falls within a certain range.
+3. Split the original subquery into two separate subqueries: This rule can be applied when a subquery is complex and involves operations on multiple tables that can be separated.
+4. Remove unnecessary CASE statements: This rule can be applied when there are CASE statements in the query that are not required for the final result.
+5. Remove unnecessary UNION ALL operation: This rule can be applied when there are UNION ALL operations in the query that are not required for the final result.
+6. Remove unnecessary columns in the SELECT clause: This rule can be applied when there are columns in the SELECT clause that are not required for the final result.
+7. Use column aliases for clarity: This rule can be applied when the columns in the query have complex expressions or when the same column name exists in multiple tables.
+8. Use a single JOIN condition instead of multiple WHERE conditions: This rule can be applied when there are multiple conditions in the WHERE clause that can be combined into a single JOIN condition.

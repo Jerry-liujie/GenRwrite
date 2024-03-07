@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for joining tables: This rule can be applied when there are multiple tables in the query that need to be joined based on certain conditions.
+2. Remove unnecessary conditions: This rule can be applied when there are conditions in the WHERE clause that do not affect the final result of the query.
+3. Combine similar conditions: This rule can be applied when there are multiple conditions in the WHERE clause that are checking the same columns.
+4. Remove unnecessary columns from GROUP BY and ORDER BY: This rule can be applied when there are columns in the GROUP BY or ORDER BY clauses that do not affect the final result of the query.
+5. Limit the number of results: This rule can be applied when only a certain number of results are needed, to avoid processing unnecessary data.

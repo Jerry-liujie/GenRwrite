@@ -1,0 +1,5 @@
+1. Combine similar subqueries into one: This rule can be applied when there are multiple subqueries that select data from the same tables and perform similar operations.
+2. Use UNION ALL instead of UNION: This rule can be applied when combining results from multiple SELECT statements and there is no need to remove duplicate rows.
+3. Use CASE statements to differentiate between different types of data: This rule can be applied when there are different types of data in the same table that need to be processed differently.
+4. Move the join operations to the outer query: This rule can be applied when there are multiple subqueries that join the same tables.
+5. Move the date filter to the outer query: This rule can be applied when there are conditions based on dates that can be used to filter the data before performing join operations.

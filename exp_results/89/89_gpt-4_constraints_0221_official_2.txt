@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query.
+2. Replace subquery in the WHERE clause with a calculated column in the SELECT clause: This rule can be applied when the same calculation is being performed multiple times in different parts of the query.
+3. Use column alias for calculated columns: This rule can be applied when there are calculated columns in the SELECT clause of the query.
+4. Use equality operator (=) instead of IN operator for single value comparison: This rule can be applied when the IN operator is being used to compare a single value in the WHERE clause of the query.

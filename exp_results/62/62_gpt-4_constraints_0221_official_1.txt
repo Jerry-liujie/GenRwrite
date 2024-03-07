@@ -1,0 +1,4 @@
+1. Move calculations to subquery: This rule can be applied when the same calculation is being performed multiple times in the query, especially in the SELECT and WHERE clauses.
+2. Use explicit JOIN syntax: This rule can be applied when the query involves joining multiple tables. Using explicit JOIN syntax makes the query easier to read and understand.
+3. Use IN clause for filtering on multiple values: This rule can be applied when there are multiple values for a single column that need to be included or excluded in the results.
+4. Push down predicates: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query, especially in subqueries or joins.

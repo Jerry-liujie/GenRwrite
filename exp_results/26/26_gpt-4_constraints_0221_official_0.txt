@@ -1,0 +1,4 @@
+1. Use subqueries to filter data: This rule can be applied when there are complex conditions that can be broken down into smaller, simpler conditions, and these conditions can be used to filter the data before the main query is executed.
+2. Use IN clause instead of direct join for filtering: This rule can be applied when the subquery returns a small number of rows and the main query needs to filter data based on these rows.
+3. Push down predicates: This rule can be applied when there are conditions in the WHERE clause that can be moved to the FROM clause to filter data at the source, reducing the amount of data that needs to be processed.
+4. Use LIMIT clause: This rule can be applied when the query is used for exploratory purposes or when only a small subset of the result set is needed, as this can significantly reduce the amount of data that needs to be sorted and returned.

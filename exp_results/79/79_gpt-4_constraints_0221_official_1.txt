@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Remove unused columns from the GROUP BY clause: This rule can be applied when there are columns in the GROUP BY clause that are not used in the SELECT clause or in an aggregate function.
+3. Replace the IN operator with BETWEEN for continuous integer ranges: This rule can be applied when there are conditions that check if a column's value is within a continuous integer range.
+4. Use table alias for better readability: This rule can be applied when a query involves multiple tables or subqueries, and the same table name is used in different parts of the query.
+5. Use 'as' for aliasing: This rule can be applied when a column or a table is being renamed in the query for easier reference later on.

@@ -1,0 +1,4 @@
+1. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses implicit JOINs, which are typically indicated by a comma-separated list of tables in the FROM clause and join conditions in the WHERE clause.
+2. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that are related to the join operation and can be moved to the ON clause of the corresponding JOIN.
+3. Replace CASE WHEN THEN ELSE END with IF(): This rule can be applied when the query uses CASE WHEN THEN ELSE END statements, especially for simple conditions that can be expressed with an IF() function.
+4. Move non-join related conditions to the appropriate JOIN ON clause: This rule can be applied when there are conditions in the WHERE clause that are not related to the join operation but can be moved to the ON clause of a JOIN to filter the data earlier in the query execution.

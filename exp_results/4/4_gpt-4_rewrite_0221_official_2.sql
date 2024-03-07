@@ -1,0 +1,116 @@
+```sql
+with year_total as (
+    select
+        c_customer_id as customer_id,
+        c_first_name as customer_first_name,
+        c_last_name as customer_last_name,
+        c_birth_country as customer_birth_country,
+        d_year as dyear,
+        sum(
+            (
+                (
+                    ss_ext_list_price - ss_ext_wholesale_cost - ss_ext_discount_amt
+                ) + ss_ext_sales_price
+            ) / 2
+        ) as year_total,
+        's' as sale_type
+    from
+        customer
+    join
+        store_sales on c_customer_sk = ss_customer_sk
+    join
+        date_dim on ss_sold_date_sk = d_date_sk
+    group by
+        c_customer_id,
+        c_first_name,
+        c_last_name,
+        c_birth_country,
+        d_year
+    union all
+    select
+        c_customer_id,
+        c_first_name,
+        c_last_name,
+        c_birth_country,
+        d_year,
+        sum(
+            (
+                (
+                    cs_ext_list_price - cs_ext_wholesale_cost - cs_ext_discount_amt
+                ) + cs_ext_sales_price
+            ) / 2
+        ),
+        'c'
+    from
+        customer
+    join
+        catalog_sales on c_customer_sk = cs_bill_customer_sk
+    join
+        date_dim on cs_sold_date_sk = d_date_sk
+    group by
+        c_customer_id,
+        c_first_name,
+        c_last_name,
+        c_birth_country,
+        d_year
+    union all
+    select
+        c_customer_id,
+        c_first_name,
+        c_last_name,
+        c_birth_country,
+        d_year,
+        sum(
+            (
+                (
+                    ws_ext_list_price - ws_ext_wholesale_cost - ws_ext_discount_amt
+                ) + ws_ext_sales_price
+                ) / 2
+            ),
+        'w'
+    from
+        customer
+    join
+        web_sales on c_customer_sk = ws_bill_customer_sk
+    join
+        date_dim on ws_sold_date_sk = d_date_sk
+    group by
+        c_customer_id,
+        c_first_name,
+        c_last_name,
+        c_birth_country,
+        d_year
+)
+select
+    customer_id,
+    customer_first_name,
+    customer_last_name,
+    customer_birth_country
+from
+    year_total
+where
+    dyear in (1999, 2000)
+    and year_total > 0
+group by
+    customer_id,
+    customer_first_name,
+    customer_last_name,
+    customer_birth_country
+having
+    max(case when sale_type = 'c' and dyear = 1999 then year_total else null end) /
+    max(case when sale_type = 'c' and dyear = 2000 then year_total else null end) >
+    max(case when sale_type = 's' and dyear = 1999 then year_total else null end) /
+    max(case when sale_type = 's' and dyear = 2000 then year_total else null end)
+    and
+    max(case when sale_type = 'c' and dyear = 1999 then year_total else null end) /
+    max(case when sale_type = 'c' and dyear = 2000 then year_total else null end) >
+    max(case when sale_type = 'w' and dyear = 1999 then year_total else null end) /
+    max(case when sale_type = 'w' and dyear = 2000 then year_total else null end)
+order by
+    customer_id,
+    customer_first_name,
+    customer_last_name,
+    customer_birth_country
+limit
+    100;
+```

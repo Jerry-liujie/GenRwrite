@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for table relationships: This rule can be applied when there are multiple tables in the query and they are related to each other through certain columns.
+2. Remove duplicate values in IN clause: This rule can be applied when there are IN clauses in the query and there are duplicate values in the list of values.
+3. Use indexes on the columns used in the JOIN and WHERE clauses: This rule can be applied when the query is performing operations on large tables and there are specific columns that are frequently used in JOIN and WHERE clauses.
+4. Limit the number of rows processed by the query using LIMIT: This rule can be applied when the query is expected to return a large number of rows but only a subset of the result is needed.
+5. Use GROUP BY instead of DISTINCT for aggregation: This rule can be applied when the query is performing aggregation operations and there are columns that have duplicate values.

@@ -1,0 +1,48 @@
+```sql
+with ssci as (
+    select
+        ss_customer_sk customer_sk,
+        ss_item_sk item_sk
+    from
+        store_sales
+    join date_dim on ss_sold_date_sk = d_date_sk
+    where
+        d_month_seq between 1199 and 1199 + 11
+    group by
+        ss_customer_sk,
+        ss_item_sk
+),
+csci as(
+    select
+        cs_bill_customer_sk customer_sk,
+        cs_item_sk item_sk
+    from
+        catalog_sales
+    join date_dim on cs_sold_date_sk = d_date_sk
+    where
+        d_month_seq between 1199 and 1199 + 11
+    group by
+        cs_bill_customer_sk,
+        cs_item_sk
+),
+combined as (
+    select 
+        customer_sk, 
+        item_sk, 
+        'store' as source 
+    from ssci 
+    union all 
+    select 
+        customer_sk, 
+        item_sk, 
+        'catalog' as source 
+    from csci
+)
+select 
+    sum(case when source = 'store' then 1 else 0 end) as store_only,
+    sum(case when source = 'catalog' then 1 else 0 end) as catalog_only,
+    sum(case when source = 'store' and source = 'catalog' then 1 else 0 end) as store_and_catalog
+from combined
+group by customer_sk, item_sk
+limit 100;
+```

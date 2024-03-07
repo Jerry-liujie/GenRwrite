@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being used in the query and there are conditions that specify how these tables are related.
+2. Move complex calculations to subquery: This rule can be applied when the query contains complex calculations or expressions, especially if they are used multiple times in the query.
+3. Replace IN clause with JOIN for large lists: This rule can be applied when the query uses an IN clause with a large list of values, and these values can be obtained from a table or subquery.
+4. Use alias for calculated columns: This rule can be applied when the query contains calculated columns or expressions, to make the query more readable and easier to maintain.
+5. Use WHERE clause to filter data as early as possible: This rule can be applied when there are conditions that can be used to reduce the amount of data that needs to be processed in the later stages of the query.

@@ -1,0 +1,6 @@
+1. Combine similar subqueries into one: This rule can be applied when there are multiple subqueries with similar structures, such as selecting from the same tables with similar conditions.
+2. Use UNION ALL instead of UNION when possible: This rule can be applied when combining results from multiple SELECT statements and it's acceptable to include duplicate rows in the result set.
+3. Use derived tables to simplify complex queries: This rule can be applied when the query involves multiple joins or aggregations that can be broken down into separate steps.
+4. Avoid calculations in the GROUP BY clause: This rule can be applied when the query involves grouping by a calculated field.
+5. Limit the number of rows returned: This rule can be applied when only a subset of the result set is needed, such as retrieving the top N rows.
+6. Use indexes on columns used in joins and WHERE clauses: This rule can be applied when the query involves joining tables on certain columns or filtering data based on certain conditions.

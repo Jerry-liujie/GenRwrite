@@ -1,0 +1,3 @@
+1. Subquery for filtering: This rule can be applied when there are multiple conditions that can be used to filter data from different tables before joining them.
+2. Use IN clause for filtering: This rule can be applied when you need to filter data based on values from another table, and the subquery returns a small number of rows.
+3. Avoid unnecessary columns in the select clause: This rule can be applied when there are columns in the select clause that are not necessary for the final result or further calculations.

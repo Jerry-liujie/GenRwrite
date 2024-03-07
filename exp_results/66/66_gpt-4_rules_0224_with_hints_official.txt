@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: Using JOINs can improve performance by reducing the amount of data that needs to be processed.
+2. Move calculations to subquery: By moving calculations to the subquery, we avoid repeating the same calculations multiple times, which can improve performance.
+3. Filter rows as early as possible: By filtering rows in the subquery, we reduce the amount of data that needs to be processed in the main query, which can improve performance.
+4. Use IN clause for filtering on multiple values: Using the IN clause can simplify the query and potentially improve performance when filtering on multiple values for a single column.

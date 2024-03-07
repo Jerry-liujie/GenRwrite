@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This makes the query more readable and easier to understand.
+2. Move join conditions from WHERE clause to ON clause in JOIN statements: This can improve performance by reducing the amount of data that needs to be processed.
+3. Avoid cross joins: Cross joins can result in a large number of rows and can be very slow. It's better to use inner joins or left joins where possible.
+4. Use WHERE clause for filtering data: This can reduce the amount of data that needs to be processed and can improve performance.

@@ -1,0 +1,4 @@
+1. Replace implicit join with explicit join: This rule can be applied when the query uses implicit join syntax (comma-separated tables in the FROM clause and join conditions in the WHERE clause).
+2. Remove unnecessary subquery: This rule can be applied when a subquery does not contribute to the final result, or its logic can be incorporated into the main query without changing the result.
+3. Move window function to WHERE clause: This rule can be applied when the result of a window function is used only for filtering, and the window function does not depend on any calculations performed in the main body of the query.
+4. Remove rollup function: This rule can be applied when the rollup function is used, but the query only requires a subset of the rollup results, or the rollup results can be calculated more efficiently using other methods.

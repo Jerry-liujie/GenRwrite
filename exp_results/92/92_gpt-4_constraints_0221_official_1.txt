@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being used in the query and there is a need to combine rows from these tables based on a related column.
+2. Use table aliases: This rule can be applied when the tables in the query have long or complex names, or when the same table is being used multiple times in the query.
+3. Move subquery to a WITH clause: This rule can be applied when the same subquery is being used multiple times in the main query, or when the subquery is complex and moving it to a WITH clause would make the main query easier to understand.
+4. Use explicit JOIN conditions instead of WHERE clause for joining tables: This rule can be applied when there are multiple tables being joined in the query, and separating the join conditions from the filter conditions would make the query easier to read and understand.

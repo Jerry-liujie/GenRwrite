@@ -1,0 +1,4 @@
+1. Use WITH clause to create subqueries: This improves readability and maintainability of the query. It also allows reusing the same subquery multiple times, which can improve performance if the subquery is complex and/or returns a large result set.
+2. Replace implicit JOINs with explicit JOINs: This makes the query easier to understand and maintain. It also allows the database to optimize the query more effectively.
+3. Combine multiple subqueries into one when they have the same FROM and WHERE clauses: This reduces the number of times the database has to scan the same tables, which can significantly improve performance.
+4. Move conditions from the WHERE clause to the ON clause in JOINs when possible: This can improve performance by reducing the number of rows that need to be joined.

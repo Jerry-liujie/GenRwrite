@@ -1,0 +1,5 @@
+1. Use CTEs to break down complex subqueries: This makes the query more readable and easier to debug. It also allows reusing the same subquery multiple times, which can lead to performance improvements.
+2. Use JOIN instead of comma-separated FROM clause: This makes the query more readable and can improve performance by enabling the database to use more efficient join algorithms.
+3. Move conditions from WHERE clause to ON clause in JOINs: This can improve performance by reducing the number of rows that need to be joined.
+4. Remove unnecessary grouping in subqueries: This can reduce the amount of data that needs to be processed, leading to performance improvements.
+5. Use table aliases to make the query more readable: This makes the query easier to understand and maintain.

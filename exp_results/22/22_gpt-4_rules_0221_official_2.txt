@@ -1,0 +1,3 @@
+1. Remove unnecessary joins: The date_dim table is not necessary in this query since we only need the date sequence which is already in the inventory table. This reduces the complexity of the query and improves performance.
+2. Use subquery to filter data first: By creating a subquery that filters the inventory table first, we reduce the amount of data that needs to be joined with the item table. This reduces the time and resources needed to perform the join operation.
+3. Use table alias: Using table alias can make the query easier to read and understand, and it can also make the query run faster because the database doesn't have to look up the full table name each time it's referenced.

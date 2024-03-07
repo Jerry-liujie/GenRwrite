@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when multiple tables are being combined based on matching column values.
+2. Split the subquery into two separate subqueries: This rule can be applied when a subquery is used in the main query and the subquery is complex or contains multiple operations.
+3. Remove unnecessary columns in the SELECT clause: This rule can be applied when the SELECT clause contains columns that are not used in the output or in any calculations.
+4. Move conditions from WHERE to ON in JOINs: This rule can be applied when there are conditions in the WHERE clause that can be moved to the ON clause in a JOIN operation.
+5. Use direct comparison in WHERE clause instead of CASE WHEN: This rule can be applied when the WHERE clause contains a CASE WHEN statement that can be replaced with a direct comparison.

@@ -1,0 +1,6 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being used in the query and there are relationships between these tables that can be expressed using JOIN operations.
+2. Break down complex subqueries into multiple CTEs: This rule can be applied when the query contains complex subqueries that can be broken down into simpler, more manageable parts.
+3. Remove unnecessary UNION ALL operation: This rule can be applied when the query contains a UNION ALL operation that is not needed to produce the desired result.
+4. Remove unnecessary CASE statements: This rule can be applied when the query contains CASE statements that are not needed to produce the desired result.
+5. Remove unnecessary sale_type column: This rule can be applied when the query includes columns that are not needed to produce the desired result.
+6. Use explicit year values instead of expressions: This rule can be applied when the query contains expressions to calculate year values that can be replaced with explicit year values to improve performance.

@@ -1,0 +1,3 @@
+1. Use subqueries to reduce the size of the data being joined: This rule can be applied when the query involves joining multiple tables and there are conditions that can be used to filter the data before the join operation.
+2. Join only necessary columns: This rule can be applied when the query involves joining multiple tables but not all columns from the tables are required in the final output.
+3. Use explicit join syntax instead of implicit join syntax: This rule can be applied in any scenario where tables are being joined, as it improves readability and maintainability of the query.

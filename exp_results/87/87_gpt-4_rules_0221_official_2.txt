@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Use NOT EXISTS instead of EXCEPT: NOT EXISTS is more efficient than EXCEPT as it stops as soon as it finds a match, while EXCEPT compares all records.
+3. Eliminate DISTINCT by using EXISTS: DISTINCT can be a costly operation as it needs to sort the data to remove duplicates. By using EXISTS, we can avoid this sorting operation, thereby improving performance.
+4. Combine the conditions in the WHERE clause: This makes the query more readable and can potentially improve performance by reducing the number of operations.

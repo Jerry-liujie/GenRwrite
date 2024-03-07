@@ -1,0 +1,5 @@
+1. Use CTEs to simplify complex subqueries: The subquery to calculate the ranking of states and the subquery to filter states are moved into CTEs. This makes the main query easier to read and understand.
+2. Replace implicit joins with explicit joins: The implicit joins in the original query are replaced with explicit JOIN clauses. This makes the query easier to understand and can improve performance.
+3. Use JOIN instead of WHERE for linking tables: The tables are joined using the JOIN clause instead of the WHERE clause. This can improve performance by reducing the amount of data that needs to be processed.
+4. Push down predicates where possible: The condition to filter the states is moved to a CTE. This can improve performance by reducing the amount of data that needs to be processed in the main query.
+5. Use CTEs to filter data early: The data is filtered in the CTEs before it is processed in the main query. This can improve performance by reducing the amount of data that needs to be processed.

@@ -1,0 +1,4 @@
+1. Combine similar subqueries using UNION ALL: This rule can be applied when there are multiple subqueries that select from the same tables and perform similar transformations, but differ only in some conditions or specific columns.
+2. Use CASE statements to differentiate between different types of returns in the combined subquery: This rule can be applied when there are categorical variables that need to be treated differently in calculations or aggregations.
+3. Use a single subquery to calculate all necessary quantities: This rule can be applied when there are multiple subqueries that perform similar calculations on the same set of data.
+4. Move the date filter to the outer query: This rule can be applied when there are filters on a date or timestamp column that can be applied after all other transformations and aggregations have been performed.

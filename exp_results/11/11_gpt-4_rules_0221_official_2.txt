@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for linking tables: This can improve readability and performance as the database can optimize the execution plan better.
+2. Filter data as early as possible: By adding the condition `d_year in (1998, 1999)` in the subqueries, we reduce the amount of data processed in the later stages of the query.
+3. Avoid UNION ALL if not necessary: UNION ALL can be expensive as it combines the result sets of two or more SELECT statements. In this case, we can achieve the same result by using JOINs.
+4. Avoid unnecessary calculations: Instead of calculating the ratio twice and comparing, we can simply check if `ws.year_total / ss.year_total` is greater than 1.
+5. Use subqueries for complex calculations: By calculating the year totals in subqueries, we make the main query simpler and easier to read. This also allows the database to optimize the execution plan better.

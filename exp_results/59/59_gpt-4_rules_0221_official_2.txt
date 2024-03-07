@@ -1,0 +1,4 @@
+1. Replace NULL with 0 in the aggregation: It simplifies the computation and may improve performance.
+2. Use JOIN instead of WHERE for linking tables: JOIN is more efficient and clearer in intent.
+3. Use window function LAG instead of self-join: It reduces the complexity of the query and improves performance by avoiding self-join.
+4. Remove unnecessary subqueries: It simplifies the query and may improve performance by reducing the number of operations.

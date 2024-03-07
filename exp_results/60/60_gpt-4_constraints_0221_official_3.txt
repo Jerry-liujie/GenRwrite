@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one: This rule can be applied when there are multiple subqueries that scan the same table or perform similar operations.
+2. Use left join instead of in clause: This rule can be applied when the query uses the IN clause to match values in a large dataset, which can be inefficient.
+3. Combine sum operations: This rule can be applied when there are multiple sum operations on the same column in different parts of the query.
+4. Use where clause to filter data early: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.

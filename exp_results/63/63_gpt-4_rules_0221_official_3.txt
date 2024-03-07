@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for connecting tables: This makes the query more readable and easier to understand.
+2. Use BETWEEN for continuous range conditions: This simplifies the query and improves readability.
+3. Move the partition by clause to the inner query and include the month in the partition: This allows the database to calculate the average sales while scanning the data, reducing the amount of data that needs to be processed in the outer query.
+4. Filter out zero averages in the WHERE clause of the outer query: This avoids unnecessary calculations and potential division by zero errors.
+5. Avoid using SELECT *: This reduces the amount of data transferred from the disk and over the network, which can significantly improve performance.

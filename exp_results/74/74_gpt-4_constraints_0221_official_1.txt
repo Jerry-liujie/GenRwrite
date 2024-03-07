@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for linking tables: This rule can be applied when there are multiple tables that need to be linked based on common columns.
+2. Split complex queries into simpler ones using WITH clause: This rule can be applied when the query is complex and involves multiple steps or calculations that can be separated.
+3. Avoid UNION ALL if not necessary: This rule can be applied when the query is combining similar datasets from different tables or subqueries, but the combined dataset is not required for the final result.
+4. Avoid CASE WHEN in WHERE clause: This rule can be applied when the WHERE clause contains complex conditional logic that can be simplified using standard comparison operators.
+5. Use aliases for tables: This rule can be applied when the query involves multiple tables or subqueries, to make the query easier to read and understand.

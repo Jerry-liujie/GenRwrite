@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit join syntax (comma-separated tables in the FROM clause and join conditions in the WHERE clause).
+2. Use subquery factoring (with clause): This rule can be applied when a subquery is used multiple times in the main query or when the subquery is complex.
+3. Use semi-join for existence check: This rule can be applied when the query checks if a value exists in another table, typically using a subquery in the WHERE clause.
+4. Filter as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query, reducing the amount of data that needs to be processed.

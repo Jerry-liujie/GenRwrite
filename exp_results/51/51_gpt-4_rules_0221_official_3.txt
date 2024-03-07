@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand. It also allows the database to optimize the query better.
+2. Use COALESCE function instead of CASE WHEN for handling NULL values: This simplifies the query and makes it easier to read and understand.
+3. Remove unnecessary GROUP BY clause: This can improve performance by reducing the amount of data that needs to be processed.
+4. Use window functions directly in the main query instead of subqueries: This can improve performance by reducing the number of operations and the amount of data that needs to be processed.

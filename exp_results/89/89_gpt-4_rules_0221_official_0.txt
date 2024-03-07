@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Move complex calculations to subquery: This simplifies the WHERE clause and makes the query easier to read and understand.
+3. Replace IN clause with JOIN for large lists: This can improve performance as JOINs are generally faster than IN clauses.
+4. Use alias for calculated columns: This makes the query more readable and easier to maintain.
+5. Use WHERE clause to filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query, improving performance.

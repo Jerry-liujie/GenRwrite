@@ -1,0 +1,4 @@
+1. Use window functions for lag and lead calculations: This rule can be applied when we need to compare a value with the previous or next value within a specific partition of the data.
+2. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied to any query that involves joining multiple tables.
+3. Simplify WHERE clause conditions: This rule can be applied when there are multiple conditions in the WHERE clause that can be simplified using operators like BETWEEN and IN.
+4. Remove unnecessary CASE statement: This rule can be applied when the CASE statement is used to handle division by zero, but the condition already ensures that the denominator is not zero.

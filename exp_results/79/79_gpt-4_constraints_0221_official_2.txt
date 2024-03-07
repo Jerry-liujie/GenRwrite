@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query, to improve readability and maintainability.
+2. Remove unnecessary column in the GROUP BY clause: This rule can be applied when there are columns in the GROUP BY clause that do not affect the grouping result, to improve performance.
+3. Replace arithmetic operations with their results in the WHERE clause: This rule can be applied when there are arithmetic operations in the WHERE clause that can be pre-calculated, to reduce computation overhead and improve performance.
+4. Use table alias for tables in the FROM clause: This rule can be applied when tables have long names or when the same table is used multiple times in a query, to make the query more readable and easier to maintain.

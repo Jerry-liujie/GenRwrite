@@ -1,0 +1,3 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses the WHERE clause to join tables, which is an implicit join. Instead, the JOIN keyword should be used for clarity and optimization.
+2. Remove unnecessary table aliasing: This rule can be applied when the query uses table aliases that are not necessary for understanding the query or when the same table is not joined multiple times in the query.
+3. Combine multiple conditions into a single condition using the OR operator: This rule can be applied when the query has multiple conditions that can be combined using the OR operator. This simplifies the query and can improve performance.

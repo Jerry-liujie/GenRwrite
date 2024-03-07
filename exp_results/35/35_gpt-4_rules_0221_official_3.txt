@@ -1,0 +1,3 @@
+1. Replace implicit joins with explicit joins: This makes the query more readable and maintainable. It also helps the database optimizer to better understand the relationships between tables and potentially generate more efficient execution plans.
+2. Use SELECT 1 in EXISTS subqueries: This can potentially improve performance as the database doesn't need to fetch and return actual data from the subquery. The EXISTS operator only checks for the existence of rows, so it doesn't matter what values are returned.
+3. Move join conditions from WHERE clause to ON clause in JOIN operation: This can improve performance by reducing the number of rows that need to be processed in the join operation.

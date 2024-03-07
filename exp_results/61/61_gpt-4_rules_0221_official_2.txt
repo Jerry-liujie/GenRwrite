@@ -1,0 +1,5 @@
+1. Combine multiple queries into a single query: This reduces the number of scans on the same table, which can significantly improve performance.
+2. Use JOIN instead of comma-separated tables in the FROM clause: This makes the query more readable and easier to maintain.
+3. Use LEFT JOIN for optional tables: This prevents unnecessary filtering of rows when the join condition is not met.
+4. Move conditions from WHERE clause to CASE statement in the SELECT clause: This allows the database to calculate the sum in a single pass, which can improve performance.
+5. Remove unnecessary parentheses: This makes the query more readable.

@@ -1,0 +1,4 @@
+1. Use JOIN syntax instead of WHERE for joining tables: This makes the query more readable and easier to understand.
+2. Pre-calculate averages in a separate subquery: This reduces the number of times the average calculation needs to be performed, thus improving performance.
+3. Use subquery results in the main query: This avoids the need to recalculate the same values multiple times, improving performance.
+4. Avoid using subqueries in the WHERE clause: Subqueries in the WHERE clause can be inefficient because they need to be re-evaluated for each row processed by the query. By moving the subquery to a JOIN, it only needs to be evaluated once.

@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit joins, which are harder to read and understand than explicit joins.
+2. Remove unnecessary cast function: This rule can be applied when the query uses the cast function in a way that is not necessary, such as casting a number to a string and then back to a number.
+3. Use literals instead of calculations in the where clause: This rule can be applied when the query uses calculations in the where clause that could be replaced with literal values.
+4. Use limit clause: This rule can be applied when the query does not have a limit clause, which can improve performance by reducing the amount of data that needs to be returned.

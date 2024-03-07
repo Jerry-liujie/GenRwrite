@@ -1,0 +1,4 @@
+1. Combine similar subqueries into one using UNION ALL: This rule can be applied when there are multiple subqueries that select similar data from different tables or different conditions.
+2. Use CASE statements to differentiate different types of data in a combined subquery: This rule can be applied when there are different types of data in a single table or subquery that need to be processed differently.
+3. Move common WHERE clause conditions to the outer query: This rule can be applied when there are common conditions in the WHERE clause of multiple subqueries.
+4. Use JOIN instead of WHERE for matching rows from different tables: This rule can be applied when there are multiple tables that need to be combined based on a common column.

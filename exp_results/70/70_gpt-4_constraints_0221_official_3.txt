@@ -1,0 +1,5 @@
+1. Use WITH clause for subqueries: This rule can be applied when the query contains subqueries that are complex, used in multiple places, or both.
+2. Replace IN subquery with JOIN: This rule can be applied when the query uses an IN subquery to filter rows based on a column from another table.
+3. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when the query uses a comma-separated FROM clause to join tables.
+4. Move the ranking condition to a HAVING clause in the subquery: This rule can be applied when the query uses a ranking function in the SELECT clause and the result is used to filter rows.
+5. Use column aliases for calculated columns: This rule can be applied when the query includes calculated columns in the SELECT clause.

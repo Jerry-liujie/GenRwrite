@@ -1,0 +1,4 @@
+1. Use JOIN syntax instead of WHERE for joining tables: This makes the query more readable and easier to understand.
+2. Use BETWEEN for range conditions: This makes the query more readable and can potentially improve performance.
+3. Move conditions from WHERE clause to JOIN ON clause: This can improve performance by reducing the amount of data that needs to be processed.
+4. Remove unnecessary CASE statement: This simplifies the query and can potentially improve performance by reducing the amount of computation needed.

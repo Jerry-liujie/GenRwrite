@@ -1,0 +1,3 @@
+1. Replace commas in FROM clause with JOINs: This makes the query more readable and allows for better optimization by the query planner.
+2. Move conditions from WHERE clause to ON clause in JOINs: This can improve performance by reducing the number of rows that need to be joined. In this case, however, all conditions are related to the WHERE clause, not to the JOINs, so this rule is not applicable.
+3. Use LIMIT clause: This can improve performance by reducing the number of rows that need to be processed. In this case, the original query already uses the LIMIT clause.

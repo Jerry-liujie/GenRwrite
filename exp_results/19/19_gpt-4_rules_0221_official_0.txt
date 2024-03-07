@@ -1,0 +1,3 @@
+1. Use JOIN instead of WHERE for linking tables: This makes the query more readable and easier to understand. It also helps the database optimize the query better.
+2. Remove unnecessary columns from the SELECT clause: This reduces the amount of data that needs to be processed and returned, improving query performance.
+3. Use LIMIT to reduce the number of rows returned: This can significantly improve performance if only a small number of rows are needed from a large result set.

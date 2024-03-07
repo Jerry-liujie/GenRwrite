@@ -1,0 +1,4 @@
+1. Replace multiple subqueries with window functions: This rule can be applied when there are calculations that involve comparing values in different rows of a table, especially when those calculations involve aggregations or rankings.
+2. Replace NULL with 0 in the case statement: This rule can be applied when there are case statements that involve NULL checks, especially when those NULL checks are not necessary for the logic of the query.
+3. Use JOIN instead of WHERE for combining tables: This rule can be applied when there are multiple tables that need to be combined based on matching values in certain columns.
+4. Filter in the main query instead of in the subquery: This rule can be applied when there are conditions that can be used to filter the data in the main query, especially when those conditions can significantly reduce the amount of data that needs to be processed in the subquery.

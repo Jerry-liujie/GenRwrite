@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for combining tables: This can improve the performance of the query by reducing the number of rows that need to be scanned.
+2. Split the subquery into two separate subqueries: This can reduce the complexity of the query and make it easier for the database to optimize.
+3. Remove unnecessary columns in the SELECT clause: This can reduce the amount of data that needs to be processed and returned.
+4. Move conditions from WHERE to ON in JOINs: This can reduce the number of rows that need to be joined, which can improve performance.
+5. Use direct comparison in WHERE clause instead of CASE WHEN: This can simplify the query and improve performance by reducing the number of operations.

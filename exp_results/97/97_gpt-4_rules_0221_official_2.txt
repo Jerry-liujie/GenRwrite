@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Replace FULL OUTER JOIN with UNION ALL: This can improve performance as UNION ALL is generally faster than FULL OUTER JOIN. It also simplifies the query and makes it more readable.
+3. Use a combined subquery to consolidate the data from the two original subqueries: This can improve performance by reducing the number of times the data needs to be scanned.
+4. Move the aggregation to the final query: This can improve performance by reducing the amount of data that needs to be processed in the intermediate steps.
+5. Use a case statement to categorize the data: This simplifies the query and can improve performance by reducing the number of conditions that need to be evaluated.

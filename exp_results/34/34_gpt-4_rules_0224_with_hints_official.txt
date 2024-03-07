@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Use alias for tables: This simplifies the query and makes it easier to read and maintain.
+3. Replace OR conditions with IN clause: This simplifies the query and can improve performance by reducing the number of conditions that need to be evaluated.
+4. Remove redundant conditions in WHERE clause: The condition 's.s_county = 'Williamson County'' was repeated multiple times, so it was simplified to a single condition. This can improve performance by reducing the number of conditions that need to be evaluated.
+5. Replace repetitive conditions in WHERE clause with BETWEEN operator: This simplifies the query and can improve performance by reducing the number of conditions that need to be evaluated.

@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when there are multiple tables being joined in the query, especially when there are complex join conditions.
+2. Use IN operator for multiple OR conditions on the same column: This rule can be applied when there are multiple OR conditions on the same column in the WHERE clause.
+3. Use BETWEEN operator for continuous range conditions: This rule can be applied when there are conditions that specify a continuous range of values for a column.
+4. Remove redundant conditions: This rule can be applied when there are duplicate or redundant conditions in the WHERE clause.

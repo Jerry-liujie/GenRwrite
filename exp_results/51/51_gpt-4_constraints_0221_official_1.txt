@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for joining tables: This rule can be applied when there are multiple tables involved in the query and they need to be joined based on common columns.
+2. Remove unnecessary subqueries: This rule can be applied when the query contains subqueries that do not contribute to the final result or can be replaced with simpler constructs.
+3. Remove unnecessary CASE statements: This rule can be applied when the query contains CASE statements that are not needed for the final result or can be replaced with simpler constructs.
+4. Use aliases for table names: This rule can be applied when the query involves multiple tables or when the table names are long and complex, making the query difficult to read and understand.
+5. Use the correct sequence in the BETWEEN clause: This rule can be applied when the query uses the BETWEEN clause to filter data based on a range of values.

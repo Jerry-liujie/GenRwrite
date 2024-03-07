@@ -1,0 +1,6 @@
+1. Use explicit JOIN syntax instead of implicit comma-separated syntax: This makes the query more readable and easier to understand.
+2. Use IN operator for multiple OR conditions on the same column: This simplifies the query and can improve performance.
+3. Simplify the condition on the year: Using a BETWEEN clause is simpler and more efficient than listing each year separately.
+4. Remove duplicate conditions: The same condition on the county was repeated multiple times, which is unnecessary.
+5. Use aliases for subqueries: This makes the query more readable and easier to understand.
+6. Use COUNT(*) instead of COUNT(column): COUNT(*) is generally faster and more accurate for counting rows.

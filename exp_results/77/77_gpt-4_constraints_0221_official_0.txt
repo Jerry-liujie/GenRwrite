@@ -1,0 +1,3 @@
+1. Remove unnecessary joins: This rule can be applied when there are joins in the query to tables whose columns are not used in the final output or in any calculations or conditions.
+2. Use explicit join instead of implicit join: This rule can be applied when the query uses implicit join syntax (i.e., listing multiple tables in the FROM clause and specifying the join conditions in the WHERE clause).
+3. Use coalesce function to handle null values: This rule can be applied when the query involves calculations or aggregations that may involve null values, which can cause errors or incorrect results.

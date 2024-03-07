@@ -1,0 +1,5 @@
+1. Combine similar subqueries into one: This rule can be applied when there are multiple subqueries that are selecting similar data from the same or related tables.
+2. Use LEFT JOIN instead of WHERE for joining tables: This rule can be applied when there are conditions in the WHERE clause that are used to join tables.
+3. Use JOIN instead of WHERE for joining tables in the main query: This rule can be applied when there are conditions in the WHERE clause that are used to join tables in the main query.
+4. Move conditions from WHERE to ON in JOINs: This rule can be applied when there are conditions in the WHERE clause that can be moved to the ON clause in JOINs to filter data before the join operation.
+5. Remove unnecessary columns from the subquery: This rule can be applied when there are columns in the subquery that are not used in the main query or in subsequent operations.

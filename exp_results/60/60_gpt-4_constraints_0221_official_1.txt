@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into a single query: This rule can be applied when there are multiple subqueries scanning the same tables and performing similar operations.
+2. Use LEFT JOIN instead of IN clause: This rule can be applied when there are IN clauses in the query that can be replaced with JOIN operations for efficiency.
+3. Combine multiple aggregations into a single aggregation: This rule can be applied when there are multiple aggregation operations in the query that can be combined into a single operation.
+4. Use WHERE clause to filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.

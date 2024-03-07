@@ -1,0 +1,4 @@
+1. Replace implicit JOINs with explicit JOINs: This makes the query more readable and easier to understand. It also can help the database optimizer to choose a better execution plan.
+2. Reduce the number of subqueries: Subqueries can be expensive in terms of performance. By reducing the number of subqueries, we can potentially improve the performance of the query.
+3. Use JOINs instead of subqueries in the FROM clause: This can improve performance by reducing the amount of data that needs to be processed.
+4. Use WHERE clause to filter data as early as possible: This can reduce the amount of data that needs to be processed, improving performance.

@@ -1,0 +1,5 @@
+1. Combine similar subqueries into one: This reduces the number of subqueries and simplifies the overall query, potentially improving performance.
+2. Use case statement to calculate sum: This allows us to perform a single sum operation instead of multiple, potentially improving performance.
+3. Push conditions into join: This allows us to filter the data as early as possible, potentially reducing the amount of data that needs to be processed.
+4. Use left join instead of where clause for joining tables: This can improve performance by reducing the amount of data that needs to be processed.
+5. Remove unnecessary grouping in subqueries: This simplifies the query and can potentially improve performance by reducing the amount of data that needs to be grouped.

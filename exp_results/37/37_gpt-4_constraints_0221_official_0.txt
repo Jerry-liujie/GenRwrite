@@ -1,0 +1,5 @@
+1. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses implicit JOINs, which are indicated by the presence of multiple tables in the FROM clause and join conditions in the WHERE clause.
+2. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when the query uses comma-separated tables in the FROM clause, which is a sign of implicit JOINs.
+3. Use direct date values instead of casting and adding intervals: This rule can be applied when the query uses date operations, such as adding intervals or casting to date, which can be replaced with direct date values.
+4. Filter as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+5. Use LIMIT clause: This rule can be applied when the query does not have a LIMIT clause, which can be used to reduce the amount of data that needs to be processed and returned.

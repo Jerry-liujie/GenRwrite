@@ -1,0 +1,6 @@
+1. Use JOIN syntax instead of WHERE for joining tables: This improves readability and allows the database to optimize the join operations more effectively.
+2. Replace implicit join syntax with explicit join syntax: This makes the join conditions more explicit and easier to understand.
+3. Move the computation of the average to the outer query: This allows the database to compute the average only once, reducing the computational overhead.
+4. Use subquery to filter records before joining: This reduces the amount of data that needs to be processed in the join operations, improving performance.
+5. Replace the sequence of month numbers with a range (BETWEEN): This simplifies the query and can potentially improve performance by allowing the database to use range-based optimizations.
+6. Move conditions from WHERE clause to JOIN ON clause: This allows the database to filter records before performing the join operations, potentially reducing the amount of data that needs to be processed.

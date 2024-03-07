@@ -1,0 +1,5 @@
+1. Replace implicit join syntax with explicit join syntax: This makes the query more readable and easier to understand.
+2. Remove redundant conditions in the WHERE clause: This simplifies the query and can potentially improve performance.
+3. Replace * in subqueries with 1: This can improve performance because it reduces the amount of data that needs to be returned from the subquery.
+4. Add a GROUP BY clause: This can improve performance by reducing the number of rows that need to be processed in the main query.
+5. Remove duplicate entries in the IN clause: This simplifies the query and can potentially improve performance.

@@ -1,0 +1,4 @@
+1. Remove unnecessary union operations: Unions can be expensive operations, especially if they involve large datasets. If the data being unioned is not necessary for the final result, removing these operations can significantly improve performance.
+2. Replace subqueries with joins: Subqueries can be slower than joins, especially if they involve large datasets. Replacing subqueries with joins can often improve performance.
+3. Remove unnecessary calculations: Calculations can be expensive operations, especially if they involve large datasets. If the results of these calculations are not necessary for the final result, removing these operations can significantly improve performance.
+4. Use "group by" instead of "distinct": The "distinct" keyword can be expensive to use, especially on large datasets. Using "group by" can often achieve the same result more efficiently.

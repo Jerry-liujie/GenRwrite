@@ -1,0 +1,2 @@
+1. Use CTE (Common Table Expressions) to avoid multiple subqueries: This improves readability and maintainability of the code. It also allows the database engine to potentially optimize the query by reducing the number of times the subquery needs to be executed.
+2. Combine count and avg calculations in a single subquery: This reduces the number of times the database needs to scan the table, improving performance.

@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This makes the query easier to read and understand, and can help the database optimize the query more effectively.
+2. Remove unnecessary parentheses in WHERE clause: This simplifies the query and can improve readability without changing the logic.
+3. Use alias for calculated columns in ORDER BY clause: This avoids the need to repeat the calculation in the ORDER BY clause, which can improve performance.

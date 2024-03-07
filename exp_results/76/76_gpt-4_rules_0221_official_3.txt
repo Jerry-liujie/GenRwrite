@@ -1,0 +1,2 @@
+1. Replace comma-separated joins with explicit JOIN syntax: This makes the query more readable and easier to understand.
+2. Use UNION ALL instead of UNION: UNION ALL is faster than UNION because UNION removes duplicate rows between the various SELECT statements, and this requires extra work. If you know that there will be no duplicates, or duplicates are not a problem, use UNION ALL as it does not need to do this extra work.

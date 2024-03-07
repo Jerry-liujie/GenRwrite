@@ -1,0 +1,4 @@
+1. Use subquery instead of join for filtering: This rule can be applied when we need to filter data based on conditions from another table, and the other table has a large number of rows.
+2. Use alias for column names: This rule can be applied in any situation where we need to refer to the same column multiple times in the query, or when the original column names are long or not descriptive.
+3. Remove unnecessary columns from the SELECT clause: This rule can be applied when the query selects more columns than necessary for the final result, especially when those columns are not used in any calculations or conditions.
+4. Use FULL OUTER JOIN instead of LEFT JOIN and UNION: This rule can be applied when we need to combine results from two tables and include all rows from both tables, regardless of whether there is a match in the other table.

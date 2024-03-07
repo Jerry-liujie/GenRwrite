@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: It improves readability and maintainability of the query.
+2. Split complex query into simpler subqueries using WITH clause: It makes the query easier to understand and debug.
+3. Avoid casting date in condition: It improves performance by avoiding unnecessary type casting.
+4. Use USING clause in JOIN for common columns: It makes the query shorter and easier to read.
+5. Filter data as early as possible: It reduces the amount of data that needs to be processed in later stages of the query.

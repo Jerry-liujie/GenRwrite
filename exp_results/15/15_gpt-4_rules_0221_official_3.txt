@@ -1,0 +1,5 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Move conditions from WHERE clause to ON clause in JOIN statement: This can improve performance as it reduces the number of rows that need to be processed in the join.
+3. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query. In this case, filtering on 'd_qoy', 'd_year', and 'cs_sales_price' can be done earlier to reduce the data size.
+4. Use LIMIT clause: This can significantly improve performance by reducing the amount of data returned by the query.
+5. Avoid using functions on columns in WHERE clause: Using functions on columns in the WHERE clause can prevent the use of indexes and slow down the query. However, in this case, it may not be avoidable due to the business requirement.

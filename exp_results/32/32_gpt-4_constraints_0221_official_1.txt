@@ -1,0 +1,3 @@
+1. Use CTEs to calculate subquery results: This rule can be applied when a subquery is used multiple times in the main query or when the subquery result is used in a comparison operation in the main query.
+2. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+3. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that are based on columns from the joined tables.

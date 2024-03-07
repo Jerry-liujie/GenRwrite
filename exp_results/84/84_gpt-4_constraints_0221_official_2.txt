@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query, and the relationships between them are defined in the WHERE clause rather than the FROM clause.
+2. Remove unnecessary tables from the FROM clause: This rule can be applied when there are tables in the FROM clause that are not used in the SELECT, WHERE, GROUP BY, HAVING, or ORDER BY clauses.
+3. Use INNER JOIN instead of OUTER JOIN where possible: This rule can be applied when the data needed for the query is only from the intersection of the tables being joined, not from the union.
+4. Use LIMIT clause: This rule can be applied when the query is expected to return a large number of rows, but only a small subset of the result is needed for the immediate task.

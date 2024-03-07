@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This improves readability and reduces the chance of accidental cross joins.
+2. Remove unnecessary subqueries: This simplifies the query and can improve performance by reducing the number of operations.
+3. Remove unnecessary case statement: This simplifies the query and can improve performance by reducing the number of operations.
+4. Remove unnecessary columns from the select clause: This can improve performance by reducing the amount of data that needs to be processed and returned.

@@ -1,0 +1,97 @@
+```
+with frequent_ss_items as (
+    select
+        i_item_sk,
+        count(*) cnt
+    from
+        store_sales,
+        date_dim
+    where
+        ss_sold_date_sk = d_date_sk
+        and d_year between 2000 and 2003
+    group by
+        i_item_sk
+    having
+        count(*) > 4
+),
+max_store_sales as (
+    select
+        max(csales) tpcds_cmax
+    from
+        (
+            select
+                ss_customer_sk,
+                sum(ss_quantity * ss_sales_price) csales
+            from
+                store_sales,
+                date_dim
+            where
+                ss_sold_date_sk = d_date_sk
+                and d_year between 2000 and 2003
+            group by
+                ss_customer_sk
+        )
+),
+best_ss_customer as (
+    select
+        ss_customer_sk,
+        sum(ss_quantity * ss_sales_price) ssales
+    from
+        store_sales
+    group by
+        ss_customer_sk
+    having
+        ssales > (95 / 100.0) * (select tpcds_cmax from max_store_sales)
+)
+select
+    c_last_name,
+    c_first_name,
+    sum(sales) as total_sales
+from
+    (
+        select
+            c_last_name,
+            c_first_name,
+            cs_quantity * cs_list_price as sales
+        from
+            catalog_sales,
+            customer,
+            date_dim,
+            frequent_ss_items,
+            best_ss_customer
+        where
+            d_year = 2000
+            and d_moy = 7
+            and cs_sold_date_sk = d_date_sk
+            and cs_item_sk = frequent_ss_items.i_item_sk
+            and cs_bill_customer_sk = best_ss_customer.ss_customer_sk
+            and cs_bill_customer_sk = c_customer_sk
+        union all
+        select
+            c_last_name,
+            c_first_name,
+            ws_quantity * ws_list_price as sales
+        from
+            web_sales,
+            customer,
+            date_dim,
+            frequent_ss_items,
+            best_ss_customer
+        where
+            d_year = 2000
+            and d_moy = 7
+            and ws_sold_date_sk = d_date_sk
+            and ws_item_sk = frequent_ss_items.i_item_sk
+            and ws_bill_customer_sk = best_ss_customer.ss_customer_sk
+            and ws_bill_customer_sk = c_customer_sk
+    ) as tmp
+group by
+    c_last_name,
+    c_first_name
+order by
+    c_last_name,
+    c_first_name,
+    total_sales
+limit
+    100;
+```

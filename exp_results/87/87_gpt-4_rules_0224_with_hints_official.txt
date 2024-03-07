@@ -1,0 +1,3 @@
+1. Use CTEs (Common Table Expressions) to break down complex queries: This makes the query more readable and easier to debug. It also allows for better query optimization by the database engine.
+2. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand. It also allows for better query optimization by the database engine.
+3. Remove DISTINCT when using EXCEPT: EXCEPT operator automatically removes duplicates, so using DISTINCT is redundant and can slow down the query.

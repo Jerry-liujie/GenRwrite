@@ -1,0 +1,4 @@
+1. Use CTE (Common Table Expressions) to simplify the query: CTEs can be used to create a named subquery which can be referred in the query multiple times. This makes the query more readable and easier to maintain.
+2. Replace implicit joins with explicit joins: Explicit joins are more readable and less prone to errors than implicit joins. They also make it easier to understand the relationships between tables.
+3. Move the calculation of the rank function into the main query: This avoids the need to calculate the rank for all rows in the subquery, improving performance.
+4. Use the column alias in the ORDER BY clause: This can make the query more readable and easier to maintain.

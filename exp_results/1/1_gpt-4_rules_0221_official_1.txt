@@ -1,0 +1,4 @@
+1. Replace subquery with join: Subqueries can be expensive in terms of performance. By replacing the subquery with a join, the database can optimize the execution plan for the query.
+2. Use explicit join syntax instead of comma-separated tables: This makes the query easier to read and understand, and can also help the database optimize the execution plan.
+3. Pre-calculate averages in a separate CTE: This avoids having to calculate the average for each row in the main query, which can significantly improve performance.
+4. Use CTEs for complex calculations: This can make the query easier to read and understand, and can also help the database optimize the execution plan.

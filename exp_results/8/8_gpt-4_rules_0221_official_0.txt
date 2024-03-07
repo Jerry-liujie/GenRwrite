@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This makes the query easier to read and understand. It also allows for better optimization by the database engine.
+2. Use CTEs (Common Table Expressions) for subqueries: This makes the query more readable and maintainable, and can also improve performance by allowing the database to materialize the results of the subquery.
+3. Avoid using functions in the WHERE clause: This can prevent the use of indexes and lead to full table scans. Instead, pre-calculate these values in a subquery or CTE.
+4. Filter as early as possible: Apply filtering conditions as early as possible in the query to reduce the amount of data that needs to be processed in later stages.

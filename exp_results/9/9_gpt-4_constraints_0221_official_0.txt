@@ -1,0 +1,2 @@
+1. Use CTE (Common Table Expressions) to avoid multiple subqueries: This rule can be applied when the same subquery is used multiple times in the main query, especially when the subquery involves complex calculations or aggregations.
+2. Combine count and avg calculations in a single subquery: This rule can be applied when multiple aggregate functions are used on the same set of data in separate subqueries.

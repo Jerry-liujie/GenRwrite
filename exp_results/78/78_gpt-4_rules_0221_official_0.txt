@@ -1,0 +1,4 @@
+1. Replace LEFT JOIN with NOT EXISTS for anti-join: This can improve performance by reducing the amount of data that needs to be processed. The NOT EXISTS clause can stop processing as soon as it finds a match, while the LEFT JOIN processes all data.
+2. Filter data as early as possible: By moving the filtering conditions into the subqueries, we can reduce the amount of data that needs to be processed in the main query, which can improve performance.
+3. Avoid using COALESCE function when not necessary: The COALESCE function can add unnecessary overhead. If we can guarantee that the values will not be NULL (for example, by using NOT EXISTS for anti-join), we can avoid using this function.
+4. Use WHERE clause instead of HAVING clause: The WHERE clause filters rows before grouping and aggregation, while the HAVING clause filters after. By using the WHERE clause, we can reduce the amount of data that needs to be grouped and aggregated, which can improve performance.

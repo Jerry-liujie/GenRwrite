@@ -1,0 +1,4 @@
+1. Use CTEs for complex subqueries: This rule can be applied when the query contains subqueries that are complex or repeated multiple times in the main query.
+2. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit join syntax (i.e., comma-separated tables in the FROM clause and join conditions in the WHERE clause).
+3. Move calculations to the CTE: This rule can be applied when the main query contains calculations that are based on the data retrieved in the subquery.
+4. Use window functions for ranking: This rule can be applied when the query requires ranking or ordering of data based on certain conditions or groups.

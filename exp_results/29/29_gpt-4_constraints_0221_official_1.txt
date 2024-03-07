@@ -1,0 +1,4 @@
+1. Use subquery to reduce the size of the data set: This rule can be applied when the main query involves complex calculations or aggregations on a large dataset, and there are conditions that can be used to filter the data beforehand.
+2. Use IN clause instead of direct join on date_dim table: This rule can be applied when the join operation is only used for filtering based on certain fields in the joined table, and the fields for filtering are not frequently updated.
+3. Use join instead of where clause for table relationships: This rule can be applied when there are relationships between tables that are defined by matching fields, and these relationships are used to combine data from the tables.
+4. Group by in subquery: This rule can be applied when the main query involves aggregations on a large dataset, and the data can be grouped on certain fields in the early stages of the query to reduce the number of rows to be processed.

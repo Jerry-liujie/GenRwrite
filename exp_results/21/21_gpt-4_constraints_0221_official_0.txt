@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being joined in a query.
+2. Split complex query into simpler subqueries using WITH clause: This rule can be applied when the query is complex and involves multiple operations that can be broken down into simpler subqueries.
+3. Avoid casting date in condition: This rule can be applied when the query involves date comparisons and the date is being cast to a different format.
+4. Use USING clause in JOIN for common columns: This rule can be applied when two tables are being joined on common columns.
+5. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.

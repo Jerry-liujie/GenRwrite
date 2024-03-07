@@ -1,0 +1,134 @@
+```
+select
+    channel,
+    item,
+    return_ratio,
+    return_rank,
+    currency_rank
+from
+    (
+        select
+            'web' as channel,
+            item,
+            return_ratio,
+            rank() over (
+                order by
+                    return_ratio
+            ) as return_rank,
+            rank() over (
+                order by
+                    currency_ratio
+            ) as currency_rank
+        from
+            (
+                select
+                    ws.ws_item_sk as item,
+                    sum(coalesce(wr.wr_return_quantity, 0)) / sum(coalesce(ws.ws_quantity, 0)) as return_ratio,
+                    sum(coalesce(wr.wr_return_amt, 0)) / sum(coalesce(ws.ws_net_paid, 0)) as currency_ratio
+                from
+                    web_sales ws
+                    left outer join web_returns wr on (
+                        ws.ws_order_number = wr.wr_order_number
+                        and ws.ws_item_sk = wr.wr_item_sk
+                    )
+                    join date_dim on ws_sold_date_sk = d_date_sk
+                where
+                    wr.wr_return_amt > 10000
+                    and ws.ws_net_profit > 1
+                    and ws.ws_net_paid > 0
+                    and ws.ws_quantity > 0
+                    and d_year = 1998
+                    and d_moy = 11
+                group by
+                    ws.ws_item_sk
+            ) web
+        where
+            return_rank <= 10
+            or currency_rank <= 10
+        union all
+        select
+            'catalog' as channel,
+            item,
+            return_ratio,
+            rank() over (
+                order by
+                    return_ratio
+            ) as return_rank,
+            rank() over (
+                order by
+                    currency_ratio
+            ) as currency_rank
+        from
+            (
+                select
+                    cs.cs_item_sk as item,
+                    sum(coalesce(cr.cr_return_quantity, 0)) / sum(coalesce(cs.cs_quantity, 0)) as return_ratio,
+                    sum(coalesce(cr.cr_return_amount, 0)) / sum(coalesce(cs.cs_net_paid, 0)) as currency_ratio
+                from
+                    catalog_sales cs
+                    left outer join catalog_returns cr on (
+                        cs.cs_order_number = cr.cr_order_number
+                        and cs.cs_item_sk = cr.cr_item_sk
+                    )
+                    join date_dim on cs_sold_date_sk = d_date_sk
+                where
+                    cr.cr_return_amount > 10000
+                    and cs.cs_net_profit > 1
+                    and cs.cs_net_paid > 0
+                    and cs.cs_quantity > 0
+                    and d_year = 1998
+                    and d_moy = 11
+                group by
+                    cs.cs_item_sk
+            ) catalog
+        where
+            return_rank <= 10
+            or currency_rank <= 10
+        union all
+        select
+            'store' as channel,
+            item,
+            return_ratio,
+            rank() over (
+                order by
+                    return_ratio
+            ) as return_rank,
+            rank() over (
+                order by
+                    currency_ratio
+            ) as currency_rank
+        from
+            (
+                select
+                    sts.ss_item_sk as item,
+                    sum(coalesce(sr.sr_return_quantity, 0)) / sum(coalesce(sts.ss_quantity, 0)) as return_ratio,
+                    sum(coalesce(sr.sr_return_amt, 0)) / sum(coalesce(sts.ss_net_paid, 0)) as currency_ratio
+                from
+                    store_sales sts
+                    left outer join store_returns sr on (
+                        sts.ss_ticket_number = sr.sr_ticket_number
+                        and sts.ss_item_sk = sr.sr_item_sk
+                    )
+                    join date_dim on ss_sold_date_sk = d_date_sk
+                where
+                    sr.sr_return_amt > 10000
+                    and sts.ss_net_profit > 1
+                    and sts.ss_net_paid > 0
+                    and sts.ss_quantity > 0
+                    and d_year = 1998
+                    and d_moy = 11
+                group by
+                    sts.ss_item_sk
+            ) store
+        where
+            return_rank <= 10
+            or currency_rank <= 10
+    ) as tmp
+order by
+    1,
+    4,
+    5,
+    2
+limit
+    100;
+```

@@ -1,0 +1,4 @@
+1. Use WITH clause for subqueries: This rule can be applied when the query contains subqueries that are complex or used multiple times in the main query.
+2. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses implicit JOIN syntax (comma-separated tables in FROM clause).
+3. Replace subquery in WHERE clause with JOIN: This rule can be applied when there is a subquery in the WHERE clause that is used to filter rows based on a condition that involves another table.
+4. Use IN instead of equals for subquery in WHERE clause: This rule can be applied when the subquery in the WHERE clause can potentially return more than one row.

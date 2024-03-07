@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This makes the query easier to read and understand, and can potentially improve performance by providing the query optimizer with more information about the relationships between tables.
+2. Use CTEs (Common Table Expressions) to break down complex queries: This makes the query easier to read and maintain, and can also improve performance by allowing the database to materialize intermediate results.
+3. Apply DISTINCT after the INTERSECT operations: This can potentially improve performance by reducing the amount of data that needs to be processed in the INTERSECT operations.
+4. Move the LIMIT clause to the outermost query: This can improve performance by reducing the amount of data that needs to be processed in the final query.

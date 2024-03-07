@@ -1,0 +1,4 @@
+1. Combine similar subqueries using UNION ALL: This reduces the number of subqueries and makes the query easier to read and maintain. It also allows the database to perform one full table scan instead of multiple, which can improve performance.
+2. Replace FULL OUTER JOIN with UNION ALL and conditional aggregation: This eliminates the need for a potentially expensive join operation and can improve performance. The conditional aggregation allows us to count the distinct customers for each sale type.
+3. Use COUNT DISTINCT with conditional statements instead of SUM with CASE WHEN: This simplifies the query and can improve performance by reducing the number of operations. The COUNT DISTINCT function is used to count the unique customers for each sale type.
+4. Move the date filtering condition to the JOIN clause: This can improve performance by reducing the number of rows that need to be joined.

@@ -1,0 +1,5 @@
+1. Remove unnecessary subqueries: The original query has three subqueries (ssr, csr, wsr) that are not necessary. Each of these subqueries can be replaced with a single SELECT statement. This simplifies the query and reduces the amount of data that needs to be processed.
+2. Use UNION ALL instead of UNION: UNION removes duplicate rows, which requires additional processing. If you know that the result sets from your queries do not overlap, you can use UNION ALL to improve performance.
+3. Remove the ROLLUP function: The ROLLUP function creates subtotals and grand totals, which can be expensive in terms of processing. If these totals are not needed, removing the ROLLUP function can improve performance.
+4. Limit the number of rows returned: The original query uses a LIMIT clause to restrict the number of rows returned. This can significantly reduce the amount of data that needs to be processed and returned to the client.
+5. Use indexing: If the columns used in the WHERE, JOIN and ORDER BY clauses are indexed, the database can locate the necessary data more quickly. This can significantly improve query performance.

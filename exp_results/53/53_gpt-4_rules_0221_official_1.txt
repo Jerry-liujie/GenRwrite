@@ -1,0 +1,3 @@
+1. Use JOIN clause instead of WHERE clause for joining tables: This makes the query more readable and easier to maintain.
+2. Replace IN clause with BETWEEN for continuous integer values: This can improve performance as it reduces the number of comparisons.
+3. Move conditions from CASE statement to WHERE clause: This can improve performance as it reduces the complexity of the query.

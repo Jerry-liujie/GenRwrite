@@ -1,0 +1,41 @@
+with avg_profit as
+  (select ss_item_sk,
+          avg(ss_net_profit) as avg_profit
+   from store_sales
+   where ss_store_sk = 4
+   group by ss_item_sk
+   having avg(ss_net_profit) > 0.9 *
+     (select avg(ss_net_profit)
+      from store_sales
+      where ss_store_sk = 4
+        and ss_hdemo_sk is null
+      group by ss_store_sk)),
+     ranked_profit_asc as
+  (select ss_item_sk,
+          rank() over (
+                       order by avg_profit asc) as rank
+   from avg_profit),
+     ranked_profit_desc as
+  (select ss_item_sk,
+          rank() over (
+                       order by avg_profit desc) as rank
+   from avg_profit),
+     top_10_asc as
+  (select ss_item_sk,
+          rank
+   from ranked_profit_asc
+   where rank < 11 ),
+     top_10_desc as
+  (select ss_item_sk,
+          rank
+   from ranked_profit_desc
+   where rank < 11 )
+select asc_rank.rank,
+       i1.i_product_name as best_performing,
+       i2.i_product_name as worst_performing
+from top_10_asc asc_rank
+join top_10_desc desc_rank on asc_rank.rank = desc_rank.rank
+join item i1 on i1.i_item_sk = asc_rank.ss_item_sk
+join item i2 on i2.i_item_sk = desc_rank.ss_item_sk
+order by asc_rank.rank
+limit 100;

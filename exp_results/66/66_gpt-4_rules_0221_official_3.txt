@@ -1,0 +1,6 @@
+1. Combine similar subqueries into one: This reduces the complexity of the query and makes it easier to read and maintain.
+2. Use UNION ALL instead of UNION when possible: UNION ALL is faster than UNION because UNION removes duplicate rows, which requires extra processing.
+3. Use derived tables to simplify complex queries: This can make the query easier to understand and can also improve performance by reducing the number of times the database needs to scan the same table.
+4. Avoid calculations in the GROUP BY clause: Calculations in the GROUP BY clause can slow down query performance. Instead, perform calculations in a subquery or derived table and then group by the calculated result.
+5. Limit the number of rows returned: Using the LIMIT clause can improve performance by reducing the amount of data that needs to be returned.
+6. Use indexes on columns used in joins and WHERE clauses: Indexes can significantly improve query performance by reducing the amount of data that needs to be scanned.

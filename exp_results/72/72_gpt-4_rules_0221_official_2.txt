@@ -1,0 +1,5 @@
+1. Use subquery to filter data: By using subqueries to filter data in the where clause, we can reduce the amount of data that needs to be joined, which can significantly improve performance.
+2. Eliminate unnecessary joins: The original query joins the 'promotion' and 'catalog_returns' tables, but the results are not used in the select or where clauses. Removing these joins can improve performance.
+3. Use 'in' instead of '=' for subqueries: When comparing a column to a subquery that returns multiple rows, use 'in' instead of '='. This can improve performance by allowing the database to stop searching once it finds a match.
+4. Use 'not in' instead of left outer join for exclusion: When excluding rows based on a condition, use 'not in' instead of a left outer join. This can improve performance by reducing the amount of data that needs to be joined.
+5. Move constant conditions to subquery: By moving conditions that involve constants (such as 'd1.d_year = 1998') to the subquery, we can reduce the amount of data that needs to be processed in the main query, which can improve performance.

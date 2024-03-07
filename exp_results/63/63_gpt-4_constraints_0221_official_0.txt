@@ -1,0 +1,4 @@
+1. Use JOIN clause instead of WHERE for joining tables: This rule can be applied when multiple tables are being combined based on common columns. 
+2. Use BETWEEN operator for range conditions: This rule can be applied when there are conditions that involve checking if a value falls within a certain range.
+3. Move complex calculations to subquery: This rule can be applied when the main query involves complex calculations that are based on the same set of data.
+4. Create an alias for complex calculations and use it in WHERE clause: This rule can be applied when the same complex calculation is being used multiple times in the query.

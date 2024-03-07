@@ -1,0 +1,2 @@
+1. Replace implicit JOINs with explicit JOINs: This makes the query easier to read and understand. It also allows the database engine to optimize the query more effectively.
+2. Remove duplicate values in the IN clause: The same value 'TN' is repeated multiple times in the IN clause. This is unnecessary and can be replaced with a single equality check. This simplifies the query and can potentially improve performance.

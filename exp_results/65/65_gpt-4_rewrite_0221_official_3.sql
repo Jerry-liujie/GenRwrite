@@ -1,0 +1,44 @@
+```sql
+with revenue_per_store as (
+    select
+        ss_store_sk,
+        ss_item_sk,
+        sum(ss_sales_price) as revenue
+    from
+        store_sales
+    join date_dim on ss_sold_date_sk = d_date_sk
+    where
+        d_month_seq between 1176 and 1176 + 11
+    group by
+        ss_store_sk,
+        ss_item_sk
+),
+average_revenue as (
+    select
+        ss_store_sk,
+        avg(revenue) as ave
+    from
+        revenue_per_store
+    group by
+        ss_store_sk
+)
+select
+    s_store_name,
+    i_item_desc,
+    rp.revenue,
+    i_current_price,
+    i_wholesale_cost,
+    i_brand
+from
+    store
+join item on s_store_sk = rp.ss_store_sk and i_item_sk = rp.ss_item_sk
+join revenue_per_store rp on s_store_sk = rp.ss_store_sk
+join average_revenue ar on rp.ss_store_sk = ar.ss_store_sk
+where
+    rp.revenue <= 0.1 * ar.ave
+order by
+    s_store_name,
+    i_item_desc
+limit
+    100;
+```

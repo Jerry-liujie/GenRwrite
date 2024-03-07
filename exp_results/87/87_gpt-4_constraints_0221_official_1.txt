@@ -1,0 +1,3 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when there are multiple tables in the query that need to be combined based on some common columns.
+2. Use MINUS instead of EXCEPT: This rule can be applied when the query needs to return the difference between two select statements and the database system supports the MINUS operator.
+3. Remove DISTINCT when using MINUS/EXCEPT: This rule can be applied when the query uses the MINUS or EXCEPT operators, as these operators automatically remove duplicates.

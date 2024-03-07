@@ -1,0 +1,4 @@
+1. Use UNION ALL instead of UNION: UNION ALL does not remove duplicates and is faster than UNION.
+2. Filter early: Apply the filter on d_year as early as possible to reduce the amount of data processed.
+3. Use JOIN instead of comma-separated FROM clause: JOINs are more readable and can improve performance by allowing the database to use indexes.
+4. Explicitly specify join conditions in the ON clause: This makes the query more readable and can help the database optimize the query.

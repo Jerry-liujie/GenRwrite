@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query more readable and easier to understand.
+2. Replace subquery in the WHERE clause with a calculated column in the SELECT clause: This reduces the number of times the same calculation is performed, improving performance.
+3. Use column alias for calculated columns: This makes the query more readable and easier to maintain.
+4. Use equality operator (=) instead of IN operator for single value comparison: This can improve performance as equality operator is faster than IN operator.

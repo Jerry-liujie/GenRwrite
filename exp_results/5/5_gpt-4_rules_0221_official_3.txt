@@ -1,0 +1,5 @@
+1. Remove unnecessary UNION operations: UNION operations can be expensive as they require the database to remove duplicate rows. If we know that the data sets we are combining do not have any duplicates, we can use UNION ALL instead, which does not remove duplicates and is therefore faster.
+2. Avoid unnecessary subqueries and joins: Subqueries and joins can be expensive operations, especially if they involve large data sets. If possible, we should try to rewrite the query to avoid unnecessary subqueries and joins.
+3. Use JOIN instead of WHERE for linking tables: Using JOIN can be more efficient than using WHERE to link tables, especially if we are dealing with large data sets.
+4. Remove unnecessary CAST operations: CAST operations can be expensive, especially if they are performed on large data sets. If we know that the data types of the columns are already correct, we can remove the CAST operations to improve performance.
+5. Use WHERE clause to filter data as early as possible: By filtering data as early as possible, we can reduce the amount of data that needs to be processed in later stages of the query, which can significantly improve performance.

@@ -1,0 +1,4 @@
+1. Use CTEs to simplify complex subqueries: This improves readability and maintainability of the query by breaking down complex subqueries into smaller, more manageable parts.
+2. Use explicit join syntax instead of implicit join syntax: This improves readability and makes the query easier to understand and maintain.
+3. Push down predicates where possible: This improves performance by reducing the amount of data that needs to be processed in the later stages of the query.
+4. Replace implicit joins with explicit joins: This improves readability and makes the query easier to understand and maintain.

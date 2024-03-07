@@ -1,0 +1,3 @@
+1. Use of Common Table Expressions (CTEs): CTEs are used to create temporary result sets that can be referenced within another SELECT, INSERT, UPDATE, or DELETE statement. They improve readability and performance by reducing the need for repeated queries.
+2. Avoiding subqueries in SELECT clause: Subqueries in the SELECT clause are executed for each row returned by the main query. By moving these subqueries to a CTE, they are only executed once, improving performance.
+3. Combining count and average calculations in a single query: This reduces the number of times the database needs to scan the table, improving performance.

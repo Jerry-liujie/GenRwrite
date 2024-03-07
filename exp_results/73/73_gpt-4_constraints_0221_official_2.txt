@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Replace OR conditions with IN clause: This rule can be applied when there are multiple OR conditions in a WHERE clause that check if a column's value is one of several specific values.
+3. Replace repetitive conditions in WHERE clause with BETWEEN operator: This rule can be applied when there are two conditions in a WHERE clause that check if a column's value is greater than or equal to a lower limit and less than or equal to an upper limit.
+4. Remove redundant conditions in WHERE clause: This rule can be applied when there are conditions in a WHERE clause that are either repeated or unnecessary for the query's logic.
+5. Move subquery from FROM clause to JOIN clause: This rule can be applied when a subquery in the FROM clause is only used to filter rows from one of the main query's tables.

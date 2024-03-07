@@ -1,0 +1,81 @@
+with asceding as (
+    select
+        item_sk,
+        rank() over (
+            order by
+                rank_col asc
+        ) rnk
+    from
+        (
+            select
+                ss_item_sk as item_sk,
+                avg(ss_net_profit) as rank_col
+            from
+                store_sales
+            where
+                ss_store_sk = 4
+            group by
+                ss_item_sk
+            having
+                avg(ss_net_profit) > 0.9 *(
+                    select
+                        avg(ss_net_profit)
+                    from
+                        store_sales
+                    where
+                        ss_store_sk = 4
+                        and ss_hdemo_sk is null
+                    group by
+                        ss_store_sk
+                )
+        ) 
+    where
+        rnk < 11
+), 
+descending as (
+    select
+        item_sk,
+        rank() over (
+            order by
+                rank_col desc
+        ) rnk
+    from
+        (
+            select
+                ss_item_sk as item_sk,
+                avg(ss_net_profit) as rank_col
+            from
+                store_sales
+            where
+                ss_store_sk = 4
+            group by
+                ss_item_sk
+            having
+                avg(ss_net_profit) > 0.9 *(
+                    select
+                        avg(ss_net_profit)
+                    from
+                        store_sales
+                    where
+                        ss_store_sk = 4
+                        and ss_hdemo_sk is null
+                    group by
+                        ss_store_sk
+                )
+        ) 
+    where
+        rnk < 11
+)
+select
+    asceding.rnk,
+    i1.i_product_name as best_performing,
+    i2.i_product_name as worst_performing
+from
+    asceding
+    join item i1 on i1.i_item_sk = asceding.item_sk
+    join descending on asceding.rnk = descending.rnk
+    join item i2 on i2.i_item_sk = descending.item_sk
+order by
+    asceding.rnk
+limit
+    100;

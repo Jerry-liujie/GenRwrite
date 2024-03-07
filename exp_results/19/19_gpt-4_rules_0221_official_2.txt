@@ -1,0 +1,3 @@
+1. Push down predicates: By pushing down predicates into subqueries, we can reduce the amount of data that needs to be processed in the join operations. This can significantly improve the performance of the query.
+2. Use subqueries to pre-filter data: By using subqueries to pre-filter data, we can reduce the amount of data that needs to be processed in the main query. This can also improve the performance of the query.
+3. Avoid using functions in join conditions: By avoiding the use of functions in join conditions, we can take advantage of index usage and improve the performance of the query.

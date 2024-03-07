@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This makes the query more readable and maintainable.
+2. Use BETWEEN for range conditions: This simplifies the query and can potentially improve performance.
+3. Calculate complex expressions once and reuse the result: This can reduce the computation overhead and improve performance.
+4. Use subquery to filter the results: This can reduce the amount of data that needs to be processed in the outer query, which can improve performance.

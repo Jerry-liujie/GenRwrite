@@ -1,0 +1,4 @@
+1. Use CTEs for subqueries: This rule can be applied when the query contains subqueries that are used multiple times or when the subquery is complex and makes the main query difficult to read.
+2. Use JOIN instead of WHERE for table relationships: This rule can be applied when there are relationships between tables that are expressed in the WHERE clause of the query.
+3. Use IN instead of = for subquery in WHERE clause: This rule can be applied when the subquery in the WHERE clause can return multiple rows.
+4. Move calculations to CTEs: This rule can be applied when there are calculations in the main query that are based on columns from the same table or when the same calculation is used multiple times in the query.

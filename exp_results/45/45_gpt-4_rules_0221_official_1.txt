@@ -1,0 +1,3 @@
+1. Use WITH clause for subqueries: This can improve readability and maintainability of the code. It can also improve performance by materializing the subquery result.
+2. Use explicit JOIN syntax instead of comma-separated tables: This can improve readability and can also help the database optimizer to better understand the query.
+3. Move conditions to the ON clause of the JOIN statement: This can improve performance by reducing the number of rows that need to be joined.

@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for joining tables: This can improve performance by reducing the amount of data that needs to be processed. It also makes the query easier to read and understand.
+2. Replace multiple year conditions with a range: This can simplify the query and potentially improve performance by reducing the number of conditions that need to be evaluated.
+3. Use aliases for table names: This can make the query easier to read and understand, especially when dealing with complex queries involving multiple tables.
+4. Move conditions from the having clause to the where clause: This can improve performance by reducing the amount of data that needs to be processed.
+5. Group by customer names in the outer query instead of in the subqueries: This can improve performance by reducing the amount of data that needs to be grouped.

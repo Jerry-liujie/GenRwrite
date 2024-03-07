@@ -1,0 +1,4 @@
+1. Use CTEs to simplify the query: This rule can be applied when the query includes multiple subqueries or complex expressions that are used multiple times in the query.
+2. Use UNION ALL instead of UNION: This rule can be applied when combining results from multiple SELECT statements and there is no need to remove duplicate rows.
+3. Move the ranking functions to the outer query: This rule can be applied when ranking functions are used in multiple subqueries or when the ranking is based on the combined result of multiple subqueries.
+4. Use the WHERE clause to filter rows after the UNION ALL: This rule can be applied when there are conditions that can be used to filter the results after combining the results from multiple SELECT statements.

@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query easier to read and understand. It also allows the database to optimize the query more effectively.
+2. Remove unnecessary table joins: If a table is not used in the SELECT, WHERE, or ORDER BY clauses, it can be removed from the query. This reduces the amount of data that needs to be processed, improving performance.
+3. Use indexes on columns used in JOIN and WHERE clauses: Indexes can significantly speed up data retrieval. However, this rule assumes that appropriate indexes have been created on the relevant columns.
+4. Limit the number of results returned: Using the LIMIT clause can improve performance by reducing the amount of data that needs to be sent to the client. However, this should be used judiciously, as it can also lead to incomplete results.

@@ -1,0 +1,4 @@
+1. Use JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being used in the query and there is a need to combine rows from these tables based on a related column.
+2. Use BETWEEN operator for range conditions: This rule can be applied when there are conditions that specify a range of values for a particular column.
+3. Move conditions from WHERE clause to JOIN ON clause: This rule can be applied when there are conditions that can be used to filter the data during the join operation, rather than after the join has been completed.
+4. Remove unnecessary CASE statement: This rule can be applied when there are CASE statements in the query that are not necessary for the desired output or that could be simplified.

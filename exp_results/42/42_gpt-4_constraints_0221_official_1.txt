@@ -1,0 +1,2 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Move conditions from WHERE clause to ON clause in JOINs when possible: This rule can be applied when there are conditions in the WHERE clause that directly relate to the relationship between two tables being joined.

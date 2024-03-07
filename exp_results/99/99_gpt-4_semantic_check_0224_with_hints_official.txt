@@ -1,0 +1,48 @@
+select warehouse_name,
+       sm_type,
+       cc_name,
+       sum("30 days"),
+       sum("31-60 days"),
+       sum("61-90 days"),
+       sum("91-120 days"),
+       sum(">120 days")
+from
+  (select substr(w_warehouse_name, 1, 20) as warehouse_name,
+          sm_type,
+          cc_name,
+          case
+              when (cs_ship_date_sk - cs_sold_date_sk <= 30) then 1
+              else 0
+          end as "30 days",
+          case
+              when (cs_ship_date_sk - cs_sold_date_sk > 30)
+                   and (cs_ship_date_sk - cs_sold_date_sk <= 60) then 1
+              else 0
+          end as "31-60 days",
+          case
+              when (cs_ship_date_sk - cs_sold_date_sk > 60)
+                   and (cs_ship_date_sk - cs_sold_date_sk <= 90) then 1
+              else 0
+          end as "61-90 days",
+          case
+              when (cs_ship_date_sk - cs_sold_date_sk > 90)
+                   and (cs_ship_date_sk - cs_sold_date_sk <= 120) then 1
+              else 0
+          end as "91-120 days",
+          case
+              when (cs_ship_date_sk - cs_sold_date_sk > 120) then 1
+              else 0
+          end as ">120 days"
+   from catalog_sales
+   join warehouse on cs_warehouse_sk = w_warehouse_sk
+   join ship_mode on cs_ship_mode_sk = sm_ship_mode_sk
+   join call_center on cs_call_center_sk = cc_call_center_sk
+   join date_dim on cs_ship_date_sk = d_date_sk
+   where d_month_seq between 1194 and 1194 + 11 ) subquery
+group by warehouse_name,
+         sm_type,
+         cc_name
+order by warehouse_name,
+         sm_type,
+         cc_name
+limit 100;

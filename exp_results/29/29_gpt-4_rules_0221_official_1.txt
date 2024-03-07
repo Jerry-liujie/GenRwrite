@@ -1,0 +1,4 @@
+1. Use subquery to reduce the size of the data set: This will reduce the amount of data that needs to be processed in the main query, which can significantly improve performance.
+2. Use IN clause instead of direct join on date_dim table: This reduces the number of joins in the query, which can improve performance.
+3. Use join instead of where clause for table relationships: This makes the query more readable and can also improve performance by allowing the database to use indexes more efficiently.
+4. Group by in subquery: This reduces the number of rows that need to be processed in the main query, which can improve performance.

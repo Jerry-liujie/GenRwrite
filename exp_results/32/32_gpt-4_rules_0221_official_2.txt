@@ -1,0 +1,5 @@
+1. Use JOIN instead of comma-separated FROM clause: It makes the query more readable and is more standard SQL.
+2. Use CTE (Common Table Expressions) for subqueries: It makes the query more readable and can be more efficient as the result can be reused.
+3. Remove redundant subquery in WHERE clause: It improves performance by reducing the number of subqueries.
+4. Use table alias for better readability: It makes the query easier to understand and maintain.
+5. Move conditions to ON clause in JOINs where possible: It can improve performance by reducing the amount of data that needs to be processed.

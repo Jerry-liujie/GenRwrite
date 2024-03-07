@@ -1,0 +1,4 @@
+1. Filter data as early as possible: By moving the condition `d_year = 1998` into each of the subqueries, we reduce the amount of data that needs to be processed in the main query. This can significantly improve performance.
+2. Remove unnecessary subqueries: The join with `date_dim` table was removed from each subquery as it was not contributing to the final result. This simplifies the query and reduces the amount of data that needs to be processed.
+3. Replace multiple year conditions with a range: The condition `ss_sold_year = 1998` was replaced with a range condition in the subquery, reducing the number of comparisons that need to be made.
+4. Move conditions from the having clause to the where clause: The condition `( coalesce(ws_qty, 0) > 0 or coalesce(cs_qty, 0) > 0 )` was moved from the having clause to the where clause, allowing it to be evaluated earlier in the query execution and potentially reducing the amount of data that needs to be processed.

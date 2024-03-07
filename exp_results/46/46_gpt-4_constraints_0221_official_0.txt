@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated table list in FROM clause: This rule can be applied when multiple tables are being joined in a query.
+2. Remove redundant values in IN clause: This rule can be applied when the IN clause of a query contains duplicate values.
+3. Use aliases for table names: This rule can be applied when a query involves multiple tables, especially when those tables have long or complex names.
+4. Use aliases for calculated fields: This rule can be applied when a query includes calculated fields, especially when those calculations are complex or when the calculated fields are referenced elsewhere in the query.
+5. Remove unnecessary parentheses in WHERE clause: This rule can be applied when the WHERE clause of a query contains parentheses that do not affect the logic of the conditions.

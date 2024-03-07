@@ -1,0 +1,23 @@
+select
+    count(*)
+from
+    store_sales
+join
+    household_demographics
+on
+    ss_hdemo_sk = household_demographics.hd_demo_sk
+join
+    time_dim
+on
+    ss_sold_time_sk = time_dim.t_time_sk
+join
+    store
+on
+    ss_store_sk = s_store_sk
+where
+    time_dim.t_hour = 8
+    and time_dim.t_minute >= 30
+    and household_demographics.hd_dep_count = 0
+    and store.s_store_name = 'ese'
+limit
+    100;

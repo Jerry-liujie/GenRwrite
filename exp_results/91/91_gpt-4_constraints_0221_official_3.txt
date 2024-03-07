@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Remove unnecessary parentheses in WHERE clause: This rule can be applied when the WHERE clause contains multiple conditions that are grouped by parentheses, but the grouping does not affect the logic of the conditions.
+3. Use alias for calculated columns in ORDER BY clause: This rule can be applied when a query includes calculated columns and these columns are used in the ORDER BY clause.

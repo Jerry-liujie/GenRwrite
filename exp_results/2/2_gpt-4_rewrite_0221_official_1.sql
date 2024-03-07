@@ -1,0 +1,45 @@
+```sql
+with wscs as (
+    select
+        d_week_seq,
+        sum(case when d_day_name = 'Sunday' then sales_price else 0 end) as sun_sales,
+        sum(case when d_day_name = 'Monday' then sales_price else 0 end) as mon_sales,
+        sum(case when d_day_name = 'Tuesday' then sales_price else 0 end) as tue_sales,
+        sum(case when d_day_name = 'Wednesday' then sales_price else 0 end) as wed_sales,
+        sum(case when d_day_name = 'Thursday' then sales_price else 0 end) as thu_sales,
+        sum(case when d_day_name = 'Friday' then sales_price else 0 end) as fri_sales,
+        sum(case when d_day_name = 'Saturday' then sales_price else 0 end) as sat_sales
+    from
+        (
+            select
+                ws_sold_date_sk as sold_date_sk,
+                ws_ext_sales_price as sales_price
+            from
+                web_sales
+            union all
+            select
+                cs_sold_date_sk,
+                cs_ext_sales_price
+            from
+                catalog_sales
+        ) as tmp
+        join date_dim on date_dim.d_date_sk = tmp.sold_date_sk
+    where
+        d_year in (1998, 1999)
+    group by
+        d_week_seq
+)
+select
+    d_week_seq,
+    round(sun_sales / lag(sun_sales, 53) over (order by d_week_seq), 2) as sun_sales,
+    round(mon_sales / lag(mon_sales, 53) over (order by d_week_seq), 2) as mon_sales,
+    round(tue_sales / lag(tue_sales, 53) over (order by d_week_seq), 2) as tue_sales,
+    round(wed_sales / lag(wed_sales, 53) over (order by d_week_seq), 2) as wed_sales,
+    round(thu_sales / lag(thu_sales, 53) over (order by d_week_seq), 2) as thu_sales,
+    round(fri_sales / lag(fri_sales, 53) over (order by d_week_seq), 2) as fri_sales,
+    round(sat_sales / lag(sat_sales, 53) over (order by d_week_seq), 2) as sat_sales
+from
+    wscs
+order by
+    d_week_seq;
+```

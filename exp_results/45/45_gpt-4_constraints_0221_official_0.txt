@@ -1,0 +1,4 @@
+1. Use CTE to pre-filter data: This rule can be applied when there are complex subqueries or repeated calculations that can be simplified and isolated using a CTE.
+2. Use JOIN instead of WHERE for linking tables: This rule can be applied when there are multiple tables that need to be combined based on common columns.
+3. Replace IN subquery with JOIN to a CTE: This rule can be applied when there is an IN subquery that checks for the existence of a value in a list that can be replaced with a JOIN to a CTE.
+4. Filter as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query, reducing the amount of data that needs to be processed in later stages.

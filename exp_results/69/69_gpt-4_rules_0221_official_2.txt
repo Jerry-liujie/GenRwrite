@@ -1,0 +1,4 @@
+1. Use explicit join syntax instead of comma-separated tables in the FROM clause: This makes the query more readable and easier to understand, reducing the chance of errors.
+2. Move subqueries to a derived table in the FROM clause: This can improve performance by reducing the number of times the subquery is executed.
+3. Use EXISTS instead of IN for subqueries: EXISTS can be more efficient than IN when the subquery results is very large.
+4. Use NOT EXISTS instead of NOT IN for subqueries: NOT EXISTS can be more efficient than NOT IN when the subquery results is very large.

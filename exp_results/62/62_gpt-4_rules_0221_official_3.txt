@@ -1,0 +1,3 @@
+1. Subquery Factoring: By moving the case statements into a subquery, we can avoid calculating them multiple times for each sum. This can improve the performance of the query.
+2. Use IN clause for subquery: Instead of joining the date_dim table, we can use a subquery in the where clause to filter the dates. This can reduce the number of rows that need to be joined, which can improve performance.
+3. Use table alias: Using table aliases can make the query easier to read and understand, which can help prevent errors.

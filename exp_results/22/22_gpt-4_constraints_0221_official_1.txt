@@ -1,0 +1,2 @@
+1. Use subquery to filter data before joining: This rule can be applied when the join operation involves large tables and there are conditions that can be used to filter out unnecessary data before the join operation.
+2. Push down predicates: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query, particularly before expensive operations like joins or aggregations.

@@ -1,0 +1,5 @@
+1. Remove unnecessary columns from the select and group by clauses: This reduces the amount of data that needs to be processed and grouped.
+2. Replace multiple year conditions with a range: This simplifies the query and can potentially improve performance if the database can optimize range conditions better.
+3. Move conditions from the having clause to the where clause: This can improve performance as the where clause is evaluated before the group by clause, reducing the amount of data that needs to be grouped.
+4. Join the subqueries in the from clause instead of in the where clause: This can improve performance as it allows the database to optimize the join operation.
+5. Group by customer names in the outer query instead of in the subqueries: This reduces the amount of data that needs to be grouped in the subqueries and can improve performance.

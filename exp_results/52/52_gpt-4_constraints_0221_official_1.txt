@@ -1,0 +1,3 @@
+1. Replace implicit JOINs with explicit JOINs: This rule can be applied when the query uses implicit JOIN syntax (i.e., listing tables in the FROM clause separated by commas and specifying the join conditions in the WHERE clause).
+2. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that are related to the tables being joined.
+3. Use LIMIT clause to reduce the amount of data returned: This rule can be applied when the query does not have a LIMIT clause and the amount of data that needs to be returned is not important or can be limited.

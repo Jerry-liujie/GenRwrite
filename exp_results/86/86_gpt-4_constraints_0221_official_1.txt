@@ -1,0 +1,3 @@
+1. Use CTEs to simplify complex queries: This rule can be applied when the query is complex and involves multiple operations that can be broken down into smaller, more manageable parts.
+2. Use JOIN instead of WHERE for combining tables: This rule can be applied when multiple tables are being combined based on a common column or set of columns.
+3. Filter data as early as possible: This rule can be applied when there are conditions that can be used to limit the amount of data that needs to be processed in the later stages of the query.

@@ -1,0 +1,3 @@
+1. Use CTEs to break down complex queries: This makes the query easier to understand and can improve performance by reducing the amount of data processed in later stages of the query.
+2. Move conditions to the earliest possible point in the query: This reduces the amount of data processed in later stages of the query, improving performance.
+3. Use JOIN instead of comma-separated FROM clause: This can improve performance by allowing the database to use indexes more effectively.

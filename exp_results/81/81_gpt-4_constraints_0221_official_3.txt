@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when multiple tables are being combined based on matching column values.
+2. Pre-calculate the average return: This rule can be applied when the same aggregate function (like AVG, SUM, etc.) is being calculated multiple times in the query.
+3. Use subquery to calculate average return: This rule can be applied when an aggregate function is being used in a condition or a calculation in the main query.
+4. Use JOIN instead of WHERE for combining the main query with the subquery: This rule can be applied when a subquery is being used in the WHERE clause of the main query.

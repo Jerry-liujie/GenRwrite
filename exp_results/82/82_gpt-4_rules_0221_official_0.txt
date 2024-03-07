@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This makes the query more readable and easier to understand. It can also help the database optimize the query.
+2. Remove unnecessary cast function: The cast function can be expensive, especially when dealing with large amounts of data. By removing it, we can improve the performance of the query.
+3. Use literals instead of calculations in the where clause: This can help the database optimize the query by reducing the amount of computation needed.
+4. Use limit clause: This can help improve the performance of the query by reducing the amount of data that needs to be returned.

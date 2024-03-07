@@ -1,0 +1,3 @@
+1. Replace WHERE clause joins with ANSI JOINs: This rule can be applied when there are joins in the WHERE clause of the SQL query, which can be replaced with ANSI JOINs for better readability and maintainability.
+2. Use subqueries to pre-calculate aggregates: This rule can be applied when there are aggregate functions used in the main query, which can be pre-calculated using subqueries to potentially improve performance.
+3. Avoid using subqueries in the WHERE clause: This rule can be applied when there are subqueries in the WHERE clause, which can be inefficient and can be replaced with a join to a subquery that calculates the necessary values once.

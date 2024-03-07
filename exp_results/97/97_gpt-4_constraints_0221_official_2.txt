@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being joined in a query, especially if there are complex join conditions.
+2. Replace FULL OUTER JOIN with UNION ALL: This rule can be applied when the data from two or more tables need to be combined, and there are no matching rows that need to be excluded.
+3. Use a combined subquery to consolidate the data from the two original subqueries: This rule can be applied when the same calculations or operations are being performed on multiple subqueries.
+4. Move the aggregation to the final query: This rule can be applied when there are aggregations in subqueries that can be moved to the final query to reduce the amount of data that needs to be processed in the intermediate steps.
+5. Use a case statement to categorize the data: This rule can be applied when there are multiple conditions that need to be evaluated to categorize the data.

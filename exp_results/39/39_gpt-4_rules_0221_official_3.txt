@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for combining tables: This can improve readability and performance as the database can optimize the join operation.
+2. Move calculations to the SELECT clause: This can improve performance by reducing the number of calculations the database has to perform.
+3. Use HAVING clause for filtering grouped data: This can improve performance by reducing the amount of data that needs to be processed.
+4. Avoid using subqueries when not necessary: Subqueries can often be replaced with JOINs or other constructs, which can be more efficient.
+5. Avoid using CASE statements in WHERE clause: This can improve performance by simplifying the query and allowing the database to use indexes more effectively.

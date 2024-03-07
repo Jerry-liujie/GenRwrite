@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated table list in FROM clause: This rule can be applied when multiple tables are being joined in a query. 
+2. Move join conditions from WHERE clause to ON clause: This rule can be applied when there are conditions in the WHERE clause that are actually join conditions between tables.
+3. Use UNION ALL instead of UNION: This rule can be applied when combining results from multiple SELECT statements and there is no need to remove duplicate rows.

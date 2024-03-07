@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one: This reduces the number of scans on the same table and reduces the complexity of the query.
+2. Use window function instead of self-join: Window functions are more efficient than self-join operations. They can perform calculations across a set of table rows that are related to the current row.
+3. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query.
+4. Replace NULL with 0 in aggregation: This avoids unnecessary NULL checks and can improve performance.

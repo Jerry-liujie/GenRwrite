@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for joining tables: This makes the query more readable and maintainable. It also allows the database to optimize the join operation.
+2. Use window functions (LAG, LEAD) instead of self-join: This reduces the complexity of the query and improves performance by avoiding unnecessary data duplication and computation.
+3. Combine WHERE conditions: This simplifies the query and can improve performance by reducing the number of operations.
+4. Avoid unnecessary calculations in the ORDER BY clause: This can improve performance by reducing the amount of computation needed to sort the results.

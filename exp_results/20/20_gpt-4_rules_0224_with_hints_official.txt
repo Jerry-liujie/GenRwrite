@@ -1,0 +1,5 @@
+1. Use CTE (Common Table Expressions) to break down complex queries: This makes the query easier to read and maintain. It also allows for better optimization by the database engine.
+2. Filter in subquery: By filtering the data in the subquery, we reduce the amount of data that needs to be processed in the main query. This can significantly improve performance.
+3. Use table aliases for shorter and cleaner code: This makes the query easier to read and write, and reduces the chance of errors.
+4. Move the filtering condition to the end: By moving the filtering condition to the end, we ensure that it is applied after all other operations, reducing the amount of data that needs to be processed.
+5. Reduce the number of tables in the join operation: By joining only the necessary tables, we reduce the complexity of the query and improve performance.

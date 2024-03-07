@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Remove unnecessary columns from the GROUP BY clause: This rule can be applied when the GROUP BY clause includes columns that are not included in the SELECT clause or used in aggregate functions.
+3. Combine similar queries into one by using the IN operator: This rule can be applied when there are multiple similar queries that differ only by a single condition.
+4. Move conditions from the WHERE clause to the JOIN clause when possible: This rule can be applied when there are conditions in the WHERE clause that relate to columns from multiple tables that are being joined.
+5. Remove unnecessary columns from the SELECT clause: This rule can be applied when the SELECT clause includes columns that are not needed in the final output.

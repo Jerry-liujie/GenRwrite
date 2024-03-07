@@ -1,0 +1,4 @@
+1. Use UNION ALL instead of UNION: UNION ALL is faster because it does not remove duplicates, while UNION does, which requires extra processing.
+2. Use IFNULL instead of COALESCE: IFNULL is more efficient than COALESCE because it only checks the first two arguments, while COALESCE checks all arguments until it finds a non-null one.
+3. Use JOIN instead of comma-separated FROM clause: JOIN is more readable and can be more efficient because it allows for better optimization by the database engine.
+4. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query.

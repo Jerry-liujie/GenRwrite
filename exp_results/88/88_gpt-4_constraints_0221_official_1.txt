@@ -1,0 +1,5 @@
+1. Combine multiple subqueries into a single query: This rule can be applied when the query contains multiple subqueries that are querying the same tables.
+2. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This rule can be applied when the query uses comma-separated tables in the FROM clause to join tables.
+3. Use CASE statements to count different conditions in a single pass: This rule can be applied when the query is counting rows that meet different conditions.
+4. Use IN clause for multiple OR conditions on the same column: This rule can be applied when the query contains multiple OR conditions on the same column.
+5. Replace arithmetic operations in WHERE clause with a static list: This rule can be applied when the WHERE clause contains arithmetic operations that can be replaced with a static list of values.

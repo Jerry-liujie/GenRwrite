@@ -1,0 +1,4 @@
+1. Use CTE to pre-filter data: This can reduce the amount of data that needs to be processed in the main query, which can improve performance.
+2. Use JOIN instead of WHERE for linking tables: JOINs are generally more efficient than WHERE clauses for combining rows from two or more tables.
+3. Replace IN subquery with JOIN to a CTE: This can reduce the number of times the subquery needs to be executed, which can improve performance.
+4. Filter as early as possible: By filtering data as early as possible, we reduce the amount of data that needs to be processed in later stages of the query, which can improve performance.

@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when multiple tables are being joined in the query.
+2. Use table aliases: This rule can be applied to any query that references tables multiple times, to make the query more readable and reduce typing.
+3. Move conditions from WHERE clause to ON clause in JOINs where possible: This rule can be applied when there are conditions in the WHERE clause that are based on columns from the joined tables.
+4. Use BETWEEN for range conditions: This rule can be applied when there are conditions that involve checking if a value falls within a certain range.
+5. Limit the number of rows early with a subquery if possible: This rule can be applied when the query is expected to return a large number of rows and only a subset of the results is needed.

@@ -1,0 +1,4 @@
+1. Use explicit join syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Move subqueries to a derived table in the FROM clause: This rule can be applied when a subquery is used in the WHERE or SELECT clause and the subquery is not dependent on any columns in the outer query.
+3. Use EXISTS instead of IN for subqueries: This rule can be applied when a subquery is used in the WHERE clause to check if any rows returned by the subquery match the condition.
+4. Use NOT EXISTS instead of NOT IN for subqueries: This rule can be applied when a subquery is used in the WHERE clause to check if no rows returned by the subquery match the condition.

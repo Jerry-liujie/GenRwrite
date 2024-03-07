@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for linking tables: This rule can be applied when there are multiple tables in the query that need to be linked based on some common columns.
+2. Use a subquery to avoid repeated calculations: This rule can be applied when the same calculation is repeated multiple times in the query.
+3. Use a CTE (Common Table Expression) for repeated subqueries: This rule can be applied when the same subquery is used multiple times in the query.
+4. Use JOIN instead of WHERE for filtering: This rule can be applied when there are conditions that can be used to filter the data and these conditions involve columns from multiple tables.

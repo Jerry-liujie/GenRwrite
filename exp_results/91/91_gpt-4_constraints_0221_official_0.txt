@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit joins, which are indicated by conditions in the WHERE clause that equate columns from different tables.
+2. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that are related to the relationship between tables in JOINs.
+3. Use table alias for better readability: This rule can be applied when the query involves multiple tables, especially when the table names are long or complex.
+4. Group only necessary columns: This rule can be applied when the query uses a GROUP BY clause. The condition to apply this rule is to identify whether all columns in the GROUP BY clause are necessary for the query's requirements.

@@ -1,0 +1,4 @@
+1. Use explicit join syntax instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query, especially when there are complex join conditions.
+2. Use table aliases for shorter and more readable code: This rule can be applied to any query that references tables multiple times, especially when the table names are long or complex.
+3. Only join necessary tables: This rule can be applied when a query is joining multiple tables, but not all of the joined tables are used in the SELECT, WHERE, or GROUP BY clauses.
+4. Filter as early as possible: This rule can be applied when there are conditions in the WHERE clause that can be used to reduce the amount of data that needs to be processed in the later stages of the query.

@@ -1,0 +1,4 @@
+1. Replace implicit JOINs with explicit JOINs: This rule can be applied when there are multiple tables being joined in the query using the WHERE clause instead of the JOIN clause.
+2. Remove duplicate conditions in the IN clause: This rule can be applied when there are duplicate conditions in the IN clause of the query.
+3. Replace the wildcard '*' with specific column in the EXISTS subquery: This rule can be applied when there is an EXISTS subquery using a wildcard '*' to select all columns.
+4. Add a GROUP BY clause: This rule can be applied when there are aggregate functions used in the SELECT clause but no GROUP BY clause is used in the query.

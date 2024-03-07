@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for joining tables: This rule can be applied when multiple tables are being combined based on matching column values.
+2. Use NULLIF function to avoid division by zero: This rule can be applied when there is a division operation in the query and there's a possibility that the denominator could be zero.
+3. Use HAVING clause to filter grouped data: This rule can be applied when the query involves aggregate functions and there's a need to filter the results of these functions.
+4. Remove unnecessary columns from the SELECT clause: This rule can be applied when the query is selecting more columns than necessary for the final result.
+5. Combine two similar queries into one: This rule can be applied when there are two or more queries that are performing similar operations on the same or related data.

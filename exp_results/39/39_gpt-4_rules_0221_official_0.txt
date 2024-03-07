@@ -1,0 +1,5 @@
+1. Replace implicit joins with explicit joins: Explicit joins are more readable and less prone to errors than implicit joins.
+2. Move conditions from WHERE clause to HAVING clause: This allows the database to filter rows after aggregation, which can improve performance.
+3. Use JOIN ON for conditions that relate two tables: This can improve readability and performance by reducing the number of rows that need to be processed.
+4. Remove unnecessary subqueries: Subqueries can often be replaced with JOINs or WHERE conditions, which can improve performance.
+5. Use column aliases for calculated fields: This makes the query more readable and allows the calculated fields to be used in other parts of the query.

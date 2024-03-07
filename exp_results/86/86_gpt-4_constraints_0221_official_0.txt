@@ -1,0 +1,4 @@
+1. Use CTE (Common Table Expressions) to simplify the query: This rule can be applied when the same subquery is used multiple times in the main query or when a complex subquery is used that makes the main query difficult to understand.
+2. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit joins (i.e., joins that are specified in the WHERE clause rather than the FROM clause).
+3. Move the calculation of the rank function into the main query: This rule can be applied when the rank function is used in a subquery and the results of the rank function are only needed for a subset of the rows in the main query.
+4. Use the column alias in the ORDER BY clause: This rule can be applied when the query includes a column alias and the ORDER BY clause refers to the same column.

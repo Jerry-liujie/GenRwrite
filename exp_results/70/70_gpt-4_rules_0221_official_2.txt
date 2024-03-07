@@ -1,0 +1,4 @@
+1. Use CTEs to break down complex queries: This makes the query more readable and maintainable. It can also improve performance by allowing the database to materialize intermediate results.
+2. Replace subqueries with joins where possible: Joins are usually more efficient than subqueries, especially correlated subqueries.
+3. Use window functions for ranking: Window functions can be more efficient than group by for calculating rankings.
+4. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query.

@@ -1,0 +1,4 @@
+1. Replace LEFT JOIN with NOT EXISTS for anti-join: This rule can be applied when the query is using a LEFT JOIN followed by a WHERE clause to exclude records, which is essentially an anti-join.
+2. Remove unnecessary WHERE clause in the main query: This rule can be applied when the subqueries already filter out the records based on a condition and the same condition is checked again in the main query.
+3. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+4. Use JOIN instead of LEFT JOIN when possible: This rule can be applied when we know that every record in the left table has a match in the right table.

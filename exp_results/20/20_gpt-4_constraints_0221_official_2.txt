@@ -1,0 +1,3 @@
+1. Filter data in subquery: This rule can be applied when the query involves joining multiple tables and there are conditions that can be used to filter the data in the subquery before the join operation.
+2. Use alias for tables: This rule can be applied in any query that involves multiple tables or subqueries. It is especially useful when the table names are long or when the same table is used multiple times in the query.
+3. Avoid using functions in the WHERE clause: This rule can be applied when the query uses functions in the WHERE clause that operate on columns used in join conditions or in the SELECT clause.

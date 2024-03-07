@@ -1,0 +1,4 @@
+1. Replace NULL with 0 in aggregation: This will make the sum function simpler and faster because it does not need to check for NULL values.
+2. Use JOIN instead of WHERE for combining tables: This makes the query more readable and can also improve performance in some database systems.
+3. Use window function instead of self-join: This can significantly improve performance because it avoids the need to join the table to itself, which can be very expensive for large tables.
+4. Filter rows as early as possible: This can reduce the amount of data that needs to be processed in later stages of the query.

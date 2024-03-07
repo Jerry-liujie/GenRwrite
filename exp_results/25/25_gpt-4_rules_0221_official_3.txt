@@ -1,0 +1,4 @@
+1. Use subquery to reduce the number of rows for join operation: This can significantly reduce the amount of data that needs to be processed in the join operation, thus improving performance.
+2. Replace multiple join conditions with IN clause: This can simplify the query and potentially improve performance by reducing the number of comparisons needed.
+3. Group by before join: This can reduce the number of rows that need to be joined, thus improving performance.
+4. Use explicit join syntax instead of comma-separated tables: This can improve readability and potentially performance by making the join conditions more explicit.

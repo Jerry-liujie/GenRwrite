@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This makes the query more readable and easier to understand. It also allows the database to better optimize the query execution.
+2. Move conditions from WHERE clause to ON clause in JOINs: This can improve performance by reducing the amount of data that needs to be processed. The database can eliminate rows earlier in the process, before performing the join.
+3. Use table aliases for better readability: This makes the query easier to read and understand, especially when dealing with complex queries with multiple tables.
+4. Join tables in a logical order: This can improve performance by reducing the amount of data that needs to be processed. The database can eliminate rows earlier in the process, before performing the join.

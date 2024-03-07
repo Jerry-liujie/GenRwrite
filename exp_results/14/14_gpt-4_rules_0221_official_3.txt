@@ -1,0 +1,2 @@
+1. Replace multiple where conditions with IN clause: This reduces the number of comparisons and improves the performance of the query.
+2. Use UNION ALL instead of UNION: UNION ALL does not remove duplicates and hence is faster than UNION. Use UNION ALL when you are sure that the datasets do not have duplicates or when duplicates do not matter in the result set.

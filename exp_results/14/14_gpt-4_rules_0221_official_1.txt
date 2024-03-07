@@ -1,0 +1,6 @@
+1. Use IN instead of multiple AND conditions in WHERE clause: This simplifies the query and can improve performance by reducing the number of comparisons.
+2. Avoid unnecessary subqueries: Subqueries can often be rewritten as joins, which are usually faster. In this case, the subquery in the WHERE clause of the main query is unnecessary and can be replaced with a join.
+3. Use UNION ALL instead of UNION: UNION removes duplicate rows, which requires extra processing. If you know that the queries combined with UNION do not produce duplicate rows, use UNION ALL instead to improve performance.
+4. Use EXISTS instead of IN for subqueries: If the subquery returns a large number of rows, EXISTS can be faster than IN.
+5. Avoid calculations in the WHERE clause: Calculations in the WHERE clause can prevent the use of indexes and slow down the query. If possible, pre-calculate values or use a computed column.
+6. Use appropriate indexes: Indexes can greatly improve query performance. Consider adding indexes on columns used in joins, WHERE clauses, and ORDER BY clauses.

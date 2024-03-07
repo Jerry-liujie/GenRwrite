@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one: This rule can be applied when there are multiple subqueries in the main query that are scanning the same table and can be combined into a single subquery.
+2. Use left join instead of inner join: This rule can be applied when there is a need to keep all records from the left table, even if there are no matching records in the right table.
+3. Use case when to calculate the sum: This rule can be applied when there are multiple sum calculations in the query that can be combined into a single sum calculation using case when.
+4. Use where clause to filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.

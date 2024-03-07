@@ -1,0 +1,3 @@
+1. Replace LEFT JOIN with NOT EXISTS for anti-join: This rule can be applied when the query is trying to exclude rows from the first table that have a match in the second table.
+2. Remove unnecessary WHERE clause in subqueries: This rule can be applied when the conditions in the WHERE clause of a subquery are redundant or unnecessary for the result of the main query.
+3. Use JOIN instead of LEFT JOIN when possible: This rule can be applied when we know that every row from the first table will definitely have a match in the second table, thus eliminating the need for a LEFT JOIN which includes rows from the first table that don't have a match in the second table.

@@ -1,0 +1,3 @@
+1. Combine multiple subqueries into one: This rule can be applied when there are multiple subqueries in the main query that are scanning the same table and performing similar operations.
+2. Use case when in aggregation functions: This rule can be applied when there are multiple aggregation functions that are based on different conditions on the same column or set of columns.
+3. Consolidate where clause conditions: This rule can be applied when there are multiple conditions in the where clause that can be combined using logical operators (AND, OR).

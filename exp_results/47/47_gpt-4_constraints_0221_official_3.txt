@@ -1,0 +1,3 @@
+1. Use window functions for previous and next values: This rule can be applied when we need to compare a value with its preceding or succeeding value in the same column, especially when the comparison is based on some order.
+2. Remove unnecessary subquery: This rule can be applied when the subquery is not contributing to the final result or its operation can be performed in the main query itself.
+3. Avoid unnecessary calculations: This rule can be applied when the same calculation or condition is being used multiple times in the query. Instead, we can perform the calculation once and use its result wherever required.

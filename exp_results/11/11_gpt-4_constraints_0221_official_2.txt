@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for linking tables: This rule can be applied when there are multiple tables in the query that need to be linked based on certain conditions.
+2. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+3. Avoid UNION ALL if not necessary: This rule can be applied when the query uses UNION ALL to combine the result sets of two or more SELECT statements, but the same result can be achieved using JOINs.
+4. Avoid unnecessary calculations: This rule can be applied when the query includes repeated or unnecessary calculations that can be simplified or eliminated.
+5. Use subqueries for complex calculations: This rule can be applied when the query includes complex calculations that can be isolated in subqueries to simplify the main query and improve performance.

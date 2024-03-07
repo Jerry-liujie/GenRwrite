@@ -1,0 +1,4 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This improves readability and allows the database to better optimize the query execution.
+2. Move join conditions from WHERE clause to ON clause in JOINs: This makes the query more readable and can improve performance by reducing the amount of data that needs to be processed.
+3. Use CTEs to pre-calculate subqueries: This can improve performance by avoiding repeated calculation of the same subquery, and it also improves readability.
+4. Remove unnecessary parentheses: This improves readability of the query.

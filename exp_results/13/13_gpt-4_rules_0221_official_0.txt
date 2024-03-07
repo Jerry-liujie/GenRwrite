@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query more readable and easier to understand.
+2. Combine similar conditions in the WHERE clause: This simplifies the query and can improve performance by reducing the number of conditions the database has to evaluate.
+3. Use IN clause for multiple OR conditions on the same column: This simplifies the query and can improve performance by reducing the number of conditions the database has to evaluate.
+4. Remove unnecessary parentheses: This makes the query more readable and easier to understand.

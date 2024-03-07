@@ -1,0 +1,3 @@
+1. Push down predicates: This rule can be applied when a query includes conditions that can be used to filter out unnecessary data at an early stage, before further processing or computations are performed.
+2. Eliminate unnecessary joins: This rule can be applied when a query includes multiple joins that involve the same tables and conditions, which can be consolidated into a single join to reduce computational cost.
+3. Use CTEs to simplify query: This rule can be applied when a query is complex and involves multiple stages of data processing, which can be broken down into smaller, more manageable pieces using Common Table Expressions.

@@ -1,0 +1,4 @@
+1. Remove unnecessary subqueries: This rule can be applied when the subquery does not contribute to the final result or its operation can be performed in the main query itself.
+2. Replace UNION with UNION ALL: This rule can be applied when the sets of rows being combined are guaranteed to be distinct, hence there is no need to remove duplicate rows.
+3. Move the join with date_dim table inside the subquery: This rule can be applied when the join operation does not depend on the results of the outer query, and moving it inside can reduce the number of rows in the result set of the join.
+4. Remove unnecessary casting: This rule can be applied when the data types of the columns being casted are already in the desired format, hence the casting operation is redundant.

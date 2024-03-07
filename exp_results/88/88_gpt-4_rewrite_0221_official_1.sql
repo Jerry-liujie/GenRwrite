@@ -1,0 +1,22 @@
+```sql
+select
+    sum(case when t_hour = 8 and t_minute >= 30 then 1 else 0 end) as h8_30_to_9,
+    sum(case when t_hour = 9 and t_minute < 30 then 1 else 0 end) as h9_to_9_30,
+    sum(case when t_hour = 9 and t_minute >= 30 then 1 else 0 end) as h9_30_to_10,
+    sum(case when t_hour = 10 and t_minute < 30 then 1 else 0 end) as h10_to_10_30,
+    sum(case when t_hour = 10 and t_minute >= 30 then 1 else 0 end) as h10_30_to_11,
+    sum(case when t_hour = 11 and t_minute < 30 then 1 else 0 end) as h11_to_11_30,
+    sum(case when t_hour = 11 and t_minute >= 30 then 1 else 0 end) as h11_30_to_12,
+    sum(case when t_hour = 12 and t_minute < 30 then 1 else 0 end) as h12_to_12_30
+from
+    store_sales
+    join household_demographics on ss_hdemo_sk = hd_demo_sk
+    join time_dim on ss_sold_time_sk = t_time_sk
+    join store on ss_store_sk = s_store_sk
+where
+    (
+        hd_dep_count in (0, -1, 3)
+        and hd_vehicle_count <= hd_dep_count + 2
+    )
+    and s_store_name = 'ese'
+```

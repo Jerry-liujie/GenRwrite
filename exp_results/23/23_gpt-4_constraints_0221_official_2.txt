@@ -1,0 +1,5 @@
+1. Remove unnecessary columns in the select clause: This rule can be applied when there are columns in the select clause that are not used in the final result of the query.
+2. Replace IN subqueries with JOINs: This rule can be applied when there are IN subqueries that can be rewritten as JOINs to improve performance.
+3. Replace OR conditions with BETWEEN: This rule can be applied when there are OR conditions that involve the same column and can be rewritten as a BETWEEN condition.
+4. Move conditions from the HAVING clause to the WHERE clause: This rule can be applied when there are conditions in the HAVING clause that can be moved to the WHERE clause without changing the result of the query.
+5. Combine the two main SELECT queries using UNION ALL and then perform the aggregation in the outer query: This rule can be applied when there are multiple SELECT queries that produce the same columns and can be combined using UNION ALL, and the aggregation can be performed in the outer query.

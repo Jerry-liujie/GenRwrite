@@ -1,0 +1,5 @@
+1. Replace implicit JOINs with explicit JOINs: This makes the query easier to read and understand. It also allows the database to optimize the query more effectively.
+2. Use JOIN ON clause for joining conditions: This separates the joining conditions from the filtering conditions, making the query easier to read and understand.
+3. Use literal values for dates and numbers: This avoids the overhead of casting and arithmetic operations.
+4. Remove unnecessary parentheses: This makes the query easier to read and understand.
+5. Use LIMIT clause to reduce the amount of data returned: This can significantly improve performance if only a small subset of the data is needed.

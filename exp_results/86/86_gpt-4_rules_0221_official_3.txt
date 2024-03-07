@@ -1,0 +1,4 @@
+1. Use CTEs for complex subqueries: This makes the query more readable and maintainable, and can also improve performance by breaking down the query into smaller, more manageable parts.
+2. Replace implicit joins with explicit joins: This makes the query more readable and can also improve performance by allowing the database to optimize the join operation.
+3. Move calculations to the CTE: This can improve performance by reducing the amount of computation needed in the main query.
+4. Use window functions for ranking: This can improve performance by reducing the need for additional subqueries or joins.

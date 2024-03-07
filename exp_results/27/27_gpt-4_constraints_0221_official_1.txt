@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being joined in a query. 
+2. Remove redundant conditions in WHERE clause: This rule can be applied when the WHERE clause contains duplicate or unnecessary conditions.
+3. Use indexes on join and where clause columns: This rule can be applied when the columns used in JOIN and WHERE clauses are not indexed, which can slow down the query execution.
+4. Limit the number of rows processed by the query: This rule can be applied when the query is expected to return a large number of rows, which can be time-consuming and resource-intensive.

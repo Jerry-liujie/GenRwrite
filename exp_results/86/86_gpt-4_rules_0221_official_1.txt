@@ -1,0 +1,3 @@
+1. Use CTEs to simplify complex queries: This makes the query easier to read and understand, and can also improve performance by breaking down the query into smaller parts.
+2. Use JOIN instead of WHERE for combining tables: This can improve performance by reducing the amount of data that needs to be processed. The database can optimize the join operation more efficiently than the equivalent WHERE clause.
+3. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query, which can significantly improve performance.

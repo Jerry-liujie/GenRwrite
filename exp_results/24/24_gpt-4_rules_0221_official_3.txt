@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for linking tables: This makes the query more readable and easier to understand.
+2. Remove unnecessary columns from SELECT and GROUP BY clauses: This reduces the amount of data that needs to be processed, which can improve performance.
+3. Combine similar queries using IN clause: This reduces the number of queries that need to be executed, which can improve performance.
+4. Use subquery only once: This avoids repeated calculation of the same subquery, which can improve performance.

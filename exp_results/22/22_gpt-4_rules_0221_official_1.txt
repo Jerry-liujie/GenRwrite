@@ -1,0 +1,2 @@
+1. Use subquery to filter data before joining: This reduces the amount of data that needs to be processed during the join operation, which can significantly improve performance.
+2. Push down predicates: This means applying filters as early as possible in the query, which reduces the amount of data that needs to be processed in later stages of the query. This can lead to significant performance improvements.

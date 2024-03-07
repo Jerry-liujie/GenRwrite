@@ -1,0 +1,4 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This rule can be applied when multiple tables are being joined in a query. 
+2. Use CTE (Common Table Expressions) for subqueries: This rule can be applied when there are complex subqueries or repeated subqueries in the main query.
+3. Move the computation of the average to the outer query: This rule can be applied when there are aggregate functions being used in the query, and the result of these functions is used in subsequent computations.
+4. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.

@@ -1,0 +1,4 @@
+1. Move calculations to subquery: This reduces the number of times the calculations are performed, which can improve performance.
+2. Use explicit JOIN syntax: This makes the query easier to read and understand.
+3. Use IN clause for filtering on multiple values: This can be more efficient than using multiple OR conditions.
+4. Push down predicates: This reduces the amount of data that needs to be processed in the main query, which can improve performance.

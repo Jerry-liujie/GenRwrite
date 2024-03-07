@@ -1,0 +1,4 @@
+1. Use JOIN syntax instead of comma-separated tables in FROM clause: This makes the query more readable and easier to understand.
+2. Use BETWEEN operator for range conditions: This simplifies the query and can improve performance because the database can optimize the range condition more efficiently.
+3. Move conditions from WHERE clause to JOIN ON clause: This can improve performance by reducing the number of rows that need to be processed in the join operation.
+4. Remove unnecessary CASE statement: This simplifies the query and can improve performance by reducing the amount of computation needed.

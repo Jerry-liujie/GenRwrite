@@ -1,0 +1,5 @@
+1. Use CTEs to pre-calculate subqueries: This rule can be applied when the same subquery is used multiple times in the main query.
+2. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being used in the FROM clause of the query.
+3. Use EXISTS instead of IN for subqueries: This rule can be applied when the subquery is expected to return a large result set.
+4. Use DISTINCT in CTEs to reduce the amount of data: This rule can be applied when the data in the CTEs has duplicate rows.
+5. Use SELECT 1 instead of SELECT * in EXISTS subqueries: This rule can be applied when the EXISTS subquery does not need to return any specific columns from the table.

@@ -1,0 +1,2 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query more readable and easier to maintain. It also helps to avoid accidental cross joins.
+2. Move conditions from WHERE clause to ON clause in JOINs when possible: This can improve performance by reducing the number of rows that need to be joined. In this case, the condition `store_sales.ss_item_sk = item.i_item_sk` is moved to the ON clause of the JOIN between `store_sales` and `item`.

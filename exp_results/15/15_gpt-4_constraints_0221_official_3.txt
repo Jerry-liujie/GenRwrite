@@ -1,0 +1,5 @@
+1. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being used in a query and there is a need to combine rows from these tables based on a related column.
+2. Move conditions from WHERE clause to ON clause in JOIN statement: This rule can be applied when there are conditions in the WHERE clause that are related to the tables being joined.
+3. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+4. Use LIMIT clause: This rule can be applied when only a specific number of rows are required from the result set, especially when sorting is involved.
+5. Avoid using functions on columns in WHERE clause: This rule can be applied when the query is using functions on columns in the WHERE clause which could potentially slow down the query due to full table scans.

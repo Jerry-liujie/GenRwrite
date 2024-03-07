@@ -1,0 +1,4 @@
+1. Use subqueries to filter data: This rule is applied to filter data from individual tables before joining. This reduces the amount of data that needs to be processed, improving performance.
+2. Limit the number of results returned: This rule is applied to limit the number of rows returned by the query. This reduces the amount of data that needs to be processed, improving performance.
+3. Remove unnecessary table joins: This rule is applied to remove unnecessary joins with the 'store_returns' table. This reduces the complexity of the query, improving performance.
+4. Push down predicates: This rule is applied to move conditions from the WHERE clause to the FROM clause. This reduces the amount of data that needs to be processed, improving performance.

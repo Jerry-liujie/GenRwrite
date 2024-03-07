@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query more readable and easier to understand.
+2. Replace the addition of a number to a column in a WHERE clause with a simple range: This simplifies the query and may allow the database to use an index on the column.
+3. Replace the addition of an interval to a date with a simple date: This simplifies the query and may allow the database to use an index on the date column.
+4. Remove unnecessary parentheses: This simplifies the query and makes it more readable.
+5. Use direct date values instead of casting string to date: This improves performance by avoiding unnecessary casting operations.

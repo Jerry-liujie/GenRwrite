@@ -1,0 +1,5 @@
+1. Use join instead of subquery: It is generally faster to join tables than to use subqueries. The optimizer can more effectively use indexes and other query optimization techniques when joins are used.
+2. Extract common subquery to a separate CTE: This reduces the repetition of the same subquery, making the query more efficient and easier to read.
+3. Combine similar queries using UNION ALL: This reduces the number of separate queries that need to be run, improving performance.
+4. Move conditions to join clause: This can improve performance by reducing the number of rows that need to be processed in the join.
+5. Use CTEs to break down complex queries: This can improve readability and maintainability, and can also improve performance by allowing the database to materialize intermediate results.

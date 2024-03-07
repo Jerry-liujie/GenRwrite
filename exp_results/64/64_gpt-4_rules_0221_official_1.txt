@@ -1,0 +1,4 @@
+1. Replace comma-separated table list in FROM clause with JOINs: This makes the query more readable and maintainable by explicitly specifying the join conditions.
+2. Simplify the range condition on i_current_price: This reduces the complexity of the condition, making it easier to understand and potentially improving performance.
+3. Replace the arithmetic operation in the WHERE clause with a direct value: This reduces the computation overhead, improving performance.
+4. Use JOIN instead of comma-separated table list in the final SELECT statement: This makes the query more readable and maintainable by explicitly specifying the join conditions.

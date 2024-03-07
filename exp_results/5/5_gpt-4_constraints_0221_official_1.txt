@@ -1,0 +1,4 @@
+1. Remove unnecessary subqueries: This rule can be applied when the query contains subqueries that do not contribute to the final result or can be replaced with simpler operations such as joins or group by clauses.
+2. Remove unnecessary calculations: This rule can be applied when the query contains calculations that do not contribute to the final result or are always the same for all rows.
+3. Use explicit join instead of implicit join: This rule can be applied when the query uses implicit joins (where clauses) to join tables, which can be replaced with explicit joins (join clauses) to potentially improve performance.
+4. Use union all instead of union: This rule can be applied when the query uses union to combine results from different subqueries or tables, and there is no need to remove duplicate rows.

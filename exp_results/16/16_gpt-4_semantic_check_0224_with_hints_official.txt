@@ -1,0 +1,26 @@
+with filtered_sales as
+  (select cs1.cs_order_number,
+          cs1.cs_ext_ship_cost,
+          cs1.cs_net_profit
+   from catalog_sales cs1
+   join date_dim on cs1.cs_ship_date_sk = date_dim.d_date_sk
+   join customer_address on cs1.cs_ship_addr_sk = customer_address.ca_address_sk
+   join call_center on cs1.cs_call_center_sk = call_center.cc_call_center_sk
+   where date_dim.d_date between '2002-4-01' and (cast('2002-4-01' as date) + interval '60' day)
+     and customer_address.ca_state = 'PA'
+     and call_center.cc_county = 'Williamson County'
+     and exists
+       (select 1
+        from catalog_sales cs2
+        where cs1.cs_order_number = cs2.cs_order_number
+          and cs1.cs_warehouse_sk <> cs2.cs_warehouse_sk )
+     and not exists
+       (select 1
+        from catalog_returns cr1
+        where cs1.cs_order_number = cr1.cr_order_number ) )
+select count(distinct cs_order_number) as "order count",
+       sum(cs_ext_ship_cost) as "total shipping cost",
+       sum(cs_net_profit) as "total net profit"
+from filtered_sales
+order by count(distinct cs_order_number)
+limit 100;

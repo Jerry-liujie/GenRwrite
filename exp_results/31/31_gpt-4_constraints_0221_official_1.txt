@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: This rule can be applied when the query involves joining multiple tables, and the join conditions are specified in the WHERE clause.
+2. Filter data as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+3. Combine similar conditions in WHERE clause: This rule can be applied when the WHERE clause contains multiple conditions that can be combined into a single condition using logical operators (AND, OR).
+4. Avoid unnecessary calculations in WHERE clause: This rule can be applied when the WHERE clause contains calculations that can be moved to the SELECT clause or a subquery.
+5. Use JOIN ON clause to specify join conditions: This rule can be applied when the query involves joining multiple tables, and the join conditions are specified in the WHERE clause.

@@ -1,0 +1,4 @@
+1. Replace comma-separated table list in FROM clause with JOIN clauses: This makes the query more readable and allows the database to optimize the query execution.
+2. Move conditions from WHERE clause to ON clause in JOINs where possible: This can improve performance by reducing the amount of data that needs to be joined.
+3. Use explicit JOIN syntax instead of implicit comma-separated syntax: This makes the query easier to understand and maintain. It also allows the database to optimize the query execution.
+4. Filter data as early as possible: This reduces the amount of data that needs to be processed in later stages of the query execution.

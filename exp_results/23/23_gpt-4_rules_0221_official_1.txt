@@ -1,0 +1,6 @@
+1. Remove unnecessary columns from the select clause: This reduces the amount of data that needs to be processed and returned, improving performance.
+2. Replace the usage of arithmetic operations in the WHERE clause with the BETWEEN operator: This simplifies the condition and can potentially improve performance by allowing the database to use an index.
+3. Move the aggregation to the outermost query: This reduces the complexity of the subqueries and can improve performance by reducing the amount of data that needs to be processed.
+4. Use the MAX function instead of ordering and limiting the result: This can improve performance by reducing the amount of data that needs to be sorted.
+5. Use the IN operator instead of a subquery in the WHERE clause: This can improve performance by reducing the number of rows that need to be processed.
+6. Use UNION ALL instead of UNION: UNION ALL is faster because it does not need to check for duplicate rows.

@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query easier to read and understand.
+2. Remove unnecessary columns from the GROUP BY clause: This can significantly improve performance by reducing the amount of data that needs to be grouped.
+3. Combine similar queries into one by using the IN operator: This reduces the number of queries that need to be executed, which can improve performance.
+4. Move conditions from the WHERE clause to the JOIN clause when possible: This can improve performance by reducing the amount of data that needs to be processed.
+5. Remove unnecessary columns from the SELECT clause: This can improve performance by reducing the amount of data that needs to be returned.

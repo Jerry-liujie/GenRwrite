@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: It makes the query more readable and easier to understand.
+2. Combine multiple AND conditions in WHERE clause: This makes the query more readable and easier to understand.
+3. Remove unnecessary conditions in WHERE clause: This reduces the complexity of the query and can improve performance.
+4. Remove duplicated conditions: This simplifies the query and can improve performance.
+5. Use table aliases for better readability: This makes the query easier to read and understand.

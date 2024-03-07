@@ -1,0 +1,4 @@
+1. Combine similar subqueries into one: This rule can be applied when there are multiple subqueries that are performing similar operations on the same or similar data.
+2. Use CASE statement to differentiate between different sales types: This rule can be applied when there are different types of data that need to be handled differently within the same query.
+3. Remove unnecessary grouping in subqueries: This rule can be applied when there are group by clauses in subqueries that are not necessary for the final result of the query.
+4. Use UNION ALL instead of UNION: This rule can be applied when the query is combining results from multiple select statements and it is not necessary to remove duplicates.

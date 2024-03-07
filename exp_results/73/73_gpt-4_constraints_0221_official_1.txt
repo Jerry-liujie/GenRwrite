@@ -1,0 +1,7 @@
+1. Use explicit JOIN syntax instead of implicit comma-separated syntax: This rule can be applied when multiple tables are being joined in a query.
+2. Use IN clause for multiple OR conditions: This rule can be applied when there are multiple OR conditions in the WHERE clause that involve the same column.
+3. Use BETWEEN clause for multiple AND conditions: This rule can be applied when there are multiple AND conditions in the WHERE clause that involve a range of values for the same column.
+4. Remove redundant conditions: This rule can be applied when there are conditions in the WHERE clause that are unnecessary or duplicate other conditions.
+5. Use table alias for better readability: This rule can be applied when tables have long names or when the same table is used multiple times in a query.
+6. Use subquery alias: This rule can be applied when a subquery is used in the FROM, WHERE, or SELECT clause of a query.
+7. Move subquery to FROM clause: This rule can be applied when a subquery is used in the WHERE or SELECT clause and it would be more efficient to process the subquery results as a temporary table in the FROM clause.

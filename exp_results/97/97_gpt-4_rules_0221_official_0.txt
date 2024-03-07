@@ -1,0 +1,4 @@
+1. Use subquery instead of join for filtering: By using a subquery in the WHERE clause instead of joining the date_dim table, we can reduce the number of rows that need to be processed in the main query, which can improve performance.
+2. Use alias for column names: Using alias for column names can make the query more readable and easier to maintain. It does not directly improve performance, but it can reduce the chance of making mistakes in complex queries.
+3. Remove unnecessary columns from the SELECT clause: Only select the columns that are necessary for the final result. This can reduce the amount of data that needs to be processed and transferred, which can improve performance.
+4. Use FULL OUTER JOIN instead of LEFT JOIN and UNION: FULL OUTER JOIN can be more efficient than using LEFT JOIN and UNION to combine results from two tables, because it only needs to scan each table once.

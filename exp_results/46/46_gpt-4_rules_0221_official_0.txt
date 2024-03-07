@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated table list in FROM clause: This makes the query more readable and easier to understand. It also allows for better optimization by the database engine.
+2. Remove redundant values in IN clause: This reduces the complexity of the query and can improve performance by reducing the number of comparisons.
+3. Use aliases for table names: This makes the query more readable and easier to write.
+4. Use aliases for calculated fields: This makes the query more readable and allows for easier reference to these fields in other parts of the query.
+5. Remove unnecessary parentheses in WHERE clause: This makes the query more readable and can improve performance by simplifying the condition logic.

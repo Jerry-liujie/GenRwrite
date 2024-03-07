@@ -1,0 +1,3 @@
+1. Move the filtering conditions to the subquery: By moving the filtering conditions to the subquery, we can reduce the number of rows in the join operation, which can significantly improve the performance of the query.
+2. Remove unnecessary cast functions: The cast function can be resource-intensive. If the data types are known and compatible, the cast function can be removed to improve performance.
+3. Use ANSI standard date literals: ANSI standard date literals are more portable and perform better than casting strings to dates.

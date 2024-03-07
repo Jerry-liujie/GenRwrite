@@ -1,0 +1,64 @@
+```sql
+select
+    s_store_name,
+    s_store_id,
+    sum(
+        case
+            when (d_day_name = 'Sunday') then ss_sales_price
+            else 0
+        end
+    ) sun_sales,
+    sum(
+        case
+            when (d_day_name = 'Monday') then ss_sales_price
+            else 0
+        end
+    ) mon_sales,
+    sum(
+        case
+            when (d_day_name = 'Tuesday') then ss_sales_price
+            else 0
+        end
+    ) tue_sales,
+    sum(
+        case
+            when (d_day_name = 'Wednesday') then ss_sales_price
+            else 0
+        end
+    ) wed_sales,
+    sum(
+        case
+            when (d_day_name = 'Thursday') then ss_sales_price
+            else 0
+        end
+    ) thu_sales,
+    sum(
+        case
+            when (d_day_name = 'Friday') then ss_sales_price
+            else 0
+        end
+    ) fri_sales,
+    sum(
+        case
+            when (d_day_name = 'Saturday') then ss_sales_price
+            else 0
+        end
+    ) sat_sales
+from
+    date_dim
+inner join
+    store_sales on d_date_sk = ss_sold_date_sk
+inner join
+    store on s_store_sk = ss_store_sk
+where
+    s_gmt_offset = -5
+    and d_year = 2000
+group by
+    s_store_name,
+    s_store_id
+order by
+    s_store_name,
+    s_store_id
+limit
+    100;
+```

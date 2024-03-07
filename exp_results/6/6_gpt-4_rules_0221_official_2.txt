@@ -1,0 +1,5 @@
+1. Replace implicit joins with explicit joins: This makes the query more readable and easier to understand. It also avoids Cartesian products that can occur with implicit joins if the join condition is accidentally omitted.
+2. Use subqueries to pre-calculate values: This can reduce the complexity of the main query and improve performance by reducing the amount of data that needs to be processed.
+3. Use the IN clause instead of a subquery in the WHERE clause: This can improve performance by reducing the number of rows that need to be scanned.
+4. Use a CTE (Common Table Expression) to calculate average prices: This can improve performance by reducing the number of times the average price calculation needs to be performed.
+5. Use a CTE (Common Table Expression) to get the distinct month sequence: This can improve performance by reducing the number of times the distinct month sequence needs to be calculated.

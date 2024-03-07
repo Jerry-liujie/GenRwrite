@@ -1,0 +1,5 @@
+1. Use join instead of subquery: This rule can be applied when the query involves retrieving data from multiple tables based on some matching condition, especially when the subquery is correlated.
+2. Extract common subquery to a separate CTE: This rule can be applied when the same subquery is used multiple times in different parts of the main query.
+3. Combine similar queries using UNION ALL: This rule can be applied when there are multiple queries that retrieve similar data from the same or different tables and the results need to be combined.
+4. Move conditions to join clause: This rule can be applied when there are conditions that can be used to filter the data before or during the join operation, rather than after the join.
+5. Use CTEs to break down complex queries: This rule can be applied when the query is complex and involves multiple steps that can be broken down into separate, simpler queries.

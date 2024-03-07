@@ -1,0 +1,4 @@
+1. Combine multiple subqueries into one single query: This rule can be applied when the same tables are being scanned multiple times in different subqueries for similar purposes.
+2. Use JOIN instead of comma-separated tables in FROM clause: This rule can be applied when multiple tables are being used in the query and there is a need to combine their data based on some common columns.
+3. Remove unnecessary addition operations in WHERE clause: This rule can be applied when there are unnecessary arithmetic operations in the WHERE clause that do not contribute to the final result.
+4. Use CASE WHEN to count different conditions in one pass: This rule can be applied when there are multiple conditions that need to be counted separately, and these conditions can be evaluated in a single pass through the data.

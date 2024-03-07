@@ -1,0 +1,4 @@
+1. Replace implicit join with explicit join: This makes the query easier to read and understand, and can also improve performance in some cases.
+2. Use CTE (Common Table Expressions) for subqueries: This simplifies the query and makes it easier to read and understand. It can also improve performance by allowing the database to optimize the execution of the query.
+3. Move the computation of the average to the outer query: This can improve performance by reducing the number of computations needed.
+4. Move conditions from WHERE clause to JOIN ON clause: This can improve performance by reducing the amount of data that needs to be processed in the join operation.

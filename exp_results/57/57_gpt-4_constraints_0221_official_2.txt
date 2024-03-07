@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for joining tables: This rule can be applied when multiple tables are being used in the query and there are conditions that specify how these tables are related.
+2. Use window functions (LAG, LEAD) instead of self-join: This rule can be applied when the query involves comparing a value with the previous or next value in a certain order.
+3. Combine WHERE conditions: This rule can be applied when there are multiple conditions in the WHERE clause that can be combined using logical operators (AND, OR).
+4. Avoid unnecessary calculations in the ORDER BY clause: This rule can be applied when the ORDER BY clause includes expressions that perform calculations on the columns being sorted.

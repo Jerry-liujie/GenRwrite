@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This can improve readability and performance as JOINs are usually faster than WHERE clauses.
+2. Use window functions instead of self-join: Window functions like LAG can be used to compare values with previous rows, which can be more efficient than self-join.
+3. Replace NULL with 0 in aggregation: This can avoid unnecessary NULL checks and improve performance.
+4. Remove unnecessary date range conditions: The original query has conditions on d_month_seq, but they are not used in the final result, so they can be removed to simplify the query.

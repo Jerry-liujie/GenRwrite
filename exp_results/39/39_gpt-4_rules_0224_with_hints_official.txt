@@ -1,0 +1,4 @@
+1. Move conditions from the having clause to the where clause: This can improve performance by reducing the number of rows that need to be grouped and aggregated.
+2. Join the subqueries in the from clause instead of in the where clause: This can improve performance by reducing the number of rows that need to be joined.
+3. Reduce the number of subqueries: This can improve performance by reducing the complexity of the query and the number of operations that need to be performed.
+4. Replace multiple year conditions with a range: This can improve performance by simplifying the condition and potentially reducing the number of rows that need to be scanned.

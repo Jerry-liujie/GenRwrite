@@ -1,0 +1,5 @@
+1. Combine multiple queries into a single query: This rule can be applied when multiple queries are scanning the same tables and can be combined into a single query to improve performance.
+2. Use JOIN instead of comma-separated tables in the FROM clause: This rule can be applied when multiple tables are being joined in a query, to improve readability and maintainability.
+3. Use LEFT JOIN for optional tables: This rule can be applied when there are tables in the query that do not need to match a row in the other table, and their absence should not result in excluding the row from the result set.
+4. Move conditions from WHERE clause to CASE statement in the SELECT clause: This rule can be applied when conditions in the WHERE clause can be moved to a CASE statement in the SELECT clause to calculate aggregate functions in a single pass.
+5. Remove unnecessary parentheses: This rule can be applied when there are unnecessary parentheses in the query that do not contribute to the logic of the query and only serve to complicate its readability.

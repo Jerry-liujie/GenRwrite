@@ -1,0 +1,3 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when there are multiple tables that need to be combined based on some common columns.
+2. Pre-calculate averages in a separate subquery: This rule can be applied when the main query involves calculations like average, sum, etc., which can be pre-calculated in a separate subquery to improve performance.
+3. Use subquery to filter out unnecessary data before joining tables: This rule can be applied when there is a need to join multiple tables and there are conditions that can be used to filter out unnecessary data before the join operation.

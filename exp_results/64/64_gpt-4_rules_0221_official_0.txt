@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for combining tables: This improves performance by reducing the amount of data that needs to be processed.
+2. Simplify WHERE clause conditions: This reduces the complexity of the query and improves performance.
+3. Use explicit JOINs instead of implicit JOINs: This makes the query easier to understand and maintain.
+4. Remove unnecessary table joins: This reduces the amount of data that needs to be processed, improving performance.
+5. Combine similar conditions in WHERE clause: This simplifies the query and can improve performance by reducing the number of operations.

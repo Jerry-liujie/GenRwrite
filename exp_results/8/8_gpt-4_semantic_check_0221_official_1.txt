@@ -1,0 +1,30 @@
+with a1 as
+  (select substr(ca_zip, 1, 5) ca_zip,
+          count(*) cnt
+   from customer_address,
+        customer
+   where ca_address_sk = c_current_addr_sk
+     and c_preferred_cust_flag = 'Y'
+   group by ca_zip
+   having count(*) > 10),
+     a2 as
+  (select substr(ca_zip, 1, 5) ca_zip
+   from customer_address
+   where substr(ca_zip, 1, 5) in ('47602',
+                                  '16704',
+                                  '35863', ... '15475') ),
+     v1 as
+  (select ca_zip
+   from a2 intersect select ca_zip
+   from a1)
+select s_store_name,
+       sum(ss_net_profit)
+from store_sales
+join date_dim on ss_sold_date_sk = d_date_sk
+join store on ss_store_sk = s_store_sk
+join v1 on substr(s_zip, 1, 2) = substr(v1.ca_zip, 1, 2)
+where d_qoy = 2
+  and d_year = 1998
+group by s_store_name
+order by s_store_name
+limit 100;

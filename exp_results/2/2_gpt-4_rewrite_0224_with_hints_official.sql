@@ -1,0 +1,37 @@
+```
+with wscs as (
+    select ws_sold_date_sk as sold_date_sk, ws_ext_sales_price as sales_price from web_sales
+    union all
+    select cs_sold_date_sk as sold_date_sk, cs_ext_sales_price as sales_price from catalog_sales
+), 
+wswscs as (
+    select d_week_seq, 
+        sum(case when (d_day_name='Sunday') then sales_price else 0 end) as sun_sales, 
+        sum(case when (d_day_name='Monday') then sales_price else 0 end) as mon_sales, 
+        sum(case when (d_day_name='Tuesday') then sales_price else 0 end) as tue_sales, 
+        sum(case when (d_day_name='Wednesday') then sales_price else 0 end) as wed_sales, 
+        sum(case when (d_day_name='Thursday') then sales_price else 0 end) as thu_sales, 
+        sum(case when (d_day_name='Friday') then sales_price else 0 end) as fri_sales, 
+        sum(case when (d_day_name='Saturday') then sales_price else 0 end) as sat_sales 
+    from wscs 
+    join date_dim on date_dim.d_date_sk = wscs.sold_date_sk 
+    where d_year in (1998, 1999)
+    group by d_week_seq
+), 
+y as (
+    select * from wswscs where d_week_seq between 1 and 53
+), 
+z as (
+    select * from wswscs where d_week_seq between 54 and 106
+)
+select y.d_week_seq as d_week_seq1, 
+    round(y.sun_sales/z.sun_sales,2) as sun_sales_ratio, 
+    round(y.mon_sales/z.mon_sales,2) as mon_sales_ratio, 
+    round(y.tue_sales/z.tue_sales,2) as tue_sales_ratio, 
+    round(y.wed_sales/z.wed_sales,2) as wed_sales_ratio, 
+    round(y.thu_sales/z.thu_sales,2) as thu_sales_ratio, 
+    round(y.fri_sales/z.fri_sales,2) as fri_sales_ratio, 
+    round(y.sat_sales/z.sat_sales,2) as sat_sales_ratio 
+from y join z on y.d_week_seq = z.d_week_seq - 53
+order by y.d_week_seq;
+```

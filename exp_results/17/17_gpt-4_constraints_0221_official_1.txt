@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit join syntax (comma-separated tables in the FROM clause and join conditions in the WHERE clause).
+2. Move conditions from WHERE clause to ON clause in JOINs: This rule can be applied when there are conditions in the WHERE clause that are directly related to the join operation.
+3. Use table aliases for better readability: This rule can be applied when the query involves multiple tables or when the table names are long and complex.
+4. Join tables in a logical order: This rule can be applied when the query involves multiple joins. The order of joins should be determined based on the relationships between the tables and the conditions in the query.

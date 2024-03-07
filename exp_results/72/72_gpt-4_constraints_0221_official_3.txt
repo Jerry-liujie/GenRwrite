@@ -1,0 +1,4 @@
+1. Filter data as early as possible: This rule can be applied when there are conditions in the WHERE or JOIN clauses that can be used to filter the data in subqueries before the main query is executed.
+2. Avoid unnecessary joins: This rule can be applied when there are tables in the JOIN clause that are not used in the SELECT, WHERE, GROUP BY, or ORDER BY clauses.
+3. Use LIMIT to reduce the amount of data returned: This rule can be applied when only a certain number of rows are needed from the result set.
+4. Use indexes: This rule can be applied when the columns used in the JOIN, WHERE, GROUP BY, or ORDER BY clauses are or can be indexed.

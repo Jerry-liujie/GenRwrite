@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for combining tables: This improves performance by reducing the amount of data that needs to be processed.
+2. Replace NULL with 0 in aggregation: This avoids unnecessary NULL checks and can improve the performance of the aggregation.
+3. Filter rows as early as possible: This reduces the amount of data that needs to be processed in later stages of the query, improving performance.
+4. Filter data as early as possible: This reduces the amount of data that needs to be processed, improving performance.
+5. Use window function instead of self-join: This avoids the need for a costly self-join operation, improving performance.

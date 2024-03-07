@@ -1,0 +1,5 @@
+1. Use JOIN instead of WHERE for joining tables: This makes the query more readable and easier to understand. It also allows the database to optimize the query more efficiently.
+2. Combine similar conditions: If there are similar conditions in the WHERE clause, they can be combined to simplify the query and potentially improve performance.
+3. Remove unnecessary conditions: If a condition does not affect the result of the query, it can be removed to simplify the query and potentially improve performance.
+4. Use IN instead of multiple OR conditions: This simplifies the query and can improve performance by reducing the number of comparisons the database needs to make.
+5. Use BETWEEN instead of multiple AND conditions for range checks: This simplifies the query and can improve performance by reducing the number of comparisons the database needs to make.

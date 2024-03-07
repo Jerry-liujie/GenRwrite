@@ -1,0 +1,5 @@
+1. Use alias for tables: Makes the query more readable and easier to maintain.
+2. Use explicit JOIN syntax instead of comma-separated tables in FROM clause: Makes the relationships between the tables clearer and the query easier to understand.
+3. Grouping in subquery: Reduces the amount of data that needs to be processed in the outer query and improves performance.
+4. Replace repetitive conditions in WHERE clause with BETWEEN operator: Makes the query more readable and can improve performance by reducing the number of conditions the database needs to check.
+5. Remove redundant values from IN clause: Improves the performance of the query by reducing the number of values the database needs to check.

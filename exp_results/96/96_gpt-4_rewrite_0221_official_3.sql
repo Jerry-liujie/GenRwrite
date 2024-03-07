@@ -1,0 +1,13 @@
+```sql
+select
+    count(*)
+from
+    (select ss_sold_time_sk, ss_hdemo_sk, ss_store_sk from store_sales where ss_store_sk = (select s_store_sk from store where s_store_name = 'ese')) sales,
+    (select hd_demo_sk from household_demographics where hd_dep_count = 0) demographics,
+    (select t_time_sk from time_dim where t_hour = 8 and t_minute >= 30) time
+where
+    sales.ss_sold_time_sk = time.t_time_sk
+    and sales.ss_hdemo_sk = demographics.hd_demo_sk
+limit
+    100;
+```

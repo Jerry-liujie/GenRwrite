@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This makes the query easier to read and understand.
+2. Replace EXISTS subqueries with IN subqueries: This can improve performance as the database can optimize IN subqueries better.
+3. Use GROUP BY and HAVING in subquery instead of joining on the same table again: This reduces the amount of data that needs to be processed.
+4. Use NOT IN instead of NOT EXISTS for the second subquery: This can improve performance as NOT IN is usually faster than NOT EXISTS.

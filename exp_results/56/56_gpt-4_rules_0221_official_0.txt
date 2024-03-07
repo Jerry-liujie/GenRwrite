@@ -1,0 +1,4 @@
+1. Avoid repeated subqueries: If the same subquery is used multiple times, it's better to create a common table expression (CTE) for it. This can reduce the computation and improve the performance.
+2. Combine multiple joins into one: Instead of joining the same table multiple times with different conditions, we can combine these conditions using OR operator. This can reduce the number of joins and improve the performance.
+3. Push conditions into join: Instead of filtering the data after joining, we can push the conditions into the join clause. This can reduce the amount of data to be joined and improve the performance.
+4. Use left join instead of inner join: If the data in the right table is not necessary, we can use left join instead of inner join. This can reduce the amount of data to be joined and improve the performance.

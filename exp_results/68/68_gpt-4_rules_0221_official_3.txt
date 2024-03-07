@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This makes the query easier to read and understand, and can also improve performance by making the join operations more explicit to the database engine.
+2. Move the WHERE clause filters to the subquery: This can improve performance by reducing the number of rows that need to be processed in the outer query.
+3. Remove unnecessary columns from the GROUP BY clause: This can improve performance by reducing the amount of data that needs to be grouped.

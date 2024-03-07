@@ -1,0 +1,4 @@
+1. Push conditions into join clause: By pushing conditions into the join clause, we can reduce the number of rows that need to be joined, which can improve performance.
+2. Remove subquery: By removing the subquery, we can reduce the complexity of the query and improve performance. The database engine can process the query more efficiently without the need to create a temporary table for the subquery.
+3. Move calculations to aggregate function: By moving calculations to the aggregate function, we can avoid the need for a separate calculation step, which can improve performance.
+4. Remove unnecessary table: The 'reason' table was not used in the original query, so it can be removed to simplify the query and improve performance.

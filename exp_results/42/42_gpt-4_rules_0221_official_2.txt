@@ -1,0 +1,3 @@
+1. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query easier to read and understand, and can also help the database optimizer to come up with a more efficient execution plan.
+2. Use table aliases for tables with long names: This makes the query shorter and easier to read, and can also reduce the chance of typing errors.
+3. Only select necessary columns: This reduces the amount of data that needs to be processed and returned, which can improve performance.

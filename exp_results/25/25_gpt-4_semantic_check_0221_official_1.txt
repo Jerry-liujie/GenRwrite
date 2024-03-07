@@ -1,0 +1,51 @@
+select i_item_id,
+       i_item_desc,
+       s_store_id,
+       s_store_name,
+       max(ss_net_profit) as store_sales_profit,
+       max(sr_net_loss) as store_returns_loss,
+       max(cs_net_profit) as catalog_sales_profit
+from
+  (select ss_item_sk,
+          ss_store_sk,
+          ss_customer_sk,
+          ss_ticket_number,
+          max(ss_net_profit) as ss_net_profit,
+          max(sr_net_loss) as sr_net_loss,
+          max(cs_net_profit) as cs_net_profit
+   from store_sales
+   join store_returns on ss_customer_sk = sr_customer_sk
+   and ss_item_sk = sr_item_sk
+   and ss_ticket_number = sr_ticket_number
+   join catalog_sales on sr_customer_sk = cs_bill_customer_sk
+   and sr_item_sk = cs_item_sk
+   where ss_sold_date_sk in
+       (select d_date_sk
+        from date_dim
+        where d_moy = 4
+          and d_year = 1999 )
+     and sr_returned_date_sk in
+       (select d_date_sk
+        from date_dim
+        where d_moy between 4 and 10
+          and d_year = 1999 )
+     and cs_sold_date_sk in
+       (select d_date_sk
+        from date_dim
+        where d_moy between 4 and 10
+          and d_year = 1999 )
+   group by ss_item_sk,
+            ss_store_sk,
+            ss_customer_sk,
+            ss_ticket_number) sales
+join item on i_item_sk = sales.ss_item_sk
+join store on s_store_sk = sales.ss_store_sk
+group by i_item_id,
+         i_item_desc,
+         s_store_id,
+         s_store_name
+order by i_item_id,
+         i_item_desc,
+         s_store_id,
+         s_store_name
+limit 100;

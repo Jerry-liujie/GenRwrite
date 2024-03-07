@@ -1,0 +1,4 @@
+1. Replace implicit joins with explicit joins: This rule can be applied when the query uses implicit joins, which are indicated by conditions in the WHERE clause that compare columns from different tables.
+2. Use "select 1" instead of "select *": This rule can be applied when a subquery is used in the EXISTS or NOT EXISTS clause, and the actual data from the subquery is not needed.
+3. Move the aggregation to the end of the query: This rule can be applied when the query includes aggregation functions like COUNT, SUM, AVG, etc., and these functions are used before the final stages of the query.
+4. Remove unnecessary columns from the group by clause: This rule can be applied when the GROUP BY clause includes columns that are not included in the SELECT clause or used in aggregation functions.

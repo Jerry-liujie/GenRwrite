@@ -1,0 +1,7 @@
+1. Remove unnecessary subqueries: This rule can be applied when the subquery does not depend on the outer query, and can be replaced with a simpler join or where clause.
+2. Use UNION ALL instead of UNION: This rule can be applied when the result set does not need to be distinct, as UNION ALL does not remove duplicates and is therefore faster than UNION.
+3. Move conditions from WHERE to JOIN ON: This rule can be applied when the condition is directly related to the join operation and can be used to filter rows before the join is performed.
+4. Remove unnecessary grouping: This rule can be applied when there are columns in the GROUP BY clause that do not appear in the SELECT clause or in an aggregate function.
+5. Move conditions to the earliest possible point: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+6. Remove unnecessary columns from the SELECT clause: This rule can be applied when there are columns in the SELECT clause that are not used in the output or in any subsequent processing.
+7. Use LIMIT to reduce the number of rows returned: This rule can be applied when only a small number of rows are needed from the result set, as limiting the number of rows can significantly improve performance.

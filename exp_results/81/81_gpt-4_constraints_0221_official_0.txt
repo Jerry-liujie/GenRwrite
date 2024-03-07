@@ -1,0 +1,4 @@
+1. Use JOIN instead of WHERE for combining tables: This rule can be applied when there are multiple tables that need to be combined based on a common column.
+2. Filter as early as possible: This rule can be applied when there are conditions that can be used to filter the data in the early stages of the query.
+3. Pre-calculate averages: This rule can be applied when the query involves calculating averages or other aggregate functions that can be pre-calculated in a subquery.
+4. Replace subquery in WHERE clause with JOIN: This rule can be applied when the query includes a subquery in the WHERE clause that can be replaced with a JOIN to improve performance.

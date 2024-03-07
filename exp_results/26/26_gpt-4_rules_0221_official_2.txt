@@ -1,0 +1,4 @@
+1. Use subqueries to filter data: This reduces the amount of data that needs to be joined, which can significantly improve performance.
+2. Use IN clause instead of direct join for filtering: This can be faster when the subquery returns a small number of rows.
+3. Avoid joining tables that are not necessary for the final result: This reduces the complexity of the query and the amount of data that needs to be processed.
+4. Use LIMIT clause to restrict the number of rows returned: This can significantly reduce the amount of data that needs to be processed and returned, improving performance.

@@ -1,0 +1,5 @@
+1. Combine multiple subqueries into a single subquery: This rule can be applied when multiple subqueries are scanning the same table or performing similar operations.
+2. Use left join instead of where clause for joining tables: This rule can be applied when tables are being joined based on a common field and the join operation is not dependent on conditions that are evaluated after the join operation.
+3. Remove unnecessary group by fields: This rule can be applied when there are fields in the group by clause that are not used in the select clause or having clause.
+4. Use in clause instead of multiple or conditions: This rule can be applied when there are multiple or conditions that are checking for the same field being equal to different values.
+5. Combine multiple conditions into a single condition: This rule can be applied when there are multiple conditions that can be combined into a single condition using logical operators.

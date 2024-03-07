@@ -1,0 +1,5 @@
+1. Use explicit JOIN syntax instead of comma-separated FROM clause: This makes the query more readable and easier to maintain. It also avoids accidental Cartesian products if the WHERE clause is not properly formed.
+2. Use table aliases: This makes the query more readable and reduces the amount of typing needed.
+3. Move conditions from WHERE clause to ON clause in JOINs where possible: This can improve performance by reducing the number of rows that need to be joined.
+4. Use BETWEEN for range conditions: This can improve readability and potentially performance by reducing the number of comparisons needed.
+5. Limit the number of rows early with a subquery if possible: This can improve performance by reducing the amount of data that needs to be processed in the main query. However, this is not applicable in this case as the LIMIT clause is already used in the main query.

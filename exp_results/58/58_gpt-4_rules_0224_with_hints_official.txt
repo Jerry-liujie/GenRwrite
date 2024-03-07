@@ -1,0 +1,4 @@
+1. Use a subquery to avoid repeated calculations: The week sequence calculation is repeated multiple times in the query, so it is moved to a subquery to avoid repeated calculations.
+2. Use JOIN instead of WHERE for combining tables: The tables are combined using JOIN instead of WHERE to improve performance.
+3. Combine conditions in JOIN ON clause: The conditions for joining tables are combined in the ON clause to filter data while joining, which can improve performance.
+4. Move repeated calculations to a cross join subquery: The average calculation is repeated multiple times in the query, so it is moved to a cross join subquery to avoid repeated calculations.

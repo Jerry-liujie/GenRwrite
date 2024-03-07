@@ -1,0 +1,5 @@
+1. Combine multiple subqueries into a single query: This reduces the number of times the database needs to scan the same tables, which can significantly improve performance.
+2. Use explicit JOIN syntax instead of comma-separated tables in the FROM clause: This makes the query easier to read and understand.
+3. Use CASE statements to count different conditions in a single pass: This reduces the number of times the database needs to scan the same tables.
+4. Use IN clause for multiple OR conditions on the same column: This can make the query more readable and potentially improve performance by allowing the database to optimize the query.
+5. Replace arithmetic operations in WHERE clause with a static list: This can improve performance by reducing the amount of computation required during query execution.

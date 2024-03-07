@@ -1,0 +1,4 @@
+1. Use UNION ALL instead of UNION: This rule can be applied when the query is combining results from multiple SELECT statements and duplicate rows are not a concern.
+2. Move filter conditions to JOIN clause: This rule can be applied when there are conditions that can be used to filter the data during the join operation, reducing the number of rows that need to be joined.
+3. Replace Cartesian product with JOIN: This rule can be applied when the query is combining data from multiple tables and there is a clear relationship between the tables that can be used for a join operation.
+4. Use explicit JOIN syntax: This rule can be applied to any query that is joining tables, as it makes the query easier to understand and maintain.
