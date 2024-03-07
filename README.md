@@ -1,2 +1,2 @@
 # GenRwrite
-Code will be made available very soon.
+Query Rewriting via Large Language Models
