@@ -1,0 +1,1 @@
+Replace NULL in aggregation expressions with a default value: Simplifies aggregations by ensuring calculations operate on numeric values.

@@ -1,0 +1,1 @@
+Push filter conditions into earlier stages: Minimizes the working data set, thereby enhancing performance.

@@ -1,0 +1,1 @@
+Use explicit JOIN syntax instead of implicit comma-separated joins: Improves clarity and helps the optimizer choose efficient join orders.

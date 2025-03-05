@@ -1,0 +1,1 @@
+Apply filtering predicates in the WHERE clause: Placing filters immediately after joins reduces the dataset early in the execution, thus improving performance.

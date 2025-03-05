@@ -1,0 +1,1 @@
+Eliminate unnecessary Cartesian products by specifying join conditions: Minimizes redundant data processing and improves overall query performance.

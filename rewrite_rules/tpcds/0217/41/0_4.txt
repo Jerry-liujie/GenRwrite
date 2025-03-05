@@ -1,0 +1,1 @@
+Leverage range predicates for filtering numeric columns: Benefit – allows the use of index ranges, which speeds up data retrieval.

@@ -1,0 +1,1 @@
+Move join predicates from the WHERE clause into the ON clause: Provides clearer join conditions and potential optimization benefits.

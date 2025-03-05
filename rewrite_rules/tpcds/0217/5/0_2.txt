@@ -1,0 +1,1 @@
+Push filtering predicates into the individual subqueries: Apply the date filter within each union branch to reduce the input set early.

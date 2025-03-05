@@ -1,0 +1,1 @@
+Pre-aggregate each data source before combining: This minimizes the volume of data carried forward into subsequent steps.

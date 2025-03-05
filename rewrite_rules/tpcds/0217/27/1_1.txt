@@ -1,0 +1,1 @@
+Remove duplicate constant filters: Replace multiple identical values in an IN clause with a single equality condition. This reduces parsing overhead and clarifies intent.

@@ -1,0 +1,1 @@
+Qualify columns with table aliases: Enhances readability and reduces ambiguity when referencing fields.

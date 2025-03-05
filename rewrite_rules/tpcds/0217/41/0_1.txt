@@ -1,0 +1,1 @@
+Replace an aggregated subquery with an EXISTS clause: Benefit – the EXISTS clause stops processing as soon as a matching record is found, reducing unnecessary computations.

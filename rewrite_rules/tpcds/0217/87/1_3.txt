@@ -1,0 +1,1 @@
+Push filtering predicates into the FROM/JOIN clauses: Limits the number of rows processed early, enhancing performance.

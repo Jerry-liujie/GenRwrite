@@ -1,0 +1,1 @@
+Replace legacy comma-style joins with explicit JOIN syntax: Enhances readability and allows the optimizer to better understand join relationships.

@@ -1,0 +1,1 @@
+Consolidate common filtering conditions into centralized predicates: Minimizes redundant evaluations and improves overall performance.

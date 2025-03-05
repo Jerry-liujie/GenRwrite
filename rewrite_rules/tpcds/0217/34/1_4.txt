@@ -1,0 +1,1 @@
+Use a common table expression (CTE) to pre-aggregate data: Filters and aggregates data early, reducing the overall workload of subsequent steps.

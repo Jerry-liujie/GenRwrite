@@ -1,0 +1,1 @@
+Combine similar aggregated subqueries into one unified subquery using UNION ALL: This reduces the number of separate joins and duplicate work.

@@ -1,0 +1,1 @@
+Use CASE expressions to compute aggregated measures within one pass: This minimizes computation overhead by scanning the data only once.

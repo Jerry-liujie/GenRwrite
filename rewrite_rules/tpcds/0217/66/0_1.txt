@@ -1,0 +1,1 @@
+Use explicit JOINs and Common Table Expressions: Improves query readability and allows the optimizer to better manage join order and predicate pushdown.

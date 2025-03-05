@@ -1,0 +1,1 @@
+Remove duplicate filtering conditions: Replacing multiple identical conditions with a single condition simplifies the predicate evaluation.

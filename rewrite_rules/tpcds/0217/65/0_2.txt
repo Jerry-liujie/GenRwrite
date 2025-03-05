@@ -1,0 +1,1 @@
+Use common table expressions (CTEs) to factor out repeated subqueries: Avoids redundant computations and improves maintainability.

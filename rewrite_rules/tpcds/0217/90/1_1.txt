@@ -1,0 +1,1 @@
+Combine Multiple Aggregations into One Query: Replaced separate subqueries with conditional aggregation to scan the data only once, thus reducing overall query execution time.

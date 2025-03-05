@@ -1,0 +1,1 @@
+Apply filters in the WHERE clause directly related to each joined entity: Reduces data early in the query process, potentially improving performance.

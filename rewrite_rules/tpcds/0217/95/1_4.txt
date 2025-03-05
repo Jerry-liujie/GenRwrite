@@ -1,0 +1,1 @@
+Remove duplicate references by relying on JOIN filtering: Enhances query clarity and may improve performance through better execution planning.

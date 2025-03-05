@@ -1,0 +1,1 @@
+Push filters after aggregation: Apply filter conditions after consolidating data. Benefit: Minimizes the interim data set and improves performance.

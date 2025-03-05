@@ -1,0 +1,1 @@
+Compute window functions after aggregation in an outer query: Avoids redundant calculations and streamlines processing.

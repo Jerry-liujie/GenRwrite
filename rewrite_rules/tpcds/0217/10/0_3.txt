@@ -1,0 +1,1 @@
+Convert range expressions into explicit bounds: Enhances readability and may enable the optimizer to use appropriate range scans.

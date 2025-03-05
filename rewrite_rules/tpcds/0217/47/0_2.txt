@@ -1,0 +1,1 @@
+Use explicit JOIN syntax instead of cross joins with WHERE conditions: Improves readability and allows the optimizer to better restructure the query.

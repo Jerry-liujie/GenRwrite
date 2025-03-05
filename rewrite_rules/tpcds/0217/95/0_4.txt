@@ -1,0 +1,1 @@
+Apply DISTINCT within the common subquery to avoid duplicate rows early: Reduces data volume for subsequent operations and improves performance.

@@ -1,0 +1,1 @@
+Apply filtering predicates after joining corresponding data sets: Ensures that only relevant rows are processed, improving performance.

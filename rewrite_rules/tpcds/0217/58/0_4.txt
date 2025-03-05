@@ -1,0 +1,1 @@
+Structure filter conditions clearly in the WHERE clause: Facilitates efficient evaluation of range predicates.

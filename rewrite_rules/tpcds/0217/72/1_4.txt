@@ -1,0 +1,1 @@
+Inline filtering conditions in join clauses rather than in the WHERE clause: This helps the query optimizer leverage the conditions when choosing join orders.

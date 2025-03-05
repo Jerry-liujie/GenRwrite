@@ -1,0 +1,1 @@
+Consolidation of Common Predicates: Move shared filtering conditions (on date and geographic attributes) into the JOIN clauses, so each sale-type subquery benefits from the same restrictions. Benefit: Minimizes redundant filtering and can improve performance through reduced data scanning.

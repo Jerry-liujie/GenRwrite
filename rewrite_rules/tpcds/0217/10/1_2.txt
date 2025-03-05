@@ -1,0 +1,1 @@
+Use SELECT 1 instead of SELECT * in subqueries: Minimizes data retrieval and signals that only existence is being checked.

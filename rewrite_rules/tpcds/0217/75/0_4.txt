@@ -1,0 +1,1 @@
+Aggregate after filtering: Perform the GROUP BY on a smaller, pre-filtered dataset.

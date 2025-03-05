@@ -1,0 +1,1 @@
+Preserve window functions and grouping logic while ensuring clarity in partitioning and ordering: Helps the optimizer focus on the set-based operations needed for efficient ranking and aggregation.

@@ -1,0 +1,1 @@
+Use UNION ALL instead of UNION: UNION ALL avoids the overhead of duplicate elimination when it isn’t needed.

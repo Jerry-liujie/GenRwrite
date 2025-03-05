@@ -1,0 +1,1 @@
+Replace a grouping operation with a distinct selection when only unique pairs are required: Reduces unnecessary aggregation overhead.

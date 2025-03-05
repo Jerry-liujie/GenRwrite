@@ -1,0 +1,1 @@
+Consolidate separate aggregations with UNION ALL followed by an outer aggregation: Simplifies the query structure and minimizes redundant operations.

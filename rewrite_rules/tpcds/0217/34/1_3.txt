@@ -1,0 +1,1 @@
+Simplify redundant predicates by using a single comparison (e.g., using IN vs multiple ORs): Enhances clarity and may aid in performance.

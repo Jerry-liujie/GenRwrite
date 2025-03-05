@@ -1,0 +1,1 @@
+Apply filtering conditions directly in each joined subquery: Reduces data volume early, leading to more efficient processing.

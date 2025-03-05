@@ -1,0 +1,1 @@
+Use separate common table expressions for each aggregated source: Improves clarity by computing aggregates once per source.

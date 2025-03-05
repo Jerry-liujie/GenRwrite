@@ -1,0 +1,1 @@
+Use standardized date literal formats: Enhances clarity and potentially leverages built-in date handling functions for better performance.

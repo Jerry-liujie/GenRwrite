@@ -1,0 +1,1 @@
+Move filtering conditions to the WHERE clause to clearly separate join logic from filtering: Improves predicate pushdown for better performance.

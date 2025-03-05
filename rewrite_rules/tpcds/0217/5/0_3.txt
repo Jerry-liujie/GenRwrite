@@ -1,0 +1,1 @@
+Consolidate joins: Move common join conditions (to dimension tables) after the subquery filtering to reduce the join’s workload.

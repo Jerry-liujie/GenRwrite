@@ -1,0 +1,1 @@
+Organize conditions logically: Enhances readability and assists the optimizer in identifying efficient join orders and access paths.

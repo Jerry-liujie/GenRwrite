@@ -1,0 +1,1 @@
+Replace scalar subqueries in WHERE clauses with joined derived results when possible: Enhances execution efficiency.

@@ -1,0 +1,1 @@
+Filter early on using the WHERE clause in the subquery: Reduces the number of rows processed in later stages of the query.

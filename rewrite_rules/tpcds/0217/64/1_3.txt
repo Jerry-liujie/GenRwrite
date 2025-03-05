@@ -1,0 +1,1 @@
+Push filtering criteria as early as possible (inside CTEs or ON clauses): Minimizes data volume in subsequent operations.

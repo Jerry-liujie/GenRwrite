@@ -1,0 +1,1 @@
+Filter early using date-based criteria in the join: Applying date filters during the join minimizes unnecessary row creation before aggregation.

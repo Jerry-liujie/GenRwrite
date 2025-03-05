@@ -1,0 +1,1 @@
+Consolidate similar union operations into a unified structure: Minimizes repeated table scans by processing combined datasets.

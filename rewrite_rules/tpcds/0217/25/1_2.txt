@@ -1,0 +1,1 @@
+Move filtering conditions into join clauses: This reduces the intermediate result set earlier in the query execution.

@@ -1,0 +1,1 @@
+Simplify predicates by comparing directly on the join fields: Enhances index utilization and overall efficiency.

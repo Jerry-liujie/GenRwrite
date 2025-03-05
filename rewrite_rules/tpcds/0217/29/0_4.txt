@@ -1,0 +1,1 @@
+Explicitly define range predicates with clear boundaries: Aids in utilizing indexes and speeds up filtering.

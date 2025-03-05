@@ -1,0 +1,1 @@
+Avoid recomputing expressions by aggregating once per data source before the UNION ALL: Decreases redundant computation during final aggregation.

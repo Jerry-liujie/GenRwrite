@@ -1,0 +1,1 @@
+Eliminate implicit cross joins by specifying explicit join conditions: Prevents unnecessary data combinations for better performance.

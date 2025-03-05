@@ -1,0 +1,1 @@
+Use explicit JOIN syntax instead of comma-separated joins: This clarifies join conditions and allows the optimizer to generate more efficient plans.

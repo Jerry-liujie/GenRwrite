@@ -1,0 +1,1 @@
+Replace repeated IN subqueries with a JOIN on a pre-filtered derived table: Enables index usage and avoids unnecessary subquery executions.

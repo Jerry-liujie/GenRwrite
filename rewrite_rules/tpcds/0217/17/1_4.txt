@@ -1,0 +1,1 @@
+Standardize table aliases: Improves readability and simplifies query maintenance.

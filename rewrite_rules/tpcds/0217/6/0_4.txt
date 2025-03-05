@@ -1,0 +1,1 @@
+Consolidate filtering conditions in the WHERE clause rather than nesting them: Enhances clarity and allows the optimizer to apply more efficient access paths.

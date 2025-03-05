@@ -1,0 +1,1 @@
+Aggregate combined data using a GROUP BY: This efficiently summarizes the combined flags for final computation.

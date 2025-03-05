@@ -1,0 +1,1 @@
+Use table aliases to shorten and clarify references: Simplifies query maintenance and enhances clarity.

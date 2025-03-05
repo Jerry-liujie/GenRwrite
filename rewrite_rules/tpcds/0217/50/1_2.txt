@@ -1,0 +1,1 @@
+Filter records early using a common table expression (CTE): Restricts the dataset from the date dimension before the join, reducing unnecessary row processing.

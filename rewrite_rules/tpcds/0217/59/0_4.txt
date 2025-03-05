@@ -1,0 +1,1 @@
+Reduce redundant table access by computing the aggregate once in a CTE: Minimizes repeated work and improves performance.

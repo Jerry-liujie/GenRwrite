@@ -1,0 +1,1 @@
+Maintain date casting and interval arithmetic within the WHERE clause: Ensures correct data type handling and leverages any potential date-index optimizations.

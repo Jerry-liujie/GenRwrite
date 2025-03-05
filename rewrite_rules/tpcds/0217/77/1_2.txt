@@ -1,0 +1,1 @@
+Push filtering predicates directly into subqueries: Reduces the data processed by filtering early.

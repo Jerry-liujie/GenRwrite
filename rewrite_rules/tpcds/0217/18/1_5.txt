@@ -1,0 +1,1 @@
+Apply grouping and ordering after filtering: Minimizes the dataset size before grouping, enhancing overall performance.

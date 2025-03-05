@@ -1,0 +1,1 @@
+Replace nested subqueries for window functions with separate CTEs that compute ranking: simplifies the query plan and improves readability.

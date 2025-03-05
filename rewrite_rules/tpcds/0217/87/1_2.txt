@@ -1,0 +1,1 @@
+Swap set‐difference operations with correlated NOT EXISTS predicates: Reduces intermediate result sizes and can offer more efficient execution plans.

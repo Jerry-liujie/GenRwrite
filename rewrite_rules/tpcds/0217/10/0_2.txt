@@ -1,0 +1,1 @@
+Use Common Table Expressions (CTEs) to pre-filter and combine data from multiple subqueries: Reduces repetition and limits the number of correlated subqueries.

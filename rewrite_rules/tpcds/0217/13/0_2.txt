@@ -1,0 +1,1 @@
+Factor out common predicates from OR conditions: Reduces redundancy and simplifies filtering logic for better performance.

@@ -1,0 +1,1 @@
+Replace individual subquery counts with conditional aggregation: Enables calculating multiple counts in one pass through the data.

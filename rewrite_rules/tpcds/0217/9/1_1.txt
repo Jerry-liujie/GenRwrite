@@ -1,0 +1,1 @@
+Consolidate repeated table scans into a single common table expression (CTE) that aggregates data once: reduces the number of full table scans. 

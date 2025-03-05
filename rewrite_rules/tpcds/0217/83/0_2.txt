@@ -1,0 +1,1 @@
+Replace repetitive subqueries with common table expressions: Enhances performance by reducing repeated computations.

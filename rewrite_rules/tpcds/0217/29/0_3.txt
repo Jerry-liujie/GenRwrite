@@ -1,0 +1,1 @@
+Rearrange and structure join operations logically: Enhances clarity and can help the optimizer generate a more efficient execution plan.

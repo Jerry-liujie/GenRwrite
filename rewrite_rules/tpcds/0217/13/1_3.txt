@@ -1,0 +1,1 @@
+Consolidate constant predicates: Embedding fixed-value filters directly in the join conditions enables more efficient index usage.

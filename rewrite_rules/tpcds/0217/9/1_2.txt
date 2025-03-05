@@ -1,0 +1,1 @@
+Group data by bucket criteria in one pass instead of running separate subqueries: minimizes redundant computation and I/O.

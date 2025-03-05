@@ -1,0 +1,1 @@
+Consolidate overlapping range filters into a single condition: Simplifies predicate evaluation and reduces redundant computations.

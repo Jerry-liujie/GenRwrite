@@ -1,0 +1,1 @@
+Precompute aggregated thresholds using a common table expression: Reduces repeated subquery computation by calculating the aggregate once.

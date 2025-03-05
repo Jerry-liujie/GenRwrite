@@ -1,0 +1,1 @@
+Use common table expressions to precompute shared filter criteria: Avoids repeating the same subquery by computing the common filter once.

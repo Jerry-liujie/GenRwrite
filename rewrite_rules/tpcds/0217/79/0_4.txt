@@ -1,0 +1,1 @@
+Remove unused grouping columns from the aggregation: Reduces unnecessary processing during the group-by phase.

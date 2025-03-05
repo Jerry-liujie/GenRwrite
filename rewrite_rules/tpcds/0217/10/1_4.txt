@@ -1,0 +1,1 @@
+Maintain clear grouping and ordering: Ensures that the aggregate results are computed and returned as intended while enabling potential optimizations.

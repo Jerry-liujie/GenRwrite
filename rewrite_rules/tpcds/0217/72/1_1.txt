@@ -1,0 +1,1 @@
+Push predicate filters into join conditions: This restricts the volume of rows early in the query execution.

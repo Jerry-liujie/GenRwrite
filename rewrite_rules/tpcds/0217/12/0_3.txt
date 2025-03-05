@@ -1,0 +1,1 @@
+Alias tables and columns consistently: Enhances readability and minimizes the risk of ambiguity.

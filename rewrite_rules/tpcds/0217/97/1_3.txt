@@ -1,0 +1,1 @@
+Apply filtering conditions as early as possible (in the common table expressions): Minimizes the data volume processed downstream.

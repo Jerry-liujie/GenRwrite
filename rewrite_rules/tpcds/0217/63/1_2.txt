@@ -1,0 +1,1 @@
+Replace the list of consecutive values with a BETWEEN predicate: Simplifies the query and helps the optimizer evaluate the range more efficiently.

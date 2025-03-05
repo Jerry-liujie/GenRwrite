@@ -1,0 +1,1 @@
+Consolidate filtering conditions in the WHERE clause: Helps reduce intermediate row sets early for more efficient processing.

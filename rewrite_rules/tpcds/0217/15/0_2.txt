@@ -1,0 +1,1 @@
+Apply pre-filtering using a common table expression: Reduces the volume of rows early by filtering on selective conditions.

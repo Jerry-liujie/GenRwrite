@@ -1,0 +1,1 @@
+Transform correlated subqueries (using IN) into JOIN operations: Reduces redundant execution and leverages join optimizations.

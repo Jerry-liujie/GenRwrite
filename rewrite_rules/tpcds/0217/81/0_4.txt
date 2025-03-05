@@ -1,0 +1,1 @@
+Use clear and meaningful aliases consistently: This enhances maintainability and clarity of the query.

@@ -1,0 +1,1 @@
+Compute common expressions once and reuse them in the final select: Minimizes redundant calculations and boosts performance.

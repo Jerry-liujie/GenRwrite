@@ -1,0 +1,1 @@
+Factor out common aggregations: Computes the aggregated dataset once in a common expression to avoid redundant processing.

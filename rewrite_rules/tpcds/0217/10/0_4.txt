@@ -1,0 +1,1 @@
+Replace multiple EXISTS conditions with a precomputed set via joins: Eliminates repeated subquery execution and simplifies the overall query logic.

@@ -1,0 +1,1 @@
+Eliminate unnecessary nested subqueries: Simplifies the query plan and minimizes processing overhead.

@@ -1,0 +1,1 @@
+Push filters early by extracting common filtering conditions into a separate subquery: This reduces the number of rows processed in later joins.

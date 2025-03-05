@@ -1,0 +1,1 @@
+Apply join conditions and filters as early as possible in each subquery: Reduces the amount of data processed in later stages.

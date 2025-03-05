@@ -1,0 +1,1 @@
+Retain UNION ALL to combine results without unnecessary deduplication: This avoids extra computation and preserves performance.

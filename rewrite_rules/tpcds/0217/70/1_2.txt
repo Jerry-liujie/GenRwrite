@@ -1,0 +1,1 @@
+Apply filtering and join conditions in a Common Table Expression (CTE):

@@ -1,0 +1,1 @@
+Push filtering conditions as early as possible: Reduces the row count for subsequent grouping and window operations.

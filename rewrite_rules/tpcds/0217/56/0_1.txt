@@ -1,0 +1,1 @@
+Factor out common filtering criteria into separate CTEs: This reduces repeated filtering logic and allows the query engine to optimize the evaluation of those filters.

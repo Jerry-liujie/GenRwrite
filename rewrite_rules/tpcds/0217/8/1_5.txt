@@ -1,0 +1,1 @@
+Clearly separate join conditions from filter predicates: Makes the query easier to read and tune.

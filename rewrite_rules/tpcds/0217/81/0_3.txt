@@ -1,0 +1,1 @@
+Apply filtering conditions early in the query: Early filtering minimizes the dataset processed in subsequent joins.

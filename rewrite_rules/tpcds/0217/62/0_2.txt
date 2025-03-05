@@ -1,0 +1,1 @@
+Push filtering predicates into the join clause: Reduces the amount of data processed by applying restrictions as early as possible.

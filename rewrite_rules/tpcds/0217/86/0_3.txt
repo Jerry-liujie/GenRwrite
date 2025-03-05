@@ -1,0 +1,1 @@
+Utilize a common table expression (CTE) for aggregation: Isolates aggregate calculations and simplifies the subsequent window function computation.

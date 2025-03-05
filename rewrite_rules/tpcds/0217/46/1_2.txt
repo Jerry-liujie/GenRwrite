@@ -1,0 +1,1 @@
+Eliminate duplicate constants in filter predicates: Reduces redundancy and ensures the engine evaluates fewer expressions.

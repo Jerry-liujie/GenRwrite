@@ -1,0 +1,1 @@
+Retain appropriate grouping and ordering operations: This ensures that aggregation and result sorting are executed efficiently.

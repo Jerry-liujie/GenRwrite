@@ -1,0 +1,1 @@
+Push filtering conditions into the JOIN clauses: Narrows data sets at the source, lowering the volume of data processed.

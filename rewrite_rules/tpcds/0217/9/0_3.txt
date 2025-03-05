@@ -1,0 +1,1 @@
+Use a join to combine the aggregated results with the filtering table instead of independent subqueries: This simplifies the query and leverages set-based operations.

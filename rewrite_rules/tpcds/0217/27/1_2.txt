@@ -1,0 +1,1 @@
+Convert implicit joins to explicit ANSI join syntax: This enhances readability and allows the query planner to optimize join order and methods.

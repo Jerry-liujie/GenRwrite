@@ -1,0 +1,1 @@
+Replace multiple set intersections with a union-all of separate queries followed by a grouping and filtering step: This reduces duplicate scans and leverages aggregation for set intersection.

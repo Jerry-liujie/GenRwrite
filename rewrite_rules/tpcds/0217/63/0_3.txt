@@ -1,0 +1,1 @@
+Decompose the query into Common Table Expressions (CTEs): Separates filtering, aggregation, and window function logic to modularize the query and promote plan reuse.

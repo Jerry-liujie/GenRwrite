@@ -1,0 +1,1 @@
+Consolidate multiple similar subqueries into a single query: Reduces repeated scanning and joining by aggregating over one dataset.

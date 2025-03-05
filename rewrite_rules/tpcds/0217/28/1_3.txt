@@ -1,0 +1,1 @@
+Use CASE expressions to compute aggregates based on conditions within a single query: Enhances clarity and execution efficiency.

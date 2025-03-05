@@ -1,0 +1,1 @@
+Push join conditions into the JOIN clause in subqueries rather than in the WHERE clause: Simplifies the query structure and potentially aids in predicate pushdown.

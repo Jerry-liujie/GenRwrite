@@ -1,0 +1,1 @@
+Eliminate unnecessary operations (e.g., ordering an aggregated result when only one row is returned): Streamlines execution and reduces overhead.

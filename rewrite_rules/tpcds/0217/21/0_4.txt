@@ -1,0 +1,1 @@
+Use table aliases for brevity: Enhances readability and maintainability without affecting performance.

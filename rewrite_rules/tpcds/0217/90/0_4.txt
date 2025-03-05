@@ -1,0 +1,1 @@
+Limit the data range in the WHERE clause to only the necessary time frames: This helps to reduce the intermediate data set size and improve performance.

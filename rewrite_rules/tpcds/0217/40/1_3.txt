@@ -1,0 +1,1 @@
+Move join conditions into the appropriate ON clauses: Clearly separates join logic from filtering conditions, improving maintainability and performance.

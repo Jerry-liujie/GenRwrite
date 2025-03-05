@@ -1,0 +1,1 @@
+Consolidate repeated filtering conditions in the CTE and main query: Helps in reducing data volume early and minimizes redundant evaluation.

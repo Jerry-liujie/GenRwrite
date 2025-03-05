@@ -1,0 +1,1 @@
+Pre-aggregate data within subqueries before the join: Aggregating early reduces join complexity and improves performance.

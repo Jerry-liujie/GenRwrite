@@ -1,0 +1,1 @@
+Push constant filters into join conditions: Moving static conditions into the join clauses restricts rows earlier, reducing the size of intermediate results.

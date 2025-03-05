@@ -1,0 +1,1 @@
+Maintain UNION ALL for Combining Aggregates: Use UNION ALL to merge pre-aggregated results from multiple subqueries, then perform a final aggregation. Benefit: This avoids unnecessary duplicate elimination and leverages partial aggregations for better efficiency.

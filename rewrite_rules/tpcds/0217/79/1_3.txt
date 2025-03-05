@@ -1,0 +1,1 @@
+Remove redundant grouping columns: Group only by the necessary fields that appear in the SELECT, which can reduce grouping overhead.

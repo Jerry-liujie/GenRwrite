@@ -1,0 +1,1 @@
+Push filtering predicates into the WHERE clause: Reduces the dataset earlier in the process, decreasing data volume for later operations.

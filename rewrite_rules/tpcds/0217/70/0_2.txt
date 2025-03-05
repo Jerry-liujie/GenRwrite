@@ -1,0 +1,1 @@
+Extract the inner top‐group filtering subquery into a common table expression (CTE): Avoids repeated calculation and simplifies maintenance.

@@ -1,0 +1,1 @@
+Consolidate unioned data into a single CTE: Reduces complexity by pre-aggregating data from multiple sources.

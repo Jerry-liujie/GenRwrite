@@ -1,0 +1,1 @@
+Push filtering of date ranges into a separate CTE: Limits the data processed in the joins, thereby reducing overall dataset size.

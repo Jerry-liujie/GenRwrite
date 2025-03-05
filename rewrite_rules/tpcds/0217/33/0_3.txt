@@ -1,0 +1,1 @@
+Replace subqueries for filtering with direct JOIN filters: Eliminates redundant subquery execution.

@@ -1,0 +1,1 @@
+Push filtering conditions into the WHERE clause to limit the data as early as possible: Reduces the number of rows processed in subsequent operations.

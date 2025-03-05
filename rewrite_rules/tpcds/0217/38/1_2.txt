@@ -1,0 +1,1 @@
+Eliminate redundant DISTINCT operations by using EXISTS conditions instead of set intersections: This avoids the cost of deduplication in each subquery.

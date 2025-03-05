@@ -1,0 +1,1 @@
+Use conditional aggregation instead of separate aggregations: Avoids re-scanning the same dataset for different sums.

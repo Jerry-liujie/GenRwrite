@@ -1,0 +1,1 @@
+Push filtering conditions into early join operations: This reduces the number of rows processed in later stages and improves overall query efficiency.

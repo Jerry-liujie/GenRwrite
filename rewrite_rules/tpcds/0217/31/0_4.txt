@@ -1,0 +1,1 @@
+Compute comparative ratios in the outer query from pre-aggregated results: This avoids redundant recalculations and improves efficiency.

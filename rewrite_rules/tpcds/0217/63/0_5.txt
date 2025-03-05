@@ -1,0 +1,1 @@
+Retain necessary groupings and window functions while avoiding redundant columns: Streamlines aggregations and computations for better performance.

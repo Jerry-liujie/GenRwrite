@@ -1,0 +1,1 @@
+Maintain ordering and limit operations after aggregation: Ensures that only the necessary subset of results is processed and returned.

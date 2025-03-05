@@ -1,0 +1,1 @@
+Push filtering predicates into ON clauses (or immediately after joins): Reduces the number of rows early in the execution, lowering processing and memory overhead.

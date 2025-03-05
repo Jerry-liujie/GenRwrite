@@ -1,0 +1,1 @@
+Retain aggregate and conditional expressions: Keeps the aggregation logic intact while the overall query structure is enhanced for performance.

@@ -1,0 +1,1 @@
+Replace LEFT JOIN filtering on related returns with a NOT EXISTS predicate: Avoids unnecessary join overhead and improves execution efficiency.

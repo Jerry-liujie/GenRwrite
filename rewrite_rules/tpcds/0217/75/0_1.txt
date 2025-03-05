@@ -1,0 +1,1 @@
+Apply early filtering: Move filtering conditions into individual parts of the union subqueries to reduce the dataset before aggregation.

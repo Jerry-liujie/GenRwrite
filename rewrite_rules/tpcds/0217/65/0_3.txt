@@ -1,0 +1,1 @@
+Consolidate similar aggregations into a single base subquery: Reduces scanning overhead of the data.

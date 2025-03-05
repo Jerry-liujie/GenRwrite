@@ -1,0 +1,1 @@
+Apply date filters consistently in both the main query and the aggregate computation: Ensures that all calculations operate on the same data subset, reducing unnecessary processing.

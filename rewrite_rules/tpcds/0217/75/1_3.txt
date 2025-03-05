@@ -1,0 +1,1 @@
+Use explicit JOIN syntax for combining datasets: This makes join criteria clearer and can improve execution plan optimization.

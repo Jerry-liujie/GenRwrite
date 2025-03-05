@@ -1,0 +1,1 @@
+Collapse self-joins by computing aggregates for each sale type once and joining on the common key: This minimizes the number of joins and streamlines the query execution.

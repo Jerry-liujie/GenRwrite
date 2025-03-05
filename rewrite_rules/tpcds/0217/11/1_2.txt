@@ -1,0 +1,1 @@
+Combine multiple self-joins by pivoting aggregated data into columns using CASE statements: Reduces the number of joins and overall complexity.

@@ -1,0 +1,1 @@
+Move common calculations (such as substring extraction and date difference) into a subquery: Avoids recalculating expressions, which simplifies grouping and ordering.

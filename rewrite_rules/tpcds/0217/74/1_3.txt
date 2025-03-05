@@ -1,0 +1,1 @@
+Push filtering predicates into the CTEs: Decreases data volume earlier and improves query performance.

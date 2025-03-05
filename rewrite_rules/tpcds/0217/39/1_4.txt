@@ -1,0 +1,1 @@
+Apply filter conditions as early as possible (in the CTE): Reduces the number of rows processed in later steps, thus improving performance.

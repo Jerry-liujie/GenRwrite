@@ -1,0 +1,1 @@
+Substitute a GROUP BY with DISTINCT when no aggregates are computed: Eliminates unnecessary grouping steps and can improve performance by reducing processing overhead.

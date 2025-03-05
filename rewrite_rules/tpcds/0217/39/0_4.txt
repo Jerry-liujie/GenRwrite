@@ -1,0 +1,1 @@
+Push filter conditions early (in the CTE and WHERE clause): Minimizes the intermediate result set and improves overall performance.

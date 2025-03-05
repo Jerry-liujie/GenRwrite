@@ -1,0 +1,1 @@
+Push filtering conditions into the JOIN/WHERE clause: Reduces the number of rows early in execution, improving performance.

@@ -1,0 +1,1 @@
+Introduce a common table expression (CTE) to precompute and filter rows: Reduces redundant calculations and limits the working set for aggregation.

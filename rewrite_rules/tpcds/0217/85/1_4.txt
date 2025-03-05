@@ -1,0 +1,1 @@
+Organize complex OR conditions clearly by grouping related filters: This enhances clarity and can assist the optimizer in evaluating the logic more efficiently.

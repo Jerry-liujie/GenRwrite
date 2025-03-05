@@ -1,0 +1,1 @@
+Use derived tables to compute aggregates prior to joining: Helps avoid recalculation and improves overall query performance.

@@ -1,0 +1,1 @@
+Create distinct aggregated subqueries for different periods: Simplifies the final join logic and minimizes repeated computation.

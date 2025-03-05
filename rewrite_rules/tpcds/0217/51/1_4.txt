@@ -1,0 +1,1 @@
+Use COALESCE to handle missing values in joined data: Ensures that nulls do not interfere with arithmetic operations and comparisons.

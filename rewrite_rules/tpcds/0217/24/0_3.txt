@@ -1,0 +1,1 @@
+Precompute invariant expressions: Extracts the aggregate threshold value into its own common expression so it is calculated only once.

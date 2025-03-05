@@ -1,0 +1,1 @@
+Consolidate filter expressions for similar conditions: Enables more efficient predicate pushdown and index utilization.

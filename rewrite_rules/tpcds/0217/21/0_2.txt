@@ -1,0 +1,1 @@
+Remove redundant type casts by using date literals and native date arithmetic: Reduces function overhead and improves index utilization.

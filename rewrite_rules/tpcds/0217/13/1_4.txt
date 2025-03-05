@@ -1,0 +1,1 @@
+Maintain logical grouping of disjunctive conditions: Keeps different filter groups separate to improve readability while ensuring optimal execution plans.

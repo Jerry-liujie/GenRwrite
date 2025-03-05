@@ -1,0 +1,1 @@
+Utilize date literals and direct interval arithmetic in the WHERE clause: Streamlines date comparisons and may improve evaluation efficiency.

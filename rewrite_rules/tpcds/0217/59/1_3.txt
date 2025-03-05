@@ -1,0 +1,1 @@
+Push filter conditions into the respective subqueries: Reduces the data set early in processing.

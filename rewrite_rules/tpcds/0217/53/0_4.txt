@@ -1,0 +1,1 @@
+Remove the CASE expression by moving its logic into the WHERE clause: Reduces redundant computation and improves filtering efficiency.

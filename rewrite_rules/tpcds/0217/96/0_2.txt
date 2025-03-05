@@ -1,0 +1,1 @@
+Remove unnecessary ORDER BY and LIMIT clauses on an aggregate query: Eliminates redundant sorting and limits when the result is a single aggregated row.

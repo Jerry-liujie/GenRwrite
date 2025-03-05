@@ -1,0 +1,1 @@
+Replace implicit join syntax with explicit join clauses: Improves clarity and enables the optimizer to better plan join operations.

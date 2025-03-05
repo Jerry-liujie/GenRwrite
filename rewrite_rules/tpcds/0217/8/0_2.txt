@@ -1,0 +1,1 @@
+Use common table expressions to precompute filtered subsets: Reduces the volume of data processed in later joins and clarifies logical query steps.

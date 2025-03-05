@@ -1,0 +1,1 @@
+Simplify complex expressions by converting conditional arithmetic comparisons into direct comparisons: Allows the query engine to utilize indices and reduce computation overhead.

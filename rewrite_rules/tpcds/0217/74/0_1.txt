@@ -1,0 +1,1 @@
+Replace multiple UNION subqueries with separate aggregation subqueries using CASE expressions: This reduces redundant scans by combining filtering within each aggregated subquery.

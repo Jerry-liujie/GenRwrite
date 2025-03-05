@@ -1,0 +1,1 @@
+Align window function partitioning and ordering clauses so aggregation is computed once: Minimizes redundant computations.

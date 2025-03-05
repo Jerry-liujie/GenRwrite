@@ -1,0 +1,1 @@
+Alias tables for brevity and readability: Makes the query more maintainable and easier to understand.

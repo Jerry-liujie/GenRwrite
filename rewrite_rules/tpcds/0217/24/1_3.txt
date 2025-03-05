@@ -1,0 +1,1 @@
+Calculate shared aggregate values in a separate common expression: Eliminates duplicate computations across similar queries.

@@ -1,0 +1,1 @@
+Convert the NOT EXISTS predicate into a LEFT JOIN with a NULL check: Leverages anti-join patterns that can be more efficient in many databases.

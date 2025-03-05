@@ -1,0 +1,1 @@
+Compute counts and averages for each range in one pass: This minimizes repeated calculations and improves query performance.

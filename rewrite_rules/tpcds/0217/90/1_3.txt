@@ -1,0 +1,1 @@
+Push Common Filter Conditions into the WHERE Clause: Applied filters early in the query to limit the dataset processed by the aggregations, thereby enhancing performance.

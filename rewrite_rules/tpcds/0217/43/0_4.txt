@@ -1,0 +1,1 @@
+Retain the grouping and ordering structure as is: Ensures the logical results remain consistent while optimizing join and filtering operations.

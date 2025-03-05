@@ -1,0 +1,1 @@
+Consolidate range conditions using a BETWEEN-like construct: Simplifies the filtering logic and can enhance index usage.

@@ -1,0 +1,1 @@
+Use conditional expressions on pre-aggregated data instead of multiple nested subqueries: simplifies the query and allows the engine to optimize join operations.

@@ -1,0 +1,1 @@
+Replace SELECT * in subqueries with SELECT 1: Reduces unnecessary overhead by only returning a minimal value.

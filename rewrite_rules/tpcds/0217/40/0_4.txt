@@ -1,0 +1,1 @@
+Use descriptive table aliases: Enhances readability and maintainability without affecting performance.

@@ -1,0 +1,1 @@
+Move filtering predicates into the join condition: Reduces intermediate result sizes by filtering early in the query plan.

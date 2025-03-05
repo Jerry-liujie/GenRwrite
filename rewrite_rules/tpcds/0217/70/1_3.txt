@@ -1,0 +1,1 @@
+Isolate intermediary aggregations into a separate CTE for ranking:

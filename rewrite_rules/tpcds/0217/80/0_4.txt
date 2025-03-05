@@ -1,0 +1,1 @@
+Replace repeated literal expressions with references to a common subquery: Enhances consistency and facilitates future updates.

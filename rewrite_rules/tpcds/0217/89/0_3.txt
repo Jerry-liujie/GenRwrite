@@ -1,0 +1,1 @@
+Replace the CASE expression in the filtering step with a compound WHERE clause: Simplifies the predicate and avoids extra computation by moving nonzero checks upfront.

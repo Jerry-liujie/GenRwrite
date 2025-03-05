@@ -1,0 +1,1 @@
+Move common filters to the outer WHERE clause: Simplifies and centralizes filtering to improve execution efficiency.

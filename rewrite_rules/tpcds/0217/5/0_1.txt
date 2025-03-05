@@ -1,0 +1,1 @@
+Pre‐filter common dimension data: Use a separate CTE to restrict rows by the date range so that later operations work only on relevant keys.

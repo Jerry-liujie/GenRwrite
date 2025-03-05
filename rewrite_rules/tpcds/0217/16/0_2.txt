@@ -1,0 +1,1 @@
+Consolidate duplicate value checks into a single equality condition: Reduces redundant checks and simplifies evaluation.

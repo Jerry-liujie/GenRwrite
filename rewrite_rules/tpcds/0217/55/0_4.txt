@@ -1,0 +1,1 @@
+Order operations to filter data before aggregation: Minimizes the dataset on which grouping and sorting are performed, improving performance.

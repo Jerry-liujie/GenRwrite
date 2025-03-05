@@ -1,0 +1,1 @@
+Use DISTINCT in the earliest stage possible: Eliminates duplicate rows early in the execution plan, improving performance.

@@ -1,0 +1,1 @@
+Use clear aliasing for tables and columns: This shortens references and improves maintenance and readability.

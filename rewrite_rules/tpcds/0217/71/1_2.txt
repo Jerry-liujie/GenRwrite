@@ -1,0 +1,1 @@
+Replace the inline view with a common table expression (CTE): This improves readability and may help with planning and debugging.

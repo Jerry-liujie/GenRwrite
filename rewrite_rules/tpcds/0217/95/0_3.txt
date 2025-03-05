@@ -1,0 +1,1 @@
+Remove redundant ordering and limiting in an aggregate query: Eliminates needless operations when returning a single aggregated result.

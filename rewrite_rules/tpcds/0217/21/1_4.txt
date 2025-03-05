@@ -1,0 +1,1 @@
+Maintain filtering predicates before grouping: Reduces the volume of data processed in the aggregation step.

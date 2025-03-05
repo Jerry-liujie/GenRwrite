@@ -1,0 +1,1 @@
+Consolidate filtering predicates to push down filters as early as possible: Helps in reducing the data set before costly operations such as grouping and ordering.

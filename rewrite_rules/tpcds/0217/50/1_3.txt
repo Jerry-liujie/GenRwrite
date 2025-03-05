@@ -1,0 +1,1 @@
+Consolidate join conditions in the JOIN clause: Ensures that only matching records are processed and minimizes the use of implicit joins using commas.

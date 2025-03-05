@@ -1,0 +1,1 @@
+Remove unnecessary columns from the GROUP BY clause: Simplifies aggregation, reducing computational overhead.

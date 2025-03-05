@@ -1,0 +1,1 @@
+Push string manipulation into the subquery: By computing the substring inside the subquery, it avoids repeated computation in the outer query.

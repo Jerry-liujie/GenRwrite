@@ -1,0 +1,1 @@
+Replace the correlated subquery with a common table expression (CTE) that precomputes the aggregate value: Reduces repeated computations and enhances performance.

@@ -1,0 +1,1 @@
+Replace NULL alternatives in aggregates with zero values where appropriate: Ensures accurate arithmetic and can enable better optimization.

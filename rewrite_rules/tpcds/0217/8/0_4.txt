@@ -1,0 +1,1 @@
+Replace set operations with inner joins: Streamlines the query by eliminating less efficient operations.

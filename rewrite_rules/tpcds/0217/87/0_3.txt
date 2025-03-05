@@ -1,0 +1,1 @@
+Express explicit join conditions instead of listing multiple tables in the FROM clause: This aids the optimizer in choosing a more efficient join strategy.

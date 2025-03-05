@@ -1,0 +1,1 @@
+Replace conditional expressions in the WHERE clause with direct Boolean conditions: Simplifies filtering and can enhance performance.

@@ -1,0 +1,1 @@
+Push filter conditions on dimension-like tables into the WHERE clause: Reduces intermediate result sizes early in the processing.

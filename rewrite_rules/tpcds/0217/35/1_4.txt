@@ -1,0 +1,1 @@
+Consistently alias tables and columns: Enhances readability and maintainability, reducing ambiguity in references.

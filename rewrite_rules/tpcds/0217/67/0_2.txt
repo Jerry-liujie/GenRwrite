@@ -1,0 +1,1 @@
+Use Common Table Expressions (CTEs) to separate the aggregation and ranking phases: Enhances query readability and maintainability.

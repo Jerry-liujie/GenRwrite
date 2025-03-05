@@ -1,0 +1,1 @@
+Push filtering conditions into the join operations: Reduces the intermediate result set and overall processing.

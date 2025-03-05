@@ -1,0 +1,1 @@
+Push filtering predicates into the join/WHERE clause: Benefit – reduces the volume of data early in the query processing.

@@ -1,0 +1,1 @@
+Eliminate unnecessary duplicate data retrieval by grouping at the earliest stage: Lowers overall query execution time.

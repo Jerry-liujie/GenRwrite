@@ -1,0 +1,1 @@
+Replace multiple self-joins with pivoted aggregations: This rule aggregates data by sale type and year in subqueries, reducing redundant scans and joins.

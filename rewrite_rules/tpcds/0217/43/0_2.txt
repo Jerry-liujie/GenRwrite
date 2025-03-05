@@ -1,0 +1,1 @@
+Push filtering conditions into the JOIN predicates: Reduces the number of rows processed in subsequent operations.

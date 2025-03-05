@@ -1,0 +1,1 @@
+Utilize common table expressions (CTE) for clarity and potential reuse: This isolates the aggregation step and can allow the optimizer to better optimize the query plan.

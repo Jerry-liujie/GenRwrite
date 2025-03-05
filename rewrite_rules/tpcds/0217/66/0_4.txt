@@ -1,0 +1,1 @@
+Factor out constant expressions and reuse them: Minimizes repeated calculations and reduces computation overhead.

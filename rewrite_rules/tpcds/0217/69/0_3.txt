@@ -1,0 +1,1 @@
+Convert subquery existence checks to anti-joins using left joins with null filters: Streamlines filtering logic and avoids costly nested loop evaluations.

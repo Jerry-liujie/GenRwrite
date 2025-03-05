@@ -1,0 +1,1 @@
+Isolate different data sources into common table expressions (CTEs): Simplifies maintenance and enables early filtering and aggregation.

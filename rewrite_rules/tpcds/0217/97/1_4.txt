@@ -1,0 +1,1 @@
+Alias tables uniformly and use parameter placeholders instead of literal values: Improves readability and facilitates query parameterization.

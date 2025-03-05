@@ -1,0 +1,1 @@
+Push filtering conditions into the WHERE clause early: Reduces dataset size before expensive operations like grouping and windowing.

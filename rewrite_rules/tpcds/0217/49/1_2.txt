@@ -1,0 +1,1 @@
+Push filtering and join conditions into the aggregation CTEs: Reduces the amount of data processed in later stages.

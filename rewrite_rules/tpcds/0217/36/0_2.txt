@@ -1,0 +1,1 @@
+Remove redundant filtering conditions: Eliminates duplicate constant values to reduce unnecessary computations.

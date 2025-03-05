@@ -1,0 +1,1 @@
+Replace comma-separated joins with explicit inner and left joins: Clarifies join conditions and optimizes performance.

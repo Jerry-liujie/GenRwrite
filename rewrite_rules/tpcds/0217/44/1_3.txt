@@ -1,0 +1,1 @@
+Flatten nested subqueries into simpler, modular components: Improves query readability and optimization potential.

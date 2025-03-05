@@ -1,0 +1,1 @@
+Simplify the overall structure by breaking up complex unions: This enhances the optimizer’s ability to generate an efficient execution plan.

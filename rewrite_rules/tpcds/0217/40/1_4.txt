@@ -1,0 +1,1 @@
+Ensure selection criteria are applied as early as possible in the WHERE clause: Helps in reducing the dataset processed in subsequent operations.

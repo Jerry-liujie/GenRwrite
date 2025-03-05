@@ -1,0 +1,1 @@
+Encapsulate the aggregation in a common table expression: Enhances modularity and allows the optimizer to better manage intermediate results.

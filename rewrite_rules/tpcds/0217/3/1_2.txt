@@ -1,0 +1,1 @@
+Move join conditions to the ON clause rather than keeping them in the WHERE clause: Enables the optimizer to better manage join operations and potentially reduce intermediate result sizes.

@@ -1,0 +1,1 @@
+Convert a repeated subquery filter into a common filtered dataset: Reduces redundant computations by filtering once and reusing the result.

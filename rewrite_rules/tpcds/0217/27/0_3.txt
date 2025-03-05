@@ -1,0 +1,1 @@
+Streamline filtering predicates: Applying filters early reduces the data processed in joins.

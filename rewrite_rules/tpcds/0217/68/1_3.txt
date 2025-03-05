@@ -1,0 +1,1 @@
+Consolidate filters in the subquery: Eliminates extra data early in processing to lower the data volume for subsequent operations.

@@ -1,0 +1,1 @@
+Factor common filtering logic into common table expressions: Reduces redundant computations and simplifies subqueries.

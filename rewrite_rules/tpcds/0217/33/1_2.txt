@@ -1,0 +1,1 @@
+Factor out common filtering on a shared dimension into a separate common table expression: Reduces redundant computations and simplifies maintenance.

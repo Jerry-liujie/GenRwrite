@@ -1,0 +1,1 @@
+Use explicit INNER JOINs instead of implicit or mixed (comma) joins: Improves clarity and enables the optimizer to better utilize join conditions.

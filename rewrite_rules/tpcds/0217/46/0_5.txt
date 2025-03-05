@@ -1,0 +1,1 @@
+Use clear aliasing for tables and derived columns: Increases clarity and supports accurate query optimization.

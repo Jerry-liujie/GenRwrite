@@ -1,0 +1,1 @@
+Use explicit JOIN syntax instead of commas in FROM: Enhances clarity and lets the optimizer better understand join conditions.

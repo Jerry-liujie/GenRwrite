@@ -1,0 +1,1 @@
+Maintain window function calculation at the source level: Ensures proper partitioning and ordering without re-computation outside the analytic function.

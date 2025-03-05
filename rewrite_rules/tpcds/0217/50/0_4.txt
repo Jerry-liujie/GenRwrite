@@ -1,0 +1,1 @@
+Qualify column names with table aliases: Enhances clarity and ensures accurate reference during join operations.

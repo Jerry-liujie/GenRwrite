@@ -1,0 +1,1 @@
+Use explicit join syntax instead of implicit joins: This improves readability and helps the optimizer generate more efficient execution plans.

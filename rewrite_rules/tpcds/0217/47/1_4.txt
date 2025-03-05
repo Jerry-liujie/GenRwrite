@@ -1,0 +1,1 @@
+Remove unnecessary ranking by using ordered analytic functions: This reduces computation by eliminating extra ranking operations.

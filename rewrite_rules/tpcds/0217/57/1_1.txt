@@ -1,0 +1,1 @@
+Replace self-joins with window functions (LAG/LEAD): Improves performance by eliminating expensive self-joins and reducing data shuffling.

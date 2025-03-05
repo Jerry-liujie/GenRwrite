@@ -1,0 +1,1 @@
+Maintain straightforward join order and explicit conditions: Clear join syntax helps the optimizer generate an efficient execution plan while reducing complexity.

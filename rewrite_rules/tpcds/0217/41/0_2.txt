@@ -1,0 +1,1 @@
+Consolidate multiple OR conditions using IN predicates: Benefit – using IN makes conditions easier to read and can improve optimization by the query planner.

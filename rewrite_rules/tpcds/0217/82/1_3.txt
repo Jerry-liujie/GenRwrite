@@ -1,0 +1,1 @@
+Replace CAST expressions with standard date literals and interval arithmetic: Provides clarity, reduces function overhead, and can lead to better performance.

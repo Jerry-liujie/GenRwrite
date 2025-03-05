@@ -1,0 +1,1 @@
+Move filtering conditions into the subqueries: This reduces the volume of data processed by applying constant filters early.

@@ -1,0 +1,1 @@
+Push filtering conditions into the aggregated subqueries wherever possible: This reduces the intermediate result set size early, improving overall query performance.

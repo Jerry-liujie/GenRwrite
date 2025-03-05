@@ -1,0 +1,1 @@
+Union similar queries with UNION ALL: Enables a single aggregation pass over a combined dataset.

@@ -1,0 +1,1 @@
+Replace implicit joins with explicit JOIN clauses: Improves readability and helps the query optimizer with join ordering and predicate pushdown.

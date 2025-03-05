@@ -1,0 +1,1 @@
+Consolidate repeated table filtering into a single aggregated CTE: Reduces redundant scans and accelerates the aggregation phase.

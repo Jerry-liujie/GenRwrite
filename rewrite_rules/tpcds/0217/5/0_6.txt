@@ -1,0 +1,1 @@
+Maintain ordering and rollup grouping at the outer query: Aggregate results after combining channels, reducing intermediate data processing.

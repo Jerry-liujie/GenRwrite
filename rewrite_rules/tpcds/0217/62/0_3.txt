@@ -1,0 +1,1 @@
+Structure CASE expressions clearly without redundant computation: Enhances clarity and helps the optimizer evaluate expressions more efficiently.

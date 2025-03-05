@@ -1,0 +1,1 @@
+Compute aggregates in common table expressions prior to joining: Enables early filtering and minimizes data volume in subsequent joins.

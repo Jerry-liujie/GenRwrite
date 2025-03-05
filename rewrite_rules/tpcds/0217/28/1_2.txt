@@ -1,0 +1,1 @@
+Replace multiple derived subqueries with conditional aggregates: Minimizes overhead from joins on intermediate results.

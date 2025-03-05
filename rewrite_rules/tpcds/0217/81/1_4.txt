@@ -1,0 +1,1 @@
+Consolidate join conditions in the FROM clause instead of the WHERE clause: Enhances query readability and can lead to more efficient execution.

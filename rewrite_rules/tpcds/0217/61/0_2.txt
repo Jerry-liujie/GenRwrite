@@ -1,0 +1,1 @@
+Replace implicit join syntax with explicit JOINs including filter conditions: Improves clarity and allows the query optimizer to apply predicates earlier.

@@ -1,0 +1,1 @@
+Eliminate ambiguous join relationships by clearly specifying join conditions: Ensures correctness and may improve performance by reducing unnecessary row comparisons.

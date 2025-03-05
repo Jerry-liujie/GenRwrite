@@ -1,0 +1,1 @@
+Rewrite complex nested subqueries as separate CTEs: Simplifies the query structure and enables the optimizer to potentially reuse intermediate results.

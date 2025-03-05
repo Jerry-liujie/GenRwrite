@@ -1,0 +1,1 @@
+Consolidate filter conditions into join predicates where applicable: Enables earlier filtering of data sets and minimizes the volume of data processed during aggregation.

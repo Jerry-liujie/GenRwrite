@@ -1,0 +1,1 @@
+Eliminate repeated subqueries by joining on a prefiltered set of date records: Enhances performance by reducing redundant computations.

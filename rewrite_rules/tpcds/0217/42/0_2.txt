@@ -1,0 +1,1 @@
+Apply filtering predicates early: Reduces the dataset before joining and aggregating, which in turn enhances performance.

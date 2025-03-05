@@ -1,0 +1,1 @@
+Eliminate a subquery returning a single constant by applying its filtering conditions directly in the main query: Avoids unnecessary subquery execution and simplifies predicate evaluation.

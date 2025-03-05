@@ -1,0 +1,1 @@
+Push filtering predicates to the appropriate relations: Minimizes data processed during joins by filtering out unnecessary rows as soon as possible.

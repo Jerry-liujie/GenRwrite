@@ -1,0 +1,1 @@
+Apply filtering conditions on a related dimension table immediately in the WHERE clause: Reduces the number of rows processed during join operations.

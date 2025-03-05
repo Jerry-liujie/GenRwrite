@@ -1,0 +1,1 @@
+Simplify date filters using an IN clause and grouped conditions: This helps the optimizer process predicates more efficiently.

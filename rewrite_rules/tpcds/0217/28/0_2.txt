@@ -1,0 +1,1 @@
+Replace repeated filtering logic with CASE expressions: This consolidates evaluation of filter conditions, leading to a simpler and more efficient execution plan.

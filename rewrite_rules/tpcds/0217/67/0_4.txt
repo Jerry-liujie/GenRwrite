@@ -1,0 +1,1 @@
+Consolidate calculations in the aggregation step: Minimizes redundant computations and streamlines the overall query execution.

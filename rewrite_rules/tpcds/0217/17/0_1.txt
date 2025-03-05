@@ -1,0 +1,1 @@
+Use explicit JOIN syntax instead of listing tables in the FROM clause: This clarifies join conditions and helps the optimizer eliminate unnecessary Cartesian products.

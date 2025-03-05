@@ -1,0 +1,1 @@
+Replace SELECT * in subqueries with SELECT 1: Minimizes unnecessary data retrieval in the existence checks.

@@ -1,0 +1,1 @@
+Factor out common date calculations into a separate expression: Eliminates redundant computations and simplifies maintenance.

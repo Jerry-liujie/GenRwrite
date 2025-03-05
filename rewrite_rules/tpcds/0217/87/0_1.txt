@@ -1,0 +1,1 @@
+Replace set‐difference operators with anti–join constructs (using NOT EXISTS): This can reduce overhead by allowing the optimizer to use efficient index–based lookups rather than scanning and subtracting whole result sets.

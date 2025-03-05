@@ -1,0 +1,1 @@
+Derive and alias the difference expression once in the CTE: Minimizes repeated computation and simplifies the CASE expressions.

@@ -1,0 +1,1 @@
+Push filter conditions into individual subqueries: Filtering early helps reduce the amount of data processed.

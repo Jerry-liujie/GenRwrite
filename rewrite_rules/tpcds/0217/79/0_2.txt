@@ -1,0 +1,1 @@
+Encapsulate complex subqueries using a common table expression (CTE): Enhances readability and can allow the optimizer to better manage intermediate results.

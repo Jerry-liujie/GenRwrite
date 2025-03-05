@@ -1,0 +1,1 @@
+Apply clear table aliasing: Enhances clarity and simplifies maintenance.

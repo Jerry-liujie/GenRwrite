@@ -1,0 +1,1 @@
+Replace comma‐separated joins with explicit JOIN syntax: Improves clarity and allows the optimizer to better plan join order.

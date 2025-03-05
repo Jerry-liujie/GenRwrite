@@ -1,0 +1,1 @@
+Apply filtering conditions in the WHERE clause as early as possible: Narrows down the dataset, reducing the amount of data processed during joins and aggregation.

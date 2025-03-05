@@ -1,0 +1,1 @@
+Replace implicit union subqueries with a CTE-based union: Allows for clearer aggregation over combined results.

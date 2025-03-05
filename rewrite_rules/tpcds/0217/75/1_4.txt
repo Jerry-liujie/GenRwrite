@@ -1,0 +1,1 @@
+Replace division with multiplication for comparisons: This eliminates unnecessary type casting and potential performance overhead.

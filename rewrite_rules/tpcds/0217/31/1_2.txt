@@ -1,0 +1,1 @@
+Filter data early within subqueries: Restricting by period criteria in each subquery reduces the data volume processed in aggregations.

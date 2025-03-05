@@ -1,0 +1,1 @@
+Remove duplicated filter values from IN predicates: Eliminates redundant comparisons and simplifies the condition.

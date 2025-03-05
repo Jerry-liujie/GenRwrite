@@ -1,0 +1,1 @@
+Standardize alias usage: Increases maintainability and improves query parsing for the optimizer.

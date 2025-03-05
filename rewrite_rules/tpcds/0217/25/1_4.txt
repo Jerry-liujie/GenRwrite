@@ -1,0 +1,1 @@
+Consolidate date filter predicates within the corresponding join: This ensures that date restrictions are applied directly to the related data set.

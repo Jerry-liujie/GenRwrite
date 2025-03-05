@@ -1,0 +1,1 @@
+Maintain clear and concise CASE statements: Enhances readability and ensures that conditions are applied efficiently.

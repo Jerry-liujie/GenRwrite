@@ -1,0 +1,1 @@
+Pre-filter constant predicate dimensions using common table expressions: Reduces redundant filtering in subqueries and minimizes data processed.

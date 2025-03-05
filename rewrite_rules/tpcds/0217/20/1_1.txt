@@ -1,0 +1,1 @@
+Use explicit JOIN syntax: Improves query readability and helps the optimizer better understand join relationships.

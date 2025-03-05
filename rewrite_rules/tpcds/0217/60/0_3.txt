@@ -1,0 +1,1 @@
+Eliminate IN-subqueries by leveraging direct joins: Helps avoid multiple executions of the same subquery and can improve performance.

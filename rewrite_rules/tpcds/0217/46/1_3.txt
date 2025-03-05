@@ -1,0 +1,1 @@
+Push filtering conditions into subqueries and JOIN conditions: Narrows the dataset early, lowering the volume of data processed in later stages.

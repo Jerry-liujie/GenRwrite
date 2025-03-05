@@ -1,0 +1,1 @@
+Retain grouping and ordering expressions: Maintains the intended aggregation and sort order while allowing the optimizer to make efficient plans.

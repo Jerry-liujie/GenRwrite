@@ -1,0 +1,1 @@
+Use common table expressions (CTEs) to precompute aggregates: This modularizes the query and simplifies debugging and optimization.

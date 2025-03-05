@@ -1,0 +1,1 @@
+Apply filtering conditions as early as possible in each subquery: Decreases the overall data volume processed by later operations.

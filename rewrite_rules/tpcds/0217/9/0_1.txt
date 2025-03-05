@@ -1,0 +1,1 @@
+Replace multiple similar subqueries with a single aggregate query using conditional aggregation: This reduces the number of table scans.

@@ -1,0 +1,1 @@
+Retain typecasting within aggregate functions to ensure type consistency: Although the casts are preserved, isolating them in the select clause helps the optimizer focus on filtering and join logic.

@@ -1,0 +1,1 @@
+Consolidate repeated date range filtering into a single, SARGable predicate: Helps the database engine use indexes more efficiently.

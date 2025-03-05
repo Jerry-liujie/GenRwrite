@@ -1,0 +1,1 @@
+Use table aliases consistently: Benefit – enhances query clarity and reduces potential for ambiguous references.

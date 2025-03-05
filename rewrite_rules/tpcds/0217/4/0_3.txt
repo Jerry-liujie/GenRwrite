@@ -1,0 +1,1 @@
+Replace repetitive ratio computations with precomputed aggregated columns: This minimizes recalculations and simplifies the conditions.

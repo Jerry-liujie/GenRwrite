@@ -1,0 +1,1 @@
+Combine subqueries with common filters into a single scan using a common table expression: Reduces duplicate work and improves efficiency.

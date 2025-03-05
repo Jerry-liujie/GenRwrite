@@ -1,0 +1,1 @@
+Use a single aggregated query with conditional expressions instead of separate subqueries: Reduces multiple scans and joins, minimizing resource usage.

@@ -1,0 +1,1 @@
+Organize joins logically to align with data relationships: Enhances readability and allows the optimizer to better leverage available indexes.

@@ -1,0 +1,1 @@
+Project only necessary columns and alias aggregates: Minimizes data processing and simplifies downstream processing steps.

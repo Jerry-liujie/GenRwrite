@@ -1,0 +1,1 @@
+Align join conditions to reflect logical relationships: This minimizes unnecessary row multiplication and enhances performance.

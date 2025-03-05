@@ -1,0 +1,1 @@
+Push filtering conditions into JOIN or WHERE clauses to reduce the volume of rows early in the query execution: This minimizes intermediate result sets.

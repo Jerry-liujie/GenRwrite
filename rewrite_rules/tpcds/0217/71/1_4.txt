@@ -1,0 +1,1 @@
+Use IN() for filtering multiple values: This simplifies the predicate and can optimize condition evaluation.

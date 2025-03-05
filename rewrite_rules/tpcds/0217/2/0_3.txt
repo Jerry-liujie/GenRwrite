@@ -1,0 +1,1 @@
+Push filtering conditions (by year) into separate CTEs: Narrows the data set early, lowering the volume of data processed in subsequent joins.

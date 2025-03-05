@@ -1,0 +1,1 @@
+Pre-aggregate daily values before computing cumulative sums: Reduces redundant window function calculations by aggregating at the date level and then applying cumulative sums.

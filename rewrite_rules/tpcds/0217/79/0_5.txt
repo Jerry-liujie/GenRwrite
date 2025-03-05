@@ -1,0 +1,1 @@
+Align filtering conditions directly with their related tables: Improves early data reduction by pushing filters closer to data sources.

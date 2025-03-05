@@ -1,0 +1,1 @@
+Consolidate distinct-row computation in a single subquery: Minimizes redundant work by performing deduplication only once.

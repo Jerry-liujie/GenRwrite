@@ -1,0 +1,1 @@
+Replace full outer joins with a UNION ALL of pre-aggregated data: This simplifies the join logic and reduces processing overhead.

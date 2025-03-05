@@ -1,0 +1,1 @@
+Preserve filtering conditions in the WHERE clause: Early filtering reduces the dataset size before grouping, enhancing performance.

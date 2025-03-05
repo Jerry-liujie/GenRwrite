@@ -1,0 +1,1 @@
+Use clear table aliases for correlated subqueries: Benefit – enhances readability and assists the optimizer in correlating subqueries efficiently.

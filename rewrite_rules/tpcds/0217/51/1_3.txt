@@ -1,0 +1,1 @@
+Compute cumulative aggregates in a separate step rather than nested subqueries: Simplifies the overall query structure and reduces complexity.

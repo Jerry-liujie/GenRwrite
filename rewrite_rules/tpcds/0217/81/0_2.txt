@@ -1,0 +1,1 @@
+Replace the correlated subquery with a precomputed aggregate in a separate CTE: This reduces redundant computations and can improve performance.

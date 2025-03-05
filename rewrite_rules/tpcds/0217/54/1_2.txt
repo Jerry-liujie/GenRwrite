@@ -1,0 +1,1 @@
+Precompute constant expressions via a dedicated CTE: Prevents re-evaluation of the same subquery and reduces redundant computation.

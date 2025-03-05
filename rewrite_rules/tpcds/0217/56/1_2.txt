@@ -1,0 +1,1 @@
+Use of Explicit JOIN Syntax: Replace implicit join syntax with explicit JOINs and ON clauses to clearly express relationships between tables. Benefit: Improves query clarity and can help the optimizer generate more efficient execution plans.

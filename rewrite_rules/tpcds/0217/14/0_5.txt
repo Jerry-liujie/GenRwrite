@@ -1,0 +1,1 @@
+Use rollup grouping on a pre‐aggregated subquery : Simplifies final aggregation and allows the engine to optimize grouping operations.

@@ -1,0 +1,1 @@
+Filter constant conditions early in the query: Reduces the data volume processed in later stages.

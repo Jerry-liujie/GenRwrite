@@ -1,0 +1,1 @@
+Assign table aliases to shorten the query and enhance readability.

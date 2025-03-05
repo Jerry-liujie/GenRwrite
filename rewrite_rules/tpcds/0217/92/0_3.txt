@@ -1,0 +1,1 @@
+Consolidate common filter conditions (e.g., date predicates) in one place: Enhances predicate pushdown and reduces redundant filtering.

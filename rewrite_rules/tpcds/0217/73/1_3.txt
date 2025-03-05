@@ -1,0 +1,1 @@
+Apply filtering conditions in the subquery (or CTE) prior to aggregation: Reduces the number of rows processed during aggregation.

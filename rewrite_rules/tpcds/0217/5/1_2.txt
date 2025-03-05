@@ -1,0 +1,1 @@
+Decompose union operations into separate subqueries that each apply the necessary filters and joins before the union: This allows the query optimizer to perform predicate pushdown and reduce intermediate data size.

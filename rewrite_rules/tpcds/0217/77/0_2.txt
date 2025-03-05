@@ -1,0 +1,1 @@
+Move repetitive constant expressions into a common subquery: Avoids redundant computation and enhances maintainability.

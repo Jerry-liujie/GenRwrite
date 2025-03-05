@@ -1,0 +1,1 @@
+Use explicit JOIN syntax instead of comma-based joins: This improves query readability and helps the optimizer with join order.

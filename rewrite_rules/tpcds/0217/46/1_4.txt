@@ -1,0 +1,1 @@
+Apply consistent aliasing across tables: Enhances clarity and simplifies query maintenance.

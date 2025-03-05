@@ -1,0 +1,1 @@
+Maintain consistent table aliasing: Simplifies query readability and aids in avoiding ambiguous column references.

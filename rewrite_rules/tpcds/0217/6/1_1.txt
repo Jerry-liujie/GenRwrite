@@ -1,0 +1,1 @@
+Replace implicit join syntax with explicit JOIN clauses: enhances query clarity and optimizes join order.

@@ -1,0 +1,1 @@
+Push filter predicates into the WHERE clause early: This minimizes row counts before the join and aggregation phases, improving performance.

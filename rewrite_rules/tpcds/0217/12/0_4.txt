@@ -1,0 +1,1 @@
+Remove implicit joins: Helps prevent cross join mistakes and improves overall performance.

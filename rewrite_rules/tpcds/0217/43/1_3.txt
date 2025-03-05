@@ -1,0 +1,1 @@
+Remove unnecessary ELSE clauses in CASE expressions (defaulting to NULL): Simplifies the expressions without affecting the result.

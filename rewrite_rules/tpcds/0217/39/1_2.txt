@@ -1,0 +1,1 @@
+Use derived CTE steps to compute aggregations and derived metrics separately: Simplifies filtering and avoids repeated computation.

@@ -1,0 +1,1 @@
+Group related conditions logically: Makes the query easier to understand and maintain without affecting performance.

@@ -1,0 +1,1 @@
+Use a CTE to prefilter records based on a self-join condition: Lowers the data volume processed in subsequent joins.

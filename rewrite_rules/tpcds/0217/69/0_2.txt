@@ -1,0 +1,1 @@
+Replace correlated subqueries with common table expressions (CTEs) and explicit joins: Reduces repeated subquery evaluations and leverages set-based processing for better performance.

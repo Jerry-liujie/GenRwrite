@@ -1,0 +1,1 @@
+Push filters into join conditions: Reduces the volume of data joined by applying date filters during the join rather than in a later filtering step.

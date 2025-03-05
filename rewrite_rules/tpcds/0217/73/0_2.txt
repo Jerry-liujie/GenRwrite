@@ -1,0 +1,1 @@
+Push filtering conditions into the JOIN or WHERE clauses in the subquery: Reduces the data set early in the execution plan, improving performance.

@@ -1,0 +1,1 @@
+Use EXISTS clauses instead of IN subqueries: Helps the planner to potentially short‐circuit evaluations and avoids unnecessary duplicate row processing.

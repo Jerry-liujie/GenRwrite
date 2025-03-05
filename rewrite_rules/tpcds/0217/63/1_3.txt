@@ -1,0 +1,1 @@
+Move complex conditional logic from a CASE expression to direct boolean filtering: Reduces function calls and simplifies evaluation.

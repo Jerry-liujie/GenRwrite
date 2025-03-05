@@ -1,0 +1,1 @@
+Order overall query structure to separate join logic from filtering logic: Enhances maintainability and logical organization of the SQL statement.

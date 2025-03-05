@@ -1,0 +1,1 @@
+Use explicit join syntax in place of implicit joins: Clarifies join conditions and can enable the optimizer to generate more efficient plans.

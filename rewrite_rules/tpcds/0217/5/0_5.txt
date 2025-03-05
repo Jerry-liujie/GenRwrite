@@ -1,0 +1,1 @@
+Streamline unions: Use union all in subqueries to preserve rows while preventing duplicate elimination overhead.

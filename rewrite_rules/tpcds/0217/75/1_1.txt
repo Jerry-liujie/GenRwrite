@@ -1,0 +1,1 @@
+Push down filters early in the subqueries: By filtering on the required year values and category at the source, we reduce the volume of data processed in the later stages.

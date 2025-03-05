@@ -1,0 +1,1 @@
+Use explicit join syntax instead of listing tables and joining with WHERE clauses: Improves readability and allows the query optimizer to better plan join order and execution.

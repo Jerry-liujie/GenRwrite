@@ -1,0 +1,1 @@
+Replace the aggregate subquery with an EXISTS subquery: Benefits by stopping the processing after the first match, reducing unnecessary counting operations.

@@ -1,0 +1,1 @@
+Push filtering predicates into the WHERE clause early: Reduces the dataset size before performing joins and aggregations.

@@ -1,0 +1,1 @@
+Consolidate multiple scans: Replace multiple self-joins on the same derived table with a single aggregated (pivoted) result set. Benefit: Reduces repeated data scans and improves join efficiency.

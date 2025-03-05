@@ -1,0 +1,1 @@
+Simplify the subquery layering: Enhances maintainability and allows the optimizer to eliminate unnecessary intermediate processing.

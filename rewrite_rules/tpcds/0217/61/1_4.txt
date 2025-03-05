@@ -1,0 +1,1 @@
+Use a LEFT JOIN for the optional promotional data: Ensures that non-promotional records are not inadvertently excluded.

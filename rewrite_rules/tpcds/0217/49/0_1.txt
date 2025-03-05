@@ -1,0 +1,1 @@
+Use common table expressions to factor out repeated filtering logic: Benefits include reducing redundancy and enhancing clarity.

@@ -1,0 +1,1 @@
+Move filtering conditions into the WHERE clause to reduce the number of rows processed early in the execution.

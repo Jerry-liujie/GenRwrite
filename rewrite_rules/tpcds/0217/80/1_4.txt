@@ -1,0 +1,1 @@
+Consistently alias tables and columns: Enhances clarity and may contribute to improved execution planning.

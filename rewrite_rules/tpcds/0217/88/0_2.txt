@@ -1,0 +1,1 @@
+Use conditional aggregation with CASE expressions: Eliminates separate subqueries by combining multiple counts in one pass.

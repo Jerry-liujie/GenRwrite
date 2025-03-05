@@ -1,0 +1,1 @@
+Use explicit JOIN syntax: Improves clarity and allows the database optimizer to better manage join orders and predicate pushdown.

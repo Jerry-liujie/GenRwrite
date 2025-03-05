@@ -1,0 +1,1 @@
+Utilize simplified grouping: Maintaining only the necessary grouping levels minimizes computational overhead.

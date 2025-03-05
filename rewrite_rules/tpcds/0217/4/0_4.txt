@@ -1,0 +1,1 @@
+Filter early by applying conditions on aggregated results: Early filtering reduces the dataset size for subsequent operations, improving performance.

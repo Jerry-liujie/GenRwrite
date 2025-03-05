@@ -1,0 +1,1 @@
+Filter on the date attribute early in the aggregation step: Reduces the dataset size before further processing.

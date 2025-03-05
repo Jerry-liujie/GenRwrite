@@ -1,0 +1,1 @@
+Use explicit JOIN syntax: Enhances clarity and allows the query planner to optimize join operations more efficiently.

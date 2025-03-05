@@ -1,0 +1,1 @@
+Replace self-joins on the union with a simple join between the pre-aggregated results: Minimizes redundant data scans and join complexity.

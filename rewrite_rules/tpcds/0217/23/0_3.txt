@@ -1,0 +1,1 @@
+Push filtering conditions into the individual subqueries: Reduces the data volume processed in subsequent operations.

@@ -1,0 +1,1 @@
+Filter ranked results in an outer query rather than within each subquery: Simplifies individual subqueries and centralizes the filtering criteria.

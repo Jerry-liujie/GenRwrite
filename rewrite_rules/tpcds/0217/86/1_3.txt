@@ -1,0 +1,1 @@
+Replace legacy comma-separated table listings with explicit aliases: Improves clarity and simplifies maintenance.

@@ -1,0 +1,1 @@
+Replace self-joins with window functions (LAG/LEAD): Reduces join overhead by computing adjacent rows in a single pass.

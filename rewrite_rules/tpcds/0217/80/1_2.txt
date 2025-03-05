@@ -1,0 +1,1 @@
+Define a common CTE for the date range: Eliminates repetitive expressions and ensures a single point of modification.

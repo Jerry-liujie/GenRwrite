@@ -1,0 +1,1 @@
+Introduce a common table expression to combine subqueries: This modularizes the query and can help the optimizer efficiently manage the intermediate result set.

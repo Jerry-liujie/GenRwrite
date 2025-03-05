@@ -1,0 +1,1 @@
+Use BETWEEN in the CASE expressions where applicable: Enhances readability and expresses the logic more clearly.

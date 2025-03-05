@@ -1,0 +1,1 @@
+Group and order by using computed expressions only once: Reduces redundancy and potential computation overhead.

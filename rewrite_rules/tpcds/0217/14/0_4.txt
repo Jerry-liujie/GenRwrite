@@ -1,0 +1,1 @@
+Factor out identical computations using union–all subqueries and a consolidated aggregation : Minimizes duplicate work and simplifies the overall query structure.

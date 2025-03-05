@@ -1,0 +1,1 @@
+Use native date literals and intervals: Simplifies the expression evaluation and may improve performance.

@@ -1,0 +1,1 @@
+Replace a list of arithmetic expressions with a BETWEEN predicate: Simplifies constant computations and informs the optimizer of the range, aiding index usage.

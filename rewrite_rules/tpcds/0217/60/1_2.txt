@@ -1,0 +1,1 @@
+Pre-filter common dimensions in CTEs: Reduces data volume early in the query, decreasing processing overhead.

@@ -1,0 +1,1 @@
+Compute the ratio comparison by cross-multiplying values to avoid division within the filter: Helps to optimize the filtering calculation.

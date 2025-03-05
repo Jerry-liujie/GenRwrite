@@ -1,0 +1,1 @@
+Filter the driving table once and join to the aggregated results: improves overall execution efficiency by reducing the processing of unnecessary rows.

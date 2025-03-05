@@ -1,0 +1,1 @@
+Isolate filtering conditions specific to one table: Helps the optimizer push down predicates for more efficient early filtering.

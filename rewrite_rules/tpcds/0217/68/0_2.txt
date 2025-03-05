@@ -1,0 +1,1 @@
+Use a common table expression (CTE) for subqueries: Enhances maintainability and allows the planner to optimize intermediate aggregations.

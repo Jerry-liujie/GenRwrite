@@ -1,0 +1,1 @@
+Push filtering predicates into the aggregation subquery: Filtering early minimizes the data volume processed by later operations.

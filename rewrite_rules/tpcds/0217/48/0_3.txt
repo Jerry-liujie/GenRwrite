@@ -1,0 +1,1 @@
+Consolidate related OR predicates by computing flags: Reduces repetitive comparisons and can help the optimizer use index range scans.

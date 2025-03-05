@@ -1,0 +1,1 @@
+Perform window ranking after aggregation: Ensures ranks are computed on a reduced dataset, improving performance.

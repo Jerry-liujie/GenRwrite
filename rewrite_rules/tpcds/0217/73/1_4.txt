@@ -1,0 +1,1 @@
+Use a Common Table Expression (CTE) for complex subqueries: Enhances readability and maintainability without compromising performance.

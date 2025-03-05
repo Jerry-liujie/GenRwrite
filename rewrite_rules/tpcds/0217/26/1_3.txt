@@ -1,0 +1,1 @@
+Group related filtering conditions: Helps the optimizer prune irrelevant rows earlier in the execution plan.

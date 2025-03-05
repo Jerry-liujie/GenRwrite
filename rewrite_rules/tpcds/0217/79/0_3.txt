@@ -1,0 +1,1 @@
+Simplify arithmetic expressions in filter conditions: Makes the query conditions clearer and may help the planner in evaluation.

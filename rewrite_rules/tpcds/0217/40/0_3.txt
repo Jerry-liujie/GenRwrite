@@ -1,0 +1,1 @@
+Push filtering conditions into the WHERE clause: Narrows down data earlier in the processing, reducing the amount of data processed.

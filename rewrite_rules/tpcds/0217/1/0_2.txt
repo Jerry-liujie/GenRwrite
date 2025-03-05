@@ -1,0 +1,1 @@
+Precompute aggregation thresholds in a separate CTE: Eliminates correlated subqueries, reducing redundant computation.

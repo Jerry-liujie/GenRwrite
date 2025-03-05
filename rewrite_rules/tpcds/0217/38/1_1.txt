@@ -1,0 +1,1 @@
+Replace multiple intersect operations with correlated EXISTS subqueries: This reduces intermediate result set overhead and streamlines filtering by checking existence directly.

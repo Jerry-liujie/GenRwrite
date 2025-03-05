@@ -1,0 +1,1 @@
+Replace unioned subqueries with separate common table expressions that pivot data over the year: Reduces repetitive self-joins and streamlines aggregation.

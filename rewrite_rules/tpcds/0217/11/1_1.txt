@@ -1,0 +1,1 @@
+Replace implicit joins with explicit JOIN syntax: Improves clarity and can lead to better optimization by the query planner.

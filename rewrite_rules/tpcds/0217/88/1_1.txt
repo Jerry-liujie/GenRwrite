@@ -1,0 +1,1 @@
+Combine multiple subqueries into a single query: Reduces repeated scans and improves overall processing time.

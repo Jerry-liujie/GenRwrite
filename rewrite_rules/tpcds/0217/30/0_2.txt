@@ -1,0 +1,1 @@
+Precompute aggregated metrics and threshold values in separate common table expressions: Reduces redundant calculation of aggregated values during filtering.

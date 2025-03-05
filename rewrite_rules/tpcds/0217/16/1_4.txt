@@ -1,0 +1,1 @@
+Use proper date literals directly: Simplifies date arithmetic and can improve performance by avoiding extra casts.

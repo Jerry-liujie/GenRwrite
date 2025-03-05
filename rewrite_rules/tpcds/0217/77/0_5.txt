@@ -1,0 +1,1 @@
+Structure the union components with consistent aliasing and explicit joins: Provides uniformity and readability across the combined subqueries.

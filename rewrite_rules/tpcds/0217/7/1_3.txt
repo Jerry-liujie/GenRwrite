@@ -1,0 +1,1 @@
+Keep join predicates and filter conditions separate from aggregation: Enhances predicate pushdown which minimizes the dataset before grouping.

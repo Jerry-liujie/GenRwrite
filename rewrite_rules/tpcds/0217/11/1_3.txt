@@ -1,0 +1,1 @@
+Aggregate data in a preliminary CTE to compute all necessary measures in one pass: Minimizes repeated scans and improves performance.

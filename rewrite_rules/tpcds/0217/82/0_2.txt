@@ -1,0 +1,1 @@
+Replace repeated casts with literal date expressions: Simplifies the query and reduces unnecessary function calls.

@@ -1,0 +1,1 @@
+Use explicit JOIN syntax: Improves readability and helps the optimizer by clearly delineating join conditions.

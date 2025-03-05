@@ -1,0 +1,1 @@
+Push filter conditions into the JOIN clauses: Reduces the dataset early in the execution, leading to improved performance.

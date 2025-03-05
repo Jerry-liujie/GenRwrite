@@ -1,0 +1,1 @@
+Apply filtering conditions directly in the JOIN ON clauses: Reduces the size of intermediate result sets by filtering rows as early as possible.

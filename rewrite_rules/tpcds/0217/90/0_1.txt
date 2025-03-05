@@ -1,0 +1,1 @@
+Combine multiple subqueries into a single query using conditional aggregation: This reduces the number of table scans and avoids redundant join operations.

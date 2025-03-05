@@ -1,0 +1,1 @@
+Simplify aggregations: Compute derived metrics (such as subtracting loss from profit) during aggregation to avoid redundant calculations.

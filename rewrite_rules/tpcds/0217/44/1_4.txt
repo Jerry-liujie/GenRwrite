@@ -1,0 +1,1 @@
+Replace correlated subqueries with joins using precomputed CTEs: Enables the optimizer to generate a more efficient execution plan.

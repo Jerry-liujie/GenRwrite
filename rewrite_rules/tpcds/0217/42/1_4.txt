@@ -1,0 +1,1 @@
+Assign an alias to the aggregated column and reference it in the ORDER BY clause: Avoids recalculating the expression and simplifies the ordering logic.

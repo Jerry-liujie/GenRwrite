@@ -1,0 +1,1 @@
+Break aggregated data by period: Splitting the overall aggregation into separate subqueries for each period minimizes self-joins and simplifies comparisons.

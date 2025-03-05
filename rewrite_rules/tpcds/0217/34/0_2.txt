@@ -1,0 +1,1 @@
+Push aggregation filtering into a HAVING clause: Reduces the number of rows processed in subsequent operations, thus improving performance.

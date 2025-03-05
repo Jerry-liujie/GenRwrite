@@ -1,0 +1,1 @@
+Replace repeated computations with proper literals: Simplifies expressions and potentially enables better execution plan optimizations.

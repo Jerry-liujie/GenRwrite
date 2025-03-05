@@ -1,0 +1,1 @@
+Use explicit filtering in join predicates rather than in a where clause on multiple tables: Helps the database engine apply filters earlier.

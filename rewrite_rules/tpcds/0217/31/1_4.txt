@@ -1,0 +1,1 @@
+Compute ratios in the outer query: This avoids recalculating conditions and allows the use of pre-aggregated results for better performance.

@@ -1,0 +1,1 @@
+Apply predicate conditions directly within the JOINs rather than in the WHERE clause when possible: Helps avoid unnecessary row generation and streamlines the execution plan.

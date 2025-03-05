@@ -1,0 +1,1 @@
+Replace a correlated subquery that computes an aggregate with an inline view (or common table expression) that pre-aggregates data: Reduces repeated computation and improves overall query performance.

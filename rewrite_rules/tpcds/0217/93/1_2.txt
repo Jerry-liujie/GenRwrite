@@ -1,0 +1,1 @@
+Remove unnecessary subqueries by computing the derived value directly in the aggregation: Reduces complexity and execution overhead.

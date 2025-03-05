@@ -1,0 +1,1 @@
+Consolidate related conditions: Helps the query planner eliminate unnecessary data early and makes maintenance easier.

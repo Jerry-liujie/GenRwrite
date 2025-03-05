@@ -1,0 +1,1 @@
+Use COALESCE to handle NULLs during joins and aggregations: Ensures robust and accurate cumulative calculations.

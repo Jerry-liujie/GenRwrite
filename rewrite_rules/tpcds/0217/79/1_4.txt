@@ -1,0 +1,1 @@
+Apply filter conditions early in the join process: Pushing filters in the WHERE clause during the join minimizes the intermediate result set size, enhancing performance.

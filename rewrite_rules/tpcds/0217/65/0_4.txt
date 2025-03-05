@@ -1,0 +1,1 @@
+Remove unnecessary subquery nesting: Simplifies the query structure and optimizes execution.

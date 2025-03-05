@@ -1,0 +1,1 @@
+Keep each UNION ALL branch simple by combining only one set of discrete filter conditions: Allows more efficient access paths and easier optimization.

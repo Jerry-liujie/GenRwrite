@@ -1,0 +1,1 @@
+Push static filters into the JOIN conditions where possible: Lowers the data processing overhead by restricting data earlier.

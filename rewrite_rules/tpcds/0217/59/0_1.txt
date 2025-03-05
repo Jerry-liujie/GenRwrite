@@ -1,0 +1,1 @@
+Use explicit join syntax instead of comma-style joins: Improves readability and assists the optimizer in choosing efficient join methods.

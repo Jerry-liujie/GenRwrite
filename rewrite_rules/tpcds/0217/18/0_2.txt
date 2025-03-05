@@ -1,0 +1,1 @@
+Move filtering predicates from the WHERE clause to the respective JOIN clauses when the condition applies to the joined table: This pushes down filters, reducing intermediate row counts.

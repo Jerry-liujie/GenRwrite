@@ -1,0 +1,1 @@
+Employ built-in date arithmetic functions in join conditions: Using functions native to the DB engine can enable use of indexes and improve performance.

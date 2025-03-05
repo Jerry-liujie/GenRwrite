@@ -1,0 +1,1 @@
+Move filtering predicates into the JOIN conditions: Allows early filtering to reduce the intermediate result set.

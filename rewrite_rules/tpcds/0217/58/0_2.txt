@@ -1,0 +1,1 @@
+Replace implicit join syntax (comma-separated lists) with explicit JOIN clauses: Improves clarity, readability, and may help the optimizer.

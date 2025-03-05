@@ -1,0 +1,1 @@
+Compute ratios in the outer query using pre-aggregated values: Minimizes repeated calculations and simplifies the final join condition.

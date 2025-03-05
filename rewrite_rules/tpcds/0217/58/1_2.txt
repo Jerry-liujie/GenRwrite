@@ -1,0 +1,1 @@
+Extract common filtering logic into a separate derived table: Reduces duplicate computation and simplifies maintenance.

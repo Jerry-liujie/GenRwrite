@@ -1,0 +1,1 @@
+Push filter predicates into join conditions: Reduces the dataset early by filtering on date and other attributes sooner.

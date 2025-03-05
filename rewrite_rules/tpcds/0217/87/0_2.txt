@@ -1,0 +1,1 @@
+Consolidate the common filtering into a common table expression: This minimizes duplicate filtering work and simplifies the overall logic.

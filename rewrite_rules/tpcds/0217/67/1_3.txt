@@ -1,0 +1,1 @@
+Merge nested subqueries where possible: Reduces query complexity and can facilitate more efficient optimization.

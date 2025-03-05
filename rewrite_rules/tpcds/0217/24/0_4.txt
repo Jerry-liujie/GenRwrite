@@ -1,0 +1,1 @@
+Combine similar queries: Merges separate queries with different filter values into one query (with an added filter on the parameter) to reduce duplicate data scans.

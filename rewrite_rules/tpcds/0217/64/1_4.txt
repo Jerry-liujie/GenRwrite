@@ -1,0 +1,1 @@
+Replace comma-based joins with modern join syntax: Enhances readability and allows for more effective indexing.

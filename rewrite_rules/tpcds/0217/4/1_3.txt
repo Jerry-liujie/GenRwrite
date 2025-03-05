@@ -1,0 +1,1 @@
+Pivot data early with conditional aggregation: Use CASE expressions within an aggregation to convert rows into columns. Benefit: Lowers the number of joins and simplifies filtering and comparisons.

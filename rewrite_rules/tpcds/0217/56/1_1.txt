@@ -1,0 +1,1 @@
+Early Filtering with a Dedicated Subquery: Create a separate subquery to filter records based on the item attribute so that only matching records participate in subsequent joins. Benefit: Reduces the volume of data processed in downstream operations.

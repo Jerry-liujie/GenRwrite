@@ -1,0 +1,1 @@
+Use explicit JOIN syntax instead of implicit joins: This increases query clarity and helps the optimizer generate better execution plans.

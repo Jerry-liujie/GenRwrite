@@ -1,0 +1,1 @@
+Replace the subquery condition with an equivalent direct condition on an already joined column: This removes the overhead of a subquery and speeds up filtering.

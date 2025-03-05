@@ -1,0 +1,1 @@
+Consolidate similar subqueries by aggregating based on grouping columns in a single common expression: Prevents duplicate computations.

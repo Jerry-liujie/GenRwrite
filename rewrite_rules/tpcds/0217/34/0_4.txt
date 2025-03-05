@@ -1,0 +1,1 @@
+Remove duplicate values in constant comparisons: Eliminates unnecessary redundancy to streamline filtering.

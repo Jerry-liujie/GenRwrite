@@ -1,0 +1,1 @@
+Replace multiple OR conditions with IN clauses when applicable: Simplifies predicate evaluation and enhances performance.

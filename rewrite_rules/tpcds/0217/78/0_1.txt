@@ -1,0 +1,1 @@
+Push date filtering into the early stages by joining a filtered date subset: Reduces scanned rows and speeds up subsequent joins.

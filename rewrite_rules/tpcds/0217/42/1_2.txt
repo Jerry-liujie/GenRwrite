@@ -1,0 +1,1 @@
+Push filtering predicates into the JOIN conditions: Reduces the number of rows early in the execution plan, resulting in a smaller intermediate dataset.

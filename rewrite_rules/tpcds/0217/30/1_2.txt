@@ -1,0 +1,1 @@
+Replace the correlated subquery with a precomputed aggregate common table expression: This minimizes repeated calculations and improves performance.

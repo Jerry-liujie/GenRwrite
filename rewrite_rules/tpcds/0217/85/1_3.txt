@@ -1,0 +1,1 @@
+Apply table aliases consistently to shorten reference names: This makes the query more concise and easier to maintain.

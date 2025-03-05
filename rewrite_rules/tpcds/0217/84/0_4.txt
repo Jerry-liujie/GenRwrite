@@ -1,0 +1,1 @@
+Reorder joins to apply selective filters early: Potentially minimizes the dataset processed in later joins.

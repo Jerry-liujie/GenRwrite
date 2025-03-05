@@ -1,0 +1,1 @@
+Move filter conditions directly into the join clauses: Reduces the intermediate result size earlier by filtering rows as they are joined.

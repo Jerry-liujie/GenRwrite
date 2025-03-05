@@ -1,0 +1,1 @@
+Precompute common aggregations in a single common table expression: Avoids redundant calculations and improves reusability.

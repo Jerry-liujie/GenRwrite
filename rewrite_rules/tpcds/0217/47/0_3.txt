@@ -1,0 +1,1 @@
+Push filters that depend on computed aggregates into the outer query: Ensures that only necessary rows are processed in later stages, enhancing performance.

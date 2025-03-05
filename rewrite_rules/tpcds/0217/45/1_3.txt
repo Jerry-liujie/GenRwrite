@@ -1,0 +1,1 @@
+Consolidate filtering conditions in the WHERE clause after joining: This ensures that predicates are pushed down early, reducing the intermediate data set.

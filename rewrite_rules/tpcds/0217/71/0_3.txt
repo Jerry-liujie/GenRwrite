@@ -1,0 +1,1 @@
+Push filtering predicates into join conditions: Reduces the intermediate result set early, leading to better performance.

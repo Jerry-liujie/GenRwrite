@@ -1,0 +1,1 @@
+Combine independent aggregations into a single scan using conditional expressions: Improves performance by reducing multiple passes over the data.

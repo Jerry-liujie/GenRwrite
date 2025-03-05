@@ -1,0 +1,1 @@
+Use explicit join syntax instead of implicit joins: This improves clarity and helps the optimizer apply join order and predicate pushdown.

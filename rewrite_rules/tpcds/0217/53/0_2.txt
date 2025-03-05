@@ -1,0 +1,1 @@
+Use a CTE to separate the aggregation step: Simplifies the query structure and can help the optimizer focus on each part individually.

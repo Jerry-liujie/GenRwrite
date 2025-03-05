@@ -1,0 +1,1 @@
+Replace SELECT * in subqueries with SELECT 1: Decreases unnecessary data retrieval and improves performance.

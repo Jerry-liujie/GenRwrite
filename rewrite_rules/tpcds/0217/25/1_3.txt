@@ -1,0 +1,1 @@
+Apply table aliases: This shortens the query and reduces ambiguity.

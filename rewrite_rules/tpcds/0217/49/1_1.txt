@@ -1,0 +1,1 @@
+Use common table expressions (CTEs) to modularize the query: Improves readability and allows early filtering of aggregated data.

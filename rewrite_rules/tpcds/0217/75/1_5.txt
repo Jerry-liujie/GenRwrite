@@ -1,0 +1,1 @@
+Limit the dataset in the common table expression: By restricting the data early, subsequent groupings and joins operate on a smaller dataset, improving performance.

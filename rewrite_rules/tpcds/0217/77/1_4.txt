@@ -1,0 +1,1 @@
+Consolidate repeated expressions by using separate aggregations: Minimizes redundant computations and aids performance.

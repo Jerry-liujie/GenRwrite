@@ -1,0 +1,1 @@
+Eliminate redundant constant values in filtering conditions: Reduces unnecessary evaluation overhead and simplifies the predicate logic.

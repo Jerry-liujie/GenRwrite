@@ -1,0 +1,1 @@
+Use separate common table expressions for different filtered periods and then join them: Minimizes unnecessary data scanning and simplifies the join criteria.

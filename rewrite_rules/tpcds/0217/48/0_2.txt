@@ -1,0 +1,1 @@
+Pre-filter static-dimension records using common table expressions: Limits the data volume early in the query processing.

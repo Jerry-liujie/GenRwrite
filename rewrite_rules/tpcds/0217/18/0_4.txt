@@ -1,0 +1,1 @@
+Maintain grouping with rollup while ordering on the same set of columns: This minimizes extra processing by aligning aggregation and sorting requirements.

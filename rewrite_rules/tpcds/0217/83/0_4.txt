@@ -1,0 +1,1 @@
+Structure join conditions to leverage early filtering: Minimizes the amount of data joined across tables, optimizing the query execution.

@@ -1,0 +1,1 @@
+Use IN clauses instead of multiple OR comparisons on the same column: Simplifies the condition logic and can allow better optimization.

@@ -1,0 +1,1 @@
+Replace the subquery with a direct filter on the join key: Eliminates unnecessary nested queries and reduces overhead.

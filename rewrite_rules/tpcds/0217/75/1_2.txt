@@ -1,0 +1,1 @@
+Replace UNION with UNION ALL: Since there is no deduplication requirement, using UNION ALL avoids the extra overhead of duplicate elimination.

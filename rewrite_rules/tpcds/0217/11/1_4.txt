@@ -1,0 +1,1 @@
+Filter out unwanted rows early in the query: Reduces the amount of data processed in later steps.

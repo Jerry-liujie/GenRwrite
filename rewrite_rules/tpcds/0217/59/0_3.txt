@@ -1,0 +1,1 @@
+Separate distinct query periods into their own CTEs: Simplifies logic by handling different date ranges separately and then joining on common dimensions.

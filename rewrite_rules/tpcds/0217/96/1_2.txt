@@ -1,0 +1,1 @@
+Remove unnecessary ORDER BY and LIMIT clauses when aggregating into a single result: Eliminates redundant processing and sorting.

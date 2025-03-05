@@ -1,0 +1,1 @@
+Align filtering conditions with join clauses: Helps the database engine to push predicates down for better performance.

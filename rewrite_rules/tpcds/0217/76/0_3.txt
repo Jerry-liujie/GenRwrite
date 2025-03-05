@@ -1,0 +1,1 @@
+Replace the derived table with a Common Table Expression (CTE): This improves readability and may allow the optimizer to reuse intermediate results.

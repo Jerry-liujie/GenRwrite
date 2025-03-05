@@ -1,0 +1,1 @@
+Consolidate similar data retrieval operations into a single CTE: Reduces duplicate scans and simplifies the overall query plan.

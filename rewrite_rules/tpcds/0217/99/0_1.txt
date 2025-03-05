@@ -1,0 +1,1 @@
+Use explicit join syntax instead of comma-separated tables: Improves query clarity and allows the optimizer to better apply join conditions.

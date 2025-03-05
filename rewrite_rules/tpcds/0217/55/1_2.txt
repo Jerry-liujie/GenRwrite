@@ -1,0 +1,1 @@
+Apply filtering conditions in the WHERE clause on each table before grouping: reduces the data volume processed during joins and aggregation.

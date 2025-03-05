@@ -1,0 +1,1 @@
+Maintain consistent formatting: Aids in maintenance and eases understanding of the query structure.

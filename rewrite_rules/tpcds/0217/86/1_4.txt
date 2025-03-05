@@ -1,0 +1,1 @@
+Align window function partitions with grouping expressions: Ensures that aggregation and ranking operate on correctly partitioned data subsets.

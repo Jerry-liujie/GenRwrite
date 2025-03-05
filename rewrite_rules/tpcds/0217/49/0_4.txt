@@ -1,0 +1,1 @@
+Consolidate similar query segments using union all: Reduces duplicate code and facilitates maintainability.

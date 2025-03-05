@@ -1,0 +1,1 @@
+Combine similar filter criteria using UNION: Eliminates duplicate filtering logic and streamlines multiple subqueries into one.

@@ -1,0 +1,1 @@
+Alias expressions for reuse in SELECT, GROUP BY, and ORDER BY clauses: Minimizes repeated function calls and simplifies query maintenance.

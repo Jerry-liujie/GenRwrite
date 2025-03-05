@@ -1,0 +1,1 @@
+Simplify arithmetic expressions in predicates: Enhances readability and helps the optimizer recognize constant ranges.

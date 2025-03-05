@@ -1,0 +1,1 @@
+Compute derived columns (such as substring values) once in the CTE: Avoids redundant calculations during join processing.

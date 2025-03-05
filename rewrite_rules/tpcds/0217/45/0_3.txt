@@ -1,0 +1,1 @@
+Push constant filters into the WHERE clause: Narrows down the dataset earlier for better performance.

@@ -1,0 +1,1 @@
+Apply filters directly in the base query (in the WITH clause): Reduces the amount of data flowing into later stages by eliminating unnecessary rows early.

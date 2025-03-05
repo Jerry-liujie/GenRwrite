@@ -1,0 +1,1 @@
+Apply filtering conditions in the WHERE clause immediately after joins: Reduces the number of rows processed by early elimination of irrelevant data.

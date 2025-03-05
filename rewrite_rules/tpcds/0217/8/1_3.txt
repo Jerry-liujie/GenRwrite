@@ -1,0 +1,1 @@
+Push filtering predicates into the CTE and WHERE clause: Reduces the volume of data processed in subsequent operations.

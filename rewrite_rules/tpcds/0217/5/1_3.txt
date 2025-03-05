@@ -1,0 +1,1 @@
+Replace nested joins with centralized join sources to prevent redundant filtering and scanning: This minimizes processing overhead.

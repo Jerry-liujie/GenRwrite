@@ -1,0 +1,1 @@
+Use table aliases for brevity and clarity: This makes the query easier to read and maintain.

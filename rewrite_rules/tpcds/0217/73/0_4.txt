@@ -1,0 +1,1 @@
+Remove redundant predicate values from IN clauses: Eliminates unnecessary checks and streamlines the filtering process.

@@ -1,0 +1,1 @@
+Use range predicates instead of computing expressions in filters: Simplifies the conditions and improves index utilization.

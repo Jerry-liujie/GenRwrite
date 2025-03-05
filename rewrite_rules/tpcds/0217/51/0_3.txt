@@ -1,0 +1,1 @@
+Compute daily aggregates in separate subqueries and combine them before applying window functions: Minimizes redundant computations and simplifies cumulative calculations.

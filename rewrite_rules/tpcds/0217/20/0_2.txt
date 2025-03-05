@@ -1,0 +1,1 @@
+Evaluate constant expressions outside of row-level processing: Using literal date boundaries instead of computing intervals for every row reduces computational overhead.

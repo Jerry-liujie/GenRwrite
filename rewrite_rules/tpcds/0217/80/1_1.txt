@@ -1,0 +1,1 @@
+Use explicit JOIN syntax instead of listing tables with commas: Improves readability and allows the optimizer to understand join relationships better.

@@ -1,0 +1,1 @@
+Eliminate cross joins of independent aggregations: By applying all aggregations in a single pass, the query avoids expensive join overhead.

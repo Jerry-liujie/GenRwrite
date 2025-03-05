@@ -1,0 +1,1 @@
+Replace complex OR logic with separate UNION ALL clauses: Helps the optimizer use indexes and avoids performance penalties associated with evaluating multiple OR conditions.

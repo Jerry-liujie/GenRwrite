@@ -1,0 +1,1 @@
+Replace repeated arithmetic expressions in filter predicates with range operators: Changing an in-list of consecutive expressions to a BETWEEN clause reduces expression evaluations.

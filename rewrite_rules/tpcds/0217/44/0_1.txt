@@ -1,0 +1,1 @@
+Use a common subexpression for aggregation (CTE) so that the expensive grouping and filter is computed only once: reduces duplicate computation.

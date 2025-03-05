@@ -1,0 +1,1 @@
+Use aliases for tables: Simplifies query structure and reduces parsing overhead.

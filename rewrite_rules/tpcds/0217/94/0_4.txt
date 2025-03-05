@@ -1,0 +1,1 @@
+Consolidate predicate logic in the WHERE clause: Ensures that filters are applied uniformly to narrow down the result set before aggregation.

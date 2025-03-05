@@ -1,0 +1,1 @@
+Eliminate redundant joining to the same dimension table multiple times: Enhances performance by reducing unnecessary joins.

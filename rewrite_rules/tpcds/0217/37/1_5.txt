@@ -1,0 +1,1 @@
+Keep grouping and ordering based only on necessary columns: Minimizes overhead when aggregating and sorting data.

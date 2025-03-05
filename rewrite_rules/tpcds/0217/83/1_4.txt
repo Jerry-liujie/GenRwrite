@@ -1,0 +1,1 @@
+Isolate aggregation computations in dedicated subqueries: Enables potential parallel execution and clearer modularity of the query.

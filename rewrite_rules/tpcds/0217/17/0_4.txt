@@ -1,0 +1,1 @@
+Ensure join order aligns with filtering: This helps in reducing intermediate result sizes and speeds up query execution.

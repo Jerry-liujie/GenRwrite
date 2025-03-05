@@ -1,0 +1,1 @@
+Use a common table expression (CTE) to pre-aggregate data: Reduces redundant computations and streamlines the query.

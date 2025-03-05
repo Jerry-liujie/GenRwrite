@@ -1,0 +1,1 @@
+Introduce a common table expression (CTE) for the aggregation: Simplifies the query structure by isolating the aggregation step, making subsequent window functions easier to apply.

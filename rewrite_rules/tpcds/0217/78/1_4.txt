@@ -1,0 +1,1 @@
+Replace multiple outer joins with a single join after consolidation: This simplifies the query plan and speeds up execution.

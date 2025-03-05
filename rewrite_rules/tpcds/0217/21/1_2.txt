@@ -1,0 +1,1 @@
+Replace implicit joins with explicit ON conditions: Enhances maintainability and helps ensure correct join conditions are applied.

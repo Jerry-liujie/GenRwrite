@@ -1,0 +1,1 @@
+Replace nested subqueries with a single derived table for repeated conditions: Simplifies the query structure and minimizes redundant processing.

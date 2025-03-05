@@ -1,0 +1,1 @@
+Retain only necessary conditions in the WHERE clause: Focuses on conditions that cannot be applied during joins, enhancing performance.

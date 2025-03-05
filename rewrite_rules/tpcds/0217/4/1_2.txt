@@ -1,0 +1,1 @@
+Use explicit join syntax: Change from legacy implicit joins to explicit join syntax. Benefit: Enhances clarity and allows the optimizer to better determine join order.

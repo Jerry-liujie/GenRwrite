@@ -1,0 +1,1 @@
+Consolidate and simplify expressions in the GROUP BY and window function: Enhances readability and can lead to a more optimal execution plan.

@@ -1,0 +1,1 @@
+Use clear aliasing to improve readability and reduce ambiguity: Makes the query easier to understand and optimize.

@@ -1,0 +1,1 @@
+Apply filtering conditions early (in the CTEs and join predicates): Decreases the data volume processed in downstream operations, reducing overall execution time.

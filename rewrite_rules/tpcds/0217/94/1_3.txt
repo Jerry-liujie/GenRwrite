@@ -1,0 +1,1 @@
+Replace correlated EXISTS subqueries with a derived table using aggregation: Eliminates per-row subquery execution and speeds up evaluation.

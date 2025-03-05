@@ -1,0 +1,1 @@
+Replace arithmetic expressions with literal constants when possible: Eliminates unnecessary computations and enhances clarity.

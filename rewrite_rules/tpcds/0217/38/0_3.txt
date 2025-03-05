@@ -1,0 +1,1 @@
+Consolidate repeated filter conditions into each subquery: This allows each branch to restrict its row set early, reducing data volume.

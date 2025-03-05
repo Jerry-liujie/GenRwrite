@@ -1,0 +1,1 @@
+Use literal values rather than computations in the filter conditions: Enables better use of indexes and reduces runtime calculation overhead.

@@ -1,0 +1,1 @@
+Separate aggregation from ranking by computing aggregates in one CTE and then applying window functions in a subsequent CTE: This improves modularity and can help the optimizer.

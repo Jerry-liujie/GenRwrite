@@ -1,0 +1,1 @@
+Replace self-joins with built-in analytic functions (LAG and LEAD): This avoids redundant scanning and joining of the same dataset, lowering processing time.

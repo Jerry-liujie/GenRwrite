@@ -1,0 +1,1 @@
+Consolidate identical filtering conditions into the appropriate parts of the query: Avoids redundancy and minimizes the data scanned.

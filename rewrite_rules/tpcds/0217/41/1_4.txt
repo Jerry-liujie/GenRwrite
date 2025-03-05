@@ -1,0 +1,1 @@
+Avoid redundant computation by restructuring the query into a flat, non-nested condition: Enhances performance and clarity.

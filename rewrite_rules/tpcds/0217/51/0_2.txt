@@ -1,0 +1,1 @@
+Push filtering conditions into early aggregations: Reduces the number of rows processed in later stages.

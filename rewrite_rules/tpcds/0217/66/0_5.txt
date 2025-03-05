@@ -1,0 +1,1 @@
+Rewrite division within aggregation by aggregating first and then performing arithmetic: Ensures more efficient computation when the divisor is constant per group.

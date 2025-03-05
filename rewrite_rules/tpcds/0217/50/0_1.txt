@@ -1,0 +1,1 @@
+Replace implicit joins with explicit JOIN syntax: Improves readability and lets the optimizer apply join strategies more effectively.

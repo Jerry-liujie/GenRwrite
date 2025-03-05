@@ -1,0 +1,1 @@
+Replace multiple OR conditions with an IN clause: Simplifies the filter condition and can enable faster evaluation.

@@ -1,0 +1,1 @@
+Separate the aggregation step into its own common table expression: Reduces complexity by isolating the grouping logic before applying window functions.

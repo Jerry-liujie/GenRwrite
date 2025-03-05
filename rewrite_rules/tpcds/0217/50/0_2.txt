@@ -1,0 +1,1 @@
+Filter dimension data early using a common table expression: Reduces the number of rows processed in subsequent joins.

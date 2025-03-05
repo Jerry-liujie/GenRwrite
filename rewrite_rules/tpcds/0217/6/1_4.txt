@@ -1,0 +1,1 @@
+Push filtering conditions into JOIN and WHERE clauses: limits the data processed early in the execution plan.

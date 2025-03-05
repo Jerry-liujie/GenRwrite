@@ -1,0 +1,1 @@
+Replace implicit (comma‐separated) joins with explicit ANSI join syntax: Improves readability and enables the optimizer to better determine join order and methods.

@@ -1,0 +1,1 @@
+Maintain consistent alias usage for clarity: Simplifies query maintenance and prevents ambiguity.

@@ -1,0 +1,1 @@
+Use table aliases consistently: Enhances clarity and maintainability of the query.

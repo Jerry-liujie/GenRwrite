@@ -1,0 +1,1 @@
+Push filtering predicates into the JOIN and subquery clauses: Limits the number of rows processed early in the query plan.

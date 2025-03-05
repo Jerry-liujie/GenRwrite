@@ -1,0 +1,1 @@
+Remove unnecessary CASE expressions by moving conditional logic into the WHERE clause: This makes the filter condition simpler and easier for the optimizer to push down.

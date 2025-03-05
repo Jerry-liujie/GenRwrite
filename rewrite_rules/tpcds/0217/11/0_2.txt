@@ -1,0 +1,1 @@
+Pivot yearly aggregation using conditional aggregation (CASE expressions): Reduces multiple self-joins into one pass per source.

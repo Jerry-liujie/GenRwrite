@@ -1,0 +1,1 @@
+Replace a conditional outer join with an inner join when filtering on the joined table’s column: Prevents processing of nonmatching rows and speeds up the query.

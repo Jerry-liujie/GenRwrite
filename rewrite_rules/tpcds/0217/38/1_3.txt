@@ -1,0 +1,1 @@
+Push filtering conditions on the dimension table early in the query: This limits the search space for subsequent joins and subqueries, improving performance.

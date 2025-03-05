@@ -1,0 +1,1 @@
+Leverage a Common Table Expression (CTE) for grouping: Simplifies the query structure and can enhance performance by isolating the heavy aggregation.

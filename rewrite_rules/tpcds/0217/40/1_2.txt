@@ -1,0 +1,1 @@
+Replace unnecessary casting with native date literals: Reduces overhead and makes the query more readable.

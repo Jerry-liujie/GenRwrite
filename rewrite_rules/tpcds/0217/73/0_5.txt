@@ -1,0 +1,1 @@
+Use a Common Table Expression (CTE) to separate the aggregation logic from the final retrieval: Improves maintainability and clarity of the query structure.

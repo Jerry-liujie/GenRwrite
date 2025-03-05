@@ -1,0 +1,1 @@
+Extract the correlated subquery into a separate aggregation subquery: Avoids computing the same aggregate repeatedly and reduces execution time.

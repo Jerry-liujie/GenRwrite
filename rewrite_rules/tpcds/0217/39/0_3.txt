@@ -1,0 +1,1 @@
+Convert arithmetic expressions that compute constant values into literal constants: Clarifies filter conditions and aids the query optimizer.

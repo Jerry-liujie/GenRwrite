@@ -1,0 +1,1 @@
+Push filtering conditions inside the main query: Minimizes the number of rows processed by subsequent operations.

@@ -1,0 +1,1 @@
+Apply filtering conditions early in the query: Enhances performance by reducing the number of rows processed in subsequent operations.

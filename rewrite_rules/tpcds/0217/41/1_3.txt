@@ -1,0 +1,1 @@
+Factor out common conditions in the correlated subquery: Improves readability and may help the query planner optimize common filters.

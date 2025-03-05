@@ -1,0 +1,1 @@
+Replace repeated scalar subqueries with CTEs : Avoids redundant recalculations and improves query execution speed.

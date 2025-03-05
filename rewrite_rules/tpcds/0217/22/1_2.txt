@@ -1,0 +1,1 @@
+Precompute range boundaries rather than using arithmetic expressions in the filter: enables constant folding and potential minor performance gains.

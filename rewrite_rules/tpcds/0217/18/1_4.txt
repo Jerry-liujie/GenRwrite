@@ -1,0 +1,1 @@
+Retain necessary type casts on aggregate expressions: Ensures data consistency while emphasizing computations explicitly.

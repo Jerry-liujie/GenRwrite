@@ -1,0 +1,1 @@
+Apply filters early in the WHERE clause: Reduces the data set size before joining, hence improving performance.

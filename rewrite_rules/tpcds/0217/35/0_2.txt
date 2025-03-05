@@ -1,0 +1,1 @@
+Use WITH clauses (CTEs) to prefilter data from subqueries: Reduces redundant computation and isolates filtering logic.

@@ -1,0 +1,1 @@
+Replace repeated literal casts with standardized date literals: Simplifies the expression and avoids redundant computations.

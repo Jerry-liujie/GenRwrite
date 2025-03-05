@@ -1,0 +1,1 @@
+Consolidate similar queries by filtering on a set of values: Minimizes repeated scans and simplifies maintenance.

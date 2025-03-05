@@ -1,0 +1,1 @@
+Remove redundant CASE expression by directly using the computed expression: Simplifies the logic and improves readability.

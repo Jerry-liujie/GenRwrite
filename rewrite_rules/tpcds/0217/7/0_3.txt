@@ -1,0 +1,1 @@
+Use table aliases: Simplifying the query with aliases makes it more readable and easier for both developers and optimizers to handle.
